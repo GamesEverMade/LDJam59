@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.546875,
+    "zoomFactor": 0.4789341884535245,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -44,8 +44,8 @@
       "name": "Logo",
       "persistentUuid": "8cfcc2a8-7daf-4b97-8821-0f2f977c10b5",
       "width": 554,
-      "x": 381,
-      "y": -18,
+      "x": 598,
+      "y": 220,
       "zOrder": 2,
       "numberProperties": [
         {
@@ -188,16 +188,6 @@
             "CurrentScene",
             "=",
             "\"Intro Scene\""
-          ]
-        },
-        {
-          "type": {
-            "value": "SetX"
-          },
-          "parameters": [
-            "Logo",
-            "=",
-            "366"
           ]
         },
         {

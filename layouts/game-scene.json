@@ -20,25 +20,82 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.6040838749988914,
+    "zoomFactor": 0.3010461197182484,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
   },
-  "objectsGroups": [],
-  "variables": [],
+  "objectsGroups": [
+    {
+      "name": "Flags",
+      "objects": [
+        {
+          "name": "FlagNorth"
+        },
+        {
+          "name": "FlagEast"
+        },
+        {
+          "name": "FlagSouth"
+        },
+        {
+          "name": "FlagWest"
+        }
+      ]
+    },
+    {
+      "name": "Items",
+      "objects": [
+        {
+          "name": "Bell"
+        },
+        {
+          "name": "Gong"
+        }
+      ]
+    },
+    {
+      "name": "Buttons",
+      "objects": [
+        {
+          "name": "ButtonRight"
+        },
+        {
+          "name": "ButtonLeft"
+        }
+      ]
+    },
+    {
+      "name": "Areas",
+      "objects": [
+        {
+          "name": "AreaNorth"
+        },
+        {
+          "name": "AreaEast"
+        }
+      ]
+    }
+  ],
+  "variables": [
+    {
+      "name": "AreaOffset",
+      "type": "number",
+      "value": 0
+    }
+  ],
   "instances": [
     {
       "angle": 0,
       "customSize": false,
-      "height": 78.99999999999999,
+      "height": 0,
       "keepRatio": true,
-      "layer": "",
-      "name": "Player",
-      "persistentUuid": "4ded1d81-e820-41d3-868a-3f314e5850bd",
-      "width": 79,
-      "x": 128,
-      "y": 256,
+      "layer": "UI",
+      "name": "FlagNorth",
+      "persistentUuid": "45233075-d224-4ebc-a1a3-ce90787fcc61",
+      "width": 0,
+      "x": 54,
+      "y": 880,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -46,34 +103,15 @@
     },
     {
       "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 720,
-      "layer": "Background",
-      "locked": true,
-      "name": "Background",
-      "persistentUuid": "9d4a2623-239c-44d1-95a4-076307aa3170",
-      "width": 1280,
-      "x": 0,
-      "y": 0,
-      "zOrder": -10,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
       "customSize": false,
       "height": 0,
       "keepRatio": true,
-      "layer": "MobileControls",
-      "locked": true,
-      "name": "MoveJoystick",
-      "opacity": 102,
-      "persistentUuid": "855d809a-f954-4072-86d5-1d6f0b24a066",
+      "layer": "UI",
+      "name": "FlagEast",
+      "persistentUuid": "12fca4f7-afbb-48b5-839d-d76fe5f8db06",
       "width": 0,
-      "x": 120,
-      "y": 600,
+      "x": 239,
+      "y": 881,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -81,18 +119,15 @@
     },
     {
       "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 120,
+      "customSize": false,
+      "height": 0,
       "keepRatio": true,
-      "layer": "MobileControls",
-      "locked": true,
-      "name": "JumpButton",
-      "opacity": 102,
-      "persistentUuid": "b1d437ce-f3b4-4799-875e-bb51f731cef0",
-      "width": 120,
-      "x": 1180,
-      "y": 620,
+      "layer": "UI",
+      "name": "FlagSouth",
+      "persistentUuid": "f8aa48ab-1507-4f1c-8894-8854c854a803",
+      "width": 0,
+      "x": 423,
+      "y": 887,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
@@ -100,17 +135,16 @@
     },
     {
       "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 64,
+      "customSize": false,
+      "height": 0,
       "keepRatio": true,
-      "layer": "",
-      "name": "Platform_Ground",
-      "persistentUuid": "1c4f7ab9-04d4-4cee-8572-96199ce1245c",
-      "width": 864,
-      "x": 64,
-      "y": 544,
-      "zOrder": 5,
+      "layer": "UI",
+      "name": "FlagWest",
+      "persistentUuid": "54b59954-ec52-4a5e-bb24-7caca13c958a",
+      "width": 0,
+      "x": 594,
+      "y": 877,
+      "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -119,31 +153,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 64,
+      "height": 214,
       "keepRatio": true,
-      "layer": "",
-      "name": "Platform_Ground",
-      "persistentUuid": "672ee5c6-d2bb-4ae4-bc77-78d15064dd68",
-      "width": 288,
-      "x": 928,
-      "y": 416,
-      "zOrder": 5,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 64,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Platform_Ground",
-      "persistentUuid": "e595746c-dfaa-4c91-a246-d36934b5a906",
-      "width": 288,
-      "x": 64,
-      "y": 352,
+      "layer": "UI",
+      "name": "Bell",
+      "persistentUuid": "f9cddada-8438-4e96-8060-45876d7a8c96",
+      "width": 172,
+      "x": 1292,
+      "y": 820,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -154,13 +171,30 @@
       "customSize": false,
       "height": 0,
       "keepRatio": true,
-      "layer": "",
-      "name": "Coins",
-      "persistentUuid": "4c79f19c-996c-40e5-a8fb-fcaa13753abd",
+      "layer": "UI",
+      "name": "Gong",
+      "persistentUuid": "d083090d-df7d-4062-af73-443efc7dda80",
       "width": 0,
-      "x": 1152,
-      "y": 352,
+      "x": 1547,
+      "y": 820,
       "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 285,
+      "keepRatio": true,
+      "layer": "HUD",
+      "name": "HUD",
+      "persistentUuid": "4100aeff-5f23-4676-81ba-493f7ef9f093",
+      "width": 1957,
+      "x": -1,
+      "y": 819,
+      "zOrder": 9,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -170,13 +204,13 @@
       "customSize": false,
       "height": 0,
       "keepRatio": true,
-      "layer": "",
-      "name": "Coins",
-      "persistentUuid": "ad149014-b1f1-44bd-8a58-27b4aa2a7d41",
+      "layer": "HUD",
+      "name": "ButtonRight",
+      "persistentUuid": "981f4fc0-e9a1-4e05-9791-ba757980d04e",
       "width": 0,
-      "x": 960,
-      "y": 352,
-      "zOrder": 6,
+      "x": 1787,
+      "y": 452,
+      "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -186,29 +220,47 @@
       "customSize": false,
       "height": 0,
       "keepRatio": true,
-      "layer": "",
-      "name": "Coins",
-      "persistentUuid": "4d3402ec-1550-4679-a363-6c1361c0fe53",
+      "layer": "HUD",
+      "name": "ButtonLeft",
+      "persistentUuid": "16b1823c-f85b-4038-b17b-12a67cf6171b",
       "width": 0,
-      "x": 1024,
-      "y": 352,
-      "zOrder": 6,
+      "x": 38,
+      "y": 436,
+      "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 3,
+      "height": 841,
       "keepRatio": true,
-      "layer": "",
-      "name": "Coins",
-      "persistentUuid": "e6622e84-477f-4c15-95ff-82ba580b8e3d",
-      "width": 0,
-      "x": 1088,
-      "y": 352,
-      "zOrder": 6,
+      "layer": "Background",
+      "name": "AreaEast",
+      "persistentUuid": "97700f85-1f26-4e61-a368-81ac753adf5a",
+      "width": 1910,
+      "x": 1950,
+      "y": 0,
+      "zOrder": 13,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 3,
+      "height": 901,
+      "keepRatio": true,
+      "layer": "Background",
+      "name": "AreaNorth",
+      "persistentUuid": "7b2864f3-54fe-4a5e-ae3e-346c2a50cdbe",
+      "width": 1912,
+      "x": 2,
+      "y": -4,
+      "zOrder": 14,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -216,94 +268,19 @@
   ],
   "objects": [
     {
-      "adaptCollisionMaskAutomatically": false,
+      "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "Player",
-      "persistentUuid": "83e0d6ac-d420-49fc-86bc-97277348a671",
+      "name": "FlagNorth",
+      "persistentUuid": "a2f5033f-9c6b-4ebb-9efa-76a9b6711223",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
       "behaviors": [
         {
-          "name": "PlatformerMultitouchMapper",
-          "type": "SpriteMultitouchJoystick::PlatformerMultitouchMapper",
-          "Property": "PlatformerObject",
-          "ControllerIdentifier": 1,
-          "JoystickIdentifier": "Primary",
-          "JumpButton": "A"
-        },
-        {
-          "name": "PlatformerObject",
-          "type": "PlatformBehavior::PlatformerObjectBehavior",
-          "acceleration": 1000,
-          "canGoDownFromJumpthru": true,
-          "canGrabPlatforms": false,
-          "canGrabWithoutMoving": false,
-          "deceleration": 1500,
-          "gravity": 1050,
-          "ignoreDefaultControls": false,
-          "jumpSpeed": 717,
-          "jumpSustainTime": 0.3,
-          "ladderClimbingSpeed": 200,
-          "maxFallingSpeed": 800,
-          "maxSpeed": 400,
-          "slopeMaxAngle": 60,
-          "useLegacyTrajectory": false,
-          "xGrabTolerance": 10,
-          "yGrabOffset": 0
-        },
-        {
-          "name": "SmoothCamera",
-          "type": "SmoothCamera::SmoothCamera",
-          "LeftwardSpeed": 0.9,
-          "RightwardSpeed": 0.9,
-          "UpwardSpeed": 0.95,
-          "DownwardSpeed": 0.95,
-          "FollowOnX": true,
-          "FollowOnY": true,
-          "FollowFreeAreaLeft": 0,
-          "FollowFreeAreaRight": 0,
-          "FollowFreeAreaTop": 0,
-          "FollowFreeAreaBottom": 0,
-          "CameraOffsetX": 0,
-          "CameraOffsetY": 0,
-          "CameraDelay": 0,
-          "ForecastTime": 0,
-          "ForecastHistoryDuration": 0,
-          "LogLeftwardSpeed": 2.0247e-320,
-          "LogRightwardSpeed": 2.0247e-320,
-          "LogDownwardSpeed": 2.0247e-320,
-          "LogUpwardSpeed": 2.0247e-320,
-          "DelayedCenterX": 2.0247e-320,
-          "DelayedCenterY": 2.0247e-320,
-          "ForecastHistoryMeanX": 2.0247e-320,
-          "ForecastHistoryMeanY": 2.0247e-320,
-          "ForecastHistoryVarianceX": 2.0247e-320,
-          "ForecastHistoryCovariance": 2.0247e-320,
-          "ForecastHistoryLinearA": 2.0247e-320,
-          "ForecastHistoryLinearB": 2.0247e-320,
-          "ForecastedX": 2.0247e-320,
-          "ForecastedY": 2.0247e-320,
-          "ProjectedNewestX": 2.0247e-320,
-          "ProjectedNewestY": 2.0247e-320,
-          "ProjectedOldestX": 2.0247e-320,
-          "ProjectedOldestY": 2.0247e-320,
-          "ForecastHistoryVarianceY": 2.0247e-320,
-          "Index": 2.0247e-320,
-          "CameraDelayCatchUpSpeed": 0,
-          "CameraExtraDelay": 2.0247e-320,
-          "WaitingSpeedXMax": 2.0247e-320,
-          "WaitingSpeedYMax": 2.0247e-320,
-          "WaitingEnd": 2.0247e-320,
-          "CameraDelayCatchUpDuration": 2.0247e-320,
-          "LeftwardSpeedMax": 9000,
-          "RightwardSpeedMax": 9000,
-          "UpwardSpeedMax": 9000,
-          "DownwardSpeedMax": 9000,
-          "OldX": 9000.000000007454,
-          "OldY": 9000.000000007454,
-          "IsCalledManually": false
+          "checkCollisionMask": true,
+          "name": "Draggable",
+          "type": "DraggableBehavior::Draggable"
         }
       ],
       "animations": [
@@ -317,7 +294,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\StartingPlayer.png",
+                  "image": "FlagNorth.jpg",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -334,11 +311,532 @@
                     [
                       {
                         "x": 0,
-                        "y": 2
+                        "y": 0
+                      },
+                      {
+                        "x": 144,
+                        "y": 0
+                      },
+                      {
+                        "x": 144,
+                        "y": 172
+                      },
+                      {
+                        "x": 0,
+                        "y": 172
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "FlagEast",
+      "persistentUuid": "f8f8f1c8-88c8-4bb3-ae73-19e1fe98f376",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "checkCollisionMask": true,
+          "name": "Draggable",
+          "type": "DraggableBehavior::Draggable"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "FlagEast.jpg",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 140,
+                        "y": 0
+                      },
+                      {
+                        "x": 140,
+                        "y": 158
+                      },
+                      {
+                        "x": 0,
+                        "y": 158
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "FlagSouth",
+      "persistentUuid": "8f1d9832-3eb5-4532-ae45-107f0ff8e344",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "checkCollisionMask": true,
+          "name": "Draggable",
+          "type": "DraggableBehavior::Draggable"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "FlagSouth.jpg",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 134,
+                        "y": 0
+                      },
+                      {
+                        "x": 134,
+                        "y": 158
+                      },
+                      {
+                        "x": 0,
+                        "y": 158
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "FlagWest",
+      "persistentUuid": "f0f88f49-a2b7-4571-9496-47bae1309351",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "checkCollisionMask": true,
+          "name": "Draggable",
+          "type": "DraggableBehavior::Draggable"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "FlagWest.jpg",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 148,
+                        "y": 0
+                      },
+                      {
+                        "x": 148,
+                        "y": 168
+                      },
+                      {
+                        "x": 0,
+                        "y": 168
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Bell",
+      "persistentUuid": "f5e99343-e0ea-4fea-88a1-eb86b54fe399",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "checkCollisionMask": true,
+          "name": "Draggable",
+          "type": "DraggableBehavior::Draggable"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bell.jpg",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 176,
+                        "y": 0
+                      },
+                      {
+                        "x": 176,
+                        "y": 214
+                      },
+                      {
+                        "x": 0,
+                        "y": 214
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Gong",
+      "persistentUuid": "cefb97bb-ffcf-40ff-8909-3859854ba778",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "checkCollisionMask": true,
+          "name": "Draggable",
+          "type": "DraggableBehavior::Draggable"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Gong.jpg",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 242,
+                        "y": 0
+                      },
+                      {
+                        "x": 242,
+                        "y": 212
+                      },
+                      {
+                        "x": 0,
+                        "y": 212
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "AreaNorth",
+      "persistentUuid": "6262011b-636b-4705-aac5-9cf498f9bb82",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NorthMock",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NorthMock6",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 680,
+                        "y": 0
+                      },
+                      {
+                        "x": 680,
+                        "y": 295
+                      },
+                      {
+                        "x": 0,
+                        "y": 295
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "AreaEast",
+      "persistentUuid": "f35ee809-b23d-4adc-a496-98794d72763a",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "EastMock",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "EastMock3",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 681,
+                        "y": 0
+                      },
+                      {
+                        "x": 681,
+                        "y": 300
+                      },
+                      {
+                        "x": 0,
+                        "y": 300
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "HUD",
+      "persistentUuid": "4578fb9c-e531-40b1-8d10-e91232636689",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NewSprite",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite2",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
                       },
                       {
                         "x": 64,
-                        "y": 2
+                        "y": 0
                       },
                       {
                         "x": 64,
@@ -358,22 +856,10 @@
       ]
     },
     {
-      "assetStoreId": "",
-      "height": 64,
-      "name": "Background",
-      "persistentUuid": "8004b70b-889d-4674-9cae-8a15e710618a",
-      "texture": "assets\\Background.png",
-      "type": "TiledSpriteObject::TiledSprite",
-      "width": 64,
-      "variables": [],
-      "effects": [],
-      "behaviors": []
-    },
-    {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "Coins",
-      "persistentUuid": "dbbcda56-1786-4457-8eab-8e6da3390a23",
+      "name": "ButtonRight",
+      "persistentUuid": "41646f01-6353-4f80-a5b0-ce72ef7524f0",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -381,16 +867,17 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "",
+          "name": "ButtonRight",
           "useMultipleDirections": false,
           "directions": [
             {
               "looping": false,
+              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\StartingCoin.png",
+                  "image": "ButtonRight",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -406,20 +893,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0,
-                        "y": 0
+                        "x": 1,
+                        "y": 2
                       },
                       {
-                        "x": 19,
-                        "y": 0
+                        "x": 64,
+                        "y": 2
                       },
                       {
-                        "x": 19,
-                        "y": 18
+                        "x": 64,
+                        "y": 64
                       },
                       {
-                        "x": 0,
-                        "y": 18
+                        "x": 1,
+                        "y": 64
                       }
                     ]
                   ]
@@ -432,70 +919,32 @@
     },
     {
       "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "9c727020616afdd6ba786b8af206a90481f07db0ca175ed6a4cc5b7e01c66d06",
-      "name": "JumpButton",
-      "persistentUuid": "58427946-d09d-4327-9477-50a8621cce3d",
+      "assetStoreId": "",
+      "name": "ButtonLeft",
+      "persistentUuid": "bf800815-f7dd-4540-a35e-72a341880b73",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [
-        {
-          "name": "ButtonFSM",
-          "type": "ButtonStates::ButtonFSM",
-          "ShouldCheckHovering": true,
-          "State": "Idle",
-          "TouchId": 0,
-          "TouchIsInside": false,
-          "MouseIsInside": false,
-          "Index": 2.0247e-320
-        },
-        {
-          "name": "ButtonScaleTween",
-          "type": "ButtonStates::ButtonScaleTween",
-          "Scale": "Scale",
-          "ButtonFSM": "ButtonFSM",
-          "Tween": "Tween",
-          "IdleScale": 1.5,
-          "FocusedScale": 1.45,
-          "FadeInDuration": 0.05,
-          "FadeOutDuration": 0.1,
-          "PressedScale": 1.45,
-          "FadeInEasing": "easeInOutQuad",
-          "FadeOutEasing": "easeInOutQuad",
-          "PreviousState": "Idle"
-        },
-        {
-          "name": "MultitouchButton",
-          "type": "SpriteMultitouchJoystick::MultitouchButton",
-          "ControllerIdentifier": 1,
-          "ButtonIdentifier": "A",
-          "TouchId": 0,
-          "TouchIndex": 2.0247e-320,
-          "IsReleased": false
-        },
-        {
-          "name": "Tween",
-          "type": "Tween::TweenBehavior"
-        }
-      ],
+      "behaviors": [],
       "animations": [
         {
-          "name": "",
+          "name": "ButtonLeft",
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": true,
-              "timeBetweenFrames": 0.025,
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Top arrow button.png",
+                  "image": "ButtonLeft",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 40,
-                    "y": 40
+                    "x": 0,
+                    "y": 0
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -506,20 +955,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0,
-                        "y": 0
+                        "x": 1,
+                        "y": 2
                       },
                       {
-                        "x": 80,
-                        "y": 0
+                        "x": 64,
+                        "y": 2
                       },
                       {
-                        "x": 80,
-                        "y": 80
+                        "x": 64,
+                        "y": 64
                       },
                       {
-                        "x": 0,
-                        "y": 80
+                        "x": 1,
+                        "y": 64
                       }
                     ]
                   ]
@@ -527,109 +976,6 @@
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "assetStoreId": "e71bd69f896d6c7531b48c65ceb5da25071d4fbdeb518aeceecba8d21f34ed8d",
-      "name": "MoveJoystick",
-      "persistentUuid": "e5321584-fec8-4f55-af3e-1fb852c4651a",
-      "type": "SpriteMultitouchJoystick::SpriteMultitouchJoystick",
-      "variant": "",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {},
-      "childrenContent": {
-        "Border": {
-          "adaptCollisionMaskAutomatically": false,
-          "updateIfNotVisible": false,
-          "animations": [
-            {
-              "name": "Idle",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Flat dark joystick border.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        "Thumb": {
-          "adaptCollisionMaskAutomatically": false,
-          "updateIfNotVisible": false,
-          "animations": [
-            {
-              "name": "Idle",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Flat dark joystick thumb.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assetStoreId": "",
-      "height": 64,
-      "name": "Platform_Ground",
-      "persistentUuid": "687d2e36-26c8-4be3-b2c1-2931abb02598",
-      "texture": "assets\\StartingGround.png",
-      "type": "TiledSpriteObject::TiledSprite",
-      "width": 64,
-      "variables": [],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "Platform",
-          "type": "PlatformBehavior::PlatformBehavior",
-          "canBeGrabbed": false,
-          "platformType": "NormalPlatform",
-          "yGrabOffset": 0
         }
       ]
     }
@@ -638,27 +984,37 @@
     "folderName": "__ROOT",
     "children": [
       {
-        "objectName": "Player"
+        "objectName": "FlagNorth"
       },
       {
-        "objectName": "Platform_Ground"
+        "objectName": "FlagEast"
       },
       {
-        "objectName": "Background"
+        "objectName": "FlagSouth"
       },
       {
-        "objectName": "Coins"
+        "objectName": "FlagWest"
       },
       {
-        "folderName": "Mobile Controls",
-        "children": [
-          {
-            "objectName": "MoveJoystick"
-          },
-          {
-            "objectName": "JumpButton"
-          }
-        ]
+        "objectName": "Bell"
+      },
+      {
+        "objectName": "Gong"
+      },
+      {
+        "objectName": "AreaNorth"
+      },
+      {
+        "objectName": "AreaEast"
+      },
+      {
+        "objectName": "HUD"
+      },
+      {
+        "objectName": "ButtonRight"
+      },
+      {
+        "objectName": "ButtonLeft"
       }
     ]
   },
@@ -685,48 +1041,548 @@
             "=",
             "\"Game Scene 1\""
           ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
+        },
         {
           "type": {
-            "value": "CollisionNP"
+            "value": "SetNumberVariable"
           },
           "parameters": [
-            "Player",
-            "Coins",
-            "",
-            "",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Delete"
-          },
-          "parameters": [
-            "Coins",
-            ""
+            "AreaOffset",
+            "=",
+            "150"
           ]
         },
         {
           "type": {
-            "value": "PlaySound"
+            "value": "SetCameraCenterX"
           },
           "parameters": [
             "",
-            "PickupCoin",
+            "=",
+            "AreaNorth.CenterX()",
+            "\"Background\"",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetCameraCenterY"
+          },
+          "parameters": [
             "",
-            "80",
-            "RandomFloatInRange(1,1.1)"
+            "=",
+            "AreaNorth.CenterY() + AreaOffset",
+            "\"Background\"",
+            "0"
           ]
         }
       ]
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Screen transition",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "IsCursorOnObject"
+              },
+              "parameters": [
+                "Buttons",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MouseButtonFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySoundOnChannel"
+              },
+              "parameters": [
+                "",
+                "beep.wav",
+                "1",
+                "",
+                "100",
+                "1"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "IsCursorOnObject"
+                  },
+                  "parameters": [
+                    "ButtonRight",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "CameraPosition",
+                    "+",
+                    "1"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "CameraPosition",
+                        ">",
+                        "MaxCameraPositions - 1"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "CameraPosition",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "IsCursorOnObject"
+                  },
+                  "parameters": [
+                    "ButtonLeft",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "CameraPosition",
+                    "-",
+                    "1"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "CameraPosition",
+                        "<",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "CameraPosition",
+                        "=",
+                        "MaxCameraPositions - 1"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "CameraPosition",
+                    "=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetCameraCenterX"
+                  },
+                  "parameters": [
+                    "",
+                    "=",
+                    "AreaNorth.CenterX()",
+                    "\"Background\"",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCameraCenterY"
+                  },
+                  "parameters": [
+                    "",
+                    "=",
+                    "AreaNorth.CenterY() + AreaOffset",
+                    "\"Background\"",
+                    "0"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "CameraPosition",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetCameraCenterX"
+                  },
+                  "parameters": [
+                    "",
+                    "=",
+                    "AreaEast.CenterX()",
+                    "\"Background\"",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCameraCenterY"
+                  },
+                  "parameters": [
+                    "",
+                    "=",
+                    "AreaEast.CenterY() + AreaOffset",
+                    "\"Background\"",
+                    "0"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "CameraPosition",
+                    "=",
+                    "2"
+                  ]
+                }
+              ],
+              "actions": []
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "CameraPosition",
+                    "=",
+                    "3"
+                  ]
+                }
+              ],
+              "actions": []
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "TO DO: add 2 more positions"
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Drag and drop",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "TO DO: snap back to hud"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "TO DO: snap to usage position"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Flags",
+                "Areas",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Items",
+                "Areas",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Flags",
+                "HUD",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Items",
+                "HUD",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "DraggableBehavior::Dropped"
+                      },
+                      "parameters": [
+                        "Flags",
+                        "Draggable"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "DraggableBehavior::Dropped"
+                      },
+                      "parameters": [
+                        "Items",
+                        "Draggable"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlaySoundOnChannel"
+                  },
+                  "parameters": [
+                    "",
+                    "beep.wav",
+                    "1",
+                    "",
+                    "100",
+                    "1"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Gnolls",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "TO DO: enemy movement"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "TO DO: enemy spawn"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "TO DO: enemy attack/damage"
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Level manager",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "TO DO: spawner"
+        }
+      ],
+      "parameters": []
     }
   ],
   "layers": [
@@ -789,25 +1645,107 @@
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
       "isLocked": false,
-      "name": "MobileControls",
+      "name": "HUD",
       "renderingType": "",
       "visibility": true,
       "cameras": [],
-      "effects": []
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Ambient Hemisphere Light",
+          "doubleParameters": {
+            "elevation": 40,
+            "intensity": 0.33,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "groundColor": "127;127;127",
+            "skyColor": "255;255;255",
+            "top": "Z+"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Scene3D::DirectionalLight",
+          "name": "3D Sun Light",
+          "doubleParameters": {
+            "distanceFromCamera": 1500,
+            "elevation": 40,
+            "frustumSize": 4000,
+            "intensity": 0.75,
+            "minimumShadowBias": 0,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "color": "255;255;255",
+            "shadowQuality": "medium",
+            "top": "Z+"
+          },
+          "booleanParameters": {
+            "isCastingShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "UI",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Ambient Hemisphere Light",
+          "doubleParameters": {
+            "elevation": 40,
+            "intensity": 0.33,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "groundColor": "127;127;127",
+            "skyColor": "255;255;255",
+            "top": "Z+"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Scene3D::DirectionalLight",
+          "name": "3D Sun Light",
+          "doubleParameters": {
+            "distanceFromCamera": 1500,
+            "elevation": 40,
+            "frustumSize": 4000,
+            "intensity": 0.75,
+            "minimumShadowBias": 0,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "color": "255;255;255",
+            "shadowQuality": "medium",
+            "top": "Z+"
+          },
+          "booleanParameters": {
+            "isCastingShadow": true
+          }
+        }
+      ]
     }
   ],
   "behaviorsSharedData": [
     {
       "name": "Animation",
       "type": "AnimatableCapability::AnimatableBehavior"
-    },
-    {
-      "name": "ButtonFSM",
-      "type": "ButtonStates::ButtonFSM"
-    },
-    {
-      "name": "ButtonScaleTween",
-      "type": "ButtonStates::ButtonScaleTween"
     },
     {
       "name": "Effect",
@@ -818,24 +1756,8 @@
       "type": "FlippableCapability::FlippableBehavior"
     },
     {
-      "name": "MultitouchButton",
-      "type": "SpriteMultitouchJoystick::MultitouchButton"
-    },
-    {
       "name": "Opacity",
       "type": "OpacityCapability::OpacityBehavior"
-    },
-    {
-      "name": "Platform",
-      "type": "PlatformBehavior::PlatformBehavior"
-    },
-    {
-      "name": "PlatformerMultitouchMapper",
-      "type": "SpriteMultitouchJoystick::PlatformerMultitouchMapper"
-    },
-    {
-      "name": "PlatformerObject",
-      "type": "PlatformBehavior::PlatformerObjectBehavior"
     },
     {
       "name": "Resizable",
@@ -844,14 +1766,6 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
-    },
-    {
-      "name": "SmoothCamera",
-      "type": "SmoothCamera::SmoothCamera"
-    },
-    {
-      "name": "Tween",
-      "type": "Tween::TweenBehavior"
     }
   ]
 }

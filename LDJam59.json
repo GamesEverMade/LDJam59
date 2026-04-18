@@ -15,15 +15,15 @@
     "packageName": "prototype.plataformer",
     "pixelsRounding": false,
     "projectUuid": "20dc4f7e-b8a6-4cbc-8f7b-22c23b6a485a",
-    "scaleMode": "nearest",
-    "sizeOnStartupMode": "adaptHeight",
+    "scaleMode": "linear",
+    "sizeOnStartupMode": "",
     "templateSlug": "starting-platformer",
     "version": "1.0.1",
     "name": "LDJam59",
     "description": "GEM - Basic Starter Pack",
     "author": "Games Ever Made",
-    "windowWidth": 1280,
-    "windowHeight": 720,
+    "windowWidth": 1920,
+    "windowHeight": 1080,
     "latestCompilationDirectory": "",
     "maxFPS": 60,
     "minFPS": 30,
@@ -2041,6 +2041,196 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "FlagNorth.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "FlagNorth.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "FlagEast.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "FlagEast.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "FlagSouth.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "FlagSouth.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "FlagWest.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "FlagWest.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Bell.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bell.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Gong.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "Gong.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NorthMock.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NorthMock",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NorthMock2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NorthMock2.png\"}",
+        "name": "NorthMock2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/EastMock.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "EastMock",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Small Brown Button_Hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Small Brown Button_Hovered.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/Pixel art/b0c67a3ffd38bb6a989dcd6fd82fd9d02becb98fe305ac13c3140616c5a19f35_Small Brown Button_Hovered.png",
+          "name": "Small Brown Button_Hovered.png"
+        }
+      },
+      {
+        "file": "assets/Small Brown Button_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Small Brown Button_Idle.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/Pixel art/4b14769489f9862882eba6d5463a8ccdec878e03a2abc1dca8b7d92e51416d3d_Small Brown Button_Idle.png",
+          "name": "Small Brown Button_Idle.png"
+        }
+      },
+      {
+        "file": "assets/Small Brown Button_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Small Brown Button_Pressed.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/Pixel art/7332f7b9d2fbb8370ae5ba5b62d2cbfb23ba6392d8e5d071b4c16b2e45a40d38_Small Brown Button_Pressed.png",
+          "name": "Small Brown Button_Pressed.png"
+        }
+      },
+      {
+        "file": "assets/ButtonRight.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "ButtonRight",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ButtonLeft.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "ButtonLeft",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "beep.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "beep.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NorthMock3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NorthMock3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NorthMock4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NorthMock4",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NorthMock5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NorthMock5",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/EastMock2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "EastMock2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/EastMock3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "EastMock3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NorthMock6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NorthMock6",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
@@ -2128,6 +2318,16 @@
       "name": "CurrentScene",
       "type": "string",
       "value": ""
+    },
+    {
+      "name": "CameraPosition",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "MaxCameraPositions",
+      "type": "number",
+      "value": 4
     }
   ],
   "layouts": [
@@ -2189,6 +2389,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/tweenintoview"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/camerashake"
     }
   ],
   "externalLayouts": []
