@@ -2226,113 +2226,12 @@
       "objectGroups": []
     }
   ],
-  "eventsFunctionsFolderStructure": {
-    "folderName": "__ROOT",
-    "children": [
-      {
-        "functionName": "onFirstSceneLoaded"
-      },
-      {
-        "functionName": "onSceneLoaded"
-      },
-      {
-        "functionName": "onScenePostEvents"
-      },
-      {
-        "functionName": "AcceleratedSpeed"
-      },
-      {
-        "functionName": "TriggerPressure"
-      },
-      {
-        "functionName": "StickForce"
-      },
-      {
-        "functionName": "StickRotationValue"
-      },
-      {
-        "functionName": "StickAngle"
-      },
-      {
-        "functionName": "AxisValue"
-      },
-      {
-        "functionName": "StickForceX"
-      },
-      {
-        "functionName": "StickForceY"
-      },
-      {
-        "functionName": "C_Button_released"
-      },
-      {
-        "functionName": "IsButtonJustPressed"
-      },
-      {
-        "functionName": "LastButtonID"
-      },
-      {
-        "functionName": "C_Any_Button_pressed"
-      },
-      {
-        "functionName": "LastButtonString"
-      },
-      {
-        "functionName": "GamepadCount"
-      },
-      {
-        "functionName": "C_Button_pressed"
-      },
-      {
-        "functionName": "Deadzone"
-      },
-      {
-        "functionName": "A_Set_deadzone"
-      },
-      {
-        "functionName": "C_Axis_pushed"
-      },
-      {
-        "functionName": "ConnectedGamepadsCount"
-      },
-      {
-        "functionName": "GamepadType"
-      },
-      {
-        "functionName": "C_Controller_type"
-      },
-      {
-        "functionName": "C_Controller_X_is_connected"
-      },
-      {
-        "functionName": "A_Vibrate_controller"
-      },
-      {
-        "functionName": "A_Advanced_Vibration_Controller"
-      },
-      {
-        "functionName": "A_Change_Vibration_Magnitude"
-      },
-      {
-        "functionName": "C_any_button_released"
-      },
-      {
-        "functionName": "WeakVibrationMagnitude"
-      },
-      {
-        "functionName": "StrongVibrationMagnitude"
-      }
-    ]
-  },
   "eventsBasedBehaviors": [
     {
       "description": "Control a platformer character with a gamepad.",
       "fullName": "Platformer gamepad mapper",
-      "helpPath": "",
-      "iconUrl": "",
       "name": "PlatformerGamepadMapper",
       "objectType": "",
-      "previewIconUrl": "",
       "quickCustomizationVisibility": "hidden",
       "eventsFunctions": [
         {
@@ -2816,14 +2715,6 @@
           "objectGroups": []
         }
       ],
-      "eventsFunctionsFolderStructure": {
-        "folderName": "__ROOT",
-        "children": [
-          {
-            "functionName": "doStepPreEvents"
-          }
-        ]
-      },
       "propertyDescriptors": [
         {
           "value": "",
@@ -2936,11 +2827,8 @@
     {
       "description": "Control a 3D physics character with a gamepad.",
       "fullName": "3D platformer gamepad mapper",
-      "helpPath": "",
-      "iconUrl": "",
       "name": "Platformer3DGamepadMapper",
       "objectType": "",
-      "previewIconUrl": "",
       "quickCustomizationVisibility": "hidden",
       "eventsFunctions": [
         {
@@ -3053,14 +2941,6 @@
           "objectGroups": []
         }
       ],
-      "eventsFunctionsFolderStructure": {
-        "folderName": "__ROOT",
-        "children": [
-          {
-            "functionName": "doStepPreEvents"
-          }
-        ]
-      },
       "propertyDescriptors": [
         {
           "value": "",
@@ -3163,11 +3043,8 @@
     {
       "description": "Control a 3D physics character with a gamepad.",
       "fullName": "3D shooter gamepad mapper",
-      "helpPath": "",
-      "iconUrl": "",
       "name": "Shooter3DGamepadMapper",
       "objectType": "",
-      "previewIconUrl": "",
       "quickCustomizationVisibility": "hidden",
       "eventsFunctions": [
         {
@@ -3269,14 +3146,6 @@
           "objectGroups": []
         }
       ],
-      "eventsFunctionsFolderStructure": {
-        "folderName": "__ROOT",
-        "children": [
-          {
-            "functionName": "doStepPreEvents"
-          }
-        ]
-      },
       "propertyDescriptors": [
         {
           "value": "",
@@ -3399,11 +3268,8 @@
     {
       "description": "Control camera rotations with a gamepad.",
       "fullName": "First person camera gamepad mapper",
-      "helpPath": "",
-      "iconUrl": "",
       "name": "FirstPersonGamepadMapper",
       "objectType": "",
-      "previewIconUrl": "",
       "quickCustomizationVisibility": "hidden",
       "eventsFunctions": [
         {
@@ -4329,91 +4195,6 @@
           "objectGroups": []
         }
       ],
-      "eventsFunctionsFolderStructure": {
-        "folderName": "__ROOT",
-        "children": [
-          {
-            "functionName": "doStepPreEvents"
-          },
-          {
-            "folderName": "Layers and cameras",
-            "children": [
-              {
-                "functionName": "LookFromObjectEyes"
-              }
-            ]
-          },
-          {
-            "folderName": "First person camera gamepad mapper horizontal rotation configuration",
-            "children": [
-              {
-                "functionName": "HorizontalRotationSpeedMax"
-              },
-              {
-                "functionName": "SetHorizontalRotationSpeedMax"
-              },
-              {
-                "functionName": "HorizontalRotationAcceleration"
-              },
-              {
-                "functionName": "SetHorizontalRotationAcceleration"
-              },
-              {
-                "functionName": "HorizontalRotationDeceleration"
-              },
-              {
-                "functionName": "SetHorizontalRotationDeceleration"
-              }
-            ]
-          },
-          {
-            "folderName": "First person camera gamepad mapper vertical rotation configuration",
-            "children": [
-              {
-                "functionName": "VerticalRotationSpeedMax"
-              },
-              {
-                "functionName": "SetVerticalRotationSpeedMax"
-              },
-              {
-                "functionName": "VerticalRotationAcceleration"
-              },
-              {
-                "functionName": "SetVerticalRotationAcceleration"
-              },
-              {
-                "functionName": "VerticalRotationDeceleration"
-              },
-              {
-                "functionName": "SetVerticalRotationDeceleration"
-              },
-              {
-                "functionName": "VerticalAngleMin"
-              },
-              {
-                "functionName": "SetVerticalAngleMin"
-              },
-              {
-                "functionName": "VerticalAngleMax"
-              },
-              {
-                "functionName": "SetVerticalAngleMax"
-              }
-            ]
-          },
-          {
-            "folderName": "First person camera gamepad mapper position configuration",
-            "children": [
-              {
-                "functionName": "OffsetZ"
-              },
-              {
-                "functionName": "SetOffsetZ"
-              }
-            ]
-          }
-        ]
-      },
       "propertyDescriptors": [
         {
           "value": "",
@@ -4598,11 +4379,8 @@
     {
       "description": "Control a 3D physics car with a gamepad.",
       "fullName": "3D car gamepad mapper",
-      "helpPath": "",
-      "iconUrl": "",
       "name": "PhysicsCar3DGamepadMapper",
       "objectType": "",
-      "previewIconUrl": "",
       "quickCustomizationVisibility": "hidden",
       "eventsFunctions": [
         {
@@ -4886,14 +4664,6 @@
           "objectGroups": []
         }
       ],
-      "eventsFunctionsFolderStructure": {
-        "folderName": "__ROOT",
-        "children": [
-          {
-            "functionName": "doStepPreEvents"
-          }
-        ]
-      },
       "propertyDescriptors": [
         {
           "value": "",
@@ -5006,11 +4776,8 @@
     {
       "description": "Control a top-down character with a gamepad.",
       "fullName": "Top-down gamepad mapper",
-      "helpPath": "",
-      "iconUrl": "",
       "name": "TopDownGamepadMapper",
       "objectType": "",
-      "previewIconUrl": "",
       "quickCustomizationVisibility": "hidden",
       "eventsFunctions": [
         {
@@ -5588,14 +5355,6 @@
           "objectGroups": []
         }
       ],
-      "eventsFunctionsFolderStructure": {
-        "folderName": "__ROOT",
-        "children": [
-          {
-            "functionName": "doStepPreEvents"
-          }
-        ]
-      },
       "propertyDescriptors": [
         {
           "value": "",

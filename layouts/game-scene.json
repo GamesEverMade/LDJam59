@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.34375202416123507,
+    "zoomFactor": 0.3797121001947973,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -122,6 +122,21 @@
       "name": "LevelDifficulty",
       "type": "number",
       "value": 0
+    },
+    {
+      "name": "SelectedFlagsCount",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "SelectedItemsCount",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "SelectedDirection",
+      "type": "string",
+      "value": ""
     }
   ],
   "instances": [
@@ -450,6 +465,11 @@
           "name": "IsSelected",
           "type": "boolean",
           "value": false
+        },
+        {
+          "name": "Direction",
+          "type": "string",
+          "value": "North"
         }
       ],
       "effects": [],
@@ -523,6 +543,11 @@
           "name": "IsSelected",
           "type": "boolean",
           "value": false
+        },
+        {
+          "name": "Direction",
+          "type": "string",
+          "value": "East"
         }
       ],
       "effects": [],
@@ -596,6 +621,11 @@
           "name": "IsSelected",
           "type": "boolean",
           "value": false
+        },
+        {
+          "name": "Direction",
+          "type": "string",
+          "value": "South"
         }
       ],
       "effects": [],
@@ -669,6 +699,11 @@
           "name": "IsSelected",
           "type": "boolean",
           "value": false
+        },
+        {
+          "name": "Direction",
+          "type": "string",
+          "value": "West"
         }
       ],
       "effects": [],
@@ -742,6 +777,11 @@
           "name": "IsSelected",
           "type": "boolean",
           "value": false
+        },
+        {
+          "name": "StrongAgainst",
+          "type": "string",
+          "value": ""
         }
       ],
       "effects": [],
@@ -815,6 +855,11 @@
           "name": "IsSelected",
           "type": "boolean",
           "value": false
+        },
+        {
+          "name": "StrongAgainst",
+          "type": "string",
+          "value": ""
         }
       ],
       "effects": [],
@@ -1270,6 +1315,16 @@
           "name": "gnollDamage",
           "type": "number",
           "value": 1
+        },
+        {
+          "name": "Direction",
+          "type": "string",
+          "value": ""
+        },
+        {
+          "name": "EnemyType",
+          "type": "string",
+          "value": ""
         }
       ],
       "effects": [],
@@ -1399,6 +1454,11 @@
           "name": "SpawnDifficulty",
           "type": "number",
           "value": 1
+        },
+        {
+          "name": "Direction",
+          "type": "string",
+          "value": "East"
         }
       ],
       "effects": [],
@@ -1551,6 +1611,11 @@
           "name": "SpawnDifficulty",
           "type": "number",
           "value": 1
+        },
+        {
+          "name": "Direction",
+          "type": "string",
+          "value": "North"
         }
       ],
       "effects": [],
@@ -1579,6 +1644,11 @@
           "name": "SpawnDifficulty",
           "type": "number",
           "value": 1
+        },
+        {
+          "name": "Direction",
+          "type": "string",
+          "value": "South"
         }
       ],
       "effects": [],
@@ -1607,6 +1677,11 @@
           "name": "SpawnDifficulty",
           "type": "number",
           "value": 1
+        },
+        {
+          "name": "Direction",
+          "type": "string",
+          "value": "West"
         }
       ],
       "effects": [],
@@ -2725,6 +2800,17 @@
               "parameters": [
                 "Trajectory"
               ]
+            },
+            {
+              "type": {
+                "value": "SetStringObjectVariable"
+              },
+              "parameters": [
+                "GnollSoldier",
+                "Direction",
+                "=",
+                "Spawners.Direction"
+              ]
             }
           ],
           "events": [
@@ -2806,7 +2892,38 @@
               ]
             }
           ],
-          "actions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "SelectedFlagsCount",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "SelectedItemsCount",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "SelectedDirection",
+                "=",
+                "\"\""
+              ]
+            }
+          ],
           "events": [
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -2819,31 +2936,83 @@
                     "",
                     "Flags"
                   ]
-                },
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::ForEach",
+                  "object": "Flags",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanObjectVariable"
+                      },
+                      "parameters": [
+                        "Flags",
+                        "IsSelected",
+                        "True",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "SelectedFlagsCount",
+                        "+",
+                        "1"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
                 {
                   "type": {
-                    "value": "BooleanObjectVariable"
+                    "value": "PickAllInstances"
                   },
                   "parameters": [
-                    "Flags",
-                    "IsSelected",
-                    "True",
-                    ""
+                    "",
+                    "Items"
                   ]
                 }
               ],
-              "actions": [
+              "actions": [],
+              "events": [
                 {
-                  "type": {
-                    "value": "PlaySoundOnChannel"
-                  },
-                  "parameters": [
-                    "",
-                    "beep.wav",
-                    "1",
-                    "",
-                    "100",
-                    "1"
+                  "type": "BuiltinCommonInstructions::ForEach",
+                  "object": "Items",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanObjectVariable"
+                      },
+                      "parameters": [
+                        "Items",
+                        "IsSelected",
+                        "True",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "SelectedItemsCount",
+                        "+",
+                        "1"
+                      ]
+                    }
                   ]
                 }
               ]
@@ -2858,11 +3027,21 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "Se tiver mais de 1 flag ou mais de 1 item -> falhar"
+              "comment": "1 flag selecionada"
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "SelectedFlagsCount",
+                    "=",
+                    "1"
+                  ]
+                },
                 {
                   "type": {
                     "value": "PickAllInstances"
@@ -2897,6 +3076,26 @@
                     "100",
                     "1"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "DebuggerTools::ConsoleLog"
+                  },
+                  "parameters": [
+                    "\"Sucesso. Apenas 1 flag selecionada\"",
+                    "\"info\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "SelectedDirection",
+                    "=",
+                    "Flags.Direction"
+                  ]
                 }
               ]
             },
@@ -2910,12 +3109,492 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "Se tiver bandeira X e item Gongo matar gnolls na tela X"
+              "comment": "mais de 1 flag selecionada"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "SelectedFlagsCount",
+                    ">",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PickAllInstances"
+                  },
+                  "parameters": [
+                    "",
+                    "Flags"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Flags",
+                    "IsSelected",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "DebuggerTools::ConsoleLog"
+                  },
+                  "parameters": [
+                    "\"Erro. Mais de uma flag selecionada\"",
+                    "\"info\"",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PickAllInstances"
+                  },
+                  "parameters": [
+                    "",
+                    "GnollSoldier"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringObjectVariable"
+                  },
+                  "parameters": [
+                    "GnollSoldier",
+                    "Direction",
+                    "=",
+                    "SelectedDirection"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "GnollSoldier",
+                    ""
+                  ]
+                }
+              ]
             }
           ]
         }
       ],
       "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Player attack",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "IsCursorOnObject"
+              },
+              "parameters": [
+                "Go",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MouseButtonFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "SelectedFlagsCount",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "SelectedItemsCount",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "SelectedDirection",
+                "=",
+                "\"\""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "name": "Flag Count Check",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "PickAllInstances"
+                      },
+                      "parameters": [
+                        "",
+                        "Flags"
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::ForEach",
+                      "object": "Flags",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "Flags",
+                            "IsSelected",
+                            "True",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "SelectedFlagsCount",
+                            "+",
+                            "1"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "PickAllInstances"
+                      },
+                      "parameters": [
+                        "",
+                        "Items"
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::ForEach",
+                      "object": "Items",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "Items",
+                            "IsSelected",
+                            "True",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "SelectedItemsCount",
+                            "+",
+                            "1"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": []
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "1 flag selecionada"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "SelectedFlagsCount",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PickAllInstances"
+                  },
+                  "parameters": [
+                    "",
+                    "Flags"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Flags",
+                    "IsSelected",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "SelectedItemsCount",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PickAllInstances"
+                  },
+                  "parameters": [
+                    "",
+                    "Items"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Items",
+                    "IsSelected",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlaySoundOnChannel"
+                  },
+                  "parameters": [
+                    "",
+                    "beep.wav",
+                    "1",
+                    "",
+                    "100",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "SelectedDirection",
+                    "=",
+                    "Flags.Direction"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "mais de 1 flag selecionada"
+            },
+            {
+              "disabled": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "SelectedFlagsCount",
+                    ">",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PickAllInstances"
+                  },
+                  "parameters": [
+                    "",
+                    "Flags"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Flags",
+                    "IsSelected",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "DebuggerTools::ConsoleLog"
+                  },
+                  "parameters": [
+                    "\"Erro. Mais de uma flag selecionada\"",
+                    "\"info\"",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "name": "Attack Logic",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "PickAllInstances"
+                      },
+                      "parameters": [
+                        "",
+                        "Enemies"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "StringObjectVariable"
+                      },
+                      "parameters": [
+                        "Enemies",
+                        "Direction",
+                        "=",
+                        "SelectedDirection"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "Enemies",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": []
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Se tiver mais de 1 flag ou mais de 1 item -> falhar"
     }
   ],
   "layers": [
