@@ -1,0 +1,1109 @@
+{
+  "b": 155,
+  "disableInputWhenNotFocused": true,
+  "mangledName": "Main_32Menu_32Scene",
+  "name": "Main Menu Scene",
+  "r": 155,
+  "standardSortMethod": true,
+  "stopSoundsOnStartup": true,
+  "title": "",
+  "v": 155,
+  "uiSettings": {
+    "grid": false,
+    "gridType": "rectangular",
+    "gridWidth": 32,
+    "gridHeight": 32,
+    "gridDepth": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridOffsetZ": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": false,
+    "zoomFactor": 0.529035740215684,
+    "windowMask": false,
+    "selectedLayer": "",
+    "gameEditorMode": "instances-editor"
+  },
+  "objectsGroups": [],
+  "variables": [],
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 64,
+      "height": 48,
+      "keepRatio": true,
+      "layer": "",
+      "name": "New_Game",
+      "persistentUuid": "5d5d3992-a6ce-4355-b064-7596aef08c8a",
+      "width": 201,
+      "x": 550,
+      "y": 470,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 64,
+      "height": 48,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Load_game",
+      "persistentUuid": "c83211a5-6176-40bb-b24d-d9d1310144d5",
+      "width": 200,
+      "x": 550,
+      "y": 523,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 64,
+      "height": 48,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Settings",
+      "persistentUuid": "50bbc84a-9d75-4113-b345-187204a41c29",
+      "width": 201,
+      "x": 550,
+      "y": 577,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 64,
+      "height": 48,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Quit_Game",
+      "persistentUuid": "e7388139-9efc-4c82-bcae-b9fd513925f3",
+      "width": 202,
+      "x": 550,
+      "y": 631,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "FlatDarkJoystick",
+      "opacity": 128,
+      "persistentUuid": "7fc7644e-0b06-48a4-8938-a08af9d23b6c",
+      "width": 0,
+      "x": 112,
+      "y": 612,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1.263157894736842,
+      "height": 96,
+      "keepRatio": true,
+      "layer": "",
+      "name": "A_Button",
+      "opacity": 128,
+      "persistentUuid": "5b4449c2-2b9b-4ea4-982a-a7e42e2ba430",
+      "width": 96,
+      "x": 1148,
+      "y": 595,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 72,
+      "layer": "",
+      "name": "X_Button",
+      "opacity": 128,
+      "persistentUuid": "5a4a9752-58f0-4cbc-b0c9-6d7536c0fe9b",
+      "width": 72,
+      "x": 1002,
+      "y": 620,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 72,
+      "layer": "",
+      "name": "B_Button",
+      "opacity": 128,
+      "persistentUuid": "a152239b-45a3-44bd-92a0-153dbf80017f",
+      "width": 72,
+      "x": 1173,
+      "y": 470,
+      "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 72,
+      "layer": "",
+      "name": "Y_Button",
+      "opacity": 128,
+      "persistentUuid": "b3e8cb1c-52d6-47c5-afb7-977e166a0f49",
+      "width": 72,
+      "x": 1069,
+      "y": 521,
+      "zOrder": 10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "objects": [
+    {
+      "assetStoreId": "c22fb0ef85cbe185b6ca8705c18c5bcc879d7cdfd18556b886954ad75c920835",
+      "name": "New_Game",
+      "persistentUuid": "b1d517c9-5168-43d8-900b-1294a6de472d",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "Small Tan Button",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LabelText": "New Game",
+        "PressedLabelOffsetY": 2,
+        "HoveredFadeOutDuration": 0.25
+      }
+    },
+    {
+      "assetStoreId": "c22fb0ef85cbe185b6ca8705c18c5bcc879d7cdfd18556b886954ad75c920835",
+      "name": "Load_game",
+      "persistentUuid": "b1aee4c4-ef64-4d1c-b636-de454350d5d0",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "Small Tan Button",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LabelText": "Load Game",
+        "PressedLabelOffsetY": 2
+      }
+    },
+    {
+      "assetStoreId": "c22fb0ef85cbe185b6ca8705c18c5bcc879d7cdfd18556b886954ad75c920835",
+      "name": "Settings",
+      "persistentUuid": "c2ec5898-4486-46b5-883d-524d8e2e9c8e",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "Small Tan Button",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LabelText": "Settings",
+        "PressedLabelOffsetY": 2
+      }
+    },
+    {
+      "assetStoreId": "c22fb0ef85cbe185b6ca8705c18c5bcc879d7cdfd18556b886954ad75c920835",
+      "name": "Quit_Game",
+      "persistentUuid": "2afb8bec-15d8-4c1a-8ad4-0445b3094494",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "Small Tan Button",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LabelText": "Quit Game",
+        "PressedLabelOffsetY": 2
+      }
+    },
+    {
+      "assetStoreId": "e71bd69f896d6c7531b48c65ceb5da25071d4fbdeb518aeceecba8d21f34ed8d",
+      "name": "FlatDarkJoystick",
+      "persistentUuid": "fcbdde82-7cad-4ad2-8408-70044e1ad452",
+      "type": "SpriteMultitouchJoystick::SpriteMultitouchJoystick",
+      "variant": "",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {},
+      "childrenContent": {
+        "Border": {
+          "adaptCollisionMaskAutomatically": false,
+          "updateIfNotVisible": false,
+          "animations": [
+            {
+              "name": "Idle",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Flat dark joystick border.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "Thumb": {
+          "adaptCollisionMaskAutomatically": false,
+          "updateIfNotVisible": false,
+          "animations": [
+            {
+              "name": "Idle",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Flat dark joystick thumb.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "a6184c6b374ec1da18a189b31985c1b4119b01d0efd226da48a3177f25cdd969",
+      "name": "A_Button",
+      "persistentUuid": "e6572c52-dbe9-48ca-bd49-3e845de4d1ed",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 2.0247e-320
+        },
+        {
+          "name": "ButtonScaleTween",
+          "type": "ButtonStates::ButtonScaleTween",
+          "Scale": "Scale",
+          "ButtonFSM": "ButtonFSM",
+          "Tween": "Tween",
+          "IdleScale": 3,
+          "FocusedScale": 2.5,
+          "FadeInDuration": 0.05,
+          "FadeOutDuration": 0.1,
+          "PressedScale": 2,
+          "FadeInEasing": "easeInOutQuad",
+          "FadeOutEasing": "easeInOutQuad",
+          "PreviousState": "Idle"
+        },
+        {
+          "name": "MultitouchButton",
+          "type": "SpriteMultitouchJoystick::MultitouchButton",
+          "ControllerIdentifier": 1,
+          "ButtonIdentifier": "A",
+          "TouchId": 0,
+          "TouchIndex": 2.0247e-320,
+          "IsReleased": false,
+          "IsJustPressed": false,
+          "Radius": 0
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "A Button.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 32,
+                        "y": 0
+                      },
+                      {
+                        "x": 32,
+                        "y": 32
+                      },
+                      {
+                        "x": 0,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "4ebf88723d7ea7553387a65de22fa3f4ab18e8e7631405c2b2b12bf340abc2d9",
+      "name": "X_Button",
+      "persistentUuid": "fce63527-4ccb-47b8-bbbe-36ebb3385e41",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 2.0247e-320
+        },
+        {
+          "name": "ButtonScaleTween",
+          "type": "ButtonStates::ButtonScaleTween",
+          "Scale": "Scale",
+          "ButtonFSM": "ButtonFSM",
+          "Tween": "Tween",
+          "IdleScale": 2,
+          "FocusedScale": 1.7,
+          "FadeInDuration": 0.05,
+          "FadeOutDuration": 0.1,
+          "PressedScale": 1.5,
+          "FadeInEasing": "easeInOutQuad",
+          "FadeOutEasing": "easeInOutQuad",
+          "PreviousState": "Idle"
+        },
+        {
+          "name": "MultitouchButton",
+          "type": "SpriteMultitouchJoystick::MultitouchButton",
+          "ControllerIdentifier": 3,
+          "ButtonIdentifier": "X",
+          "TouchId": 0,
+          "TouchIndex": 2.0247e-320,
+          "IsReleased": false,
+          "IsJustPressed": false,
+          "Radius": 0
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "X Button.png2",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 32,
+                        "y": 0
+                      },
+                      {
+                        "x": 32,
+                        "y": 32
+                      },
+                      {
+                        "x": 0,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "3c2e99ab3daf92cc00f9d8e3997d73cffd24677e0d5ea5df96d9e9bedb364472",
+      "name": "B_Button",
+      "persistentUuid": "9df84e8a-ecda-4886-8435-72dda21d113d",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 2.0247e-320
+        },
+        {
+          "name": "ButtonScaleTween",
+          "type": "ButtonStates::ButtonScaleTween",
+          "Scale": "Scale",
+          "ButtonFSM": "ButtonFSM",
+          "Tween": "Tween",
+          "IdleScale": 2,
+          "FocusedScale": 1.7,
+          "FadeInDuration": 0.05,
+          "FadeOutDuration": 0.1,
+          "PressedScale": 1.5,
+          "FadeInEasing": "easeInOutQuad",
+          "FadeOutEasing": "easeInOutQuad",
+          "PreviousState": "Idle"
+        },
+        {
+          "name": "MultitouchButton",
+          "type": "SpriteMultitouchJoystick::MultitouchButton",
+          "ControllerIdentifier": 2,
+          "ButtonIdentifier": "B",
+          "TouchId": 0,
+          "TouchIndex": 2.0247e-320,
+          "IsReleased": false,
+          "IsJustPressed": false,
+          "Radius": 0
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "B Button.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 32,
+                        "y": 0
+                      },
+                      {
+                        "x": 32,
+                        "y": 32
+                      },
+                      {
+                        "x": 0,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "1e7dc208d52046ab5465f1c1f8da4d7bb8438152f9c4845a74794f8b5ddbbd8b",
+      "name": "Y_Button",
+      "persistentUuid": "9b0e42a5-7efc-41a6-b181-c51bd4e4546c",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 2.0247e-320
+        },
+        {
+          "name": "ButtonScaleTween",
+          "type": "ButtonStates::ButtonScaleTween",
+          "Scale": "Scale",
+          "ButtonFSM": "ButtonFSM",
+          "Tween": "Tween",
+          "IdleScale": 2,
+          "FocusedScale": 1.7,
+          "FadeInDuration": 0.05,
+          "FadeOutDuration": 0.1,
+          "PressedScale": 1.5,
+          "FadeInEasing": "easeInOutQuad",
+          "FadeOutEasing": "easeInOutQuad",
+          "PreviousState": "Idle"
+        },
+        {
+          "name": "MultitouchButton",
+          "type": "SpriteMultitouchJoystick::MultitouchButton",
+          "ControllerIdentifier": 4,
+          "ButtonIdentifier": "Y",
+          "TouchId": 0,
+          "TouchIndex": 2.0247e-320,
+          "IsReleased": false,
+          "IsJustPressed": false,
+          "Radius": 0
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Y Button.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 32,
+                        "y": 0
+                      },
+                      {
+                        "x": 32,
+                        "y": 32
+                      },
+                      {
+                        "x": 0,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "folderName": "Background"
+      },
+      {
+        "folderName": "Buttons",
+        "children": [
+          {
+            "objectName": "Quit_Game"
+          },
+          {
+            "objectName": "Settings"
+          },
+          {
+            "objectName": "Load_game"
+          },
+          {
+            "objectName": "New_Game"
+          }
+        ]
+      },
+      {
+        "folderName": "Joycon",
+        "children": [
+          {
+            "objectName": "FlatDarkJoystick"
+          },
+          {
+            "objectName": "A_Button"
+          },
+          {
+            "objectName": "B_Button"
+          },
+          {
+            "objectName": "X_Button"
+          },
+          {
+            "objectName": "Y_Button"
+          }
+        ]
+      }
+    ]
+  },
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "SceneJustBegins"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetStringVariable"
+          },
+          "parameters": [
+            "CurrentScene",
+            "=",
+            "\"Main Menu Scene\""
+          ]
+        }
+      ]
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Buttons",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                  },
+                  "parameters": [
+                    "New_Game",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::IsPressed"
+                  },
+                  "parameters": [
+                    "New_Game",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Transition Scene\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "TransitionScene",
+                "=",
+                "\"Game Scene\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                  },
+                  "parameters": [
+                    "Load_game",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::IsPressed"
+                  },
+                  "parameters": [
+                    "Load_game",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Load Game Scene\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                  },
+                  "parameters": [
+                    "Settings",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::IsPressed"
+                  },
+                  "parameters": [
+                    "Settings",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Settings Scene\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                  },
+                  "parameters": [
+                    "Quit_Game",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::IsPressed"
+                  },
+                  "parameters": [
+                    "Quit_Game",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Quit"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    }
+  ],
+  "layers": [
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [
+        {
+          "defaultSize": true,
+          "defaultViewport": true,
+          "height": 0,
+          "viewportBottom": 1,
+          "viewportLeft": 0,
+          "viewportRight": 1,
+          "viewportTop": 0,
+          "width": 0
+        }
+      ],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Ambient Hemisphere Light",
+          "doubleParameters": {
+            "elevation": 40,
+            "intensity": 0.33,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "groundColor": "127;127;127",
+            "skyColor": "255;255;255",
+            "top": "Z+"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Scene3D::DirectionalLight",
+          "name": "3D Sun Light",
+          "doubleParameters": {
+            "distanceFromCamera": 1500,
+            "elevation": 40,
+            "frustumSize": 4000,
+            "intensity": 0.75,
+            "minimumShadowBias": 0,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "color": "255;255;255",
+            "shadowQuality": "medium",
+            "top": "Z+"
+          },
+          "booleanParameters": {
+            "isCastingShadow": true
+          }
+        }
+      ]
+    }
+  ],
+  "behaviorsSharedData": [
+    {
+      "name": "Animation",
+      "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
+      "name": "ButtonFSM",
+      "type": "ButtonStates::ButtonFSM"
+    },
+    {
+      "name": "ButtonScaleTween",
+      "type": "ButtonStates::ButtonScaleTween"
+    },
+    {
+      "name": "Effect",
+      "type": "EffectCapability::EffectBehavior"
+    },
+    {
+      "name": "Flippable",
+      "type": "FlippableCapability::FlippableBehavior"
+    },
+    {
+      "name": "MultitouchButton",
+      "type": "SpriteMultitouchJoystick::MultitouchButton"
+    },
+    {
+      "name": "Opacity",
+      "type": "OpacityCapability::OpacityBehavior"
+    },
+    {
+      "name": "Resizable",
+      "type": "ResizableCapability::ResizableBehavior"
+    },
+    {
+      "name": "Scale",
+      "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "Tween",
+      "type": "Tween::TweenBehavior"
+    }
+  ]
+}

@@ -1,0 +1,2494 @@
+{
+  "b": 155,
+  "disableInputWhenNotFocused": true,
+  "mangledName": "Settings_32Scene",
+  "name": "Settings Scene",
+  "r": 155,
+  "standardSortMethod": true,
+  "stopSoundsOnStartup": true,
+  "title": "",
+  "v": 155,
+  "uiSettings": {
+    "grid": false,
+    "gridType": "rectangular",
+    "gridWidth": 32,
+    "gridHeight": 32,
+    "gridDepth": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridOffsetZ": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": false,
+    "zoomFactor": 0.7619362677197614,
+    "windowMask": false,
+    "selectedLayer": "",
+    "gameEditorMode": "instances-editor"
+  },
+  "objectsGroups": [],
+  "variables": [],
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 64,
+      "height": 48,
+      "keepRatio": true,
+      "layer": "",
+      "name": "BackToMenu",
+      "persistentUuid": "e2371ac0-3e22-4bb2-a586-0c455cc90b3c",
+      "width": 184,
+      "x": 602,
+      "y": 629,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Apply",
+      "persistentUuid": "f09ddb5d-c252-44b3-affc-ccca495d2b2d",
+      "width": 0,
+      "x": 378,
+      "y": 629,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "QuitGame",
+      "persistentUuid": "fa23310e-6abc-4067-9940-b848f54829ad",
+      "width": 0,
+      "x": 791,
+      "y": 629,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 58,
+      "height": 29,
+      "layer": "",
+      "name": "MusicVolume",
+      "persistentUuid": "bb4315ad-0f6f-4f6a-bc29-acf221cbe401",
+      "width": 240,
+      "x": 336,
+      "y": 461,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Volume",
+      "persistentUuid": "92ba4f3e-ea2d-497c-81a2-8db44654857a",
+      "width": 0,
+      "x": 198,
+      "y": 466,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Audio",
+      "persistentUuid": "86b87228-cd79-4a9c-8840-7a4a080b392b",
+      "width": 0,
+      "x": 198,
+      "y": 415,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "KeyBindings",
+      "persistentUuid": "a745f8ee-05ad-40f0-a2c1-7e383874fa45",
+      "width": 0,
+      "x": 197,
+      "y": 78,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 64,
+      "height": 48,
+      "keepRatio": true,
+      "layer": "",
+      "name": "KeyUp",
+      "persistentUuid": "673591d2-c0b1-43de-aba2-ccab3d1a16ff",
+      "width": 86,
+      "x": 461,
+      "y": 152,
+      "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "LabelUp",
+      "persistentUuid": "aa03b8e6-f42d-42e3-b8e8-a6ca82b4e1fc",
+      "width": 0,
+      "x": 198,
+      "y": 162,
+      "zOrder": 10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "LabelDown",
+      "persistentUuid": "1019e1ea-8b9d-4937-924b-b46bff32b6d0",
+      "width": 0,
+      "x": 198,
+      "y": 223,
+      "zOrder": 11,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 64,
+      "height": 46,
+      "keepRatio": true,
+      "layer": "",
+      "name": "KeyDown",
+      "persistentUuid": "ce932052-f48f-4c8c-909b-695ced402ea3",
+      "width": 85,
+      "x": 461,
+      "y": 212,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 64,
+      "height": 46,
+      "keepRatio": true,
+      "layer": "",
+      "name": "KeyLeft",
+      "persistentUuid": "43a5cca5-477a-4698-9c51-a89ac9501622",
+      "width": 85,
+      "x": 462,
+      "y": 270,
+      "zOrder": 13,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 64,
+      "height": 45,
+      "keepRatio": true,
+      "layer": "",
+      "name": "KeyRight",
+      "persistentUuid": "d8f33ff3-c9b0-42eb-879b-796ab021f8c4",
+      "width": 85,
+      "x": 462,
+      "y": 326,
+      "zOrder": 14,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "LabelLeft",
+      "persistentUuid": "c3c2b98b-05be-457a-92d8-fa9d2dbc9a6a",
+      "width": 0,
+      "x": 198,
+      "y": 279,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "LabelRight",
+      "persistentUuid": "0f2aa745-097b-46de-8e22-cb49c2394859",
+      "width": 0,
+      "x": 198,
+      "y": 335,
+      "zOrder": 16,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 64,
+      "height": 48,
+      "keepRatio": true,
+      "layer": "",
+      "name": "KeyJump",
+      "persistentUuid": "4e3af773-3139-449d-828c-7af3b69f6108",
+      "width": 84,
+      "x": 899,
+      "y": 145,
+      "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "LabelJump",
+      "persistentUuid": "b5c9f7c9-f219-4692-82f2-78b762d98130",
+      "width": 0,
+      "x": 632,
+      "y": 162,
+      "zOrder": 18,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 64,
+      "height": 48,
+      "keepRatio": true,
+      "layer": "",
+      "name": "KeyAttack",
+      "persistentUuid": "9a9c3ee2-8b71-46bb-bf59-5eaea7729e9d",
+      "width": 85,
+      "x": 899,
+      "y": 206,
+      "zOrder": 19,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "LabelAttack",
+      "persistentUuid": "6fca33d6-d957-407f-a19f-0449641acd28",
+      "width": 0,
+      "x": 632,
+      "y": 221,
+      "zOrder": 20,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 64,
+      "height": 48,
+      "keepRatio": true,
+      "layer": "",
+      "name": "KeyDash",
+      "persistentUuid": "01f7cae3-badb-48a6-8913-ba3bef793b92",
+      "width": 84,
+      "x": 900,
+      "y": 264,
+      "zOrder": 21,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "LabelDash",
+      "persistentUuid": "c3cf41aa-20c7-4b9a-8b32-0535c5d624ea",
+      "width": 0,
+      "x": 632,
+      "y": 279,
+      "zOrder": 22,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "LabelRun",
+      "persistentUuid": "4fee3b74-8d11-47f6-9318-62ff232209d1",
+      "width": 0,
+      "x": 632,
+      "y": 336,
+      "zOrder": 23,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 64,
+      "height": 48,
+      "keepRatio": true,
+      "layer": "",
+      "name": "KeyRun",
+      "persistentUuid": "01e74ebf-b259-4205-8544-2d8a71fdc561",
+      "width": 86,
+      "x": 899,
+      "y": 326,
+      "zOrder": 24,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 64,
+      "height": 28,
+      "keepRatio": true,
+      "layer": "",
+      "name": "SFXVolume",
+      "persistentUuid": "3e2bfcd2-9d87-4ad9-b83f-d60116191c97",
+      "width": 240,
+      "x": 845,
+      "y": 461,
+      "zOrder": 25,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "SFX",
+      "persistentUuid": "6889dbb2-1c53-4df1-9e9c-efa921347696",
+      "width": 0,
+      "x": 630,
+      "y": 464,
+      "zOrder": 26,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 128,
+      "layer": "",
+      "name": "NewSprite",
+      "persistentUuid": "e879e9fc-e32d-46c2-bc42-501f5bd77e73",
+      "width": 128,
+      "x": 1116,
+      "y": 35,
+      "zOrder": 27,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "objects": [
+    {
+      "assetStoreId": "c22fb0ef85cbe185b6ca8705c18c5bcc879d7cdfd18556b886954ad75c920835",
+      "name": "BackToMenu",
+      "persistentUuid": "74aabfb2-711a-4d07-a681-9d967e00cb73",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "Small Tan Button",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 2.0247e-320
+        }
+      ],
+      "content": {
+        "LabelText": "Back to Menu",
+        "PressedLabelOffsetY": 2
+      }
+    },
+    {
+      "assetStoreId": "c22fb0ef85cbe185b6ca8705c18c5bcc879d7cdfd18556b886954ad75c920835",
+      "name": "Apply",
+      "persistentUuid": "2177a57f-f3de-4818-9f36-2a5726433c96",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "Small Tan Button",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 2.0247e-320
+        }
+      ],
+      "content": {
+        "LabelText": "Apply",
+        "PressedLabelOffsetY": 2
+      }
+    },
+    {
+      "assetStoreId": "c22fb0ef85cbe185b6ca8705c18c5bcc879d7cdfd18556b886954ad75c920835",
+      "name": "QuitGame",
+      "persistentUuid": "a1271b7d-6340-4fec-995a-169aa43fdf2d",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "Small Tan Button",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 2.0247e-320
+        }
+      ],
+      "content": {
+        "LabelText": "Quit Game",
+        "PressedLabelOffsetY": 2
+      }
+    },
+    {
+      "assetStoreId": "bfeeb465a4a164b560a2215e3ff9e78e66123af43cbf7ef1f22d56fca4271c80",
+      "name": "MusicVolume",
+      "persistentUuid": "4d915cc3-6cea-4885-ba5e-feb6481e137a",
+      "type": "PanelSpriteSlider::PanelSpriteSlider",
+      "variant": "Square white slider",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "BarTopPadding": 6,
+        "BarLeftPadding": 6,
+        "BarRightPadding": 6,
+        "BarBottomPadding": 6,
+        "LabelMargin": 6,
+        "InitialValue": 30
+      }
+    },
+    {
+      "assetStoreId": "54d86c7d46104e19c9a7e86e173b71bce9592b476e156846c53f11be91039afd",
+      "name": "Volume",
+      "persistentUuid": "56265571-c399-4cd8-8ea1-afb319c01814",
+      "type": "BitmapText::BitmapTextObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "Volume:",
+        "opacity": 255,
+        "scale": 2,
+        "fontSize": 20,
+        "tint": "255;255;255",
+        "bitmapFontResourceName": "assets/NotJamOldStyle11.fnt",
+        "textureAtlasResourceName": "assets/NotJamOldStyle11.png",
+        "align": "left",
+        "verticalTextAlignment": "top"
+      }
+    },
+    {
+      "assetStoreId": "54d86c7d46104e19c9a7e86e173b71bce9592b476e156846c53f11be91039afd",
+      "name": "Video",
+      "persistentUuid": "6e82ef72-47d9-4cfe-b31b-648a05eb587a",
+      "type": "BitmapText::BitmapTextObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "Video",
+        "opacity": 255,
+        "scale": 3,
+        "fontSize": 20,
+        "tint": "255;255;255",
+        "bitmapFontResourceName": "assets/NotJamOldStyle11.fnt",
+        "textureAtlasResourceName": "assets/NotJamOldStyle11.png",
+        "align": "left",
+        "verticalTextAlignment": "top"
+      }
+    },
+    {
+      "assetStoreId": "54d86c7d46104e19c9a7e86e173b71bce9592b476e156846c53f11be91039afd",
+      "name": "Audio",
+      "persistentUuid": "895c4b0b-2820-4c7b-8c85-c29362a1bb90",
+      "type": "BitmapText::BitmapTextObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "Audio",
+        "opacity": 255,
+        "scale": 3,
+        "fontSize": 20,
+        "tint": "255;255;255",
+        "bitmapFontResourceName": "assets/NotJamOldStyle11.fnt",
+        "textureAtlasResourceName": "assets/NotJamOldStyle11.png",
+        "align": "left",
+        "verticalTextAlignment": "top"
+      }
+    },
+    {
+      "assetStoreId": "54d86c7d46104e19c9a7e86e173b71bce9592b476e156846c53f11be91039afd",
+      "name": "Resolution",
+      "persistentUuid": "eb144d63-be7e-41fa-bb36-d2dc9311e552",
+      "type": "BitmapText::BitmapTextObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "Resolution:",
+        "opacity": 255,
+        "scale": 2,
+        "fontSize": 20,
+        "tint": "255;255;255",
+        "bitmapFontResourceName": "assets/NotJamOldStyle11.fnt",
+        "textureAtlasResourceName": "assets/NotJamOldStyle11.png",
+        "align": "left",
+        "verticalTextAlignment": "top"
+      }
+    },
+    {
+      "assetStoreId": "54d86c7d46104e19c9a7e86e173b71bce9592b476e156846c53f11be91039afd",
+      "name": "FullScreen",
+      "persistentUuid": "5f216fc4-28bf-40d4-a586-2d47b35367b6",
+      "type": "BitmapText::BitmapTextObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "FullScreen:",
+        "opacity": 255,
+        "scale": 2,
+        "fontSize": 20,
+        "tint": "255;255;255",
+        "bitmapFontResourceName": "assets/NotJamOldStyle11.fnt",
+        "textureAtlasResourceName": "assets/NotJamOldStyle11.png",
+        "align": "left",
+        "verticalTextAlignment": "top"
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "2265da6eedce6cbcd2f4b3c7a802c761068cd05f3c9d9d695213b16b1567c8fd",
+      "name": "FullScreenSelector",
+      "persistentUuid": "f3f102a7-66eb-4979-b398-fd6bda74063b",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "isFolded": true,
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 2.0247e-320
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Blank button.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 48,
+                        "y": 0
+                      },
+                      {
+                        "x": 48,
+                        "y": 48
+                      },
+                      {
+                        "x": 0,
+                        "y": 48
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Check button.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 48,
+                        "y": 0
+                      },
+                      {
+                        "x": 48,
+                        "y": 48
+                      },
+                      {
+                        "x": 0,
+                        "y": 48
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "54d86c7d46104e19c9a7e86e173b71bce9592b476e156846c53f11be91039afd",
+      "name": "Windowed",
+      "persistentUuid": "d3fd00dc-4321-4a90-a827-eed7739e6c3a",
+      "type": "BitmapText::BitmapTextObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "Windowed:",
+        "opacity": 255,
+        "scale": 2,
+        "fontSize": 20,
+        "tint": "255;255;255",
+        "bitmapFontResourceName": "assets/NotJamOldStyle11.fnt",
+        "textureAtlasResourceName": "assets/NotJamOldStyle11.png",
+        "align": "left",
+        "verticalTextAlignment": "top"
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "2265da6eedce6cbcd2f4b3c7a802c761068cd05f3c9d9d695213b16b1567c8fd",
+      "name": "WindowedSelector",
+      "persistentUuid": "cccdfe7f-0866-4b40-a76b-31e581458427",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 2.0247e-320
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Blank button.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 48,
+                        "y": 0
+                      },
+                      {
+                        "x": 48,
+                        "y": 48
+                      },
+                      {
+                        "x": 0,
+                        "y": 48
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Check button.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 48,
+                        "y": 0
+                      },
+                      {
+                        "x": 48,
+                        "y": 48
+                      },
+                      {
+                        "x": 0,
+                        "y": 48
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "c22fb0ef85cbe185b6ca8705c18c5bcc879d7cdfd18556b886954ad75c920835",
+      "name": "Resolucao1280x720",
+      "persistentUuid": "26038471-df01-4a41-92df-e1736b915f77",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "Small Tan Button",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 2.0247e-320
+        }
+      ],
+      "content": {
+        "LabelText": "1280 x 720",
+        "PressedLabelOffsetY": 2
+      }
+    },
+    {
+      "assetStoreId": "bfeeb465a4a164b560a2215e3ff9e78e66123af43cbf7ef1f22d56fca4271c80",
+      "name": "SFXVolume",
+      "persistentUuid": "7596502f-a901-435b-9755-78e3b407abea",
+      "type": "PanelSpriteSlider::PanelSpriteSlider",
+      "variant": "Square white slider",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "BarTopPadding": 6,
+        "BarLeftPadding": 6,
+        "BarRightPadding": 6,
+        "BarBottomPadding": 6,
+        "LabelMargin": 6
+      }
+    },
+    {
+      "assetStoreId": "54d86c7d46104e19c9a7e86e173b71bce9592b476e156846c53f11be91039afd",
+      "name": "KeyBindings",
+      "persistentUuid": "972be6af-d579-4719-abc4-2b738a674d54",
+      "type": "BitmapText::BitmapTextObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "Key Bindings",
+        "opacity": 255,
+        "scale": 3,
+        "fontSize": 20,
+        "tint": "255;255;255",
+        "bitmapFontResourceName": "assets/NotJamOldStyle11.fnt",
+        "textureAtlasResourceName": "assets/NotJamOldStyle11.png",
+        "align": "left",
+        "verticalTextAlignment": "top"
+      }
+    },
+    {
+      "assetStoreId": "c22fb0ef85cbe185b6ca8705c18c5bcc879d7cdfd18556b886954ad75c920835",
+      "name": "KeyUp",
+      "persistentUuid": "4be334f7-39be-4d93-a6c5-6ed53ee8d105",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "Small Tan Button",
+      "variables": [
+        {
+          "name": "function",
+          "type": "string",
+          "value": "Up"
+        },
+        {
+          "name": "key",
+          "type": "string",
+          "value": "w"
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 2.0247e-320
+        }
+      ],
+      "content": {
+        "LabelText": "",
+        "PressedLabelOffsetY": 2
+      }
+    },
+    {
+      "assetStoreId": "54d86c7d46104e19c9a7e86e173b71bce9592b476e156846c53f11be91039afd",
+      "name": "LabelUp",
+      "persistentUuid": "813c4a7c-9162-4d64-b9cd-d3859ad293f9",
+      "type": "BitmapText::BitmapTextObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "Key Up",
+        "opacity": 255,
+        "scale": 3,
+        "fontSize": 20,
+        "tint": "255;255;255",
+        "bitmapFontResourceName": "assets/NotJamOldStyle11.fnt",
+        "textureAtlasResourceName": "assets/NotJamOldStyle11.png",
+        "align": "left",
+        "verticalTextAlignment": "top"
+      }
+    },
+    {
+      "assetStoreId": "c22fb0ef85cbe185b6ca8705c18c5bcc879d7cdfd18556b886954ad75c920835",
+      "name": "KeyDown",
+      "persistentUuid": "4db63445-bebe-4d58-8bd3-91a322a01769",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "Small Tan Button",
+      "variables": [
+        {
+          "name": "function",
+          "type": "string",
+          "value": "Down"
+        },
+        {
+          "name": "key",
+          "type": "string",
+          "value": "s"
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 2.0247e-320
+        }
+      ],
+      "content": {
+        "LabelText": "",
+        "PressedLabelOffsetY": 2
+      }
+    },
+    {
+      "assetStoreId": "54d86c7d46104e19c9a7e86e173b71bce9592b476e156846c53f11be91039afd",
+      "name": "LabelDown",
+      "persistentUuid": "69a736a5-7fea-4e7b-97a1-0924be9b1b00",
+      "type": "BitmapText::BitmapTextObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "Key Down",
+        "opacity": 255,
+        "scale": 3,
+        "fontSize": 20,
+        "tint": "255;255;255",
+        "bitmapFontResourceName": "assets/NotJamOldStyle11.fnt",
+        "textureAtlasResourceName": "assets/NotJamOldStyle11.png",
+        "align": "left",
+        "verticalTextAlignment": "top"
+      }
+    },
+    {
+      "assetStoreId": "54d86c7d46104e19c9a7e86e173b71bce9592b476e156846c53f11be91039afd",
+      "name": "LabelLeft",
+      "persistentUuid": "739a0ea1-0734-4051-a702-fe509622935a",
+      "type": "BitmapText::BitmapTextObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "Key Left",
+        "opacity": 255,
+        "scale": 3,
+        "fontSize": 20,
+        "tint": "255;255;255",
+        "bitmapFontResourceName": "assets/NotJamOldStyle11.fnt",
+        "textureAtlasResourceName": "assets/NotJamOldStyle11.png",
+        "align": "left",
+        "verticalTextAlignment": "top"
+      }
+    },
+    {
+      "assetStoreId": "54d86c7d46104e19c9a7e86e173b71bce9592b476e156846c53f11be91039afd",
+      "name": "LabelRight",
+      "persistentUuid": "150a1615-bafb-42a1-b57a-43a066b3dac9",
+      "type": "BitmapText::BitmapTextObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "Key Right",
+        "opacity": 255,
+        "scale": 3,
+        "fontSize": 20,
+        "tint": "255;255;255",
+        "bitmapFontResourceName": "assets/NotJamOldStyle11.fnt",
+        "textureAtlasResourceName": "assets/NotJamOldStyle11.png",
+        "align": "left",
+        "verticalTextAlignment": "top"
+      }
+    },
+    {
+      "assetStoreId": "c22fb0ef85cbe185b6ca8705c18c5bcc879d7cdfd18556b886954ad75c920835",
+      "name": "KeyLeft",
+      "persistentUuid": "28871976-6f1e-49d1-84a5-a3e81a20defa",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "Small Tan Button",
+      "variables": [
+        {
+          "name": "function",
+          "type": "string",
+          "value": "Left"
+        },
+        {
+          "name": "key",
+          "type": "string",
+          "value": "a"
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 2.0247e-320
+        }
+      ],
+      "content": {
+        "LabelText": "",
+        "PressedLabelOffsetY": 2
+      }
+    },
+    {
+      "assetStoreId": "c22fb0ef85cbe185b6ca8705c18c5bcc879d7cdfd18556b886954ad75c920835",
+      "name": "KeyRight",
+      "persistentUuid": "b23628df-22b8-4ca0-a240-fc93bf058353",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "Small Tan Button",
+      "variables": [
+        {
+          "name": "function",
+          "type": "string",
+          "value": "Right"
+        },
+        {
+          "name": "key",
+          "type": "string",
+          "value": "d"
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 2.0247e-320
+        }
+      ],
+      "content": {
+        "LabelText": "",
+        "PressedLabelOffsetY": 2
+      }
+    },
+    {
+      "assetStoreId": "c22fb0ef85cbe185b6ca8705c18c5bcc879d7cdfd18556b886954ad75c920835",
+      "name": "KeyJump",
+      "persistentUuid": "a10a0360-7d58-4c87-bfcb-a4992d56a6ca",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "Small Tan Button",
+      "variables": [
+        {
+          "name": "function",
+          "type": "string",
+          "value": "Jump"
+        },
+        {
+          "name": "key",
+          "type": "string",
+          "value": "0"
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 2.0247e-320
+        }
+      ],
+      "content": {
+        "LabelText": "",
+        "PressedLabelOffsetY": 2
+      }
+    },
+    {
+      "assetStoreId": "54d86c7d46104e19c9a7e86e173b71bce9592b476e156846c53f11be91039afd",
+      "name": "LabelJump",
+      "persistentUuid": "97a6ff8d-c9b3-4794-8c36-72293edf7d3e",
+      "type": "BitmapText::BitmapTextObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "Key Jump",
+        "opacity": 255,
+        "scale": 3,
+        "fontSize": 20,
+        "tint": "255;255;255",
+        "bitmapFontResourceName": "assets/NotJamOldStyle11.fnt",
+        "textureAtlasResourceName": "assets/NotJamOldStyle11.png",
+        "align": "left",
+        "verticalTextAlignment": "top"
+      }
+    },
+    {
+      "assetStoreId": "c22fb0ef85cbe185b6ca8705c18c5bcc879d7cdfd18556b886954ad75c920835",
+      "name": "KeyAttack",
+      "persistentUuid": "b90adec5-f72a-4477-ba0b-b787426845a3",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "Small Tan Button",
+      "variables": [
+        {
+          "name": "function",
+          "type": "string",
+          "value": "Attack"
+        },
+        {
+          "name": "key",
+          "type": "number",
+          "value": 1
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 2.0247e-320
+        }
+      ],
+      "content": {
+        "LabelText": "",
+        "PressedLabelOffsetY": 2
+      }
+    },
+    {
+      "assetStoreId": "54d86c7d46104e19c9a7e86e173b71bce9592b476e156846c53f11be91039afd",
+      "name": "LabelAttack",
+      "persistentUuid": "c841af6a-77ec-4f46-9f57-6c17059972cc",
+      "type": "BitmapText::BitmapTextObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "Key Attack",
+        "opacity": 255,
+        "scale": 3,
+        "fontSize": 20,
+        "tint": "255;255;255",
+        "bitmapFontResourceName": "assets/NotJamOldStyle11.fnt",
+        "textureAtlasResourceName": "assets/NotJamOldStyle11.png",
+        "align": "left",
+        "verticalTextAlignment": "top"
+      }
+    },
+    {
+      "assetStoreId": "54d86c7d46104e19c9a7e86e173b71bce9592b476e156846c53f11be91039afd",
+      "name": "LabelDash",
+      "persistentUuid": "8af0eded-1690-4e05-8425-71f6ea0b4829",
+      "type": "BitmapText::BitmapTextObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "Key Dash",
+        "opacity": 255,
+        "scale": 3,
+        "fontSize": 20,
+        "tint": "255;255;255",
+        "bitmapFontResourceName": "assets/NotJamOldStyle11.fnt",
+        "textureAtlasResourceName": "assets/NotJamOldStyle11.png",
+        "align": "left",
+        "verticalTextAlignment": "top"
+      }
+    },
+    {
+      "assetStoreId": "c22fb0ef85cbe185b6ca8705c18c5bcc879d7cdfd18556b886954ad75c920835",
+      "name": "KeyDash",
+      "persistentUuid": "3521d00d-7699-4f3e-b510-04a58a5e0bfe",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "Small Tan Button",
+      "variables": [
+        {
+          "name": "function",
+          "type": "string",
+          "value": "Dash"
+        },
+        {
+          "name": "key",
+          "type": "string",
+          "value": "3"
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 2.0247e-320
+        }
+      ],
+      "content": {
+        "LabelText": "",
+        "PressedLabelOffsetY": 2
+      }
+    },
+    {
+      "assetStoreId": "c22fb0ef85cbe185b6ca8705c18c5bcc879d7cdfd18556b886954ad75c920835",
+      "name": "KeyRun",
+      "persistentUuid": "e724dd1d-a39f-4648-a46d-af0a31996c6b",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "Small Tan Button",
+      "variables": [
+        {
+          "name": "function",
+          "type": "string",
+          "value": "Run"
+        },
+        {
+          "name": "Key",
+          "type": "number",
+          "value": 3
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 2.0247e-320
+        }
+      ],
+      "content": {
+        "LabelText": "",
+        "PressedLabelOffsetY": 2
+      }
+    },
+    {
+      "assetStoreId": "54d86c7d46104e19c9a7e86e173b71bce9592b476e156846c53f11be91039afd",
+      "name": "LabelRun",
+      "persistentUuid": "70f8255b-b08b-43ce-afbb-cf1290a6d240",
+      "type": "BitmapText::BitmapTextObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "Key Run",
+        "opacity": 255,
+        "scale": 3,
+        "fontSize": 20,
+        "tint": "255;255;255",
+        "bitmapFontResourceName": "assets/NotJamOldStyle11.fnt",
+        "textureAtlasResourceName": "assets/NotJamOldStyle11.png",
+        "align": "left",
+        "verticalTextAlignment": "top"
+      }
+    },
+    {
+      "assetStoreId": "54d86c7d46104e19c9a7e86e173b71bce9592b476e156846c53f11be91039afd",
+      "name": "SFX",
+      "persistentUuid": "70dbf8bb-54aa-4d17-b325-3b3df9f1e22c",
+      "type": "BitmapText::BitmapTextObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "Sound Effects:",
+        "opacity": 255,
+        "scale": 2,
+        "fontSize": 20,
+        "tint": "255;255;255",
+        "bitmapFontResourceName": "assets/NotJamOldStyle11.fnt",
+        "textureAtlasResourceName": "assets/NotJamOldStyle11.png",
+        "align": "left",
+        "verticalTextAlignment": "top"
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "NewSprite",
+      "persistentUuid": "c208cd99-ec4c-49e2-80c0-61ee2556d4dc",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GEMLogo_ColorAndWhite_NoBG_1080.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 125,
+                        "y": 256
+                      },
+                      {
+                        "x": 955,
+                        "y": 256
+                      },
+                      {
+                        "x": 955,
+                        "y": 827
+                      },
+                      {
+                        "x": 125,
+                        "y": 827
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "folderName": "Controls",
+        "children": [
+          {
+            "objectName": "LabelUp"
+          },
+          {
+            "objectName": "LabelLeft"
+          },
+          {
+            "objectName": "LabelRight"
+          },
+          {
+            "objectName": "LabelDown"
+          },
+          {
+            "objectName": "LabelJump"
+          },
+          {
+            "objectName": "LabelAttack"
+          },
+          {
+            "objectName": "LabelDash"
+          },
+          {
+            "objectName": "LabelRun"
+          },
+          {
+            "objectName": "KeyUp"
+          },
+          {
+            "objectName": "KeyDown"
+          },
+          {
+            "objectName": "KeyLeft"
+          },
+          {
+            "objectName": "KeyRight"
+          },
+          {
+            "objectName": "KeyJump"
+          },
+          {
+            "objectName": "KeyAttack"
+          },
+          {
+            "objectName": "KeyDash"
+          },
+          {
+            "objectName": "KeyRun"
+          }
+        ]
+      },
+      {
+        "folderName": "Sliders",
+        "children": [
+          {
+            "objectName": "MusicVolume"
+          },
+          {
+            "objectName": "SFXVolume"
+          }
+        ]
+      },
+      {
+        "folderName": "Buttons",
+        "children": [
+          {
+            "objectName": "WindowedSelector"
+          },
+          {
+            "objectName": "FullScreenSelector"
+          },
+          {
+            "objectName": "QuitGame"
+          },
+          {
+            "objectName": "Apply"
+          },
+          {
+            "objectName": "BackToMenu"
+          },
+          {
+            "objectName": "Resolucao1280x720"
+          }
+        ]
+      },
+      {
+        "folderName": "Text",
+        "children": [
+          {
+            "objectName": "Audio"
+          },
+          {
+            "objectName": "KeyBindings"
+          },
+          {
+            "objectName": "Video"
+          },
+          {
+            "objectName": "Volume"
+          },
+          {
+            "objectName": "SFX"
+          },
+          {
+            "objectName": "Resolution"
+          },
+          {
+            "objectName": "FullScreen"
+          },
+          {
+            "objectName": "Windowed"
+          },
+          {
+            "objectName": "NewSprite"
+          }
+        ]
+      }
+    ]
+  },
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Scene Starting Procedures"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "SceneJustBegins"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetStringVariable"
+          },
+          "parameters": [
+            "CurrentScene",
+            "=",
+            "\"Settings Scene\""
+          ]
+        },
+        {
+          "type": {
+            "value": "PanelSpriteSlider::PanelSpriteSlider::SetValue"
+          },
+          "parameters": [
+            "MusicVolume",
+            "=",
+            "GlobalVolume()",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "PanelSpriteSlider::PanelSpriteSlider::SetValue"
+          },
+          "parameters": [
+            "SFXVolume",
+            "=",
+            "GlobalVolume()",
+            ""
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringObjectVariable"
+              },
+              "parameters": [
+                "KeyUp",
+                "function",
+                "=",
+                "\"Up\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetStringObjectVariable"
+              },
+              "parameters": [
+                "KeyUp",
+                "key",
+                "=",
+                "Controls.KeyUp"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringObjectVariable"
+              },
+              "parameters": [
+                "KeyDown",
+                "function",
+                "=",
+                "\"Down\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetStringObjectVariable"
+              },
+              "parameters": [
+                "KeyDown",
+                "key",
+                "=",
+                "Controls.KeyDown"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Keys Events"
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "folded": true,
+      "name": "Buttons",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonFSM::IsClicked"
+                  },
+                  "parameters": [
+                    "BackToMenu",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonFSM::IsPressed"
+                  },
+                  "parameters": [
+                    "BackToMenu",
+                    "ButtonFSM",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Main Menu Scene\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonFSM::IsClicked"
+                  },
+                  "parameters": [
+                    "QuitGame",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonFSM::IsPressed"
+                  },
+                  "parameters": [
+                    "QuitGame",
+                    "ButtonFSM",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Quit"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "folded": true,
+      "name": "Audio Controls",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteSlider::PanelSpriteSlider::IsBeingDragged"
+              },
+              "parameters": [
+                "MusicVolume",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetSoundChannelVolume"
+              },
+              "parameters": [
+                "",
+                "1",
+                "=",
+                "SFXVolume.StepSize()"
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Remove Keybind",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "Controls.KeyUp",
+                "!=",
+                "\"\""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringObjectVariable"
+                  },
+                  "parameters": [
+                    "KeyUp",
+                    "function",
+                    "=",
+                    "\"Up\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "Controls.KeyUp",
+                    "=",
+                    "\"\""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "Controls.KeyDown",
+                "!=",
+                "\"\""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringObjectVariable"
+                  },
+                  "parameters": [
+                    "KeyDown",
+                    "function",
+                    "=",
+                    "\"Down\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "Controls.KeyDown",
+                    "=",
+                    "\"\""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "Controls.KeyLeft",
+                "!=",
+                "\"\""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringObjectVariable"
+                  },
+                  "parameters": [
+                    "KeyLeft",
+                    "function",
+                    "=",
+                    "\"Left\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "Controls.KeyLeft",
+                    "=",
+                    "\"\""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "Controls.KeyRight",
+                "!=",
+                "\"\""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringObjectVariable"
+                  },
+                  "parameters": [
+                    "KeyRight",
+                    "function",
+                    "=",
+                    "\"Right\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "Controls.KeyRight",
+                    "=",
+                    "\"\""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "Controls.KeyJump",
+                "!=",
+                "\"\""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringObjectVariable"
+                  },
+                  "parameters": [
+                    "KeyJump",
+                    "function",
+                    "=",
+                    "\"Jump\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "Controls.KeyJump",
+                    "=",
+                    "\"\""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "Controls.KeyDash",
+                "!=",
+                "\"\""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringObjectVariable"
+                  },
+                  "parameters": [
+                    "KeyDash",
+                    "function",
+                    "=",
+                    "\"Dash\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "Controls.KeyDash",
+                    "=",
+                    "\"\""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "Controls.KeyRun",
+                "!=",
+                "\"\""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringObjectVariable"
+                  },
+                  "parameters": [
+                    "KeyRun",
+                    "function",
+                    "=",
+                    "\"Run\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "Controls.KeyRun",
+                    "=",
+                    "\"\""
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Change Keybind",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "ButtonStates::ButtonFSM::IsClicked"
+              },
+              "parameters": [
+                "KeyUp",
+                "ButtonFSM",
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Controls.KeyUp",
+                    "=",
+                    "\"\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringObjectVariable"
+                  },
+                  "parameters": [
+                    "KeyUp",
+                    "function",
+                    "=",
+                    "\"Up\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "Controls.KeyUp",
+                    "=",
+                    "LastPressedKey()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringObjectVariable"
+                  },
+                  "parameters": [
+                    "KeyUp",
+                    "key",
+                    "=",
+                    "LastPressedKey()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::SetLabelTextOp"
+                  },
+                  "parameters": [
+                    "KeyUp",
+                    "=",
+                    "KeyUp.key",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "ButtonStates::ButtonFSM::IsClicked"
+              },
+              "parameters": [
+                "KeyDown",
+                "ButtonFSM",
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Controls.KeyDown",
+                    "=",
+                    "\"\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringObjectVariable"
+                  },
+                  "parameters": [
+                    "KeyDown",
+                    "function",
+                    "=",
+                    "\"Down\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "Controls.KeyDown",
+                    "=",
+                    "LastPressedKey()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringObjectVariable"
+                  },
+                  "parameters": [
+                    "KeyDown",
+                    "key",
+                    "=",
+                    "LastPressedKey()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::SetLabelTextOp"
+                  },
+                  "parameters": [
+                    "KeyDown",
+                    "=",
+                    "KeyDown.key",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    }
+  ],
+  "layers": [
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [
+        {
+          "defaultSize": true,
+          "defaultViewport": true,
+          "height": 0,
+          "viewportBottom": 1,
+          "viewportLeft": 0,
+          "viewportRight": 1,
+          "viewportTop": 0,
+          "width": 0
+        }
+      ],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Ambient Hemisphere Light",
+          "doubleParameters": {
+            "elevation": 40,
+            "intensity": 0.33,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "groundColor": "127;127;127",
+            "skyColor": "255;255;255",
+            "top": "Z+"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Scene3D::DirectionalLight",
+          "name": "3D Sun Light",
+          "doubleParameters": {
+            "distanceFromCamera": 1500,
+            "elevation": 40,
+            "frustumSize": 4000,
+            "intensity": 0.75,
+            "minimumShadowBias": 0,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "color": "255;255;255",
+            "shadowQuality": "medium",
+            "top": "Z+"
+          },
+          "booleanParameters": {
+            "isCastingShadow": true
+          }
+        }
+      ]
+    }
+  ],
+  "behaviorsSharedData": [
+    {
+      "name": "Animation",
+      "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
+      "name": "ButtonFSM",
+      "type": "ButtonStates::ButtonFSM"
+    },
+    {
+      "name": "Effect",
+      "type": "EffectCapability::EffectBehavior"
+    },
+    {
+      "name": "Flippable",
+      "type": "FlippableCapability::FlippableBehavior"
+    },
+    {
+      "name": "Opacity",
+      "type": "OpacityCapability::OpacityBehavior"
+    },
+    {
+      "name": "Resizable",
+      "type": "ResizableCapability::ResizableBehavior"
+    },
+    {
+      "name": "Scale",
+      "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "Text",
+      "type": "TextContainerCapability::TextContainerBehavior"
+    }
+  ]
+}
