@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.4335774304702412,
+    "zoomFactor": 0.3216911764705918,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -80,7 +80,7 @@
       "name": "Enemies",
       "objects": [
         {
-          "name": "BasicGnoll"
+          "name": "GnollSoldier"
         }
       ]
     }
@@ -314,9 +314,43 @@
       "name": "GnollSpawnerEast",
       "persistentUuid": "6889538f-323f-478b-a200-658c260e708b",
       "width": 0,
-      "x": 790,
-      "y": 228,
+      "x": 122,
+      "y": 41,
       "zOrder": 18,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 3,
+      "height": 827,
+      "keepRatio": true,
+      "layer": "Background",
+      "name": "AreaSouth",
+      "persistentUuid": "0dbe42f8-0acb-4ce1-bf11-a950d3124733",
+      "width": 1906,
+      "x": 1992,
+      "y": 1193,
+      "zOrder": 19,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 3,
+      "height": 846,
+      "keepRatio": true,
+      "layer": "Background",
+      "name": "AreaWest",
+      "persistentUuid": "10118d9f-cb6a-40cf-9d1b-b3fd7cda4ba2",
+      "width": 1920,
+      "x": -36,
+      "y": 1205,
+      "zOrder": 20,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -809,7 +843,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "EastMock3",
+                  "image": "EastMock4",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1100,7 +1134,7 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "BasicGnoll",
+      "name": "GnollSoldier",
       "persistentUuid": "2ee68a9d-6fa5-4cd1-901b-3ab7e99c2e58",
       "type": "Sprite",
       "updateIfNotVisible": false,
@@ -1157,12 +1191,11 @@
           "directions": [
             {
               "looping": false,
-              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite3",
+                  "image": "GnollSoldier.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1178,20 +1211,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 3,
-                        "y": 0
+                        "x": 14,
+                        "y": 16
                       },
                       {
-                        "x": 23,
-                        "y": 0
+                        "x": 271,
+                        "y": 16
                       },
                       {
-                        "x": 23,
-                        "y": 31
+                        "x": 271,
+                        "y": 351
                       },
                       {
-                        "x": 3,
-                        "y": 31
+                        "x": 14,
+                        "y": 351
                       }
                     ]
                   ]
@@ -1254,6 +1287,130 @@
       "effects": [],
       "behaviors": [],
       "animations": []
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "AreaSouth",
+      "persistentUuid": "145e735b-cfc5-4cbf-8bcb-32b96e6b080d",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "SouthMock",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "SouthMock",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 680,
+                        "y": 0
+                      },
+                      {
+                        "x": 680,
+                        "y": 295
+                      },
+                      {
+                        "x": 0,
+                        "y": 295
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "AreaWest",
+      "persistentUuid": "4e6b60f8-9d21-46ff-b1e2-36b80174758f",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "WestMock",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "WestMock",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 681,
+                        "y": 0
+                      },
+                      {
+                        "x": 681,
+                        "y": 300
+                      },
+                      {
+                        "x": 0,
+                        "y": 300
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1284,6 +1441,12 @@
         "objectName": "AreaEast"
       },
       {
+        "objectName": "AreaSouth"
+      },
+      {
+        "objectName": "AreaWest"
+      },
+      {
         "objectName": "HUD"
       },
       {
@@ -1296,7 +1459,7 @@
         "objectName": "PlayArea"
       },
       {
-        "objectName": "BasicGnoll"
+        "objectName": "GnollSoldier"
       },
       {
         "objectName": "Trajectory"
@@ -1550,6 +1713,18 @@
               ]
             },
             {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "0 - North; 1 - East; 2 - South; 3 - West"
+            },
+            {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -1578,6 +1753,18 @@
                 },
                 {
                   "type": {
+                    "value": "SetCameraCenterX"
+                  },
+                  "parameters": [
+                    "",
+                    "=",
+                    "AreaNorth.CenterX()",
+                    "",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "SetCameraCenterY"
                   },
                   "parameters": [
@@ -1585,6 +1772,18 @@
                     "=",
                     "AreaNorth.CenterY() + AreaOffset",
                     "\"Background\"",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCameraCenterY"
+                  },
+                  "parameters": [
+                    "",
+                    "=",
+                    "AreaNorth.CenterY() + AreaOffset",
+                    "",
                     "0"
                   ]
                 }
@@ -1613,7 +1812,31 @@
                     "",
                     "=",
                     "AreaEast.CenterX()",
+                    "",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCameraCenterX"
+                  },
+                  "parameters": [
+                    "",
+                    "=",
+                    "AreaEast.CenterX()",
                     "\"Background\"",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCameraCenterY"
+                  },
+                  "parameters": [
+                    "",
+                    "=",
+                    "AreaEast.CenterY() + AreaOffset",
+                    "",
                     "0"
                   ]
                 },
@@ -1645,7 +1868,56 @@
                   ]
                 }
               ],
-              "actions": []
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetCameraCenterX"
+                  },
+                  "parameters": [
+                    "",
+                    "=",
+                    "AreaSouth.CenterX()",
+                    "\"Background\"",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCameraCenterX"
+                  },
+                  "parameters": [
+                    "",
+                    "=",
+                    "AreaSouth.CenterX()",
+                    "",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCameraCenterY"
+                  },
+                  "parameters": [
+                    "",
+                    "=",
+                    "AreaSouth.CenterY() + AreaOffset",
+                    "\"Background\"",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCameraCenterY"
+                  },
+                  "parameters": [
+                    "",
+                    "=",
+                    "AreaSouth.CenterY() + AreaOffset",
+                    "",
+                    "0"
+                  ]
+                }
+              ]
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -1661,7 +1933,56 @@
                   ]
                 }
               ],
-              "actions": []
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetCameraCenterX"
+                  },
+                  "parameters": [
+                    "",
+                    "=",
+                    "AreaWest.CenterX()",
+                    "\"Background\"",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCameraCenterX"
+                  },
+                  "parameters": [
+                    "",
+                    "=",
+                    "AreaWest.CenterX()",
+                    "",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCameraCenterY"
+                  },
+                  "parameters": [
+                    "",
+                    "=",
+                    "AreaWest.CenterY() + AreaOffset",
+                    "\"Background\"",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCameraCenterY"
+                  },
+                  "parameters": [
+                    "",
+                    "=",
+                    "AreaWest.CenterY() + AreaOffset",
+                    "",
+                    "0"
+                  ]
+                }
+              ]
             },
             {
               "type": "BuiltinCommonInstructions::Comment",
@@ -1917,7 +2238,7 @@
                 "value": "CurvedMovement::SpeedPathMovement::DrawDebug"
               },
               "parameters": [
-                "BasicGnoll",
+                "GnollSoldier",
                 "SpeedPathMovement",
                 "Trajectory",
                 ""
@@ -1983,10 +2304,51 @@
               },
               "parameters": [
                 "",
-                "BasicGnoll",
+                "GnollSoldier",
                 "GnollSpawnerEast.X()",
                 "GnollSpawnerEast.Y()",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "GnollSoldier",
+                "GnollSpawnerEast.X()+15",
+                "GnollSpawnerEast.Y()+26",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "GnollSoldier",
+                "GnollSpawnerEast.X()-22",
+                "GnollSpawnerEast.Y()-18",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PickAllInstances"
+              },
+              "parameters": [
+                "",
+                "Trajectory"
+              ]
+            },
+            {
+              "type": {
+                "value": "Hide"
+              },
+              "parameters": [
+                "Trajectory"
               ]
             }
           ],
@@ -2000,7 +2362,7 @@
                     "value": "CurvedMovement::SpeedPathMovement::SetPath"
                   },
                   "parameters": [
-                    "BasicGnoll",
+                    "GnollSoldier",
                     "SpeedPathMovement",
                     "\"TestPath\"",
                     "1",
@@ -2013,10 +2375,10 @@
                     "value": "CurvedMovement::SpeedPathMovement::SetSpeed"
                   },
                   "parameters": [
-                    "BasicGnoll",
+                    "GnollSoldier",
                     "SpeedPathMovement",
                     "=",
-                    "BasicGnoll.gnollSpeed",
+                    "GnollSoldier.gnollSpeed",
                     ""
                   ]
                 },

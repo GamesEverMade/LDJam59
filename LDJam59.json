@@ -1,7 +1,7 @@
 {
   "firstLayout": "Intro Scene",
   "gdVersion": {
-    "build": 260,
+    "build": 266,
     "major": 5,
     "minor": 6,
     "revision": 0
@@ -87,7 +87,6 @@
     "playableDevices": [
       "keyboard",
       "gamepad",
-      "mobile",
       "mobile"
     ],
     "extensionProperties": [],
@@ -2228,7 +2227,7 @@
       {
         "file": "assets/NorthMock6.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NorthMock6.png\"}",
         "name": "NorthMock6",
         "smoothed": true,
         "userAdded": false
@@ -2262,6 +2261,46 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "NewSprite3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/SouthMock.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/SouthMock.png\"}",
+        "name": "SouthMock",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/EastMock4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "EastMock4",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/WestMock.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "WestMock",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "GnollSoldier.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "GnollSoldier.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "GnollSoldier.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "GnollSoldier.png",
         "smoothed": true,
         "userAdded": false
       }
