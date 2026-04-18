@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.3010461197182484,
+    "zoomFactor": 0.4335774304702412,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -73,6 +73,14 @@
         },
         {
           "name": "AreaEast"
+        }
+      ]
+    },
+    {
+      "name": "Enemies",
+      "objects": [
+        {
+          "name": "BasicGnoll"
         }
       ]
     }
@@ -142,8 +150,8 @@
       "name": "FlagWest",
       "persistentUuid": "54b59954-ec52-4a5e-bb24-7caca13c958a",
       "width": 0,
-      "x": 594,
-      "y": 877,
+      "x": 587,
+      "y": 886,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -159,8 +167,8 @@
       "name": "Bell",
       "persistentUuid": "f9cddada-8438-4e96-8060-45876d7a8c96",
       "width": 172,
-      "x": 1292,
-      "y": 820,
+      "x": 1451,
+      "y": 855,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -175,8 +183,8 @@
       "name": "Gong",
       "persistentUuid": "d083090d-df7d-4062-af73-443efc7dda80",
       "width": 0,
-      "x": 1547,
-      "y": 820,
+      "x": 1648,
+      "y": 863,
       "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
@@ -264,6 +272,54 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "PlayArea",
+      "persistentUuid": "11a0eb92-15ed-47b4-9c40-057511ebdeb2",
+      "width": 0,
+      "x": 1304,
+      "y": 45,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Trajectory",
+      "persistentUuid": "4740b835-4092-4610-9fbb-0ef9a27abe29",
+      "width": 0,
+      "x": 621,
+      "y": -97,
+      "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "GnollSpawnerEast",
+      "persistentUuid": "6889538f-323f-478b-a200-658c260e708b",
+      "width": 0,
+      "x": 790,
+      "y": 228,
+      "zOrder": 18,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -278,9 +334,9 @@
       "effects": [],
       "behaviors": [
         {
-          "checkCollisionMask": true,
           "name": "Draggable",
-          "type": "DraggableBehavior::Draggable"
+          "type": "DraggableBehavior::Draggable",
+          "checkCollisionMask": true
         }
       ],
       "animations": [
@@ -345,9 +401,9 @@
       "effects": [],
       "behaviors": [
         {
-          "checkCollisionMask": true,
           "name": "Draggable",
-          "type": "DraggableBehavior::Draggable"
+          "type": "DraggableBehavior::Draggable",
+          "checkCollisionMask": true
         }
       ],
       "animations": [
@@ -412,9 +468,9 @@
       "effects": [],
       "behaviors": [
         {
-          "checkCollisionMask": true,
           "name": "Draggable",
-          "type": "DraggableBehavior::Draggable"
+          "type": "DraggableBehavior::Draggable",
+          "checkCollisionMask": true
         }
       ],
       "animations": [
@@ -479,9 +535,9 @@
       "effects": [],
       "behaviors": [
         {
-          "checkCollisionMask": true,
           "name": "Draggable",
-          "type": "DraggableBehavior::Draggable"
+          "type": "DraggableBehavior::Draggable",
+          "checkCollisionMask": true
         }
       ],
       "animations": [
@@ -546,9 +602,9 @@
       "effects": [],
       "behaviors": [
         {
-          "checkCollisionMask": true,
           "name": "Draggable",
-          "type": "DraggableBehavior::Draggable"
+          "type": "DraggableBehavior::Draggable",
+          "checkCollisionMask": true
         }
       ],
       "animations": [
@@ -613,9 +669,9 @@
       "effects": [],
       "behaviors": [
         {
-          "checkCollisionMask": true,
           "name": "Draggable",
-          "type": "DraggableBehavior::Draggable"
+          "type": "DraggableBehavior::Draggable",
+          "checkCollisionMask": true
         }
       ],
       "animations": [
@@ -978,6 +1034,226 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "PlayArea",
+      "persistentUuid": "63fa7916-8793-48c3-a911-ad6fcf26725e",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "PlayArea",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "PlayArea3",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 600,
+                        "y": 0
+                      },
+                      {
+                        "x": 600,
+                        "y": 200
+                      },
+                      {
+                        "x": 0,
+                        "y": 200
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "BasicGnoll",
+      "persistentUuid": "2ee68a9d-6fa5-4cd1-901b-3ab7e99c2e58",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "gnollSpeed",
+          "type": "number",
+          "value": 100
+        },
+        {
+          "name": "gnollAttackRate",
+          "type": "number",
+          "value": 1
+        },
+        {
+          "name": "gnollDamage",
+          "type": "number",
+          "value": 1
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "SpeedPathMovement",
+          "type": "CurvedMovement::SpeedPathMovement",
+          "Rotation": false,
+          "RotationOffset": 0,
+          "Speed": 0,
+          "PathOriginX": 2.0247e-320,
+          "PathOriginY": 2.0247e-320,
+          "PathName": "",
+          "TargetedSpeed": 0,
+          "Acceleration": 0,
+          "DrawingElementIndex": 0,
+          "X": 2.0247e-320,
+          "Y": 2.0247e-320,
+          "PathAngle": 2.0247e-320,
+          "PathScale": 2.0247e-320,
+          "RepetitionCount": 2.0247e-320,
+          "ShouldLoop": false,
+          "DrawingPathOriginX": 2.0247e-320,
+          "DrawingPathOriginY": 2.0247e-320,
+          "DebugLineStrokeWidth": 2.0247e-320,
+          "PreviousSpeed": 2.0247e-320,
+          "CurrentLength": 2.0247e-320,
+          "IsLookingBack": false,
+          "Viewpoint": "Top-Down"
+        }
+      ],
+      "animations": [
+        {
+          "name": "GnollPlaceholder",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite3",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 0
+                      },
+                      {
+                        "x": 23,
+                        "y": 0
+                      },
+                      {
+                        "x": 23,
+                        "y": 31
+                      },
+                      {
+                        "x": 3,
+                        "y": 31
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "Trajectory",
+      "persistentUuid": "d7be34e9-85d9-40e9-881c-ac7bfa7570e2",
+      "type": "PrimitiveDrawing::Drawer",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "fillOpacity": 255,
+      "outlineSize": 1,
+      "outlineOpacity": 255,
+      "absoluteCoordinates": false,
+      "clearBetweenFrames": true,
+      "antialiasing": "none",
+      "fillColor": {
+        "r": 255,
+        "g": 255,
+        "b": 255
+      },
+      "outlineColor": {
+        "r": 0,
+        "g": 0,
+        "b": 0
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "GnollSpawnerEast",
+      "persistentUuid": "6ea9217c-0a97-4699-9c67-4ef7669dd2ad",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "SpawnRate",
+          "type": "number",
+          "value": 5
+        },
+        {
+          "name": "SpawnAmount",
+          "type": "number",
+          "value": 1
+        },
+        {
+          "name": "SpawnDifficulty",
+          "type": "number",
+          "value": 1
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": []
     }
   ],
   "objectsFolderStructure": {
@@ -1015,6 +1291,18 @@
       },
       {
         "objectName": "ButtonLeft"
+      },
+      {
+        "objectName": "PlayArea"
+      },
+      {
+        "objectName": "BasicGnoll"
+      },
+      {
+        "objectName": "Trajectory"
+      },
+      {
+        "objectName": "GnollSpawnerEast"
       }
     ]
   },
@@ -1074,6 +1362,26 @@
             "AreaNorth.CenterY() + AreaOffset",
             "\"Background\"",
             "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "CurvedMovement::CreatePathFromSvg"
+          },
+          "parameters": [
+            "",
+            "\"TestPath\"",
+            "\"m112.34 12.638c-43.532 48.447-57.574 74.074-10.532 101.81 47.043 27.734 71.266-9.8298 89.17-38.968 17.904-29.138 47.043-81.096 80.394-63.543 33.351 17.553 211.69 36.862 147.45 87.415-64.245 50.553-201.86 15.798-205.72 66-3.8617 50.202 81.096 7.7234 77.936 35.457s-3.1596 31.596-3.1596 31.596\"",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ResetTimer"
+          },
+          "parameters": [
+            "",
+            "\"SpawnTimerEast\""
           ]
         }
       ]
@@ -1391,18 +1699,6 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "TO DO: snap back to hud"
-        },
-        {
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
           "comment": "TO DO: snap to usage position"
         },
         {
@@ -1410,99 +1706,178 @@
           "conditions": [
             {
               "type": {
-                "value": "CollisionNP"
+                "value": "BuiltinCommonInstructions::Or"
               },
-              "parameters": [
-                "Flags",
-                "Areas",
-                "",
-                "",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Items",
-                "Areas",
-                "",
-                "",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "inverted": true,
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Flags",
-                "HUD",
-                "",
-                "",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "inverted": true,
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Items",
-                "HUD",
-                "",
-                "",
-                ""
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "DraggableBehavior::Dropped"
+                  },
+                  "parameters": [
+                    "Flags",
+                    "Draggable"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "DraggableBehavior::Dropped"
+                  },
+                  "parameters": [
+                    "Items",
+                    "Draggable"
+                  ]
+                }
               ]
             }
           ],
-          "actions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySoundOnChannel"
+              },
+              "parameters": [
+                "",
+                "beep.wav",
+                "1",
+                "",
+                "50",
+                "1"
+              ]
+            }
+          ],
           "events": [
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "name": "Snap to Play Area",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [],
+              "parameters": []
+            },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "value": "BuiltinCommonInstructions::Or"
+                    "value": "CollisionNP"
                   },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "value": "DraggableBehavior::Dropped"
-                      },
-                      "parameters": [
-                        "Flags",
-                        "Draggable"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "DraggableBehavior::Dropped"
-                      },
-                      "parameters": [
-                        "Items",
-                        "Draggable"
-                      ]
-                    }
+                  "parameters": [
+                    "Flags",
+                    "Areas",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Flags",
+                    "HUD",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": []
+            },
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "name": "Snap to HUD",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [],
+              "parameters": []
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Flags",
+                    "Areas",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Flags",
+                    "HUD",
+                    "",
+                    "",
+                    ""
                   ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "value": "PlaySoundOnChannel"
+                    "value": "SetY"
                   },
                   "parameters": [
+                    "Flags",
+                    "=",
+                    "ScreenHeight() - AreaOffset "
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Items",
+                    "Areas",
                     "",
-                    "beep.wav",
-                    "1",
                     "",
-                    "100",
-                    "1"
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Items",
+                    "HUD",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetY"
+                  },
+                  "parameters": [
+                    "Items",
+                    "=",
+                    "ScreenHeight() - AreaOffset "
                   ]
                 }
               ]
@@ -1532,6 +1907,23 @@
             "textR": 0
           },
           "comment": "TO DO: enemy movement"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "CurvedMovement::SpeedPathMovement::DrawDebug"
+              },
+              "parameters": [
+                "BasicGnoll",
+                "SpeedPathMovement",
+                "Trajectory",
+                ""
+              ]
+            }
+          ]
         },
         {
           "type": "BuiltinCommonInstructions::Comment",
@@ -1569,6 +1961,78 @@
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"SpawnTimerEast\"",
+                ">=",
+                "GnollSpawnerEast.SpawnRate"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "BasicGnoll",
+                "GnollSpawnerEast.X()",
+                "GnollSpawnerEast.Y()",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "CurvedMovement::SpeedPathMovement::SetPath"
+                  },
+                  "parameters": [
+                    "BasicGnoll",
+                    "SpeedPathMovement",
+                    "\"TestPath\"",
+                    "1",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CurvedMovement::SpeedPathMovement::SetSpeed"
+                  },
+                  "parameters": [
+                    "BasicGnoll",
+                    "SpeedPathMovement",
+                    "=",
+                    "BasicGnoll.gnollSpeed",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"SpawnTimerEast\""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
         {
           "type": "BuiltinCommonInstructions::Comment",
           "color": {
@@ -1766,6 +2230,10 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "SpeedPathMovement",
+      "type": "CurvedMovement::SpeedPathMovement"
     }
   ]
 }

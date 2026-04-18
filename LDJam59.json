@@ -1,7 +1,7 @@
 {
   "firstLayout": "Intro Scene",
   "gdVersion": {
-    "build": 266,
+    "build": 260,
     "major": 5,
     "minor": 6,
     "revision": 0
@@ -87,6 +87,7 @@
     "playableDevices": [
       "keyboard",
       "gamepad",
+      "mobile",
       "mobile"
     ],
     "extensionProperties": [],
@@ -2231,6 +2232,38 @@
         "name": "NorthMock6",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/PlayArea.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "PlayArea",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/PlayArea2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "PlayArea2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/PlayArea3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "PlayArea3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite3",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
@@ -2393,6 +2426,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/camerashake"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/curvedmovement"
     }
   ],
   "externalLayouts": []

@@ -46,23 +46,34 @@ Project developed during the Ludum Dare #59. The project was based on the theme 
 
 <h2 id="started">📌 About  </h2>
 
-== Write here the subject of the game.
+Title: See Gnolls
+
+The game is about managing a watch tower where you have to **see gnolls**. The gnolls come in waves and your job is to warn the village about what is coming from where. The goal is to resist the attacks by correctly warning the village through signals (flags, horns, torches, etc), where each signal has a meaning that you, as a player, have to remember and the complexity increases at every wave.
+
+### Controls
+- Drag and drop for the items
+- Dragging an item up activates it
+- You can drag around the items to rearrange them in your watch tower.
+
+### Features
+- The player view is alternated between 4 cardinal positions.
+- The background should have defining features to indicate the compass direction (ex.: mountain for north, lake for east, etc).
+
+### Gameplay Loop
+- The player is introduced to the task and the rules.
+- A day begins. Waves comes.
+- Player warns about dangers. The village dispatch appropriate response
+- 
+
 
 <p>Visit our project, clicking on the button bellow</p>
 
-[![itch.io][ITCHIO__BADGE]](https://games-ever-made.itch.io/overpowered?secret=PbdAZeyWql0jcwVfFGzCQfazhU)
+[![itch.io][ITCHIO__BADGE]](https://games-ever-made.itch.io/)
 
 <br/>
 <h2 id="controls">🎛️ Controls </h2>
 
-|     🕹️ Input |      ⌨️ Input      | Description        |
-| -----------: | :----------------: | :----------------- |
-|  Left Analog |     W, A, S, D     | Movement           |
-| Right Analog |   Mouse movement   | Aim                |
-|            A |      E button      | Action Interaction |
-|            B |     Space bar      | Dash               |
-|            X | Left Mouse Button  | Meelee attack      |
-|            Y | Right Mouse Button | Ranged Attack      |
+
 
 <br/>
 
@@ -153,7 +164,7 @@ Here is our Special Thanks and Aknowledges for all of those who help us developi
 
 ```cs
  {
-    "plataform":"GDeveloper",
+    "plataform":"GDevelop",
     "portal":"Itch.io",
     "graph":"krita",
  }
