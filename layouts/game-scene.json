@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.3216911764705918,
+    "zoomFactor": 0.34375202416123507,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -83,11 +83,43 @@
           "name": "GnollSoldier"
         }
       ]
+    },
+    {
+      "name": "Spawners",
+      "objects": [
+        {
+          "name": "GnollSpawnerEast"
+        },
+        {
+          "name": "GnollSpawnerNorth"
+        },
+        {
+          "name": "GnollSpawnerSouth"
+        },
+        {
+          "name": "GnollSpawnerWest"
+        }
+      ]
     }
   ],
   "variables": [
     {
       "name": "AreaOffset",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "LevelSpawnRate",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "LevelAmount",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "LevelDifficulty",
       "type": "number",
       "value": 0
     }
@@ -243,7 +275,7 @@
       "angle": 0,
       "customSize": true,
       "depth": 3,
-      "height": 841,
+      "height": 808,
       "keepRatio": true,
       "layer": "Background",
       "name": "AreaEast",
@@ -260,7 +292,7 @@
       "angle": 0,
       "customSize": true,
       "depth": 3,
-      "height": 901,
+      "height": 829,
       "keepRatio": true,
       "layer": "Background",
       "name": "AreaNorth",
@@ -275,16 +307,17 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 140,
       "keepRatio": true,
-      "layer": "",
-      "name": "PlayArea",
+      "layer": "UI",
+      "name": "Go",
       "persistentUuid": "11a0eb92-15ed-47b4-9c40-057511ebdeb2",
-      "width": 0,
-      "x": 1304,
-      "y": 45,
-      "zOrder": 15,
+      "width": 146,
+      "x": 1774,
+      "y": -3,
+      "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -307,25 +340,9 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "GnollSpawnerEast",
-      "persistentUuid": "6889538f-323f-478b-a200-658c260e708b",
-      "width": 0,
-      "x": 122,
-      "y": 41,
-      "zOrder": 18,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
       "customSize": true,
       "depth": 3,
-      "height": 827,
+      "height": 741,
       "keepRatio": true,
       "layer": "Background",
       "name": "AreaSouth",
@@ -342,7 +359,7 @@
       "angle": 0,
       "customSize": true,
       "depth": 3,
-      "height": 846,
+      "height": 760,
       "keepRatio": true,
       "layer": "Background",
       "name": "AreaWest",
@@ -351,6 +368,70 @@
       "x": -36,
       "y": 1205,
       "zOrder": 20,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "GnollSpawnerNorth",
+      "persistentUuid": "4c15201d-df24-4e2b-ac10-a034cba2689d",
+      "width": 0,
+      "x": 94,
+      "y": 52,
+      "zOrder": 21,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "GnollSpawnerEast",
+      "persistentUuid": "d275c2b0-ce7d-4d72-8f13-bec1178600bb",
+      "width": 0,
+      "x": 3304,
+      "y": 130,
+      "zOrder": 22,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "GnollSpawnerSouth",
+      "persistentUuid": "9ad4a7e0-b2c5-445f-9c47-5619fe2f9d4e",
+      "width": 0,
+      "x": 2533,
+      "y": 1255,
+      "zOrder": 23,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "GnollSpawnerWest",
+      "persistentUuid": "2ebb5336-c68c-47cf-8ca5-807382279094",
+      "width": 0,
+      "x": 522,
+      "y": 1516,
+      "zOrder": 24,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -364,7 +445,13 @@
       "persistentUuid": "a2f5033f-9c6b-4ebb-9efa-76a9b6711223",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "name": "IsSelected",
+          "type": "boolean",
+          "value": false
+        }
+      ],
       "effects": [],
       "behaviors": [
         {
@@ -431,7 +518,13 @@
       "persistentUuid": "f8f8f1c8-88c8-4bb3-ae73-19e1fe98f376",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "name": "IsSelected",
+          "type": "boolean",
+          "value": false
+        }
+      ],
       "effects": [],
       "behaviors": [
         {
@@ -498,7 +591,13 @@
       "persistentUuid": "8f1d9832-3eb5-4532-ae45-107f0ff8e344",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "name": "IsSelected",
+          "type": "boolean",
+          "value": false
+        }
+      ],
       "effects": [],
       "behaviors": [
         {
@@ -565,7 +664,13 @@
       "persistentUuid": "f0f88f49-a2b7-4571-9496-47bae1309351",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "name": "IsSelected",
+          "type": "boolean",
+          "value": false
+        }
+      ],
       "effects": [],
       "behaviors": [
         {
@@ -632,7 +737,13 @@
       "persistentUuid": "f5e99343-e0ea-4fea-88a1-eb86b54fe399",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "name": "IsSelected",
+          "type": "boolean",
+          "value": false
+        }
+      ],
       "effects": [],
       "behaviors": [
         {
@@ -699,7 +810,13 @@
       "persistentUuid": "cefb97bb-ffcf-40ff-8909-3859854ba778",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "name": "IsSelected",
+          "type": "boolean",
+          "value": false
+        }
+      ],
       "effects": [],
       "behaviors": [
         {
@@ -1072,7 +1189,7 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "PlayArea",
+      "name": "Go",
       "persistentUuid": "63fa7916-8793-48c3-a911-ad6fcf26725e",
       "type": "Sprite",
       "updateIfNotVisible": false,
@@ -1411,40 +1528,134 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "GnollSpawnerNorth",
+      "persistentUuid": "e39fa82f-effe-4964-a5e5-85f714cb16fc",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "SpawnRate",
+          "type": "number",
+          "value": 5
+        },
+        {
+          "name": "SpawnAmount",
+          "type": "number",
+          "value": 1
+        },
+        {
+          "name": "SpawnDifficulty",
+          "type": "number",
+          "value": 1
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": []
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "GnollSpawnerSouth",
+      "persistentUuid": "d12653d0-6c72-4475-b682-f1174a297648",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "SpawnRate",
+          "type": "number",
+          "value": 5
+        },
+        {
+          "name": "SpawnAmount",
+          "type": "number",
+          "value": 1
+        },
+        {
+          "name": "SpawnDifficulty",
+          "type": "number",
+          "value": 1
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": []
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "GnollSpawnerWest",
+      "persistentUuid": "49764a5f-4bfd-41e2-83fe-dad6f9089df9",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "SpawnRate",
+          "type": "number",
+          "value": 5
+        },
+        {
+          "name": "SpawnAmount",
+          "type": "number",
+          "value": 1
+        },
+        {
+          "name": "SpawnDifficulty",
+          "type": "number",
+          "value": 1
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": []
     }
   ],
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
       {
-        "objectName": "FlagNorth"
+        "folderName": "Backgrounds",
+        "children": [
+          {
+            "objectName": "AreaWest"
+          },
+          {
+            "objectName": "AreaSouth"
+          },
+          {
+            "objectName": "AreaEast"
+          },
+          {
+            "objectName": "AreaNorth"
+          }
+        ]
       },
       {
-        "objectName": "FlagEast"
-      },
-      {
-        "objectName": "FlagSouth"
-      },
-      {
-        "objectName": "FlagWest"
-      },
-      {
-        "objectName": "Bell"
-      },
-      {
-        "objectName": "Gong"
-      },
-      {
-        "objectName": "AreaNorth"
-      },
-      {
-        "objectName": "AreaEast"
-      },
-      {
-        "objectName": "AreaSouth"
-      },
-      {
-        "objectName": "AreaWest"
+        "folderName": "Flags and items",
+        "children": [
+          {
+            "objectName": "Gong"
+          },
+          {
+            "objectName": "Bell"
+          },
+          {
+            "objectName": "FlagWest"
+          },
+          {
+            "objectName": "FlagSouth"
+          },
+          {
+            "objectName": "FlagEast"
+          },
+          {
+            "objectName": "FlagNorth"
+          }
+        ]
       },
       {
         "objectName": "HUD"
@@ -1456,7 +1667,7 @@
         "objectName": "ButtonLeft"
       },
       {
-        "objectName": "PlayArea"
+        "objectName": "Go"
       },
       {
         "objectName": "GnollSoldier"
@@ -1465,7 +1676,16 @@
         "objectName": "Trajectory"
       },
       {
+        "objectName": "GnollSpawnerNorth"
+      },
+      {
         "objectName": "GnollSpawnerEast"
+      },
+      {
+        "objectName": "GnollSpawnerSouth"
+      },
+      {
+        "objectName": "GnollSpawnerWest"
       }
     ]
   },
@@ -1546,8 +1766,39 @@
             "",
             "\"SpawnTimerEast\""
           ]
+        },
+        {
+          "type": {
+            "value": "ResetTimer"
+          },
+          "parameters": [
+            "",
+            "\"SpawnTimerLevel\""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "LevelSpawnRate",
+            "=",
+            "5"
+          ]
         }
       ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "TO DO: Check level and adjust spawn rates, difficulty etc"
     },
     {
       "colorB": 228,
@@ -1983,18 +2234,6 @@
                   ]
                 }
               ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Comment",
-              "color": {
-                "b": 109,
-                "g": 230,
-                "r": 255,
-                "textB": 0,
-                "textG": 0,
-                "textR": 0
-              },
-              "comment": "TO DO: add 2 more positions"
             }
           ]
         }
@@ -2010,18 +2249,6 @@
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
-        {
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "TO DO: snap to usage position"
-        },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -2108,7 +2335,148 @@
                   ]
                 }
               ],
-              "actions": []
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Flags",
+                    "IsSelected",
+                    "True",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Flags",
+                    "Areas",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Flags",
+                    "HUD",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Flags",
+                    "IsSelected",
+                    "False",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Items",
+                    "Areas",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Items",
+                    "HUD",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Items",
+                    "IsSelected",
+                    "True",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Items",
+                    "Areas",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Items",
+                    "HUD",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Items",
+                    "IsSelected",
+                    "False",
+                    ""
+                  ]
+                }
+              ]
             },
             {
               "colorB": 228,
@@ -2159,6 +2527,17 @@
                     "=",
                     "ScreenHeight() - AreaOffset "
                   ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Flags",
+                    "IsSelected",
+                    "False",
+                    ""
+                  ]
                 }
               ]
             },
@@ -2199,6 +2578,17 @@
                     "Items",
                     "=",
                     "ScreenHeight() - AreaOffset "
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Items",
+                    "IsSelected",
+                    "False",
+                    ""
                   ]
                 }
               ]
@@ -2291,9 +2681,18 @@
               },
               "parameters": [
                 "",
-                "\"SpawnTimerEast\"",
+                "\"SpawnTimerLevel\"",
                 ">=",
-                "GnollSpawnerEast.SpawnRate"
+                "LevelSpawnRate"
+              ]
+            },
+            {
+              "type": {
+                "value": "PickRandomInstance"
+              },
+              "parameters": [
+                "",
+                "Spawners"
               ]
             }
           ],
@@ -2305,32 +2704,8 @@
               "parameters": [
                 "",
                 "GnollSoldier",
-                "GnollSpawnerEast.X()",
-                "GnollSpawnerEast.Y()",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "GnollSoldier",
-                "GnollSpawnerEast.X()+15",
-                "GnollSpawnerEast.Y()+26",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "GnollSoldier",
-                "GnollSpawnerEast.X()-22",
-                "GnollSpawnerEast.Y()-18",
+                "Spawners.X()",
+                "Spawners.Y()",
                 ""
               ]
             },
@@ -2388,24 +2763,156 @@
                   },
                   "parameters": [
                     "",
-                    "\"SpawnTimerEast\""
+                    "\"SpawnTimerLevel\""
                   ]
                 }
               ]
             }
           ]
-        },
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Player attack",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
         {
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "TO DO: spawner"
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "IsCursorOnObject"
+              },
+              "parameters": [
+                "Go",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MouseButtonFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PickAllInstances"
+                  },
+                  "parameters": [
+                    "",
+                    "Flags"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Flags",
+                    "IsSelected",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlaySoundOnChannel"
+                  },
+                  "parameters": [
+                    "",
+                    "beep.wav",
+                    "1",
+                    "",
+                    "100",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Se tiver mais de 1 flag ou mais de 1 item -> falhar"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PickAllInstances"
+                  },
+                  "parameters": [
+                    "",
+                    "Flags"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Flags",
+                    "IsSelected",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlaySoundOnChannel"
+                  },
+                  "parameters": [
+                    "",
+                    "beep.wav",
+                    "1",
+                    "",
+                    "100",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Se tiver bandeira X e item Gongo matar gnolls na tela X"
+            }
+          ]
         }
       ],
       "parameters": []
