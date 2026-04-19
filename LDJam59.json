@@ -2361,6 +2361,104 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "UI_base.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "UI_base.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "FlagWest.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "FlagWest.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "FlagSouth.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "FlagSouth.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "FlagEast.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "FlagEast.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "FlagNorth.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "FlagNorth.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Gong.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Gong.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Torch.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Torch.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "GnollSoldier2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "GnollSoldier2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Wrong.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Wrong.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite4",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Manual.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Manual",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Manual2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Manual2.png\"}",
+        "name": "Manual2",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
@@ -2531,6 +2629,14 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/panelspritecontinuousbar"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/flash"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/shakeobject"
     }
   ],
   "externalLayouts": []

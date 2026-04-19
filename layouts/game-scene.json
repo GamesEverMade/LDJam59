@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.3797121001947973,
+    "zoomFactor": 0.1770859527754408,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -47,10 +47,13 @@
       "name": "Items",
       "objects": [
         {
-          "name": "Bell"
+          "name": "Torch"
         },
         {
           "name": "Gong"
+        },
+        {
+          "name": "Manual"
         }
       ]
     },
@@ -142,20 +145,31 @@
       "name": "PlayerHealth",
       "type": "number",
       "value": 20
+    },
+    {
+      "name": "SelectedAttack",
+      "type": "string",
+      "value": ""
+    },
+    {
+      "name": "ShakeAmount",
+      "type": "number",
+      "value": 0
     }
   ],
   "instances": [
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 207,
       "keepRatio": true,
       "layer": "UI",
       "name": "FlagNorth",
       "persistentUuid": "45233075-d224-4ebc-a1a3-ce90787fcc61",
-      "width": 0,
-      "x": 54,
-      "y": 880,
+      "width": 207,
+      "x": 19,
+      "y": 849,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -163,15 +177,16 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 207,
       "keepRatio": true,
       "layer": "UI",
       "name": "FlagEast",
       "persistentUuid": "12fca4f7-afbb-48b5-839d-d76fe5f8db06",
-      "width": 0,
-      "x": 239,
-      "y": 881,
+      "width": 207,
+      "x": 250,
+      "y": 851,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -179,15 +194,16 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 207,
       "keepRatio": true,
       "layer": "UI",
       "name": "FlagSouth",
       "persistentUuid": "f8aa48ab-1507-4f1c-8894-8854c854a803",
-      "width": 0,
-      "x": 423,
-      "y": 887,
+      "width": 207,
+      "x": 465,
+      "y": 845,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
@@ -195,15 +211,16 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 207,
       "keepRatio": true,
       "layer": "UI",
       "name": "FlagWest",
       "persistentUuid": "54b59954-ec52-4a5e-bb24-7caca13c958a",
-      "width": 0,
-      "x": 587,
-      "y": 886,
+      "width": 207,
+      "x": 697,
+      "y": 848,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -213,34 +230,24 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 214,
-      "keepRatio": true,
-      "layer": "UI",
-      "name": "Bell",
-      "persistentUuid": "f9cddada-8438-4e96-8060-45876d7a8c96",
-      "width": 172,
-      "x": 1451,
-      "y": 855,
-      "zOrder": 5,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "height": 207,
       "keepRatio": true,
       "layer": "UI",
       "name": "Gong",
       "persistentUuid": "d083090d-df7d-4062-af73-443efc7dda80",
-      "width": 0,
-      "x": 1648,
-      "y": 863,
+      "width": 207,
+      "x": 1696,
+      "y": 837,
       "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "StrongAgainst",
+          "type": "string",
+          "value": "\"Archer\""
+        }
+      ]
     },
     {
       "angle": 0,
@@ -249,7 +256,7 @@
       "height": 285,
       "keepRatio": true,
       "layer": "HUD",
-      "name": "HUD",
+      "name": "UIBase",
       "persistentUuid": "4100aeff-5f23-4676-81ba-493f7ef9f093",
       "width": 1957,
       "x": -1,
@@ -401,8 +408,8 @@
       "name": "GnollSpawnerNorth",
       "persistentUuid": "4c15201d-df24-4e2b-ac10-a034cba2689d",
       "width": 0,
-      "x": 94,
-      "y": 52,
+      "x": 246,
+      "y": 221,
       "zOrder": 21,
       "numberProperties": [],
       "stringProperties": [],
@@ -417,8 +424,8 @@
       "name": "GnollSpawnerEast",
       "persistentUuid": "d275c2b0-ce7d-4d72-8f13-bec1178600bb",
       "width": 0,
-      "x": 3304,
-      "y": 130,
+      "x": 3146,
+      "y": 253,
       "zOrder": 22,
       "numberProperties": [],
       "stringProperties": [],
@@ -433,8 +440,8 @@
       "name": "GnollSpawnerSouth",
       "persistentUuid": "9ad4a7e0-b2c5-445f-9c47-5619fe2f9d4e",
       "width": 0,
-      "x": 2533,
-      "y": 1255,
+      "x": 2621,
+      "y": 1418,
       "zOrder": 23,
       "numberProperties": [],
       "stringProperties": [],
@@ -449,8 +456,8 @@
       "name": "GnollSpawnerWest",
       "persistentUuid": "2ebb5336-c68c-47cf-8ca5-807382279094",
       "width": 0,
-      "x": 522,
-      "y": 1516,
+      "x": 493,
+      "y": 1417,
       "zOrder": 24,
       "numberProperties": [],
       "stringProperties": [],
@@ -487,6 +494,46 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 207,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "Torch",
+      "persistentUuid": "30bc1245-ce3e-44a2-bc8f-c4093390337d",
+      "width": 207,
+      "x": 1477,
+      "y": 842,
+      "zOrder": 27,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "StrongAgainst",
+          "type": "string",
+          "value": "\"Soldier\""
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 3,
+      "height": 188,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "Manual",
+      "persistentUuid": "586c3f93-bd0d-4c3f-adb2-a7b07dc8fc46",
+      "width": 188,
+      "x": 961,
+      "y": 852,
+      "zOrder": 28,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -515,6 +562,11 @@
           "name": "Draggable",
           "type": "DraggableBehavior::Draggable",
           "checkCollisionMask": true
+        },
+        {
+          "name": "ShakeObject_PositionAngleScale",
+          "type": "ShakeObject::ShakeObject_PositionAngleScale",
+          "Scale": "Scale"
         }
       ],
       "animations": [
@@ -528,7 +580,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "FlagNorth.jpg",
+                  "image": "FlagNorth.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -544,20 +596,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0,
-                        "y": 0
+                        "x": 40,
+                        "y": 23
                       },
                       {
-                        "x": 144,
-                        "y": 0
+                        "x": 465,
+                        "y": 23
                       },
                       {
-                        "x": 144,
-                        "y": 172
+                        "x": 465,
+                        "y": 488
                       },
                       {
-                        "x": 0,
-                        "y": 172
+                        "x": 40,
+                        "y": 488
                       }
                     ]
                   ]
@@ -593,6 +645,11 @@
           "name": "Draggable",
           "type": "DraggableBehavior::Draggable",
           "checkCollisionMask": true
+        },
+        {
+          "name": "ShakeObject_PositionAngleScale",
+          "type": "ShakeObject::ShakeObject_PositionAngleScale",
+          "Scale": "Scale"
         }
       ],
       "animations": [
@@ -606,7 +663,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "FlagEast.jpg",
+                  "image": "FlagEast.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -622,20 +679,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0,
-                        "y": 0
+                        "x": 40,
+                        "y": 23
                       },
                       {
-                        "x": 140,
-                        "y": 0
+                        "x": 465,
+                        "y": 23
                       },
                       {
-                        "x": 140,
-                        "y": 158
+                        "x": 465,
+                        "y": 488
                       },
                       {
-                        "x": 0,
-                        "y": 158
+                        "x": 40,
+                        "y": 488
                       }
                     ]
                   ]
@@ -671,6 +728,11 @@
           "name": "Draggable",
           "type": "DraggableBehavior::Draggable",
           "checkCollisionMask": true
+        },
+        {
+          "name": "ShakeObject_PositionAngleScale",
+          "type": "ShakeObject::ShakeObject_PositionAngleScale",
+          "Scale": "Scale"
         }
       ],
       "animations": [
@@ -684,7 +746,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "FlagSouth.jpg",
+                  "image": "FlagSouth.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -700,20 +762,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0,
-                        "y": 0
+                        "x": 40,
+                        "y": 23
                       },
                       {
-                        "x": 134,
-                        "y": 0
+                        "x": 465,
+                        "y": 23
                       },
                       {
-                        "x": 134,
-                        "y": 158
+                        "x": 465,
+                        "y": 488
                       },
                       {
-                        "x": 0,
-                        "y": 158
+                        "x": 40,
+                        "y": 488
                       }
                     ]
                   ]
@@ -749,6 +811,11 @@
           "name": "Draggable",
           "type": "DraggableBehavior::Draggable",
           "checkCollisionMask": true
+        },
+        {
+          "name": "ShakeObject_PositionAngleScale",
+          "type": "ShakeObject::ShakeObject_PositionAngleScale",
+          "Scale": "Scale"
         }
       ],
       "animations": [
@@ -762,7 +829,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "FlagWest.jpg",
+                  "image": "FlagWest.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -778,20 +845,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0,
-                        "y": 0
+                        "x": 40,
+                        "y": 23
                       },
                       {
-                        "x": 148,
-                        "y": 0
+                        "x": 465,
+                        "y": 23
                       },
                       {
-                        "x": 148,
-                        "y": 168
+                        "x": 465,
+                        "y": 488
                       },
                       {
-                        "x": 0,
-                        "y": 168
+                        "x": 40,
+                        "y": 488
                       }
                     ]
                   ]
@@ -805,7 +872,7 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "Bell",
+      "name": "Torch",
       "persistentUuid": "f5e99343-e0ea-4fea-88a1-eb86b54fe399",
       "type": "Sprite",
       "updateIfNotVisible": false,
@@ -821,12 +888,35 @@
           "value": ""
         }
       ],
-      "effects": [],
+      "effects": [
+        {
+          "disabled": true,
+          "effectType": "Shockwave",
+          "name": "Effect",
+          "doubleParameters": {
+            "amplitude": 50,
+            "brightness": 1,
+            "centerX": 0.5,
+            "centerY": 0.5,
+            "radius": 0,
+            "speed": 500,
+            "time": 0,
+            "wavelength": 200
+          },
+          "stringParameters": {},
+          "booleanParameters": {}
+        }
+      ],
       "behaviors": [
         {
           "name": "Draggable",
           "type": "DraggableBehavior::Draggable",
           "checkCollisionMask": true
+        },
+        {
+          "name": "ShakeObject_PositionAngleScale",
+          "type": "ShakeObject::ShakeObject_PositionAngleScale",
+          "Scale": "Scale"
         }
       ],
       "animations": [
@@ -840,7 +930,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Bell.jpg",
+                  "image": "Torch.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -856,20 +946,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0,
-                        "y": 0
+                        "x": 89,
+                        "y": 39
                       },
                       {
-                        "x": 176,
-                        "y": 0
+                        "x": 454,
+                        "y": 39
                       },
                       {
-                        "x": 176,
-                        "y": 214
+                        "x": 454,
+                        "y": 467
                       },
                       {
-                        "x": 0,
-                        "y": 214
+                        "x": 89,
+                        "y": 467
                       }
                     ]
                   ]
@@ -899,12 +989,35 @@
           "value": ""
         }
       ],
-      "effects": [],
+      "effects": [
+        {
+          "disabled": true,
+          "effectType": "Shockwave",
+          "name": "Effect",
+          "doubleParameters": {
+            "amplitude": 50,
+            "brightness": 1,
+            "centerX": 0.5,
+            "centerY": 0.5,
+            "radius": 0,
+            "speed": 500,
+            "time": 0,
+            "wavelength": 200
+          },
+          "stringParameters": {},
+          "booleanParameters": {}
+        }
+      ],
       "behaviors": [
         {
           "name": "Draggable",
           "type": "DraggableBehavior::Draggable",
           "checkCollisionMask": true
+        },
+        {
+          "name": "ShakeObject_PositionAngleScale",
+          "type": "ShakeObject::ShakeObject_PositionAngleScale",
+          "Scale": "Scale"
         }
       ],
       "animations": [
@@ -918,7 +1031,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Gong.jpg",
+                  "image": "Gong.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -934,20 +1047,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0,
-                        "y": 0
+                        "x": 42,
+                        "y": 37
                       },
                       {
-                        "x": 242,
-                        "y": 0
+                        "x": 460,
+                        "y": 37
                       },
                       {
-                        "x": 242,
-                        "y": 212
+                        "x": 460,
+                        "y": 482
                       },
                       {
-                        "x": 0,
-                        "y": 212
+                        "x": 42,
+                        "y": 482
                       }
                     ]
                   ]
@@ -1085,7 +1198,7 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "HUD",
+      "name": "UIBase",
       "persistentUuid": "4578fb9c-e531-40b1-8d10-e91232636689",
       "type": "Sprite",
       "updateIfNotVisible": false,
@@ -1094,17 +1207,16 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "NewSprite",
+          "name": "",
           "useMultipleDirections": false,
           "directions": [
             {
               "looping": false,
-              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite2",
+                  "image": "UI_base.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1124,16 +1236,16 @@
                         "y": 0
                       },
                       {
-                        "x": 64,
+                        "x": 1920,
                         "y": 0
                       },
                       {
-                        "x": 64,
-                        "y": 64
+                        "x": 1920,
+                        "y": 250
                       },
                       {
                         "x": 0,
-                        "y": 64
+                        "y": 250
                       }
                     ]
                   ]
@@ -1361,7 +1473,7 @@
         {
           "name": "EnemyType",
           "type": "string",
-          "value": ""
+          "value": "\"Soldier\""
         }
       ],
       "effects": [],
@@ -1395,7 +1507,7 @@
       ],
       "animations": [
         {
-          "name": "GnollPlaceholder",
+          "name": "",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -1404,7 +1516,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "GnollSoldier.png",
+                  "image": "GnollSoldier2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1420,20 +1532,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 14,
-                        "y": 16
+                        "x": 82,
+                        "y": 5
                       },
                       {
-                        "x": 271,
-                        "y": 16
+                        "x": 453,
+                        "y": 5
                       },
                       {
-                        "x": 271,
-                        "y": 351
+                        "x": 453,
+                        "y": 491
                       },
                       {
-                        "x": 14,
-                        "y": 351
+                        "x": 82,
+                        "y": 491
                       }
                     ]
                   ]
@@ -1765,6 +1877,139 @@
         "MaxValue": 20,
         "InitialValue": 20
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "Manual",
+      "persistentUuid": "a88cbd8f-1a31-4cdc-bcbf-a9e014ca0255",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "IsSelected",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "StrongAgainst",
+          "type": "string",
+          "value": ""
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "checkCollisionMask": true,
+          "name": "Draggable",
+          "type": "DraggableBehavior::Draggable"
+        },
+        {
+          "name": "ShakeObject_PositionAngleScale",
+          "type": "ShakeObject::ShakeObject_PositionAngleScale",
+          "Scale": "Scale"
+        }
+      ],
+      "animations": [
+        {
+          "name": "NewSprite",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite4",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 0
+                      },
+                      {
+                        "x": 61,
+                        "y": 0
+                      },
+                      {
+                        "x": 61,
+                        "y": 63
+                      },
+                      {
+                        "x": 2,
+                        "y": 63
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Manual",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Manual2",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 0
+                      },
+                      {
+                        "x": 293.5,
+                        "y": 5.5
+                      },
+                      {
+                        "x": 292.5,
+                        "y": 92
+                      },
+                      {
+                        "x": 3,
+                        "y": 95
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1794,7 +2039,7 @@
             "objectName": "Gong"
           },
           {
-            "objectName": "Bell"
+            "objectName": "Torch"
           },
           {
             "objectName": "FlagWest"
@@ -1811,7 +2056,7 @@
         ]
       },
       {
-        "objectName": "HUD"
+        "objectName": "UIBase"
       },
       {
         "objectName": "ButtonRight"
@@ -1845,6 +2090,9 @@
       },
       {
         "objectName": "AttackCooldown"
+      },
+      {
+        "objectName": "Manual"
       }
     ]
   },
@@ -2004,6 +2252,48 @@
             "",
             "",
             "\"HUD\"",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetY"
+          },
+          "parameters": [
+            "Flags",
+            "=",
+            "ScreenHeight() - AreaOffset "
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanObjectVariable"
+          },
+          "parameters": [
+            "Flags",
+            "IsSelected",
+            "False",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetY"
+          },
+          "parameters": [
+            "Items",
+            "=",
+            "ScreenHeight() - AreaOffset "
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanObjectVariable"
+          },
+          "parameters": [
+            "Items",
+            "IsSelected",
+            "False",
             ""
           ]
         }
@@ -2578,7 +2868,7 @@
                   },
                   "parameters": [
                     "Flags",
-                    "HUD",
+                    "UIBase",
                     "",
                     "",
                     ""
@@ -2621,7 +2911,7 @@
                   },
                   "parameters": [
                     "Flags",
-                    "HUD",
+                    "UIBase",
                     "",
                     "",
                     ""
@@ -2664,7 +2954,7 @@
                   },
                   "parameters": [
                     "Items",
-                    "HUD",
+                    "UIBase",
                     "",
                     "",
                     ""
@@ -2707,7 +2997,7 @@
                   },
                   "parameters": [
                     "Items",
-                    "HUD",
+                    "UIBase",
                     "",
                     "",
                     ""
@@ -2760,7 +3050,7 @@
                   },
                   "parameters": [
                     "Flags",
-                    "HUD",
+                    "UIBase",
                     "",
                     "",
                     ""
@@ -2812,7 +3102,7 @@
                   },
                   "parameters": [
                     "Items",
-                    "HUD",
+                    "UIBase",
                     "",
                     "",
                     ""
@@ -2839,6 +3129,64 @@
                     "IsSelected",
                     "False",
                     ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Manual",
+                    "IsSelected",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                  },
+                  "parameters": [
+                    "Manual",
+                    "Animation",
+                    "=",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Manual",
+                    "IsSelected",
+                    "False",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                  },
+                  "parameters": [
+                    "Manual",
+                    "Animation",
+                    "=",
+                    "0"
                   ]
                 }
               ]
@@ -3120,7 +3468,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Player attack",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3189,6 +3536,16 @@
                 "SelectedDirection",
                 "=",
                 "\"\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "ShakeAmount",
+                "=",
+                "RandomFloatInRange(4,11)"
               ]
             }
           ],
@@ -3307,7 +3664,7 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "1 flag selecionada"
+              "comment": "Only one flag selected (correct)"
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -3376,15 +3733,12 @@
               "actions": [
                 {
                   "type": {
-                    "value": "PlaySoundOnChannel"
+                    "value": "SetStringVariable"
                   },
                   "parameters": [
-                    "",
-                    "beep.wav",
-                    "1",
-                    "",
-                    "100",
-                    "1"
+                    "SelectedDirection",
+                    "=",
+                    "Flags.Direction"
                   ]
                 },
                 {
@@ -3392,9 +3746,43 @@
                     "value": "SetStringVariable"
                   },
                   "parameters": [
-                    "SelectedDirection",
+                    "SelectedAttack",
                     "=",
-                    "Flags.Direction"
+                    "Items.StrongAgainst"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ShakeObject::ShakeObject_PositionAngleScale::ShakeObject_PositionAngleScale"
+                  },
+                  "parameters": [
+                    "Items",
+                    "ShakeObject_PositionAngleScale",
+                    "3",
+                    "ShakeAmount",
+                    "ShakeAmount",
+                    "ShakeAmount",
+                    "ShakeAmount",
+                    "0.2",
+                    "no",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ShakeObject::ShakeObject_PositionAngleScale::ShakeObject_PositionAngleScale"
+                  },
+                  "parameters": [
+                    "Flags",
+                    "ShakeObject_PositionAngleScale",
+                    "3",
+                    "ShakeAmount",
+                    "ShakeAmount",
+                    "ShakeAmount",
+                    "ShakeAmount",
+                    "0.2",
+                    "no",
+                    ""
                   ]
                 }
               ]
@@ -3409,7 +3797,7 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "mais de 1 flag selecionada"
+              "comment": "More than 1 flag selected (wrong)"
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -3453,6 +3841,53 @@
                   "parameters": [
                     "\"Erro. Mais de uma flag selecionada\"",
                     "\"info\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundOnChannel"
+                  },
+                  "parameters": [
+                    "",
+                    "Wrong.wav",
+                    "1",
+                    "",
+                    "100",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ShakeObject::ShakeObject_PositionAngleScale::ShakeObject_PositionAngleScale"
+                  },
+                  "parameters": [
+                    "Items",
+                    "ShakeObject_PositionAngleScale",
+                    "3",
+                    "ShakeAmount",
+                    "ShakeAmount",
+                    "ShakeAmount",
+                    "ShakeAmount",
+                    "0.2",
+                    "no",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ShakeObject::ShakeObject_PositionAngleScale::ShakeObject_PositionAngleScale"
+                  },
+                  "parameters": [
+                    "Flags",
+                    "ShakeObject_PositionAngleScale",
+                    "3",
+                    "ShakeAmount",
+                    "ShakeAmount",
+                    "ShakeAmount",
+                    "ShakeAmount",
+                    "0.2",
+                    "no",
                     ""
                   ]
                 }
@@ -3553,6 +3988,17 @@
                         "=",
                         "SelectedDirection"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "StringObjectVariable"
+                      },
+                      "parameters": [
+                        "Enemies",
+                        "EnemyType",
+                        "=",
+                        "SelectedAttack"
+                      ]
                     }
                   ],
                   "actions": [
@@ -3574,18 +4020,6 @@
         }
       ],
       "parameters": []
-    },
-    {
-      "type": "BuiltinCommonInstructions::Comment",
-      "color": {
-        "b": 109,
-        "g": 230,
-        "r": 255,
-        "textB": 0,
-        "textG": 0,
-        "textR": 0
-      },
-      "comment": "Se tiver mais de 1 flag ou mais de 1 item -> falhar"
     }
   ],
   "layers": [
@@ -3769,6 +4203,10 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "ShakeObject_PositionAngleScale",
+      "type": "ShakeObject::ShakeObject_PositionAngleScale"
     },
     {
       "name": "SpeedPathMovement",
