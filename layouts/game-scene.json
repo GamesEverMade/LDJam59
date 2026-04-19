@@ -137,6 +137,11 @@
       "name": "SelectedDirection",
       "type": "string",
       "value": ""
+    },
+    {
+      "name": "PlayerHealth",
+      "type": "number",
+      "value": 20
     }
   ],
   "instances": [
@@ -447,6 +452,38 @@
       "x": 522,
       "y": 1516,
       "zOrder": 24,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "HUD",
+      "name": "AttackCooldown",
+      "persistentUuid": "9627ddf6-f69a-4853-9ee9-45ee9e05383c",
+      "width": 0,
+      "x": 1538,
+      "y": 87,
+      "zOrder": 25,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "HUD",
+      "name": "HealthBar",
+      "persistentUuid": "a7a4f914-331a-4e69-955d-6fa5f7b99770",
+      "width": 0,
+      "x": 1538,
+      "y": 32,
+      "zOrder": 26,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1687,6 +1724,47 @@
       "effects": [],
       "behaviors": [],
       "animations": []
+    },
+    {
+      "assetStoreId": "0a398f1656e34f64758c909a71ca17cd69fd41bd251d89ff5a640303c4279f50",
+      "name": "AttackCooldown",
+      "persistentUuid": "36cdbf74-eac7-4209-8ecc-b5a724b862e6",
+      "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
+      "variant": "Blue Flat Bar",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "PreviousHighValueDuration": 0,
+        "ShowLabel": false,
+        "BarTopPadding": 4,
+        "BarBottomPadding": 6,
+        "BarLeftPadding": 4,
+        "BarRightPadding": 4,
+        "MaxValue": 3,
+        "InitialValue": 0,
+        "EasingDuration": 0.05
+      }
+    },
+    {
+      "assetStoreId": "3d6c54e76a9a06cbd7629c1e78388d4ab808bbf36d644c61d6a14c9ad34d4f89",
+      "name": "HealthBar",
+      "persistentUuid": "89fa2a10-f4cc-4ced-b168-cadd697b897a",
+      "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
+      "variant": "Red Flat Bar",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "PreviousHighValueDuration": 0,
+        "ShowLabel": true,
+        "BarTopPadding": 4,
+        "BarBottomPadding": 6,
+        "BarLeftPadding": 4,
+        "BarRightPadding": 4,
+        "MaxValue": 20,
+        "InitialValue": 20
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -1761,6 +1839,12 @@
       },
       {
         "objectName": "GnollSpawnerWest"
+      },
+      {
+        "objectName": "HealthBar"
+      },
+      {
+        "objectName": "AttackCooldown"
       }
     ]
   },
@@ -1860,6 +1944,96 @@
             "=",
             "5"
           ]
+        },
+        {
+          "type": {
+            "value": "ResetTimer"
+          },
+          "parameters": [
+            "",
+            "\"AttackCooldown\""
+          ]
+        },
+        {
+          "type": {
+            "value": "ResetTimer"
+          },
+          "parameters": [
+            "",
+            "\"DamageCooldown\""
+          ]
+        },
+        {
+          "type": {
+            "value": "CameraShake::SetLayerShakable"
+          },
+          "parameters": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "CameraShake::SetLayerShakable"
+          },
+          "parameters": [
+            "",
+            "",
+            "\"Background\"",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "CameraShake::SetLayerShakable"
+          },
+          "parameters": [
+            "",
+            "",
+            "\"UI\"",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "CameraShake::SetLayerShakable"
+          },
+          "parameters": [
+            "",
+            "",
+            "\"HUD\"",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+          },
+          "parameters": [
+            "AttackCooldown",
+            "=",
+            "TimerElapsedTime(\"AttackCooldown\")",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+          },
+          "parameters": [
+            "HealthBar",
+            "=",
+            "PlayerHealth",
+            ""
+          ]
         }
       ]
     },
@@ -1880,6 +2054,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Screen transition",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2712,6 +2887,87 @@
           ]
         },
         {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PickAllInstances"
+              },
+              "parameters": [
+                "",
+                "Enemies"
+              ]
+            },
+            {
+              "type": {
+                "value": "CurvedMovement::SpeedPathMovement::HasReachedTarget"
+              },
+              "parameters": [
+                "GnollSoldier",
+                "SpeedPathMovement",
+                "="
+              ]
+            },
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"DamageCooldown\"",
+                ">",
+                "2"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "PlayerHealth",
+                "-",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"DamageCooldown\""
+              ]
+            },
+            {
+              "type": {
+                "value": "CameraShake::ShakeCamera"
+              },
+              "parameters": [
+                "",
+                "0.5",
+                "0.05",
+                "0.05",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundOnChannel"
+              },
+              "parameters": [
+                "",
+                "Damage.wav",
+                "2",
+                "",
+                "100",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
           "type": "BuiltinCommonInstructions::Comment",
           "color": {
             "b": 109,
@@ -2779,8 +3035,8 @@
               "parameters": [
                 "",
                 "GnollSoldier",
-                "Spawners.X()",
-                "Spawners.Y()",
+                "Spawners.X() + RandomFloatInRange(-30, 30)",
+                "Spawners.Y() + RandomFloatInRange(-30, 30)",
                 ""
               ]
             },
@@ -2864,6 +3120,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Player attack",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2890,345 +3147,16 @@
                 "",
                 "\"Left\""
               ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "SelectedFlagsCount",
-                "=",
-                "0"
-              ]
             },
             {
               "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "SelectedItemsCount",
-                "=",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "SelectedDirection",
-                "=",
-                "\"\""
-              ]
-            }
-          ],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "PickAllInstances"
-                  },
-                  "parameters": [
-                    "",
-                    "Flags"
-                  ]
-                }
-              ],
-              "actions": [],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::ForEach",
-                  "object": "Flags",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "BooleanObjectVariable"
-                      },
-                      "parameters": [
-                        "Flags",
-                        "IsSelected",
-                        "True",
-                        ""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "SetNumberVariable"
-                      },
-                      "parameters": [
-                        "SelectedFlagsCount",
-                        "+",
-                        "1"
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "PickAllInstances"
-                  },
-                  "parameters": [
-                    "",
-                    "Items"
-                  ]
-                }
-              ],
-              "actions": [],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::ForEach",
-                  "object": "Items",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "BooleanObjectVariable"
-                      },
-                      "parameters": [
-                        "Items",
-                        "IsSelected",
-                        "True",
-                        ""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "SetNumberVariable"
-                      },
-                      "parameters": [
-                        "SelectedItemsCount",
-                        "+",
-                        "1"
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Comment",
-              "color": {
-                "b": 109,
-                "g": 230,
-                "r": 255,
-                "textB": 0,
-                "textG": 0,
-                "textR": 0
-              },
-              "comment": "1 flag selecionada"
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "NumberVariable"
-                  },
-                  "parameters": [
-                    "SelectedFlagsCount",
-                    "=",
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PickAllInstances"
-                  },
-                  "parameters": [
-                    "",
-                    "Flags"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "Flags",
-                    "IsSelected",
-                    "True",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "PlaySoundOnChannel"
-                  },
-                  "parameters": [
-                    "",
-                    "beep.wav",
-                    "1",
-                    "",
-                    "100",
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "DebuggerTools::ConsoleLog"
-                  },
-                  "parameters": [
-                    "\"Sucesso. Apenas 1 flag selecionada\"",
-                    "\"info\"",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "SelectedDirection",
-                    "=",
-                    "Flags.Direction"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Comment",
-              "color": {
-                "b": 109,
-                "g": 230,
-                "r": 255,
-                "textB": 0,
-                "textG": 0,
-                "textR": 0
-              },
-              "comment": "mais de 1 flag selecionada"
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "NumberVariable"
-                  },
-                  "parameters": [
-                    "SelectedFlagsCount",
-                    ">",
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PickAllInstances"
-                  },
-                  "parameters": [
-                    "",
-                    "Flags"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "Flags",
-                    "IsSelected",
-                    "True",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "DebuggerTools::ConsoleLog"
-                  },
-                  "parameters": [
-                    "\"Erro. Mais de uma flag selecionada\"",
-                    "\"info\"",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "PickAllInstances"
-                  },
-                  "parameters": [
-                    "",
-                    "GnollSoldier"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "StringObjectVariable"
-                  },
-                  "parameters": [
-                    "GnollSoldier",
-                    "Direction",
-                    "=",
-                    "SelectedDirection"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "GnollSoldier",
-                    ""
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "parameters": []
-    },
-    {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "name": "Player attack",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "IsCursorOnObject"
-              },
-              "parameters": [
-                "Go",
-                "",
-                "",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "MouseButtonFromTextReleased"
+                "value": "CompareTimer"
               },
               "parameters": [
                 "",
-                "\"Left\""
+                "\"AttackCooldown\"",
+                ">",
+                "3"
               ]
             }
           ],
@@ -3484,7 +3412,6 @@
               "comment": "mais de 1 flag selecionada"
             },
             {
-              "disabled": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -3527,6 +3454,70 @@
                     "\"Erro. Mais de uma flag selecionada\"",
                     "\"info\"",
                     ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetY"
+                  },
+                  "parameters": [
+                    "Flags",
+                    "=",
+                    "ScreenHeight() - AreaOffset "
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Flags",
+                    "IsSelected",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetY"
+                  },
+                  "parameters": [
+                    "Items",
+                    "=",
+                    "ScreenHeight() - AreaOffset "
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Items",
+                    "IsSelected",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"AttackCooldown\""
                   ]
                 }
               ]
