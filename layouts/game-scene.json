@@ -9,7 +9,7 @@
   "title": "",
   "v": 255,
   "uiSettings": {
-    "grid": false,
+    "grid": true,
     "gridType": "rectangular",
     "gridWidth": 32,
     "gridHeight": 32,
@@ -19,8 +19,8 @@
     "gridOffsetZ": 0,
     "gridColor": 10401023,
     "gridAlpha": 0.8,
-    "snap": false,
-    "zoomFactor": 0.3673257545058862,
+    "snap": true,
+    "zoomFactor": 0.24672586957406628,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -54,6 +54,9 @@
         },
         {
           "name": "Manual"
+        },
+        {
+          "name": "Horn"
         }
       ]
     },
@@ -87,6 +90,9 @@
         },
         {
           "name": "GnollArcher"
+        },
+        {
+          "name": "GnollEnraged"
         }
       ]
     },
@@ -171,8 +177,8 @@
       "name": "FlagNorth",
       "persistentUuid": "45233075-d224-4ebc-a1a3-ce90787fcc61",
       "width": 207,
-      "x": 19,
-      "y": 849,
+      "x": 17,
+      "y": 640,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -239,8 +245,8 @@
       "name": "Gong",
       "persistentUuid": "d083090d-df7d-4062-af73-443efc7dda80",
       "width": 207,
-      "x": 1696,
-      "y": 837,
+      "x": 1446,
+      "y": 844,
       "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
@@ -256,8 +262,8 @@
       "name": "UIBase",
       "persistentUuid": "4100aeff-5f23-4676-81ba-493f7ef9f093",
       "width": 1957,
-      "x": -1,
-      "y": 819,
+      "x": 0,
+      "y": 832,
       "zOrder": 9,
       "numberProperties": [],
       "stringProperties": [],
@@ -298,40 +304,6 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 3,
-      "height": 808,
-      "keepRatio": true,
-      "layer": "Background",
-      "name": "AreaEast",
-      "persistentUuid": "97700f85-1f26-4e61-a368-81ac753adf5a",
-      "width": 1910,
-      "x": 1950,
-      "y": 0,
-      "zOrder": 13,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 3,
-      "height": 829,
-      "keepRatio": true,
-      "layer": "Background",
-      "name": "AreaNorth",
-      "persistentUuid": "7b2864f3-54fe-4a5e-ae3e-346c2a50cdbe",
-      "width": 1912,
-      "x": 2,
-      "y": -4,
-      "zOrder": 14,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
       "depth": 1,
       "height": 140,
       "keepRatio": true,
@@ -364,40 +336,6 @@
     },
     {
       "angle": 0,
-      "customSize": true,
-      "depth": 3,
-      "height": 741,
-      "keepRatio": true,
-      "layer": "Background",
-      "name": "AreaSouth",
-      "persistentUuid": "0dbe42f8-0acb-4ce1-bf11-a950d3124733",
-      "width": 1906,
-      "x": 1992,
-      "y": 1193,
-      "zOrder": 19,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 3,
-      "height": 760,
-      "keepRatio": true,
-      "layer": "Background",
-      "name": "AreaWest",
-      "persistentUuid": "10118d9f-cb6a-40cf-9d1b-b3fd7cda4ba2",
-      "width": 1920,
-      "x": -36,
-      "y": 1205,
-      "zOrder": 20,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
       "customSize": false,
       "height": 0,
       "keepRatio": true,
@@ -405,8 +343,8 @@
       "name": "GnollSpawnerNorth",
       "persistentUuid": "4c15201d-df24-4e2b-ac10-a034cba2689d",
       "width": 0,
-      "x": 246,
-      "y": 221,
+      "x": 864,
+      "y": -128,
       "zOrder": 21,
       "numberProperties": [],
       "stringProperties": [],
@@ -421,8 +359,8 @@
       "name": "GnollSpawnerEast",
       "persistentUuid": "d275c2b0-ce7d-4d72-8f13-bec1178600bb",
       "width": 0,
-      "x": 3146,
-      "y": 253,
+      "x": 3136,
+      "y": -224,
       "zOrder": 22,
       "numberProperties": [],
       "stringProperties": [],
@@ -437,8 +375,8 @@
       "name": "GnollSpawnerSouth",
       "persistentUuid": "9ad4a7e0-b2c5-445f-9c47-5619fe2f9d4e",
       "width": 0,
-      "x": 2621,
-      "y": 1418,
+      "x": 2912,
+      "y": 1376,
       "zOrder": 23,
       "numberProperties": [],
       "stringProperties": [],
@@ -453,8 +391,8 @@
       "name": "GnollSpawnerWest",
       "persistentUuid": "2ebb5336-c68c-47cf-8ca5-807382279094",
       "width": 0,
-      "x": 493,
-      "y": 1417,
+      "x": 640,
+      "y": 1440,
       "zOrder": 24,
       "numberProperties": [],
       "stringProperties": [],
@@ -469,8 +407,8 @@
       "name": "AttackCooldown",
       "persistentUuid": "9627ddf6-f69a-4853-9ee9-45ee9e05383c",
       "width": 0,
-      "x": 1538,
-      "y": 87,
+      "x": 1504,
+      "y": 81,
       "zOrder": 25,
       "numberProperties": [],
       "stringProperties": [],
@@ -485,7 +423,7 @@
       "name": "HealthBar",
       "persistentUuid": "a7a4f914-331a-4e69-955d-6fa5f7b99770",
       "width": 0,
-      "x": 1538,
+      "x": 1504,
       "y": 32,
       "zOrder": 26,
       "numberProperties": [],
@@ -502,8 +440,8 @@
       "name": "Torch",
       "persistentUuid": "30bc1245-ce3e-44a2-bc8f-c4093390337d",
       "width": 207,
-      "x": 1477,
-      "y": 842,
+      "x": 1220,
+      "y": 852,
       "zOrder": 27,
       "numberProperties": [],
       "stringProperties": [],
@@ -511,17 +449,96 @@
     },
     {
       "angle": 0,
-      "customSize": true,
-      "depth": 3,
-      "height": 188,
+      "customSize": false,
+      "height": 0,
       "keepRatio": true,
       "layer": "UI",
-      "name": "Manual",
-      "persistentUuid": "586c3f93-bd0d-4c3f-adb2-a7b07dc8fc46",
-      "width": 188,
-      "x": 961,
-      "y": 852,
+      "name": "Horn",
+      "persistentUuid": "223ffc07-562f-403e-b4f3-b0e4876c0e15",
+      "width": 0,
+      "x": 1673,
+      "y": 838,
       "zOrder": 28,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "HUD",
+      "name": "LevelProgress",
+      "persistentUuid": "4bc20844-d373-48de-8a5a-76b016e776be",
+      "width": 0,
+      "x": 1504,
+      "y": 134,
+      "zOrder": 29,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Background",
+      "name": "AreaNorth",
+      "persistentUuid": "ec412beb-8613-4926-8c1e-cb9f1253f5b3",
+      "width": 0,
+      "x": 0,
+      "y": 2,
+      "zOrder": 30,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Background",
+      "name": "AreaEast",
+      "persistentUuid": "33dfcfbe-64fe-45f9-9595-0d3c2281f4d3",
+      "width": 0,
+      "x": 2272,
+      "y": -158,
+      "zOrder": 32,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Background",
+      "name": "AreaWest",
+      "persistentUuid": "7a965bd1-714a-453a-b773-5c3375f97f47",
+      "width": 0,
+      "x": -192,
+      "y": 1536,
+      "zOrder": 33,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Background",
+      "name": "AreaSouth",
+      "persistentUuid": "aec28182-5a2e-4834-824d-2f3a109b9499",
+      "width": 0,
+      "x": 2080,
+      "y": 1442,
+      "zOrder": 34,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1074,17 +1091,16 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "NorthMock",
+          "name": "",
           "useMultipleDirections": false,
           "directions": [
             {
               "looping": false,
-              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NorthMock6",
+                  "image": "BG3.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1092,10 +1108,10 @@
                     "y": 0
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 960,
+                    "y": 540
                   },
                   "customCollisionMask": [
                     [
@@ -1104,16 +1120,16 @@
                         "y": 0
                       },
                       {
-                        "x": 680,
+                        "x": 1920,
                         "y": 0
                       },
                       {
-                        "x": 680,
-                        "y": 295
+                        "x": 1920,
+                        "y": 830
                       },
                       {
                         "x": 0,
-                        "y": 295
+                        "y": 830
                       }
                     ]
                   ]
@@ -1136,17 +1152,16 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "EastMock",
+          "name": "",
           "useMultipleDirections": false,
           "directions": [
             {
               "looping": false,
-              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "EastMock4",
+                  "image": "BG2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1154,10 +1169,10 @@
                     "y": 0
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 960,
+                    "y": 540
                   },
                   "customCollisionMask": [
                     [
@@ -1166,16 +1181,16 @@
                         "y": 0
                       },
                       {
-                        "x": 681,
+                        "x": 1920,
                         "y": 0
                       },
                       {
-                        "x": 681,
-                        "y": 300
+                        "x": 1920,
+                        "y": 830
                       },
                       {
                         "x": 0,
-                        "y": 300
+                        "y": 830
                       }
                     ]
                   ]
@@ -1607,18 +1622,19 @@
         },
         {
           "name": "ArcherThreshold",
-          "persistentUuid": "4c66722e-2c70-40eb-bf53-cbd866f60017",
+          "persistentUuid": "e50bccc5-7b74-4a78-8662-632274bb45a4",
           "type": "number",
-          "value": 25
+          "value": 40
         },
         {
           "name": "SoldierThreshold",
-          "persistentUuid": "44bc5384-858e-4f56-88c3-c50222f06b46",
+          "persistentUuid": "0db94b8a-13a3-4341-802b-92c6c4a9b184",
           "type": "number",
           "value": 100
         },
         {
           "name": "RiderThreshold",
+          "persistentUuid": "38821516-463a-4304-a880-9553ecb3b817",
           "type": "number",
           "value": 10
         }
@@ -1639,17 +1655,16 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "SouthMock",
+          "name": "",
           "useMultipleDirections": false,
           "directions": [
             {
               "looping": false,
-              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "SouthMock",
+                  "image": "BG4.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1657,10 +1672,10 @@
                     "y": 0
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 960,
+                    "y": 540
                   },
                   "customCollisionMask": [
                     [
@@ -1669,16 +1684,16 @@
                         "y": 0
                       },
                       {
-                        "x": 680,
+                        "x": 1920,
                         "y": 0
                       },
                       {
-                        "x": 680,
-                        "y": 295
+                        "x": 1920,
+                        "y": 830
                       },
                       {
                         "x": 0,
-                        "y": 295
+                        "y": 830
                       }
                     ]
                   ]
@@ -1701,17 +1716,16 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "WestMock",
+          "name": "",
           "useMultipleDirections": false,
           "directions": [
             {
               "looping": false,
-              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "WestMock",
+                  "image": "BG1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1719,10 +1733,10 @@
                     "y": 0
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 960,
+                    "y": 540
                   },
                   "customCollisionMask": [
                     [
@@ -1731,16 +1745,16 @@
                         "y": 0
                       },
                       {
-                        "x": 681,
+                        "x": 1920,
                         "y": 0
                       },
                       {
-                        "x": 681,
-                        "y": 300
+                        "x": 1920,
+                        "y": 830
                       },
                       {
                         "x": 0,
-                        "y": 300
+                        "y": 830
                       }
                     ]
                   ]
@@ -1781,18 +1795,19 @@
         },
         {
           "name": "ArcherThreshold",
-          "persistentUuid": "4c66722e-2c70-40eb-bf53-cbd866f60017",
+          "persistentUuid": "e50bccc5-7b74-4a78-8662-632274bb45a4",
           "type": "number",
-          "value": 25
+          "value": 40
         },
         {
           "name": "SoldierThreshold",
-          "persistentUuid": "44bc5384-858e-4f56-88c3-c50222f06b46",
+          "persistentUuid": "0db94b8a-13a3-4341-802b-92c6c4a9b184",
           "type": "number",
           "value": 100
         },
         {
           "name": "RiderThreshold",
+          "persistentUuid": "38821516-463a-4304-a880-9553ecb3b817",
           "type": "number",
           "value": 10
         }
@@ -1831,18 +1846,19 @@
         },
         {
           "name": "ArcherThreshold",
-          "persistentUuid": "4c66722e-2c70-40eb-bf53-cbd866f60017",
+          "persistentUuid": "e50bccc5-7b74-4a78-8662-632274bb45a4",
           "type": "number",
-          "value": 25
+          "value": 40
         },
         {
           "name": "SoldierThreshold",
-          "persistentUuid": "44bc5384-858e-4f56-88c3-c50222f06b46",
+          "persistentUuid": "0db94b8a-13a3-4341-802b-92c6c4a9b184",
           "type": "number",
           "value": 100
         },
         {
           "name": "RiderThreshold",
+          "persistentUuid": "38821516-463a-4304-a880-9553ecb3b817",
           "type": "number",
           "value": 10
         }
@@ -1881,18 +1897,19 @@
         },
         {
           "name": "ArcherThreshold",
-          "persistentUuid": "4c66722e-2c70-40eb-bf53-cbd866f60017",
+          "persistentUuid": "e50bccc5-7b74-4a78-8662-632274bb45a4",
           "type": "number",
-          "value": 25
+          "value": 40
         },
         {
           "name": "SoldierThreshold",
-          "persistentUuid": "44bc5384-858e-4f56-88c3-c50222f06b46",
+          "persistentUuid": "0db94b8a-13a3-4341-802b-92c6c4a9b184",
           "type": "number",
           "value": 100
         },
         {
           "name": "RiderThreshold",
+          "persistentUuid": "38821516-463a-4304-a880-9553ecb3b817",
           "type": "number",
           "value": 10
         }
@@ -1906,7 +1923,7 @@
       "name": "AttackCooldown",
       "persistentUuid": "36cdbf74-eac7-4209-8ecc-b5a724b862e6",
       "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
-      "variant": "Blue Flat Bar",
+      "variant": "Blue Flat Bar2",
       "variables": [],
       "effects": [],
       "behaviors": [],
@@ -2085,49 +2102,31 @@
       "variables": [
         {
           "name": "gnollSpeed",
-          "persistentUuid": "98b4b167-c5d3-464b-ad41-dc05e9fb398c",
           "type": "number",
-          "value": 100
+          "value": 80
         },
         {
           "name": "gnollAttackRate",
-          "persistentUuid": "528093ef-fd84-484d-9df3-86e5e2bbd153",
           "type": "number",
           "value": 1
         },
         {
           "name": "gnollDamage",
-          "persistentUuid": "084a87ec-548c-4302-8969-d7d5bdac819c",
           "type": "number",
           "value": 1
         },
         {
           "name": "Direction",
-          "persistentUuid": "a7d457bb-2d30-4acc-9070-2f482e26f947",
           "type": "string",
           "value": ""
         },
         {
           "name": "EnemyType",
-          "persistentUuid": "f6c4baa3-ba7e-4381-8529-692054391b1b",
           "type": "string",
           "value": "Archer"
         }
       ],
-      "effects": [
-        {
-          "effectType": "ColorReplace",
-          "name": "Effect",
-          "doubleParameters": {
-            "epsilon": 0.4
-          },
-          "stringParameters": {
-            "newColor": "65;117;5",
-            "originalColor": "228;183;144"
-          },
-          "booleanParameters": {}
-        }
-      ],
+      "effects": [],
       "behaviors": [
         {
           "name": "ShakeObject_PositionAngleScale",
@@ -2172,7 +2171,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "GnollSoldier2.png",
+                  "image": "GnollArcher.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -2188,20 +2187,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 82,
-                        "y": 5
+                        "x": 14,
+                        "y": 13
                       },
                       {
-                        "x": 453,
-                        "y": 5
+                        "x": 492,
+                        "y": 13
                       },
                       {
-                        "x": 453,
-                        "y": 491
+                        "x": 492,
+                        "y": 523
                       },
                       {
-                        "x": 82,
-                        "y": 491
+                        "x": 14,
+                        "y": 523
                       }
                     ]
                   ]
@@ -2215,56 +2214,38 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "GnollRider",
+      "name": "GnollEnraged",
       "persistentUuid": "b685f635-f2db-4b3e-aa1e-d85466c9e0c1",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [
         {
           "name": "gnollSpeed",
-          "persistentUuid": "3109d520-1130-4979-ae44-8a4d8c2c072b",
           "type": "number",
-          "value": 100
+          "value": 150
         },
         {
           "name": "gnollAttackRate",
-          "persistentUuid": "dd4751c8-2c7e-4428-acee-c49fe5c5100d",
           "type": "number",
           "value": 1
         },
         {
           "name": "gnollDamage",
-          "persistentUuid": "1a8d1ebb-c0a6-4188-9a38-d83d8e7bed33",
           "type": "number",
           "value": 1
         },
         {
           "name": "Direction",
-          "persistentUuid": "f307c39c-a54d-4028-bf21-0e6f392ec350",
           "type": "string",
           "value": ""
         },
         {
           "name": "EnemyType",
-          "persistentUuid": "43f161c4-2ca9-4302-829f-ef6416aa3bd7",
           "type": "string",
-          "value": "Archer"
+          "value": "Enraged"
         }
       ],
-      "effects": [
-        {
-          "effectType": "ColorReplace",
-          "name": "Effect",
-          "doubleParameters": {
-            "epsilon": 0.4
-          },
-          "stringParameters": {
-            "newColor": "255;34;61",
-            "originalColor": "228;183;144"
-          },
-          "booleanParameters": {}
-        }
-      ],
+      "effects": [],
       "behaviors": [
         {
           "name": "ShakeObject_PositionAngleScale",
@@ -2309,7 +2290,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "GnollSoldier2.png",
+                  "image": "GnollEnraged.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -2325,20 +2306,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 82,
-                        "y": 5
+                        "x": 68,
+                        "y": 38
                       },
                       {
-                        "x": 453,
-                        "y": 5
+                        "x": 457,
+                        "y": 38
                       },
                       {
-                        "x": 453,
-                        "y": 491
+                        "x": 457,
+                        "y": 519
                       },
                       {
-                        "x": 82,
-                        "y": 491
+                        "x": 68,
+                        "y": 519
                       }
                     ]
                   ]
@@ -2348,11 +2329,192 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Horn",
+      "persistentUuid": "fcb00bfc-064f-4899-bf23-c18583971a2d",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "IsSelected",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "StrongAgainst",
+          "type": "string",
+          "value": "Enraged"
+        }
+      ],
+      "effects": [
+        {
+          "disabled": true,
+          "effectType": "Shockwave",
+          "name": "Effect",
+          "doubleParameters": {
+            "amplitude": 50,
+            "brightness": 1,
+            "centerX": 0.5,
+            "centerY": 0.5,
+            "radius": 0,
+            "speed": 500,
+            "time": 0,
+            "wavelength": 200
+          },
+          "stringParameters": {},
+          "booleanParameters": {}
+        }
+      ],
+      "behaviors": [
+        {
+          "name": "Draggable",
+          "type": "DraggableBehavior::Draggable",
+          "checkCollisionMask": true
+        },
+        {
+          "name": "ShakeObject_PositionAngleScale",
+          "type": "ShakeObject::ShakeObject_PositionAngleScale",
+          "Scale": "Scale"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Horn2.jpg",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 206,
+                        "y": 0
+                      },
+                      {
+                        "x": 206,
+                        "y": 217
+                      },
+                      {
+                        "x": 0,
+                        "y": 217
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "5c37cb58ddc519829264b5ff95dd80416c82e89b60bfa67c6c3852154ec2b632",
+      "name": "LevelProgress",
+      "persistentUuid": "bac50fd0-7d3b-4064-80ea-f9afff274719",
+      "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
+      "variant": "Green Flat Bar",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "PreviousHighValueDuration": 0,
+        "ShowLabel": false,
+        "BarTopPadding": 4,
+        "BarBottomPadding": 6,
+        "BarLeftPadding": 4,
+        "BarRightPadding": 4,
+        "MaxValue": 30,
+        "InitialValue": 0
+      }
     }
   ],
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
+      {
+        "folderName": "Spawners",
+        "children": [
+          {
+            "objectName": "GnollSpawnerWest"
+          },
+          {
+            "objectName": "GnollSpawnerSouth"
+          },
+          {
+            "objectName": "GnollSpawnerEast"
+          },
+          {
+            "objectName": "GnollSpawnerNorth"
+          },
+          {
+            "objectName": "Trajectory"
+          }
+        ]
+      },
+      {
+        "folderName": "HUD",
+        "children": [
+          {
+            "objectName": "UIBase"
+          },
+          {
+            "objectName": "ButtonLeft"
+          },
+          {
+            "objectName": "ButtonRight"
+          },
+          {
+            "objectName": "Go"
+          },
+          {
+            "objectName": "AttackCooldown"
+          },
+          {
+            "objectName": "HealthBar"
+          },
+          {
+            "objectName": "LevelProgress"
+          }
+        ]
+      },
+      {
+        "folderName": "Gnolls",
+        "children": [
+          {
+            "objectName": "GnollSoldier"
+          },
+          {
+            "objectName": "GnollArcher"
+          },
+          {
+            "objectName": "GnollEnraged"
+          }
+        ]
+      },
       {
         "folderName": "Backgrounds",
         "children": [
@@ -2374,10 +2536,16 @@
         "folderName": "Flags and items",
         "children": [
           {
+            "objectName": "Manual"
+          },
+          {
             "objectName": "Gong"
           },
           {
             "objectName": "Torch"
+          },
+          {
+            "objectName": "Horn"
           },
           {
             "objectName": "FlagWest"
@@ -2392,51 +2560,6 @@
             "objectName": "FlagNorth"
           }
         ]
-      },
-      {
-        "objectName": "UIBase"
-      },
-      {
-        "objectName": "ButtonRight"
-      },
-      {
-        "objectName": "ButtonLeft"
-      },
-      {
-        "objectName": "Go"
-      },
-      {
-        "objectName": "GnollSoldier"
-      },
-      {
-        "objectName": "GnollArcher"
-      },
-      {
-        "objectName": "GnollRider"
-      },
-      {
-        "objectName": "Trajectory"
-      },
-      {
-        "objectName": "GnollSpawnerNorth"
-      },
-      {
-        "objectName": "GnollSpawnerEast"
-      },
-      {
-        "objectName": "GnollSpawnerSouth"
-      },
-      {
-        "objectName": "GnollSpawnerWest"
-      },
-      {
-        "objectName": "HealthBar"
-      },
-      {
-        "objectName": "AttackCooldown"
-      },
-      {
-        "objectName": "Manual"
       }
     ]
   },
@@ -2471,60 +2594,7 @@
           "parameters": [
             "AreaOffset",
             "=",
-            "150"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetCameraCenterX"
-          },
-          "parameters": [
-            "",
-            "=",
-            "AreaNorth.CenterX()",
-            "\"Background\"",
-            "0"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetCameraCenterY"
-          },
-          "parameters": [
-            "",
-            "=",
-            "AreaNorth.CenterY() + AreaOffset",
-            "\"Background\"",
-            "0"
-          ]
-        },
-        {
-          "type": {
-            "value": "CurvedMovement::CreatePathFromSvg"
-          },
-          "parameters": [
-            "",
-            "\"TestPath\"",
-            "\"m112.34 12.638c-43.532 48.447-57.574 74.074-10.532 101.81 47.043 27.734 71.266-9.8298 89.17-38.968 17.904-29.138 47.043-81.096 80.394-63.543 33.351 17.553 211.69 36.862 147.45 87.415-64.245 50.553-201.86 15.798-205.72 66-3.8617 50.202 81.096 7.7234 77.936 35.457s-3.1596 31.596-3.1596 31.596\"",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "ResetTimer"
-          },
-          "parameters": [
-            "",
-            "\"SpawnTimerEast\""
-          ]
-        },
-        {
-          "type": {
-            "value": "ResetTimer"
-          },
-          "parameters": [
-            "",
-            "\"SpawnTimerLevel\""
+            "40"
           ]
         },
         {
@@ -2534,25 +2604,40 @@
           "parameters": [
             "LevelSpawnRate",
             "=",
-            "5"
+            "2"
           ]
         },
         {
           "type": {
-            "value": "ResetTimer"
+            "value": "SetBooleanObjectVariable"
           },
           "parameters": [
-            "",
-            "\"AttackCooldown\""
+            "Flags",
+            "IsSelected",
+            "False",
+            ""
           ]
         },
         {
           "type": {
-            "value": "ResetTimer"
+            "value": "SetBooleanObjectVariable"
+          },
+          "parameters": [
+            "Items",
+            "IsSelected",
+            "False",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "CurvedMovement::CreatePathFromSvg"
           },
           "parameters": [
             "",
-            "\"DamageCooldown\""
+            "\"TestPath\"",
+            "\"m260.84 1.4043c26.681 73.723 61.085 104.27 61.085 104.27 20.362 23.521 8.7766 24.574 1.0532 24.223-7.7234-0.35107-24.926-5.9681-37.915-3.8617-12.989 2.1064-44.234 11.234-59.33 26.33-15.096 15.096-10.181 20.713-5.266 32.298 4.9149 11.585 10.181 31.596 10.181 31.596\"",
+            ""
           ]
         },
         {
@@ -2601,48 +2686,6 @@
         },
         {
           "type": {
-            "value": "SetY"
-          },
-          "parameters": [
-            "Flags",
-            "=",
-            "ScreenHeight() - AreaOffset "
-          ]
-        },
-        {
-          "type": {
-            "value": "SetBooleanObjectVariable"
-          },
-          "parameters": [
-            "Flags",
-            "IsSelected",
-            "False",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SetY"
-          },
-          "parameters": [
-            "Items",
-            "=",
-            "ScreenHeight() - AreaOffset "
-          ]
-        },
-        {
-          "type": {
-            "value": "SetBooleanObjectVariable"
-          },
-          "parameters": [
-            "Items",
-            "IsSelected",
-            "False",
-            ""
-          ]
-        },
-        {
-          "type": {
             "value": "PlaySound"
           },
           "parameters": [
@@ -2651,6 +2694,123 @@
             "yes",
             "25",
             "1"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetCameraCenterX"
+              },
+              "parameters": [
+                "",
+                "=",
+                "AreaNorth.CenterX()",
+                "\"Background\"",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCameraCenterY"
+              },
+              "parameters": [
+                "",
+                "=",
+                "AreaNorth.CenterY()",
+                "\"Background\"",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetY"
+              },
+              "parameters": [
+                "Flags",
+                "=",
+                "UIBase.Y() + AreaOffset"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetY"
+              },
+              "parameters": [
+                "Items",
+                "=",
+                "UIBase.Y() + AreaOffset "
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"SpawnTimerEast\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"SpawnTimerLevel\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"AttackCooldown\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"DamageCooldown\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"LevelTimer\""
+              ]
+            }
           ]
         }
       ]
@@ -2680,6 +2840,17 @@
             "PlayerHealth",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+          },
+          "parameters": [
+            "LevelProgress",
+            "=",
+            "TimerElapsedTime(\"LevelTimer\")",
+            ""
+          ]
         }
       ]
     },
@@ -2700,7 +2871,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Screen transition",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2917,7 +3087,7 @@
                   "parameters": [
                     "",
                     "=",
-                    "AreaNorth.CenterY() + AreaOffset",
+                    "AreaNorth.CenterY()",
                     "\"Background\"",
                     "0"
                   ]
@@ -2929,7 +3099,7 @@
                   "parameters": [
                     "",
                     "=",
-                    "AreaNorth.CenterY() + AreaOffset",
+                    "AreaNorth.CenterY()",
                     "",
                     "0"
                   ]
@@ -2982,7 +3152,7 @@
                   "parameters": [
                     "",
                     "=",
-                    "AreaEast.CenterY() + AreaOffset",
+                    "AreaEast.CenterY()",
                     "",
                     "0"
                   ]
@@ -2994,7 +3164,7 @@
                   "parameters": [
                     "",
                     "=",
-                    "AreaEast.CenterY() + AreaOffset",
+                    "AreaEast.CenterY()",
                     "\"Background\"",
                     "0"
                   ]
@@ -3047,7 +3217,7 @@
                   "parameters": [
                     "",
                     "=",
-                    "AreaSouth.CenterY() + AreaOffset",
+                    "AreaSouth.CenterY()",
                     "\"Background\"",
                     "0"
                   ]
@@ -3059,7 +3229,7 @@
                   "parameters": [
                     "",
                     "=",
-                    "AreaSouth.CenterY() + AreaOffset",
+                    "AreaSouth.CenterY()",
                     "",
                     "0"
                   ]
@@ -3112,7 +3282,7 @@
                   "parameters": [
                     "",
                     "=",
-                    "AreaWest.CenterY() + AreaOffset",
+                    "AreaWest.CenterY()",
                     "\"Background\"",
                     "0"
                   ]
@@ -3124,7 +3294,7 @@
                   "parameters": [
                     "",
                     "=",
-                    "AreaWest.CenterY() + AreaOffset",
+                    "AreaWest.CenterY()",
                     "",
                     "0"
                   ]
@@ -3421,7 +3591,7 @@
                   "parameters": [
                     "Flags",
                     "=",
-                    "ScreenHeight() - AreaOffset "
+                    "UIBase.Y() + AreaOffset"
                   ]
                 },
                 {
@@ -3473,7 +3643,7 @@
                   "parameters": [
                     "Items",
                     "=",
-                    "ScreenHeight() - AreaOffset "
+                    "UIBase.Y() + AreaOffset "
                   ]
                 },
                 {
@@ -3801,7 +3971,7 @@
                       "parameters": [
                         "EnemyType",
                         "=",
-                        "\"Rider\""
+                        "\"Enraged\""
                       ]
                     }
                   ]
@@ -3831,23 +4001,6 @@
                         "Spawners.X() + RandomFloatInRange(-30, 30)",
                         "Spawners.Y() + RandomFloatInRange(-30, 30)",
                         ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "PickAllInstances"
-                      },
-                      "parameters": [
-                        "",
-                        "Trajectory"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Hide"
-                      },
-                      "parameters": [
-                        "Trajectory"
                       ]
                     },
                     {
@@ -3911,6 +4064,28 @@
                         "",
                         "\"SpawnTimerLevel\""
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "ScalableCapability::ScalableBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "Enemies",
+                        "Scale",
+                        "=",
+                        "0.5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CurvedMovement::SpeedPathMovement::DrawDebug"
+                      },
+                      "parameters": [
+                        "Enemies",
+                        "SpeedPathMovement",
+                        "Trajectory",
+                        ""
+                      ]
                     }
                   ]
                 },
@@ -3939,23 +4114,6 @@
                         "Spawners.X() + RandomFloatInRange(-30, 30)",
                         "Spawners.Y() + RandomFloatInRange(-30, 30)",
                         ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "PickAllInstances"
-                      },
-                      "parameters": [
-                        "",
-                        "Trajectory"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Hide"
-                      },
-                      "parameters": [
-                        "Trajectory"
                       ]
                     },
                     {
@@ -4019,6 +4177,28 @@
                         "",
                         "\"SpawnTimerLevel\""
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "ScalableCapability::ScalableBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "Enemies",
+                        "Scale",
+                        "=",
+                        "0.5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CurvedMovement::SpeedPathMovement::DrawDebug"
+                      },
+                      "parameters": [
+                        "Enemies",
+                        "SpeedPathMovement",
+                        "Trajectory",
+                        ""
+                      ]
                     }
                   ]
                 },
@@ -4032,7 +4212,7 @@
                       "parameters": [
                         "EnemyType",
                         "=",
-                        "\"Rider\""
+                        "\"Enraged\""
                       ]
                     }
                   ],
@@ -4043,7 +4223,7 @@
                       },
                       "parameters": [
                         "",
-                        "GnollRider",
+                        "GnollEnraged",
                         "Spawners.X() + RandomFloatInRange(-30, 30)",
                         "Spawners.Y() + RandomFloatInRange(-30, 30)",
                         ""
@@ -4051,27 +4231,10 @@
                     },
                     {
                       "type": {
-                        "value": "PickAllInstances"
-                      },
-                      "parameters": [
-                        "",
-                        "Trajectory"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Hide"
-                      },
-                      "parameters": [
-                        "Trajectory"
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "SetStringObjectVariable"
                       },
                       "parameters": [
-                        "GnollRider",
+                        "GnollEnraged",
                         "Direction",
                         "=",
                         "Spawners.Direction"
@@ -4082,7 +4245,7 @@
                         "value": "CurvedMovement::SpeedPathMovement::SetPath"
                       },
                       "parameters": [
-                        "GnollRider",
+                        "GnollEnraged",
                         "SpeedPathMovement",
                         "\"TestPath\"",
                         "1",
@@ -4112,10 +4275,10 @@
                         "value": "CurvedMovement::SpeedPathMovement::SetSpeed"
                       },
                       "parameters": [
-                        "GnollRider",
+                        "GnollEnraged",
                         "SpeedPathMovement",
                         "=",
-                        "GnollRider.gnollSpeed",
+                        "GnollEnraged.gnollSpeed",
                         ""
                       ]
                     },
@@ -4127,13 +4290,30 @@
                         "",
                         "\"SpawnTimerLevel\""
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "ScalableCapability::ScalableBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "Enemies",
+                        "Scale",
+                        "=",
+                        "0.5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CurvedMovement::SpeedPathMovement::DrawDebug"
+                      },
+                      "parameters": [
+                        "Enemies",
+                        "SpeedPathMovement",
+                        "Trajectory",
+                        ""
+                      ]
                     }
                   ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": []
                 }
               ],
               "variables": [
@@ -4602,7 +4782,7 @@
                   "parameters": [
                     "Flags",
                     "=",
-                    "ScreenHeight() - AreaOffset "
+                    "UIBase.Y() + AreaOffset"
                   ]
                 },
                 {
@@ -4623,7 +4803,7 @@
                   "parameters": [
                     "Items",
                     "=",
-                    "ScreenHeight() - AreaOffset "
+                    "UIBase.Y() + AreaOffset"
                   ]
                 },
                 {

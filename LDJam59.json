@@ -62,8 +62,8 @@
       "backgroundFadeInDuration": 4,
       "backgroundImageResourceName": "GEMLogo_ColorAndWhite_NoBG_1080.png",
       "gdevelopLogoStyle": "dark",
-      "logoAndProgressFadeInDuration": 0.9,
-      "logoAndProgressLogoFadeInDelay": 0.5,
+      "logoAndProgressFadeInDuration": 0.2,
+      "logoAndProgressLogoFadeInDelay": 0,
       "minDuration": 5,
       "progressBarColor": 16777215,
       "progressBarHeight": 20,
@@ -75,7 +75,7 @@
     },
     "watermark": {
       "placement": "bottom-left",
-      "showWatermark": true
+      "showWatermark": false
     },
     "authorIds": [
       "oV4hiwHoEddAbbL5lUfLeKHYbGM2"
@@ -100,32 +100,6 @@
   "resources": {
     "resources": [
       {
-        "file": "assets/Background.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Background.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/PickupCoin.wav",
-        "kind": "audio",
-        "metadata": "{\"extension\":\".wav\",\"jfxr\":{\"data\":\"{\\\"_version\\\":1,\\\"_name\\\":\\\"Jump 1\\\",\\\"_locked\\\":[],\\\"sampleRate\\\":44100,\\\"attack\\\":0,\\\"sustain\\\":0.05,\\\"sustainPunch\\\":20,\\\"decay\\\":0.3,\\\"tremoloDepth\\\":0,\\\"tremoloFrequency\\\":10,\\\"frequency\\\":400,\\\"frequencySweep\\\":0,\\\"frequencyDeltaSweep\\\":0,\\\"repeatFrequency\\\":0,\\\"frequencyJump1Onset\\\":15,\\\"frequencyJump1Amount\\\":25,\\\"frequencyJump2Onset\\\":66,\\\"frequencyJump2Amount\\\":0,\\\"harmonics\\\":0,\\\"harmonicsFalloff\\\":0.5,\\\"waveform\\\":\\\"whistle\\\",\\\"interpolateNoise\\\":true,\\\"vibratoDepth\\\":0,\\\"vibratoFrequency\\\":10,\\\"squareDuty\\\":85,\\\"squareDutySweep\\\":35,\\\"flangerOffset\\\":0,\\\"flangerOffsetSweep\\\":0,\\\"bitCrush\\\":16,\\\"bitCrushSweep\\\":0,\\\"lowPassCutoff\\\":22050,\\\"lowPassCutoffSweep\\\":0,\\\"highPassCutoff\\\":0,\\\"highPassCutoffSweep\\\":0,\\\"compression\\\":1,\\\"normalization\\\":true,\\\"amplification\\\":100}\",\"name\":\"PickupCoin\"},\"localFilePath\":\"assets/PickupCoin.wav\"}",
-        "name": "PickupCoin",
-        "preloadAsMusic": false,
-        "preloadAsSound": true,
-        "preloadInCache": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/NewPanelSprite.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "NewPanelSprite",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
         "file": "assets/GEMLogo_ColorAndWhite_NoBG_1080.png",
         "kind": "image",
         "metadata": "",
@@ -136,14 +110,6 @@
           "identifier": "https://project-resources.gdevelop.io/6dbebecb-2327-4767-87c8-f3e769d9c68e/resources/c94df777ae195a38a7de706d855cf6f398b893af747d3ec4ed0bca51069713e0-GEMLogo_ColorAndWhite_NoBG_1080.png",
           "name": "cloud-project-resource"
         }
-      },
-      {
-        "file": "assets/NewSprite.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "NewSprite",
-        "smoothed": true,
-        "userAdded": false
       },
       {
         "file": "assets/8BitOperatorPlus8Regular_Edited.png",
@@ -441,116 +407,6 @@
         }
       },
       {
-        "file": "assets/New sound effect.wav",
-        "kind": "audio",
-        "metadata": "{\"extension\":\".wav\",\"jfxr\":{\"data\":\"{\\\"_version\\\":1,\\\"_name\\\":\\\"Blip/select 1\\\",\\\"_locked\\\":[],\\\"sampleRate\\\":44100,\\\"attack\\\":0,\\\"sustain\\\":0.05,\\\"sustainPunch\\\":0,\\\"decay\\\":0.01,\\\"tremoloDepth\\\":0,\\\"tremoloFrequency\\\":10,\\\"frequency\\\":2200,\\\"frequencySweep\\\":0,\\\"frequencyDeltaSweep\\\":0,\\\"repeatFrequency\\\":0,\\\"frequencyJump1Onset\\\":33,\\\"frequencyJump1Amount\\\":0,\\\"frequencyJump2Onset\\\":66,\\\"frequencyJump2Amount\\\":0,\\\"harmonics\\\":0,\\\"harmonicsFalloff\\\":0.5,\\\"waveform\\\":\\\"sine\\\",\\\"interpolateNoise\\\":true,\\\"vibratoDepth\\\":0,\\\"vibratoFrequency\\\":10,\\\"squareDuty\\\":20,\\\"squareDutySweep\\\":0,\\\"flangerOffset\\\":0,\\\"flangerOffsetSweep\\\":0,\\\"bitCrush\\\":16,\\\"bitCrushSweep\\\":0,\\\"lowPassCutoff\\\":22050,\\\"lowPassCutoffSweep\\\":0,\\\"highPassCutoff\\\":0,\\\"highPassCutoffSweep\\\":0,\\\"compression\\\":1,\\\"normalization\\\":true,\\\"amplification\\\":100}\",\"name\":\"New sound effect\"}}",
-        "name": "New sound effect",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/ClickButton.wav",
-        "kind": "audio",
-        "metadata": "{\"extension\":\".wav\",\"jfxr\":{\"data\":\"{\\\"_version\\\":1,\\\"_name\\\":\\\"Random 1\\\",\\\"_locked\\\":[],\\\"sampleRate\\\":44100,\\\"attack\\\":0,\\\"sustain\\\":0.02,\\\"sustainPunch\\\":0,\\\"decay\\\":0,\\\"tremoloDepth\\\":38,\\\"tremoloFrequency\\\":852,\\\"frequency\\\":7400,\\\"frequencySweep\\\":9400,\\\"frequencyDeltaSweep\\\":0,\\\"repeatFrequency\\\":66.5,\\\"frequencyJump1Onset\\\":15,\\\"frequencyJump1Amount\\\":30,\\\"frequencyJump2Onset\\\":66,\\\"frequencyJump2Amount\\\":0,\\\"harmonics\\\":3,\\\"harmonicsFalloff\\\":0.19,\\\"waveform\\\":\\\"whitenoise\\\",\\\"interpolateNoise\\\":false,\\\"vibratoDepth\\\":50,\\\"vibratoFrequency\\\":163,\\\"squareDuty\\\":50,\\\"squareDutySweep\\\":0,\\\"flangerOffset\\\":0,\\\"flangerOffsetSweep\\\":0,\\\"bitCrush\\\":7,\\\"bitCrushSweep\\\":-1,\\\"lowPassCutoff\\\":7800,\\\"lowPassCutoffSweep\\\":0,\\\"highPassCutoff\\\":6900,\\\"highPassCutoffSweep\\\":2600,\\\"compression\\\":1,\\\"normalization\\\":true,\\\"amplification\\\":100}\",\"name\":\"ClickButton\"}}",
-        "name": "ClickButton",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/ClickCancel.wav",
-        "kind": "audio",
-        "metadata": "{\"extension\":\".wav\",\"jfxr\":{\"data\":\"{\\\"_version\\\":1,\\\"_name\\\":\\\"Cancel\\\",\\\"_locked\\\":[],\\\"sampleRate\\\":44100,\\\"attack\\\":0.10532077705212806,\\\"sustain\\\":0.04783899298455996,\\\"sustainPunch\\\":10,\\\"decay\\\":0.11,\\\"tremoloDepth\\\":7,\\\"tremoloFrequency\\\":10,\\\"frequency\\\":24.16239081842818,\\\"frequencySweep\\\":-2568.6447423439795,\\\"frequencyDeltaSweep\\\":-955.4412350005938,\\\"repeatFrequency\\\":46.55953857904611,\\\"frequencyJump1Onset\\\":60,\\\"frequencyJump1Amount\\\":-50,\\\"frequencyJump2Onset\\\":15,\\\"frequencyJump2Amount\\\":-85,\\\"harmonics\\\":2,\\\"harmonicsFalloff\\\":0.76,\\\"waveform\\\":\\\"whitenoise\\\",\\\"interpolateNoise\\\":true,\\\"vibratoDepth\\\":2.217547664737217,\\\"vibratoFrequency\\\":2.7937644464821783,\\\"squareDuty\\\":50,\\\"squareDutySweep\\\":0,\\\"flangerOffset\\\":36,\\\"flangerOffsetSweep\\\":0,\\\"bitCrush\\\":7,\\\"bitCrushSweep\\\":0,\\\"lowPassCutoff\\\":7000,\\\"lowPassCutoffSweep\\\":0,\\\"highPassCutoff\\\":5600,\\\"highPassCutoffSweep\\\":5500,\\\"compression\\\":0.6,\\\"normalization\\\":true,\\\"amplification\\\":180}\",\"name\":\"ClickCancel\"}}",
-        "name": "ClickCancel",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
-        "userAdded": false
-      },
-      {
-        "file": "FlagNorth.jpg",
-        "kind": "image",
-        "metadata": "",
-        "name": "FlagNorth.jpg",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "FlagEast.jpg",
-        "kind": "image",
-        "metadata": "",
-        "name": "FlagEast.jpg",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "FlagSouth.jpg",
-        "kind": "image",
-        "metadata": "",
-        "name": "FlagSouth.jpg",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "FlagWest.jpg",
-        "kind": "image",
-        "metadata": "",
-        "name": "FlagWest.jpg",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "Bell.jpg",
-        "kind": "image",
-        "metadata": "",
-        "name": "Bell.jpg",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "Gong.jpg",
-        "kind": "image",
-        "metadata": "",
-        "name": "Gong.jpg",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/NorthMock.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "NorthMock",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/NorthMock2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NorthMock2.png\"}",
-        "name": "NorthMock2",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/EastMock.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "EastMock",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/NewSprite2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "NewSprite2",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
         "file": "assets/Small Brown Button_Hovered.png",
         "kind": "image",
         "metadata": "",
@@ -613,46 +469,6 @@
         "userAdded": false
       },
       {
-        "file": "assets/NorthMock3.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "NorthMock3",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/NorthMock4.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "NorthMock4",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/NorthMock5.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "NorthMock5",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/EastMock2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "EastMock2",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/EastMock3.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "EastMock3",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
         "file": "assets/NorthMock6.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NorthMock6.png\"}",
@@ -661,34 +477,10 @@
         "userAdded": false
       },
       {
-        "file": "assets/PlayArea.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "PlayArea",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/PlayArea2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "PlayArea2",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
         "file": "assets/PlayArea3.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "PlayArea3",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/NewSprite3.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "NewSprite3",
         "smoothed": true,
         "userAdded": false
       },
@@ -717,22 +509,6 @@
         "userAdded": false
       },
       {
-        "file": "GnollSoldier.jpg",
-        "kind": "image",
-        "metadata": "",
-        "name": "GnollSoldier.jpg",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "GnollSoldier.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "GnollSoldier.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
         "file": "assets/Flat Bar Blue Fill Bar.png",
         "kind": "image",
         "metadata": "",
@@ -747,7 +523,7 @@
       {
         "file": "assets/Flat Bar White Border.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/Flat Bar White Border.png\",\"extension\":\".png\",\"pskl\":{}}",
         "name": "Flat Bar White Border.png",
         "smoothed": false,
         "userAdded": false,
@@ -873,14 +649,6 @@
         "userAdded": false
       },
       {
-        "file": "assets/Manual.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Manual",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
         "file": "assets/Manual2.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Manual2.png\"}",
@@ -889,21 +657,11 @@
         "userAdded": false
       },
       {
-        "file": "assets/sfx/logo_sound.wav",
-        "kind": "audio",
-        "metadata": "",
-        "name": "assets/sfx/logo_sound.wav",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
-        "userAdded": false
-      },
-      {
         "file": "assets/music/Main_Song_freesound_community-village-theme-68229.mp3",
         "kind": "audio",
         "metadata": "",
         "name": "assets/music/Main_Song_freesound_community-village-theme-68229.mp3",
-        "preloadAsMusic": false,
+        "preloadAsMusic": true,
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
@@ -955,6 +713,82 @@
         "name": "assets/GEMLogo_ColorAndWhite_BlackBG_1080.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "GnollArcher.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "GnollArcher.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Horn.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "Horn.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Horn2.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "Horn2.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "GnollEnraged.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "GnollEnraged.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Flat Bar Green Fill Bar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Flat Bar Green Fill Bar.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/4037e5e9b8a1ede7cb20a326256ce5d9e9a5d94715303743595e97375ceaabaf_Flat Bar Green Fill Bar.png",
+          "name": "Flat Bar Green Fill Bar.png"
+        }
+      },
+      {
+        "file": "BG3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "BG3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "BG2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "BG2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "BG4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "BG4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "BG1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "BG1.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
@@ -970,59 +804,11 @@
       "value": ""
     },
     {
-      "folded": true,
-      "name": "Controls",
-      "type": "structure",
-      "children": [
-        {
-          "name": "KeyAttack",
-          "type": "string",
-          "value": "Escape"
-        },
-        {
-          "name": "KeyDash",
-          "type": "string",
-          "value": "f"
-        },
-        {
-          "name": "KeyDown",
-          "type": "string",
-          "value": "s"
-        },
-        {
-          "name": "KeyJump",
-          "type": "string",
-          "value": "Space"
-        },
-        {
-          "name": "KeyLeft",
-          "type": "string",
-          "value": "a"
-        },
-        {
-          "name": "KeyRight",
-          "type": "string",
-          "value": "d"
-        },
-        {
-          "name": "KeyRun",
-          "type": "string",
-          "value": "Shift"
-        },
-        {
-          "name": "KeyUp",
-          "type": "string",
-          "value": "w"
-        }
-      ]
-    },
-    {
       "name": "Variable",
       "type": "number",
       "value": 0
     },
     {
-      "folded": true,
       "name": "Sound",
       "type": "structure",
       "children": [
@@ -1062,10 +848,6 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/main-menu-scene"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/load-game-scene"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,

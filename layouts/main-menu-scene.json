@@ -5,7 +5,7 @@
   "name": "Main Menu Scene",
   "r": 155,
   "standardSortMethod": true,
-  "stopSoundsOnStartup": true,
+  "stopSoundsOnStartup": false,
   "title": "",
   "v": 155,
   "uiSettings": {
@@ -52,28 +52,11 @@
       "height": 48,
       "keepRatio": true,
       "layer": "",
-      "name": "Load_game",
-      "persistentUuid": "c83211a5-6176-40bb-b24d-d9d1310144d5",
-      "width": 200,
-      "x": 550,
-      "y": 523,
-      "zOrder": 3,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 64,
-      "height": 48,
-      "keepRatio": true,
-      "layer": "",
       "name": "Settings",
       "persistentUuid": "50bbc84a-9d75-4113-b345-187204a41c29",
       "width": 201,
       "x": 550,
-      "y": 630,
+      "y": 562,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -277,49 +260,6 @@
                 "TransitionScene",
                 "=",
                 "\"Tutorial\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Or"
-              },
-              "parameters": [],
-              "subInstructions": [
-                {
-                  "type": {
-                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-                  },
-                  "parameters": [
-                    "Load_game",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PanelSpriteButton::PanelSpriteButton::IsPressed"
-                  },
-                  "parameters": [
-                    "Load_game",
-                    ""
-                  ]
-                }
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "\"Load Game Scene\"",
-                ""
               ]
             }
           ]

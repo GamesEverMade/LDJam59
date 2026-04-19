@@ -200,36 +200,6 @@
             "\"Effect\"",
             ""
           ]
-        },
-        {
-          "type": {
-            "value": "PreloadSound"
-          },
-          "parameters": [
-            "",
-            "ClickButton"
-          ]
-        },
-        {
-          "type": {
-            "value": "PreloadSound"
-          },
-          "parameters": [
-            "",
-            "ClickCancel"
-          ]
-        },
-        {
-          "type": {
-            "value": "PlaySound"
-          },
-          "parameters": [
-            "",
-            "assets/sfx/logo_sound.wav",
-            "",
-            "100",
-            "1"
-          ]
         }
       ]
     },
