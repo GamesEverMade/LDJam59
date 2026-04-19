@@ -44,8 +44,8 @@
       "name": "Logo",
       "persistentUuid": "8cfcc2a8-7daf-4b97-8821-0f2f977c10b5",
       "width": 554,
-      "x": 733,
-      "y": 262,
+      "x": 598,
+      "y": 220,
       "zOrder": 2,
       "numberProperties": [
         {
@@ -251,10 +251,13 @@
       "actions": [
         {
           "type": {
-            "value": "Hide"
+            "value": "EffectCapability::EffectBehavior::EnableEffect"
           },
           "parameters": [
-            "Logo"
+            "Logo",
+            "Effect",
+            "\"Effect\"",
+            "yes"
           ]
         }
       ]

@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.1770859527754408,
+    "zoomFactor": 0.3673257545058862,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -84,6 +84,9 @@
       "objects": [
         {
           "name": "GnollSoldier"
+        },
+        {
+          "name": "GnollArcher"
         }
       ]
     },
@@ -1473,7 +1476,7 @@
         {
           "name": "EnemyType",
           "type": "string",
-          "value": "\"Soldier\""
+          "value": "Soldier"
         }
       ],
       "effects": [],
@@ -1608,6 +1611,23 @@
           "name": "Direction",
           "type": "string",
           "value": "East"
+        },
+        {
+          "name": "ArcherThreshold",
+          "persistentUuid": "4c66722e-2c70-40eb-bf53-cbd866f60017",
+          "type": "number",
+          "value": 25
+        },
+        {
+          "name": "SoldierThreshold",
+          "persistentUuid": "44bc5384-858e-4f56-88c3-c50222f06b46",
+          "type": "number",
+          "value": 100
+        },
+        {
+          "name": "RiderThreshold",
+          "type": "number",
+          "value": 10
         }
       ],
       "effects": [],
@@ -1765,6 +1785,23 @@
           "name": "Direction",
           "type": "string",
           "value": "North"
+        },
+        {
+          "name": "ArcherThreshold",
+          "persistentUuid": "4c66722e-2c70-40eb-bf53-cbd866f60017",
+          "type": "number",
+          "value": 25
+        },
+        {
+          "name": "SoldierThreshold",
+          "persistentUuid": "44bc5384-858e-4f56-88c3-c50222f06b46",
+          "type": "number",
+          "value": 100
+        },
+        {
+          "name": "RiderThreshold",
+          "type": "number",
+          "value": 10
         }
       ],
       "effects": [],
@@ -1798,6 +1835,23 @@
           "name": "Direction",
           "type": "string",
           "value": "South"
+        },
+        {
+          "name": "ArcherThreshold",
+          "persistentUuid": "4c66722e-2c70-40eb-bf53-cbd866f60017",
+          "type": "number",
+          "value": 25
+        },
+        {
+          "name": "SoldierThreshold",
+          "persistentUuid": "44bc5384-858e-4f56-88c3-c50222f06b46",
+          "type": "number",
+          "value": 100
+        },
+        {
+          "name": "RiderThreshold",
+          "type": "number",
+          "value": 10
         }
       ],
       "effects": [],
@@ -1831,6 +1885,23 @@
           "name": "Direction",
           "type": "string",
           "value": "West"
+        },
+        {
+          "name": "ArcherThreshold",
+          "persistentUuid": "4c66722e-2c70-40eb-bf53-cbd866f60017",
+          "type": "number",
+          "value": 25
+        },
+        {
+          "name": "SoldierThreshold",
+          "persistentUuid": "44bc5384-858e-4f56-88c3-c50222f06b46",
+          "type": "number",
+          "value": 100
+        },
+        {
+          "name": "RiderThreshold",
+          "type": "number",
+          "value": 10
         }
       ],
       "effects": [],
@@ -2010,6 +2081,270 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "GnollArcher",
+      "persistentUuid": "e1d80195-89ff-4e61-b8ac-57c5ca5cb310",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "gnollSpeed",
+          "persistentUuid": "98b4b167-c5d3-464b-ad41-dc05e9fb398c",
+          "type": "number",
+          "value": 100
+        },
+        {
+          "name": "gnollAttackRate",
+          "persistentUuid": "528093ef-fd84-484d-9df3-86e5e2bbd153",
+          "type": "number",
+          "value": 1
+        },
+        {
+          "name": "gnollDamage",
+          "persistentUuid": "084a87ec-548c-4302-8969-d7d5bdac819c",
+          "type": "number",
+          "value": 1
+        },
+        {
+          "name": "Direction",
+          "persistentUuid": "a7d457bb-2d30-4acc-9070-2f482e26f947",
+          "type": "string",
+          "value": ""
+        },
+        {
+          "name": "EnemyType",
+          "persistentUuid": "f6c4baa3-ba7e-4381-8529-692054391b1b",
+          "type": "string",
+          "value": "Archer"
+        }
+      ],
+      "effects": [
+        {
+          "effectType": "ColorReplace",
+          "name": "Effect",
+          "doubleParameters": {
+            "epsilon": 0.4
+          },
+          "stringParameters": {
+            "newColor": "65;117;5",
+            "originalColor": "228;183;144"
+          },
+          "booleanParameters": {}
+        }
+      ],
+      "behaviors": [
+        {
+          "name": "SpeedPathMovement",
+          "type": "CurvedMovement::SpeedPathMovement",
+          "Rotation": false,
+          "RotationOffset": 0,
+          "Speed": 0,
+          "PathOriginX": 2.0247e-320,
+          "PathOriginY": 2.0247e-320,
+          "PathName": "",
+          "TargetedSpeed": 0,
+          "Acceleration": 0,
+          "DrawingElementIndex": 0,
+          "X": 2.0247e-320,
+          "Y": 2.0247e-320,
+          "PathAngle": 2.0247e-320,
+          "PathScale": 2.0247e-320,
+          "RepetitionCount": 2.0247e-320,
+          "ShouldLoop": false,
+          "DrawingPathOriginX": 2.0247e-320,
+          "DrawingPathOriginY": 2.0247e-320,
+          "DebugLineStrokeWidth": 2.0247e-320,
+          "PreviousSpeed": 2.0247e-320,
+          "CurrentLength": 2.0247e-320,
+          "IsLookingBack": false,
+          "Viewpoint": "Top-Down"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GnollSoldier2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 82,
+                        "y": 5
+                      },
+                      {
+                        "x": 453,
+                        "y": 5
+                      },
+                      {
+                        "x": 453,
+                        "y": 491
+                      },
+                      {
+                        "x": 82,
+                        "y": 491
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "GnollRider",
+      "persistentUuid": "b685f635-f2db-4b3e-aa1e-d85466c9e0c1",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "gnollSpeed",
+          "persistentUuid": "3109d520-1130-4979-ae44-8a4d8c2c072b",
+          "type": "number",
+          "value": 100
+        },
+        {
+          "name": "gnollAttackRate",
+          "persistentUuid": "dd4751c8-2c7e-4428-acee-c49fe5c5100d",
+          "type": "number",
+          "value": 1
+        },
+        {
+          "name": "gnollDamage",
+          "persistentUuid": "1a8d1ebb-c0a6-4188-9a38-d83d8e7bed33",
+          "type": "number",
+          "value": 1
+        },
+        {
+          "name": "Direction",
+          "persistentUuid": "f307c39c-a54d-4028-bf21-0e6f392ec350",
+          "type": "string",
+          "value": ""
+        },
+        {
+          "name": "EnemyType",
+          "persistentUuid": "43f161c4-2ca9-4302-829f-ef6416aa3bd7",
+          "type": "string",
+          "value": "Archer"
+        }
+      ],
+      "effects": [
+        {
+          "effectType": "ColorReplace",
+          "name": "Effect",
+          "doubleParameters": {
+            "epsilon": 0.4
+          },
+          "stringParameters": {
+            "newColor": "255;34;61",
+            "originalColor": "228;183;144"
+          },
+          "booleanParameters": {}
+        }
+      ],
+      "behaviors": [
+        {
+          "name": "SpeedPathMovement",
+          "type": "CurvedMovement::SpeedPathMovement",
+          "Rotation": false,
+          "RotationOffset": 0,
+          "Speed": 0,
+          "PathOriginX": 2.0247e-320,
+          "PathOriginY": 2.0247e-320,
+          "PathName": "",
+          "TargetedSpeed": 0,
+          "Acceleration": 0,
+          "DrawingElementIndex": 0,
+          "X": 2.0247e-320,
+          "Y": 2.0247e-320,
+          "PathAngle": 2.0247e-320,
+          "PathScale": 2.0247e-320,
+          "RepetitionCount": 2.0247e-320,
+          "ShouldLoop": false,
+          "DrawingPathOriginX": 2.0247e-320,
+          "DrawingPathOriginY": 2.0247e-320,
+          "DebugLineStrokeWidth": 2.0247e-320,
+          "PreviousSpeed": 2.0247e-320,
+          "CurrentLength": 2.0247e-320,
+          "IsLookingBack": false,
+          "Viewpoint": "Top-Down"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "GnollSoldier2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 82,
+                        "y": 5
+                      },
+                      {
+                        "x": 453,
+                        "y": 5
+                      },
+                      {
+                        "x": 453,
+                        "y": 491
+                      },
+                      {
+                        "x": 82,
+                        "y": 491
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -2069,6 +2404,12 @@
       },
       {
         "objectName": "GnollSoldier"
+      },
+      {
+        "objectName": "GnollArcher"
+      },
+      {
+        "objectName": "GnollRider"
       },
       {
         "objectName": "Trajectory"
@@ -3375,48 +3716,7 @@
               ]
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "GnollSoldier",
-                "Spawners.X() + RandomFloatInRange(-30, 30)",
-                "Spawners.Y() + RandomFloatInRange(-30, 30)",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "PickAllInstances"
-              },
-              "parameters": [
-                "",
-                "Trajectory"
-              ]
-            },
-            {
-              "type": {
-                "value": "Hide"
-              },
-              "parameters": [
-                "Trajectory"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringObjectVariable"
-              },
-              "parameters": [
-                "GnollSoldier",
-                "Direction",
-                "=",
-                "Spawners.Direction"
-              ]
-            }
-          ],
+          "actions": [],
           "events": [
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -3424,37 +3724,398 @@
               "actions": [
                 {
                   "type": {
-                    "value": "CurvedMovement::SpeedPathMovement::SetPath"
+                    "value": "SetNumberVariable"
                   },
                   "parameters": [
-                    "GnollSoldier",
-                    "SpeedPathMovement",
-                    "\"TestPath\"",
-                    "1",
-                    "",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "CurvedMovement::SpeedPathMovement::SetSpeed"
-                  },
-                  "parameters": [
-                    "GnollSoldier",
-                    "SpeedPathMovement",
+                    "RNG",
                     "=",
-                    "GnollSoldier.gnollSpeed",
-                    ""
+                    "RandomInRange(1,100)"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Devem estar em ordem decrescente de valor para poder selecionar sempre o mais improvável no caso de low roll."
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "RNG",
+                        "<=",
+                        "Spawners.SoldierThreshold"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "EnemyType",
+                        "=",
+                        "\"Soldier\""
+                      ]
+                    }
                   ]
                 },
                 {
-                  "type": {
-                    "value": "ResetTimer"
-                  },
-                  "parameters": [
-                    "",
-                    "\"SpawnTimerLevel\""
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "RNG",
+                        "<=",
+                        "Spawners.ArcherThreshold"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "EnemyType",
+                        "=",
+                        "\"Archer\""
+                      ]
+                    }
                   ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "RNG",
+                        "<=",
+                        "Spawners.RiderThreshold"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "EnemyType",
+                        "=",
+                        "\"Rider\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "EnemyType",
+                        "=",
+                        "\"Soldier\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "GnollSoldier",
+                        "Spawners.X() + RandomFloatInRange(-30, 30)",
+                        "Spawners.Y() + RandomFloatInRange(-30, 30)",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PickAllInstances"
+                      },
+                      "parameters": [
+                        "",
+                        "Trajectory"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Hide"
+                      },
+                      "parameters": [
+                        "Trajectory"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetStringObjectVariable"
+                      },
+                      "parameters": [
+                        "GnollSoldier",
+                        "Direction",
+                        "=",
+                        "Spawners.Direction"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CurvedMovement::SpeedPathMovement::SetPath"
+                      },
+                      "parameters": [
+                        "GnollSoldier",
+                        "SpeedPathMovement",
+                        "\"TestPath\"",
+                        "1",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CurvedMovement::SpeedPathMovement::SetSpeed"
+                      },
+                      "parameters": [
+                        "GnollSoldier",
+                        "SpeedPathMovement",
+                        "=",
+                        "GnollSoldier.gnollSpeed",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResetTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"SpawnTimerLevel\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "EnemyType",
+                        "=",
+                        "\"Archer\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "GnollArcher",
+                        "Spawners.X() + RandomFloatInRange(-30, 30)",
+                        "Spawners.Y() + RandomFloatInRange(-30, 30)",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PickAllInstances"
+                      },
+                      "parameters": [
+                        "",
+                        "Trajectory"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Hide"
+                      },
+                      "parameters": [
+                        "Trajectory"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetStringObjectVariable"
+                      },
+                      "parameters": [
+                        "GnollArcher",
+                        "Direction",
+                        "=",
+                        "Spawners.Direction"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CurvedMovement::SpeedPathMovement::SetPath"
+                      },
+                      "parameters": [
+                        "GnollArcher",
+                        "SpeedPathMovement",
+                        "\"TestPath\"",
+                        "1",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CurvedMovement::SpeedPathMovement::SetSpeed"
+                      },
+                      "parameters": [
+                        "GnollArcher",
+                        "SpeedPathMovement",
+                        "=",
+                        "GnollArcher.gnollSpeed",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResetTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"SpawnTimerLevel\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "EnemyType",
+                        "=",
+                        "\"Rider\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "GnollRider",
+                        "Spawners.X() + RandomFloatInRange(-30, 30)",
+                        "Spawners.Y() + RandomFloatInRange(-30, 30)",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PickAllInstances"
+                      },
+                      "parameters": [
+                        "",
+                        "Trajectory"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Hide"
+                      },
+                      "parameters": [
+                        "Trajectory"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetStringObjectVariable"
+                      },
+                      "parameters": [
+                        "GnollRider",
+                        "Direction",
+                        "=",
+                        "Spawners.Direction"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CurvedMovement::SpeedPathMovement::SetPath"
+                      },
+                      "parameters": [
+                        "GnollRider",
+                        "SpeedPathMovement",
+                        "\"TestPath\"",
+                        "1",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CurvedMovement::SpeedPathMovement::SetSpeed"
+                      },
+                      "parameters": [
+                        "GnollRider",
+                        "SpeedPathMovement",
+                        "=",
+                        "GnollRider.gnollSpeed",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResetTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"SpawnTimerLevel\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": []
+                }
+              ],
+              "variables": [
+                {
+                  "name": "RNG",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "name": "EnemyType",
+                  "type": "string",
+                  "value": ""
                 }
               ]
             }
@@ -3991,11 +4652,11 @@
                     },
                     {
                       "type": {
-                        "value": "StringObjectVariable"
+                        "value": "NumberObjectVariable"
                       },
                       "parameters": [
                         "Enemies",
-                        "EnemyType",
+                        "gnollSpeed",
                         "=",
                         "SelectedAttack"
                       ]

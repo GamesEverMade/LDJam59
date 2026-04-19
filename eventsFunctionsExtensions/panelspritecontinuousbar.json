@@ -45,18 +45,12 @@
   "globalVariables": [],
   "sceneVariables": [],
   "eventsFunctions": [],
-  "eventsFunctionsFolderStructure": {
-    "folderName": "__ROOT"
-  },
   "eventsBasedBehaviors": [
     {
       "description": "A bar that represents a resource in the game (health, mana, ammo, etc).",
       "fullName": "Resource bar",
-      "helpPath": "",
-      "iconUrl": "",
       "name": "ResourceBar",
       "objectType": "",
-      "previewIconUrl": "",
       "private": true,
       "eventsFunctions": [
         {
@@ -651,57 +645,6 @@
           "objectGroups": []
         }
       ],
-      "eventsFunctionsFolderStructure": {
-        "folderName": "__ROOT",
-        "children": [
-          {
-            "functionName": "doStepPostEvents"
-          },
-          {
-            "functionName": "Value"
-          },
-          {
-            "functionName": "SetValue"
-          },
-          {
-            "folderName": "Resource bar configuration",
-            "children": [
-              {
-                "functionName": "MaxValue"
-              },
-              {
-                "functionName": "SetMaxValue"
-              }
-            ]
-          },
-          {
-            "functionName": "IsEmpty"
-          },
-          {
-            "functionName": "IsFull"
-          },
-          {
-            "functionName": "PreviousHighValue"
-          },
-          {
-            "functionName": "UpdatePreviousHighValue"
-          },
-          {
-            "folderName": "FillBar bar configuration",
-            "children": [
-              {
-                "functionName": "PreviousHighValueDuration"
-              },
-              {
-                "functionName": "SetPreviousHighValueDuration"
-              }
-            ]
-          },
-          {
-            "functionName": "IsChanging"
-          }
-        ]
-      },
       "propertyDescriptors": [
         {
           "value": "1",
@@ -761,12 +704,9 @@
       "defaultName": "ResourceBar",
       "description": "A bar that represents a resource in the game (health, mana, ammo, etc).",
       "fullName": "Resource bar (continuous)",
-      "helpPath": "",
-      "iconUrl": "",
       "isInnerAreaFollowingParentSize": true,
       "isUsingLegacyInstancesRenderer": false,
       "name": "PanelSpriteContinuousBar",
-      "previewIconUrl": "",
       "objects": [
         {
           "assetStoreId": "",
@@ -2515,75 +2455,6 @@
           "objectGroups": []
         }
       ],
-      "eventsFunctionsFolderStructure": {
-        "folderName": "__ROOT",
-        "children": [
-          {
-            "functionName": "onCreated"
-          },
-          {
-            "functionName": "onHotReloading"
-          },
-          {
-            "functionName": "doStepPostEvents"
-          },
-          {
-            "functionName": "UpdateLayout"
-          },
-          {
-            "folderName": "Resource bar",
-            "children": [
-              {
-                "functionName": "Value"
-              },
-              {
-                "functionName": "SetValue"
-              },
-              {
-                "functionName": "IsEmpty"
-              },
-              {
-                "functionName": "IsFull"
-              },
-              {
-                "functionName": "IsChanging"
-              }
-            ]
-          },
-          {
-            "folderName": "Resource bar configuration",
-            "children": [
-              {
-                "functionName": "MaxValue"
-              },
-              {
-                "functionName": "SetMaxValue"
-              },
-              {
-                "functionName": "PreviousValueDuration"
-              },
-              {
-                "functionName": "SetPreviousValueDuration"
-              },
-              {
-                "functionName": "IsLabelShown"
-              },
-              {
-                "functionName": "SetLabelShown"
-              }
-            ]
-          },
-          {
-            "functionName": "WidthForValue"
-          },
-          {
-            "functionName": "FullBarWidth"
-          },
-          {
-            "functionName": "UpdateLabel"
-          }
-        ]
-      },
       "propertyDescriptors": [
         {
           "value": "3",
