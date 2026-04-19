@@ -244,13 +244,7 @@
       "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "StrongAgainst",
-          "type": "string",
-          "value": "\"Archer\""
-        }
-      ]
+      "initialVariables": []
     },
     {
       "angle": 0,
@@ -513,13 +507,7 @@
       "zOrder": 27,
       "numberProperties": [],
       "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "StrongAgainst",
-          "type": "string",
-          "value": "\"Soldier\""
-        }
-      ]
+      "initialVariables": []
     },
     {
       "angle": 0,
@@ -888,7 +876,7 @@
         {
           "name": "StrongAgainst",
           "type": "string",
-          "value": ""
+          "value": "Soldier"
         }
       ],
       "effects": [
@@ -989,7 +977,7 @@
         {
           "name": "StrongAgainst",
           "type": "string",
-          "value": ""
+          "value": "Archer"
         }
       ],
       "effects": [
@@ -1481,6 +1469,11 @@
       ],
       "effects": [],
       "behaviors": [
+        {
+          "name": "ShakeObject_PositionAngleScale",
+          "type": "ShakeObject::ShakeObject_PositionAngleScale",
+          "Scale": "Scale"
+        },
         {
           "name": "SpeedPathMovement",
           "type": "CurvedMovement::SpeedPathMovement",
@@ -2137,6 +2130,11 @@
       ],
       "behaviors": [
         {
+          "name": "ShakeObject_PositionAngleScale",
+          "type": "ShakeObject::ShakeObject_PositionAngleScale",
+          "Scale": "Scale"
+        },
+        {
           "name": "SpeedPathMovement",
           "type": "CurvedMovement::SpeedPathMovement",
           "Rotation": false,
@@ -2268,6 +2266,11 @@
         }
       ],
       "behaviors": [
+        {
+          "name": "ShakeObject_PositionAngleScale",
+          "type": "ShakeObject::ShakeObject_PositionAngleScale",
+          "Scale": "Scale"
+        },
         {
           "name": "SpeedPathMovement",
           "type": "CurvedMovement::SpeedPathMovement",
@@ -3542,39 +3545,10 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "name": "Gnolls",
+      "name": "Gnolls Attack",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
-        {
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "TO DO: enemy movement"
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "CurvedMovement::SpeedPathMovement::DrawDebug"
-              },
-              "parameters": [
-                "GnollSoldier",
-                "SpeedPathMovement",
-                "Trajectory",
-                ""
-              ]
-            }
-          ]
-        },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -3592,7 +3566,7 @@
                 "value": "CurvedMovement::SpeedPathMovement::HasReachedTarget"
               },
               "parameters": [
-                "GnollSoldier",
+                "Enemies",
                 "SpeedPathMovement",
                 "="
               ]
@@ -3635,7 +3609,7 @@
               },
               "parameters": [
                 "",
-                "0.5",
+                "0.2",
                 "0.05",
                 "0.05",
                 ""
@@ -3650,35 +3624,28 @@
                 "Damage.wav",
                 "2",
                 "",
-                "100",
+                "25",
                 "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ShakeObject::ShakeObject_PositionAngleScale::ShakeObject_PositionAngleScale"
+              },
+              "parameters": [
+                "Enemies",
+                "ShakeObject_PositionAngleScale",
+                "0.5",
+                "0",
+                "20",
+                "0",
+                "5",
+                "0.5",
+                "",
+                ""
               ]
             }
           ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "TO DO: enemy spawn"
-        },
-        {
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "TO DO: enemy attack/damage"
         }
       ],
       "parameters": []
@@ -3897,6 +3864,23 @@
                     },
                     {
                       "type": {
+                        "value": "ShakeObject::ShakeObject_PositionAngleScale::ShakeObject_PositionAngleScale"
+                      },
+                      "parameters": [
+                        "Enemies",
+                        "ShakeObject_PositionAngleScale",
+                        "0.2",
+                        "0",
+                        "5",
+                        "10",
+                        "0",
+                        "0.2",
+                        "yes",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "CurvedMovement::SpeedPathMovement::SetSpeed"
                       },
                       "parameters": [
@@ -3988,6 +3972,23 @@
                     },
                     {
                       "type": {
+                        "value": "ShakeObject::ShakeObject_PositionAngleScale::ShakeObject_PositionAngleScale"
+                      },
+                      "parameters": [
+                        "Enemies",
+                        "ShakeObject_PositionAngleScale",
+                        "0.2",
+                        "0",
+                        "5",
+                        "10",
+                        "0",
+                        "0.2",
+                        "yes",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "CurvedMovement::SpeedPathMovement::SetSpeed"
                       },
                       "parameters": [
@@ -4074,6 +4075,23 @@
                         "\"TestPath\"",
                         "1",
                         "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ShakeObject::ShakeObject_PositionAngleScale::ShakeObject_PositionAngleScale"
+                      },
+                      "parameters": [
+                        "Enemies",
+                        "ShakeObject_PositionAngleScale",
+                        "0.2",
+                        "0",
+                        "5",
+                        "10",
+                        "0",
+                        "0.2",
+                        "yes",
                         ""
                       ]
                     },
@@ -4652,11 +4670,11 @@
                     },
                     {
                       "type": {
-                        "value": "NumberObjectVariable"
+                        "value": "StringObjectVariable"
                       },
                       "parameters": [
                         "Enemies",
-                        "gnollSpeed",
+                        "EnemyType",
                         "=",
                         "SelectedAttack"
                       ]
