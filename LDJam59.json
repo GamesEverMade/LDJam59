@@ -2459,6 +2459,129 @@
         "name": "Manual2",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/sfx/logo_sound.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sfx/logo_sound.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Blank Underline_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Blank Underline_Idle.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Game over dialogs/88a0c0a81e0cd72bfddeedd13576f97189bed1dc85f0d355f98a2b9621e41aa0_Blank Underline_Idle.png",
+          "name": "Blank Underline_Idle.png"
+        }
+      },
+      {
+        "file": "assets/SkeletonHand.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\SkeletonHand.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Game over dialogs/3157c10817dd183ee137b67264272855a96015807110f7c10c354b5608c0d132_SkeletonHand.png",
+          "name": "SkeletonHand.png"
+        }
+      },
+      {
+        "file": "assets/Skull GameOver Background.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Skull GameOver Background.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Game over dialogs/3826a1e5f895a011207de42750b83ad6db30d3cfac01efe54e9bc0a0b424aab5_Skull GameOver Background.png",
+          "name": "Skull GameOver Background.png"
+        }
+      },
+      {
+        "file": "assets/Skull.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Skull.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Game over dialogs/9318e301cdfce96a93dbff7e071bf30ae0bc14208b458198b657e746f0cee8f2_Skull.png",
+          "name": "Skull.png"
+        }
+      },
+      {
+        "file": "assets/CantoraOne-Regular.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "CantoraOne-Regular.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Game over dialogs/05b0c1364a92b436b86ca819e66b63480d1bc2fb399f6c0cf8bffbf8199ccc2a_CantoraOne-Regular.ttf",
+          "name": "CantoraOne-Regular.ttf"
+        }
+      },
+      {
+        "file": "assets/NotoSansArabicUI-Black.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets\\NotoSansArabicUI-Black.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Game over dialogs/58f64bcc48842f9a938582fee628aa6f6b2c229db5f8e4c82a09b3ab0b7ceed5_NotoSansArabicUI-Black.ttf",
+          "name": "NotoSansArabicUI-Black.ttf"
+        }
+      },
+      {
+        "file": "assets/GEMLogo_ColorAndWhite_BlackBG_1080.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/GEMLogo_ColorAndWhite_BlackBG_1080.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/GDevelop complete logo white.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "GDevelop complete logo white.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/GDevelop/bc88082027d0f3092776b38b1855a1c4154e72a0e7b3d266e3ae4c7b82388844_GDevelop complete logo white.png",
+          "name": "GDevelop complete logo white.png"
+        }
+      },
+      {
+        "file": "assets/8BitOperatorPlus8Regular_Edited3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\8BitOperatorPlus8Regular_Edited.png2",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Bitmap texts/GDevelop/15c1797cbcb41c3a753b6bbb21cfa60284cfaf81c9891c3abf78a8e0e1cacf59_8BitOperatorPlus8Regular_Edited.png",
+          "name": "8BitOperatorPlus8Regular_Edited.png"
+        }
+      },
+      {
+        "file": "assets/8BitOperatorPlus8Regular_Edited3.fnt",
+        "kind": "bitmapFont",
+        "metadata": "",
+        "name": "assets\\8BitOperatorPlus8Regular_Edited.fnt2",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Bitmap texts/GDevelop/6b410f07a3a02e721a49d41795e84b56707ef28ac4d095d55f1fd1093760e134_8BitOperatorPlus8Regular_Edited.fnt",
+          "name": "8BitOperatorPlus8Regular_Edited.fnt"
+        }
       }
     ]
   },
@@ -2582,6 +2705,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/transition-scene"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/game-over-scene"
     }
   ],
   "externalEvents": [],
@@ -2637,6 +2764,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/shakeobject"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/leaderboarddialog"
     }
   ],
   "externalLayouts": []

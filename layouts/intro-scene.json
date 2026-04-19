@@ -44,8 +44,8 @@
       "name": "Logo",
       "persistentUuid": "8cfcc2a8-7daf-4b97-8821-0f2f977c10b5",
       "width": 554,
-      "x": 598,
-      "y": 220,
+      "x": 733,
+      "y": 262,
       "zOrder": 2,
       "numberProperties": [
         {
@@ -218,6 +218,18 @@
             "",
             "ClickCancel"
           ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "assets/sfx/logo_sound.wav",
+            "",
+            "100",
+            "1"
+          ]
         }
       ]
     },
@@ -239,13 +251,10 @@
       "actions": [
         {
           "type": {
-            "value": "EffectCapability::EffectBehavior::EnableEffect"
+            "value": "Hide"
           },
           "parameters": [
-            "Logo",
-            "Effect",
-            "\"Effect\"",
-            "yes"
+            "Logo"
           ]
         }
       ]

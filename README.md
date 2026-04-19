@@ -10,7 +10,7 @@
     <img src='./assets/GEMLogo_ColorAndWhite_BlackBG_1080.png' alt='GamesEverMade logo' width='120'>
 </div>
 <a align="center" href="https://ldjam.com/events/ludum-dare/59/games">Ludum Dare #59</a>
-<h1 align="center" style="font-weight: bold;">Signals</h1>
+<h1 align="center" style="font-weight: bold;">See Gnolls</h1>
 
 [![Static Badge](https://img.shields.io/badge/Made_with-GDevelop-purple)](https://img.shields.io/badge/Made_with-GDevelop-purple)
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)
@@ -40,20 +40,15 @@
 <p align="center">
     <img src="./example1.png" alt="Image Example" width="400px"></img> |
     <img src="./example2.png" alt="Image Example" width="400px"></img>
+    <br/>
+    Project developed during the Ludum Dare #59. The project was based on the theme "Signal".
 </p>
 
-Project developed during the Ludum Dare #59. The project was based on the theme "Signal".
+
 
 <h2 id="started">📌 About  </h2>
 
-Title: See Gnolls
-
 The game is about managing a watch tower where you have to **see gnolls**. The gnolls come in waves and your job is to warn the village about what is coming from where. The goal is to resist the attacks by correctly warning the village through signals (flags, horns, torches, etc), where each signal has a meaning that you, as a player, have to remember and the complexity increases at every wave.
-
-### Controls
-- Drag and drop for the items
-- Dragging an item up activates it
-- You can drag around the items to rearrange them in your watch tower.
 
 ### Features
 - The player view is alternated between 4 cardinal positions.
@@ -63,17 +58,18 @@ The game is about managing a watch tower where you have to **see gnolls**. The g
 - The player is introduced to the task and the rules.
 - A day begins. Waves comes.
 - Player warns about dangers. The village dispatch appropriate response
-- 
 
 
-<p>Visit our project, clicking on the button bellow</p>
+<p>Visit our projects, clicking on the button bellow</p>
 
 [![itch.io][ITCHIO__BADGE]](https://games-ever-made.itch.io/)
 
 <br/>
 <h2 id="controls">🎛️ Controls </h2>
 
-
+- Drag and drop for the items
+- Dragging an item up activates it
+- You can drag around the items to rearrange them in your watch tower.
 
 <br/>
 
@@ -115,7 +111,7 @@ Special thank you for all people that contributed for this project.
         <img src="https://avatars.githubusercontent.com/u/16151265?v=4" width="100px;" alt="Marcelo 'Holysparks' Picture"/><br>
         <sub>
           <b>Marcelo 'Holysparks'</b><br/>
-          <i>Developer, Level Designer</i>
+          <i>CEO, Developer, Level Designer</i>
         </sub>
       </a>
     </td>
@@ -129,29 +125,20 @@ This is the list of games, articles, creators that we took inspiration to work i
 <table>
   <tr>
     <td align="center">
-      <a href="https://store.steampowered.com/app/257850/Hyper_Light_Drifter/">
-        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/257850/header.jpg?t=1739237213" width="100px;" alt="Alisson Lindote Picture"/><br>
+      <a href="https://store.steampowered.com/app/2824490/He_is_Coming/">
+        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2824490/02598f72d80e7c5da9f4b418f7fce15532d60388/header.jpg?t=1776444577" width="100px;" alt="Alisson Lindote Picture"/><br>
         <sub>
-          <b>Hyper Light Drifter, 2016</b><br/>
-          <i>Heart Machine</i>
+          <b>He is Coming. 2025</b><br/>
+          <i>Chronicle</i>
         </sub>
       </a>
     </td>
     <td align="center">
-      <a href="https://store.steampowered.com/app/1313140/Cult_of_the_Lamb/">
-        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1313140/header.jpg?t=1741724183" width="100px;" alt="Andrew Mendes 'Elfo' Picture"/><br>
+      <a href="https://store.steampowered.com/app/239030/Papers_Please/">
+        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/239030/header.jpg?t=1678266428" width="100px;" alt="Andrew Mendes 'Elfo' Picture"/><br>
         <sub>
-          <b>Cult of the Lamb, 2022</b><br/>
-          <i>Massive Monster</i>
-        </sub>
-      </a>
-    </td>
-     <td align="center">
-      <a href="https://store.steampowered.com/app/297130/Titan_Souls/">
-        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/297130/header.jpg?t=1682447075" width="100px;" alt="Andrew Mendes 'Elfo' Picture"/><br>
-        <sub>
-          <b>Titan Souls, 2015</b><br/>
-          <i>Acid Nerve</i>
+          <b>Papers, please. 2013</b><br/>
+          <i>Lucas Pope</i>
         </sub>
       </a>
     </td>
