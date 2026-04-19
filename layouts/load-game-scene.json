@@ -219,6 +219,18 @@
             "=",
             "\"Load Game Scene\""
           ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "assets/music/Main_Song_freesound_community-village-theme-68229.mp3",
+            "yes",
+            "50",
+            "1"
+          ]
         }
       ]
     },

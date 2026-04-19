@@ -35,12 +35,18 @@
   "globalVariables": [],
   "sceneVariables": [],
   "eventsFunctions": [],
+  "eventsFunctionsFolderStructure": {
+    "folderName": "__ROOT"
+  },
   "eventsBasedBehaviors": [
     {
       "description": "Tween objects into position from off screen.",
       "fullName": "Tween into view",
+      "helpPath": "",
+      "iconUrl": "",
       "name": "TweenIntoView",
       "objectType": "",
+      "previewIconUrl": "",
       "eventsFunctions": [
         {
           "fullName": "",
@@ -1384,6 +1390,40 @@
           "objectGroups": []
         }
       ],
+      "eventsFunctionsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "functionName": "doStepPostEvents"
+          },
+          {
+            "functionName": "OriginX"
+          },
+          {
+            "functionName": "OriginY"
+          },
+          {
+            "functionName": "TweenIn"
+          },
+          {
+            "functionName": "TweenOut"
+          },
+          {
+            "functionName": "IsTweenedIn"
+          },
+          {
+            "functionName": "IsTweenedOut"
+          },
+          {
+            "folderName": "Tween into view configuration",
+            "children": [
+              {
+                "functionName": "SetShouldBeDeleted"
+              }
+            ]
+          }
+        ]
+      },
       "propertyDescriptors": [
         {
           "value": "90",

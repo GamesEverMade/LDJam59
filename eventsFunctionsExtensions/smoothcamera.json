@@ -41,12 +41,18 @@
   "globalVariables": [],
   "sceneVariables": [],
   "eventsFunctions": [],
+  "eventsFunctionsFolderStructure": {
+    "folderName": "__ROOT"
+  },
   "eventsBasedBehaviors": [
     {
       "description": "Smoothly scroll to follow an object.",
       "fullName": "Smooth Camera",
+      "helpPath": "",
+      "iconUrl": "",
       "name": "SmoothCamera",
       "objectType": "",
+      "previewIconUrl": "",
       "eventsFunctions": [
         {
           "fullName": "",
@@ -4523,6 +4529,141 @@
           "objectGroups": []
         }
       ],
+      "eventsFunctionsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "functionName": "onCreated"
+          },
+          {
+            "functionName": "doStepPreEvents"
+          },
+          {
+            "functionName": "MoveCameraCloser"
+          },
+          {
+            "functionName": "DoMoveCameraCloser"
+          },
+          {
+            "functionName": "WaitAndCatchUp"
+          },
+          {
+            "functionName": "DrawDebug"
+          },
+          {
+            "folderName": "Camera configuration",
+            "children": [
+              {
+                "functionName": "SetFollowOnX"
+              },
+              {
+                "functionName": "SetFollowOnY"
+              },
+              {
+                "functionName": "SetFollowFreeAreaRight"
+              },
+              {
+                "functionName": "SetFollowFreeAreaLeft"
+              },
+              {
+                "functionName": "SetFollowFreeAreaTop"
+              },
+              {
+                "functionName": "SetFollowFreeAreaBottom"
+              },
+              {
+                "functionName": "SetLeftwardSpeedMax"
+              },
+              {
+                "functionName": "SetRightwardSpeedMax"
+              },
+              {
+                "functionName": "SetUpwardSpeedMax"
+              },
+              {
+                "functionName": "SetDownwardSpeedMax"
+              },
+              {
+                "functionName": "SetLeftwardSpeed"
+              },
+              {
+                "functionName": "SetRightwardSpeed"
+              },
+              {
+                "functionName": "SetDownwardSpeed"
+              },
+              {
+                "functionName": "SetUpwardSpeed"
+              },
+              {
+                "functionName": "OffsetX"
+              },
+              {
+                "functionName": "SetOffsetXOp"
+              },
+              {
+                "functionName": "SetOffsetX"
+              },
+              {
+                "functionName": "OffsetY"
+              },
+              {
+                "functionName": "SetOffsetYOp"
+              },
+              {
+                "functionName": "SetOffsetY"
+              },
+              {
+                "functionName": "SetForecastTime"
+              },
+              {
+                "functionName": "SetCameraDelay"
+              }
+            ]
+          },
+          {
+            "folderName": "Private",
+            "children": [
+              {
+                "functionName": "FreeAreaLeft"
+              },
+              {
+                "functionName": "FreeAreaRight"
+              },
+              {
+                "functionName": "FreeAreaBottom"
+              },
+              {
+                "functionName": "FreeAreaTop"
+              },
+              {
+                "functionName": "UpdateDelayedPosition"
+              },
+              {
+                "functionName": "AddForecastHistoryPosition"
+              },
+              {
+                "functionName": "UpdateForecastedPosition"
+              },
+              {
+                "functionName": "ProjectHistoryEnds"
+              },
+              {
+                "functionName": "ForecastTimeRatio"
+              }
+            ]
+          },
+          {
+            "functionName": "IsDelayed"
+          },
+          {
+            "functionName": "CurrentDelay"
+          },
+          {
+            "functionName": "IsWaiting"
+          }
+        ]
+      },
       "propertyDescriptors": [
         {
           "value": "0.9",
@@ -5058,8 +5199,11 @@
     {
       "description": "Smoothly scroll to follow a character and stabilize the camera when jumping.",
       "fullName": "Smooth platformer camera",
+      "helpPath": "",
+      "iconUrl": "",
       "name": "SmoothPlatformerCamera",
       "objectType": "",
+      "previewIconUrl": "",
       "eventsFunctions": [
         {
           "fullName": "",
@@ -5276,6 +5420,14 @@
           "objectGroups": []
         }
       ],
+      "eventsFunctionsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "functionName": "doStepPreEvents"
+          }
+        ]
+      },
       "propertyDescriptors": [
         {
           "value": "",

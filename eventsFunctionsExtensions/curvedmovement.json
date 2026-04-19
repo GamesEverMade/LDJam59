@@ -2577,12 +2577,144 @@
       "objectGroups": []
     }
   ],
+  "eventsFunctionsFolderStructure": {
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "functionName": "onFirstSceneLoaded"
+      },
+      {
+        "functionName": "DefineHelperClasses"
+      },
+      {
+        "functionName": "onSceneLoaded"
+      },
+      {
+        "functionName": "AddCubicCurve"
+      },
+      {
+        "functionName": "AddSmoothCubicCurve"
+      },
+      {
+        "functionName": "AddLine"
+      },
+      {
+        "functionName": "ClosePath"
+      },
+      {
+        "functionName": "CreatePathFromSvg"
+      },
+      {
+        "functionName": "ToSvg"
+      },
+      {
+        "functionName": "DeletePath"
+      },
+      {
+        "functionName": "AppendPath"
+      },
+      {
+        "functionName": "DuplicatedPath"
+      },
+      {
+        "functionName": "AppendRotatedPath"
+      },
+      {
+        "folderName": "Path transformation",
+        "children": [
+          {
+            "functionName": "SpeedScaleY"
+          },
+          {
+            "functionName": "SetSpeedScaleY"
+          },
+          {
+            "functionName": "InvertPath"
+          },
+          {
+            "functionName": "FlipPath"
+          },
+          {
+            "functionName": "FlipPathX"
+          },
+          {
+            "functionName": "FlipPathY"
+          },
+          {
+            "functionName": "ScalePath"
+          },
+          {
+            "functionName": "RotatePath"
+          }
+        ]
+      },
+      {
+        "functionName": "IsClosed"
+      },
+      {
+        "functionName": "PathX"
+      },
+      {
+        "functionName": "PathY"
+      },
+      {
+        "functionName": "PathAngle"
+      },
+      {
+        "functionName": "PathLength"
+      },
+      {
+        "functionName": "PathEndX"
+      },
+      {
+        "functionName": "PathEndY"
+      },
+      {
+        "folderName": "Path element",
+        "children": [
+          {
+            "functionName": "ElementCount"
+          },
+          {
+            "functionName": "OriginX"
+          },
+          {
+            "functionName": "OriginY"
+          },
+          {
+            "functionName": "FirstControlX"
+          },
+          {
+            "functionName": "FirstControlY"
+          },
+          {
+            "functionName": "SecondControlX"
+          },
+          {
+            "functionName": "SecondControlY"
+          },
+          {
+            "functionName": "TargetX"
+          },
+          {
+            "functionName": "TargetY"
+          }
+        ]
+      },
+      {
+        "functionName": "PathExists"
+      }
+    ]
+  },
   "eventsBasedBehaviors": [
     {
       "description": "Move objects on curved paths in a given duration and tween easing function.",
       "fullName": "Movement on a curve (duration-based)",
+      "helpPath": "",
+      "iconUrl": "",
       "name": "TweenPathMovement",
       "objectType": "",
+      "previewIconUrl": "",
       "eventsFunctions": [
         {
           "fullName": "",
@@ -4812,6 +4944,76 @@
           "objectGroups": []
         }
       ],
+      "eventsFunctionsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "functionName": "doStepPreEvents"
+          },
+          {
+            "functionName": "UpdatePosition"
+          },
+          {
+            "functionName": "MoveTo"
+          },
+          {
+            "functionName": "MoveToAndGoBack"
+          },
+          {
+            "functionName": "Move"
+          },
+          {
+            "functionName": "MoveAndGoBack"
+          },
+          {
+            "functionName": "HasReachedAnEnd"
+          },
+          {
+            "functionName": "HasFinishedToMove"
+          },
+          {
+            "functionName": "MovementAngle"
+          },
+          {
+            "folderName": "Debug",
+            "children": [
+              {
+                "functionName": "DrawDebug"
+              }
+            ]
+          },
+          {
+            "functionName": "SetTransformation"
+          },
+          {
+            "functionName": "InitializeMovement"
+          },
+          {
+            "functionName": "RepetitionDone"
+          },
+          {
+            "functionName": "RepeatedPathPosition"
+          },
+          {
+            "functionName": "Progress"
+          },
+          {
+            "functionName": "PathLength"
+          },
+          {
+            "functionName": "PathEndX"
+          },
+          {
+            "functionName": "PathEndY"
+          },
+          {
+            "functionName": "PathSpeedScaleY"
+          },
+          {
+            "functionName": "BackOrForthAngle"
+          }
+        ]
+      },
       "propertyDescriptors": [
         {
           "value": "",
@@ -5112,8 +5314,11 @@
     {
       "description": "Move objects on curved paths at a given speed.",
       "fullName": "Movement on a curve (speed-based)",
+      "helpPath": "",
+      "iconUrl": "",
       "name": "SpeedPathMovement",
       "objectType": "",
+      "previewIconUrl": "",
       "eventsFunctions": [
         {
           "fullName": "",
@@ -7698,6 +7903,117 @@
           "objectGroups": []
         }
       ],
+      "eventsFunctionsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "functionName": "doStepPreEvents"
+          },
+          {
+            "functionName": "SetPath"
+          },
+          {
+            "functionName": "SetPathTo"
+          },
+          {
+            "functionName": "PositionOnLoop"
+          },
+          {
+            "functionName": "Loop"
+          },
+          {
+            "functionName": "PositionOnPath"
+          },
+          {
+            "functionName": "SetPositionOnPath"
+          },
+          {
+            "functionName": "UpdatePosition"
+          },
+          {
+            "functionName": "CheckPositionOnPath"
+          },
+          {
+            "functionName": "HasReachedOrigin"
+          },
+          {
+            "functionName": "HasReachedTarget"
+          },
+          {
+            "functionName": "HasReachedAnEnd"
+          },
+          {
+            "functionName": "CanMoveFurther"
+          },
+          {
+            "functionName": "MovementAngle"
+          },
+          {
+            "functionName": "Speed"
+          },
+          {
+            "functionName": "SetSpeed"
+          },
+          {
+            "functionName": "AccelarateAt"
+          },
+          {
+            "functionName": "AccelarateDuring"
+          },
+          {
+            "folderName": "Debug",
+            "children": [
+              {
+                "functionName": "DrawDebug"
+              }
+            ]
+          },
+          {
+            "functionName": "SetTransformation"
+          },
+          {
+            "functionName": "InitializeMovement"
+          },
+          {
+            "functionName": "RepeatedPathPosition"
+          },
+          {
+            "functionName": "RepetitionDone"
+          },
+          {
+            "functionName": "Progress"
+          },
+          {
+            "functionName": "PathLength"
+          },
+          {
+            "functionName": "TotalLength"
+          },
+          {
+            "functionName": "PathEndX"
+          },
+          {
+            "functionName": "PathEndY"
+          },
+          {
+            "functionName": "PathSpeedScaleY"
+          },
+          {
+            "functionName": "BackOrForthAngle"
+          },
+          {
+            "folderName": "Movement on a curve (speed-based) configuration",
+            "children": [
+              {
+                "functionName": "PathOriginX"
+              },
+              {
+                "functionName": "PathOriginY"
+              }
+            ]
+          }
+        ]
+      },
       "propertyDescriptors": [
         {
           "value": "true",

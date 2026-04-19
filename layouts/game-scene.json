@@ -2640,6 +2640,18 @@
             "False",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "assets/music/Village_Song_freesound_community-village-theme-68229.mp3",
+            "yes",
+            "25",
+            "1"
+          ]
         }
       ]
     },

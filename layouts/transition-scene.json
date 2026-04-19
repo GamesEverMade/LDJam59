@@ -148,6 +148,18 @@
             "=",
             "\"Transition Scene\""
           ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "assets/sfx/Loadscenefreesound_community-old-record-player-effect-14887.mp3",
+            "yes",
+            "60",
+            "1"
+          ]
         }
       ]
     },

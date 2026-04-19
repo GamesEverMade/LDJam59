@@ -1,0 +1,567 @@
+{
+  "b": 0,
+  "disableInputWhenNotFocused": true,
+  "mangledName": "Game_32Over_32Scene",
+  "name": "Game Over Scene",
+  "r": 0,
+  "standardSortMethod": true,
+  "stopSoundsOnStartup": true,
+  "title": "",
+  "v": 0,
+  "uiSettings": {
+    "grid": false,
+    "gridType": "rectangular",
+    "gridWidth": 32,
+    "gridHeight": 32,
+    "gridDepth": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridOffsetZ": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": false,
+    "zoomFactor": 0.7817486425451757,
+    "windowMask": false,
+    "selectedLayer": "",
+    "gameEditorMode": "instances-editor"
+  },
+  "objectsGroups": [],
+  "variables": [],
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 110,
+      "keepRatio": true,
+      "layer": "",
+      "name": "GameOverTitle",
+      "persistentUuid": "d5abeb50-a2bf-4a41-bb9f-4728ae2274f6",
+      "width": 810,
+      "x": 611,
+      "y": 410,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "CreditsTitle",
+      "persistentUuid": "427512a1-ee8b-4820-8844-16700558fc7f",
+      "width": 0,
+      "x": 36,
+      "y": 780,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "CreditNames",
+      "persistentUuid": "6a2c2834-3285-478f-a153-d9a354148a90",
+      "width": 0,
+      "x": 40,
+      "y": 866,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Songs_and_Effects",
+      "persistentUuid": "e7a4ad37-7b90-4857-bb6f-2a7e7f00811e",
+      "width": 0,
+      "x": 1215,
+      "y": 808,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 254,
+      "layer": "",
+      "name": "NewSprite",
+      "persistentUuid": "ca8bf0af-cec1-43ee-bcdd-7ee0de2f00e8",
+      "width": 254,
+      "x": -1,
+      "y": 2,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Thanks",
+      "persistentUuid": "9117b528-73d6-49ea-a88a-4c3dce4b9413",
+      "width": 0,
+      "x": 501,
+      "y": 266,
+      "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 120.4705882352941,
+      "height": 52.705882352941174,
+      "keepRatio": true,
+      "layer": "",
+      "name": "TinyTanButton",
+      "persistentUuid": "c00d42d1-3f7f-4442-bfda-93202c63778c",
+      "width": 128,
+      "x": 1610,
+      "y": 960,
+      "zOrder": 10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "objects": [
+    {
+      "assetStoreId": "54d86c7d46104e19c9a7e86e173b71bce9592b476e156846c53f11be91039afd",
+      "name": "GameOverTitle",
+      "persistentUuid": "68ba0162-9d45-429b-94e9-05a22ceeaaaa",
+      "type": "BitmapText::BitmapTextObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "Game Over",
+        "opacity": 255,
+        "scale": 10,
+        "fontSize": 20,
+        "tint": "255;0;0",
+        "bitmapFontResourceName": "assets/NotJamOldStyle11.fnt",
+        "textureAtlasResourceName": "assets/NotJamOldStyle11.png",
+        "align": "left",
+        "verticalTextAlignment": "top"
+      }
+    },
+    {
+      "assetStoreId": "54d86c7d46104e19c9a7e86e173b71bce9592b476e156846c53f11be91039afd",
+      "name": "CreditsTitle",
+      "persistentUuid": "4300def4-6d82-4b13-864d-f825c8104602",
+      "type": "BitmapText::BitmapTextObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "Credits",
+        "opacity": 255,
+        "scale": 6,
+        "fontSize": 20,
+        "tint": "255;255;255",
+        "bitmapFontResourceName": "assets/NotJamOldStyle11.fnt",
+        "textureAtlasResourceName": "assets/NotJamOldStyle11.png",
+        "align": "left",
+        "verticalTextAlignment": "top"
+      }
+    },
+    {
+      "assetStoreId": "54d86c7d46104e19c9a7e86e173b71bce9592b476e156846c53f11be91039afd",
+      "name": "CreditNames",
+      "persistentUuid": "c37476d2-fd19-40ea-af07-1f24949da46d",
+      "type": "BitmapText::BitmapTextObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "Marcelo Holysparks\nAndrew \"Elf\" Lopes\nAlisson \"Bahiano\" Lindote\nFelipe \"Gilgameth\"",
+        "opacity": 255,
+        "scale": 4,
+        "fontSize": 20,
+        "tint": "255;255;255",
+        "bitmapFontResourceName": "assets/NotJamOldStyle11.fnt",
+        "textureAtlasResourceName": "assets/NotJamOldStyle11.png",
+        "align": "left",
+        "verticalTextAlignment": "top"
+      }
+    },
+    {
+      "assetStoreId": "54d86c7d46104e19c9a7e86e173b71bce9592b476e156846c53f11be91039afd",
+      "name": "Thanks",
+      "persistentUuid": "57bc9d1d-9b97-4809-9140-fbd6cafcd777",
+      "type": "BitmapText::BitmapTextObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "Thank you all for defend our Village",
+        "opacity": 255,
+        "scale": 4,
+        "fontSize": 20,
+        "tint": "255;255;255",
+        "bitmapFontResourceName": "assets/NotJamOldStyle11.fnt",
+        "textureAtlasResourceName": "assets/NotJamOldStyle11.png",
+        "align": "left",
+        "verticalTextAlignment": "top"
+      }
+    },
+    {
+      "assetStoreId": "54d86c7d46104e19c9a7e86e173b71bce9592b476e156846c53f11be91039afd",
+      "name": "Songs_and_Effects",
+      "persistentUuid": "fccc9f64-f782-430e-a759-6772e127eec9",
+      "type": "BitmapText::BitmapTextObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "Songs and SFX:\nFelipe \"Gilgameth\"",
+        "opacity": 255,
+        "scale": 4,
+        "fontSize": 20,
+        "tint": "255;255;255",
+        "bitmapFontResourceName": "assets/NotJamOldStyle11.fnt",
+        "textureAtlasResourceName": "assets/NotJamOldStyle11.png",
+        "align": "left",
+        "verticalTextAlignment": "top"
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "NewSprite",
+      "persistentUuid": "06e786e9-af57-4af7-8a16-9983a3e87b7c",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/GEMLogo_ColorAndWhite_BlackBG_1080.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 1080,
+                        "y": 0
+                      },
+                      {
+                        "x": 1080,
+                        "y": 1082
+                      },
+                      {
+                        "x": 0,
+                        "y": 1082
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "5d63e0be714d9bf61e2629d4c26dd36195ea8dee1e25f4b7037beefff44c7cf5",
+      "name": "TinyTanButton",
+      "persistentUuid": "eb9929c9-8ef0-4f9f-b66b-8c7a1d3c4650",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "Tiny Tan Button",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LabelText": "Back to Menu",
+        "PressedLabelOffsetY": 2
+      }
+    }
+  ],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "objectName": "GameOverTitle"
+      },
+      {
+        "objectName": "CreditsTitle"
+      },
+      {
+        "objectName": "CreditNames"
+      },
+      {
+        "objectName": "NewSprite"
+      },
+      {
+        "objectName": "Thanks"
+      },
+      {
+        "objectName": "Songs_and_Effects"
+      },
+      {
+        "objectName": "TinyTanButton"
+      }
+    ]
+  },
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "SceneJustBegins"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ResetTimer"
+          },
+          "parameters": [
+            "",
+            "\"GameOverInnitialTimer\""
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "assets/music/Game_over_lightyeartraxx-kl-peach-game-over-iii-142453.mp3",
+            "",
+            "25",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetStringVariable"
+          },
+          "parameters": [
+            "CurrentScene",
+            "=",
+            "\"Game Over Scene\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CompareTimer"
+          },
+          "parameters": [
+            "",
+            "\"GameOverInnitialTimer\"",
+            ">",
+            "2.5"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "assets/music/Fairytale Waltz.mp3",
+            "",
+            "16",
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Or"
+          },
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsPressed"
+              },
+              "parameters": [
+                "TinyTanButton",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "TinyTanButton",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Main Menu Scene\"",
+            ""
+          ]
+        }
+      ]
+    }
+  ],
+  "layers": [
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [
+        {
+          "defaultSize": true,
+          "defaultViewport": true,
+          "height": 0,
+          "viewportBottom": 1,
+          "viewportLeft": 0,
+          "viewportRight": 1,
+          "viewportTop": 0,
+          "width": 0
+        }
+      ],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Ambient Hemisphere Light",
+          "doubleParameters": {
+            "elevation": 40,
+            "intensity": 0.33,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "groundColor": "127;127;127",
+            "skyColor": "255;255;255",
+            "top": "Z+"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Scene3D::DirectionalLight",
+          "name": "3D Sun Light",
+          "doubleParameters": {
+            "distanceFromCamera": 1500,
+            "elevation": 40,
+            "frustumSize": 4000,
+            "intensity": 0.75,
+            "minimumShadowBias": 0,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "color": "255;255;255",
+            "shadowQuality": "medium",
+            "top": "Z+"
+          },
+          "booleanParameters": {
+            "isCastingShadow": true
+          }
+        }
+      ]
+    }
+  ],
+  "behaviorsSharedData": [
+    {
+      "name": "Animation",
+      "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
+      "name": "Effect",
+      "type": "EffectCapability::EffectBehavior"
+    },
+    {
+      "name": "Flippable",
+      "type": "FlippableCapability::FlippableBehavior"
+    },
+    {
+      "name": "Opacity",
+      "type": "OpacityCapability::OpacityBehavior"
+    },
+    {
+      "name": "Resizable",
+      "type": "ResizableCapability::ResizableBehavior"
+    },
+    {
+      "name": "Scale",
+      "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "Text",
+      "type": "TextContainerCapability::TextContainerBehavior"
+    }
+  ]
+}
