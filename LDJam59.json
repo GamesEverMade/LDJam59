@@ -950,7 +950,7 @@
       {
         "file": "assets/Sound button_on.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/Sound button_on.png\",\"extension\":\".png\"}",
         "name": "Sound button_on.png",
         "smoothed": true,
         "userAdded": false,
@@ -958,6 +958,48 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/On-Screen Controls/Sprites/Line Light/228f9d6e72596f801e84f9ff9f7b0901732a560b11611af55d19ef1a9143c66c_Sound button_on.png",
           "name": "Sound button_on.png"
         }
+      },
+      {
+        "file": "assets/ClickButton.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/ClickButton.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/on.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "on",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/off.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "off",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/off2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "off2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/off3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "off3",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
@@ -1025,10 +1067,6 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/game-scene"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/settings-scene"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,

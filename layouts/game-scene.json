@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.7370816317994161,
+    "zoomFactor": 0.34375202416123785,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -588,7 +588,7 @@
       "angle": 0,
       "customSize": true,
       "depth": 67,
-      "height": 64,
+      "height": 32,
       "layer": "HUD",
       "name": "Volume",
       "persistentUuid": "6004e212-cf33-4638-8e02-ef6a7e00e967",
@@ -603,14 +603,14 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 1.3333333333333333,
-      "height": 64,
+      "depth": 0.6666666666666666,
+      "height": 32,
       "keepRatio": true,
-      "layer": "",
+      "layer": "HUD",
       "name": "Sound_button",
       "persistentUuid": "fa3e2596-31df-4de5-82d0-e36dd92b0a88",
-      "width": 64,
-      "x": 160,
+      "width": 32,
+      "x": 200,
       "y": 32,
       "zOrder": 42,
       "numberProperties": [],
@@ -2936,7 +2936,8 @@
       "effects": [],
       "behaviors": [],
       "content": {
-        "ShowLabelAtChanges": false
+        "ShowLabelAtChanges": true,
+        "InitialValue": 50
       }
     },
     {
@@ -2946,9 +2947,27 @@
       "persistentUuid": "29cb5622-bebf-4ca6-a004-2590657f3fdc",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "name": "IsMute",
+          "type": "boolean",
+          "value": false
+        }
+      ],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "isFolded": true,
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 2.0247e-320
+        }
+      ],
       "animations": [
         {
           "name": "on",
@@ -2956,6 +2975,7 @@
           "directions": [
             {
               "looping": true,
+              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.025,
               "sprites": [
                 {
@@ -3004,11 +3024,12 @@
           "directions": [
             {
               "looping": true,
+              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.025,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Sound button_off.png",
+                  "image": "off3",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -3193,7 +3214,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "At the beginning of the scene...",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3773,8 +3793,146 @@
             "TimerElapsedTime(\"LevelTimer\")",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "PanelSpriteSlider::PanelSpriteSlider::SetValue"
+          },
+          "parameters": [
+            "Volume",
+            "=",
+            "Sound.MainVolume",
+            ""
+          ]
         }
       ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "IsLevelRunning",
+            "False",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ActivateBehavior"
+          },
+          "parameters": [
+            "Items",
+            "Draggable",
+            "no"
+          ]
+        },
+        {
+          "type": {
+            "value": "ActivateBehavior"
+          },
+          "parameters": [
+            "Flags",
+            "Draggable",
+            "no"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "TwoChoicesDialogBoxes::TwoChoicesDialogBox::IsYesClicked"
+          },
+          "parameters": [
+            "DefeatedBox",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "CurrentLevel",
+            "=",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "IsLevelRunning",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Game Scene\"",
+            "yes"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "TwoChoicesDialogBoxes::TwoChoicesDialogBox::IsNoClicked"
+          },
+          "parameters": [
+            "DefeatedBox",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Main Menu Scene\"",
+            "yes"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Village Health"
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
@@ -3861,14 +4019,26 @@
       ]
     },
     {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Volume Controller"
+    },
+    {
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
           "type": {
-            "value": "TwoChoicesDialogBoxes::TwoChoicesDialogBox::IsYesClicked"
+            "value": "PanelSpriteSlider::PanelSpriteSlider::IsActivated"
           },
           "parameters": [
-            "DefeatedBox",
+            "Volume",
             ""
           ]
         }
@@ -3879,70 +4049,60 @@
             "value": "SetNumberVariable"
           },
           "parameters": [
-            "CurrentLevel",
+            "Sound.MainVolume",
             "=",
+            "Volume.Value()"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Or"
+          },
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "ButtonStates::ButtonFSM::IsClicked"
+              },
+              "parameters": [
+                "Sound_button",
+                "ButtonFSM",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ButtonStates::ButtonFSM::IsPressed"
+              },
+              "parameters": [
+                "Sound_button",
+                "ButtonFSM",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": {
+            "value": "MouseButtonFromTextReleased"
+          },
+          "parameters": [
+            "",
+            "\"Left\""
+          ]
+        },
+        {
+          "type": {
+            "value": "HasTouchEnded"
+          },
+          "parameters": [
+            "",
             "1"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetBooleanVariable"
-          },
-          "parameters": [
-            "IsLevelRunning",
-            "True",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Scene"
-          },
-          "parameters": [
-            "",
-            "\"Game Scene\"",
-            "yes"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "TwoChoicesDialogBoxes::TwoChoicesDialogBox::IsNoClicked"
-          },
-          "parameters": [
-            "DefeatedBox",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Scene"
-          },
-          "parameters": [
-            "",
-            "\"Main Menu Scene\"",
-            "yes"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "BooleanVariable"
-          },
-          "parameters": [
-            "IsLevelRunning",
-            "False",
-            ""
           ]
         },
         {
@@ -3955,22 +4115,102 @@
       "actions": [
         {
           "type": {
-            "value": "ActivateBehavior"
+            "value": "PlaySoundOnChannel"
           },
           "parameters": [
-            "Items",
-            "Draggable",
-            "no"
+            "",
+            "assets/ClickButton.wav",
+            "7",
+            "",
+            "30",
+            "1"
           ]
         },
         {
           "type": {
-            "value": "ActivateBehavior"
+            "value": "SetBooleanObjectVariable"
           },
           "parameters": [
-            "Flags",
-            "Draggable",
-            "no"
+            "Sound_button",
+            "IsMute",
+            "Toggle",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "Sound_button",
+            "IsMute",
+            "=",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+          },
+          "parameters": [
+            "Sound_button",
+            "Animation",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "ResumeMusicChannel"
+          },
+          "parameters": [
+            "",
+            "8"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "Sound_button",
+            "IsMute",
+            "True",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+          },
+          "parameters": [
+            "Sound_button",
+            "Animation",
+            "=",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "StopMusicChannel"
+          },
+          "parameters": [
+            "",
+            "8"
           ]
         }
       ]
@@ -4475,7 +4715,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Drag and drop",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -4892,7 +5131,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Gnolls Attack",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -5013,7 +5251,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Level manager",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -6011,7 +6248,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Player attack",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -7085,6 +7321,10 @@
     {
       "name": "Animation",
       "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
+      "name": "ButtonFSM",
+      "type": "ButtonStates::ButtonFSM"
     },
     {
       "name": "Effect",

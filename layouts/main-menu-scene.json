@@ -52,23 +52,6 @@
       "height": 48,
       "keepRatio": true,
       "layer": "",
-      "name": "Settings",
-      "persistentUuid": "50bbc84a-9d75-4113-b345-187204a41c29",
-      "width": 201,
-      "x": 550,
-      "y": 562,
-      "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 64,
-      "height": 48,
-      "keepRatio": true,
-      "layer": "",
       "name": "Quit_Game",
       "persistentUuid": "e7388139-9efc-4c82-bcae-b9fd513925f3",
       "width": 202,
@@ -98,34 +81,6 @@
     },
     {
       "assetStoreId": "c22fb0ef85cbe185b6ca8705c18c5bcc879d7cdfd18556b886954ad75c920835",
-      "name": "Load_game",
-      "persistentUuid": "b1aee4c4-ef64-4d1c-b636-de454350d5d0",
-      "type": "PanelSpriteButton::PanelSpriteButton",
-      "variant": "Small Tan Button",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {
-        "LabelText": "Load Game",
-        "PressedLabelOffsetY": 2
-      }
-    },
-    {
-      "assetStoreId": "c22fb0ef85cbe185b6ca8705c18c5bcc879d7cdfd18556b886954ad75c920835",
-      "name": "Settings",
-      "persistentUuid": "c2ec5898-4486-46b5-883d-524d8e2e9c8e",
-      "type": "PanelSpriteButton::PanelSpriteButton",
-      "variant": "Small Tan Button",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {
-        "LabelText": "Settings",
-        "PressedLabelOffsetY": 2
-      }
-    },
-    {
-      "assetStoreId": "c22fb0ef85cbe185b6ca8705c18c5bcc879d7cdfd18556b886954ad75c920835",
       "name": "Quit_Game",
       "persistentUuid": "2afb8bec-15d8-4c1a-8ad4-0445b3094494",
       "type": "PanelSpriteButton::PanelSpriteButton",
@@ -150,12 +105,6 @@
         "children": [
           {
             "objectName": "Quit_Game"
-          },
-          {
-            "objectName": "Settings"
-          },
-          {
-            "objectName": "Load_game"
           },
           {
             "objectName": "New_Game"
@@ -223,60 +172,6 @@
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
-          "disabled": true,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Or"
-              },
-              "parameters": [],
-              "subInstructions": [
-                {
-                  "type": {
-                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-                  },
-                  "parameters": [
-                    "New_Game",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PanelSpriteButton::PanelSpriteButton::IsPressed"
-                  },
-                  "parameters": [
-                    "New_Game",
-                    ""
-                  ]
-                }
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "\"Transition Scene\"",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "TransitionScene",
-                "=",
-                "\"Tutorial\""
-              ]
-            }
-          ]
-        },
-        {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -314,49 +209,6 @@
               "parameters": [
                 "",
                 "\"Game Scene\"",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Or"
-              },
-              "parameters": [],
-              "subInstructions": [
-                {
-                  "type": {
-                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-                  },
-                  "parameters": [
-                    "Settings",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PanelSpriteButton::PanelSpriteButton::IsPressed"
-                  },
-                  "parameters": [
-                    "Settings",
-                    ""
-                  ]
-                }
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "\"Settings Scene\"",
                 ""
               ]
             }
