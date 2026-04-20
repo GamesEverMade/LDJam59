@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.2386775827025823,
+    "zoomFactor": 0.7370816317994161,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -580,6 +580,39 @@
       "x": 1734,
       "y": 10,
       "zOrder": 40,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 67,
+      "height": 64,
+      "layer": "HUD",
+      "name": "Volume",
+      "persistentUuid": "6004e212-cf33-4638-8e02-ef6a7e00e967",
+      "width": 200,
+      "x": 256,
+      "y": 32,
+      "zOrder": 41,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1.3333333333333333,
+      "height": 64,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Sound_button",
+      "persistentUuid": "fa3e2596-31df-4de5-82d0-e36dd92b0a88",
+      "width": 64,
+      "x": 160,
+      "y": 32,
+      "zOrder": 42,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2892,6 +2925,128 @@
         "LabelButtonID1": "Main menu",
         "TextMessage": "The village was overrun by gnolls!"
       }
+    },
+    {
+      "assetStoreId": "a0c5ce222ddf98aaf502b91b2b0e38f9cbaa61985a18a50866a66073ee00c287",
+      "name": "Volume",
+      "persistentUuid": "475c9422-67cf-4f19-b273-21f23134ed9f",
+      "type": "PanelSpriteSlider::PanelSpriteSlider",
+      "variant": "Tiny square white slider",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "ShowLabelAtChanges": false
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "28bba677a308e6e42234abd1768e81a573e7ef6527d43556948e84516256875d",
+      "name": "Sound_button",
+      "persistentUuid": "29cb5622-bebf-4ca6-a004-2590657f3fdc",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "on",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Sound button_on.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 48,
+                        "y": 0
+                      },
+                      {
+                        "x": 48,
+                        "y": 48
+                      },
+                      {
+                        "x": 0,
+                        "y": 48
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "off",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Sound button_off.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 48,
+                        "y": 0
+                      },
+                      {
+                        "x": 48,
+                        "y": 48
+                      },
+                      {
+                        "x": 0,
+                        "y": 48
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -2949,6 +3104,12 @@
           },
           {
             "objectName": "LevelProgress"
+          },
+          {
+            "objectName": "Volume"
+          },
+          {
+            "objectName": "Sound_button"
           }
         ]
       },

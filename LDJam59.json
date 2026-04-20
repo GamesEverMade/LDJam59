@@ -898,6 +898,66 @@
         "name": "tutorial3",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/Tiny Square White Slider Border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Tiny Square White Slider Border.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/f514ae509ed9c23d6412fd28ef659473cab14ea6d43d35fc158fafe6f95077c8_Tiny Square White Slider Border.png",
+          "name": "Tiny Square White Slider Border.png"
+        }
+      },
+      {
+        "file": "assets/Tiny Square White Slider Fill Bar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Tiny Square White Slider Fill Bar.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/fabe8292b1d615560e113341aa5972b8d0c94e844d346a5f596b96efb6ce259e_Tiny Square White Slider Fill Bar.png",
+          "name": "Tiny Square White Slider Fill Bar.png"
+        }
+      },
+      {
+        "file": "assets/Tiny Square White Slider Thumb.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Tiny Square White Slider Thumb.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/52698eea1f7246ed4d82cbd50d5b65213f149c9afcbc39bede711a68ccdc9124_Tiny Square White Slider Thumb.png",
+          "name": "Tiny Square White Slider Thumb.png"
+        }
+      },
+      {
+        "file": "assets/Sound button_off.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Sound button_off.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/On-Screen Controls/Sprites/Line Light/3874bf0fd5f4abcbc1f4b0e463f92e58c1264978aa7cdc86a13324f283fb1e83_Sound button_off.png",
+          "name": "Sound button_off.png"
+        }
+      },
+      {
+        "file": "assets/Sound button_on.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Sound button_on.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/On-Screen Controls/Sprites/Line Light/228f9d6e72596f801e84f9ff9f7b0901732a560b11611af55d19ef1a9143c66c_Sound button_on.png",
+          "name": "Sound button_on.png"
+        }
       }
     ]
   },
