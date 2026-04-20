@@ -59,6 +59,14 @@
       "objectGroups": []
     }
   ],
+  "eventsFunctionsFolderStructure": {
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "functionName": "IsInGameEdition"
+      }
+    ]
+  },
   "eventsBasedBehaviors": [],
   "eventsBasedObjects": [
     {
@@ -72,10 +80,13 @@
       "defaultName": "",
       "description": "A dialog box showing two options.",
       "fullName": "Two choices dialog box ",
+      "helpPath": "",
+      "iconUrl": "",
       "isInnerAreaFollowingParentSize": true,
       "isTextContainer": true,
       "isUsingLegacyInstancesRenderer": false,
       "name": "TwoChoicesDialogBox",
+      "previewIconUrl": "",
       "objects": [
         {
           "assetStoreId": "90d94b6e3a23c34948e59eaaef4679740f8ab588696d59b21e0c0c2ef106b94d",
@@ -1341,6 +1352,43 @@
           "objectGroups": []
         }
       ],
+      "eventsFunctionsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "functionName": "onCreated"
+          },
+          {
+            "functionName": "doStepPostEvents"
+          },
+          {
+            "functionName": "onHotReloading"
+          },
+          {
+            "functionName": "IsYesClicked"
+          },
+          {
+            "functionName": "IsNoClicked"
+          },
+          {
+            "folderName": "Dialog Box configuration",
+            "children": [
+              {
+                "functionName": "ActiveButtonById"
+              },
+              {
+                "functionName": "SetActiveButtonById"
+              },
+              {
+                "functionName": "TextMessage"
+              },
+              {
+                "functionName": "SetTextMessage"
+              }
+            ]
+          }
+        ]
+      },
       "propertyDescriptors": [
         {
           "value": "Default message. Continue?",
@@ -1474,13 +1522,13 @@
               ],
               "behaviors": [
                 {
+                  "bottomEdgeAnchor": 4,
                   "name": "Anchor",
+                  "topEdgeAnchor": 4,
                   "type": "AnchorBehavior::AnchorBehavior",
-                  "bottomEdgeAnchor": 2,
                   "leftEdgeAnchor": 0,
                   "relativeToOriginalWindowSize": true,
                   "rightEdgeAnchor": 2,
-                  "topEdgeAnchor": 0,
                   "useLegacyBottomAndRightAnchors": false
                 }
               ],

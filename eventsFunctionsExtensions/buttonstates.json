@@ -42,12 +42,18 @@
   "globalVariables": [],
   "sceneVariables": [],
   "eventsFunctions": [],
+  "eventsFunctionsFolderStructure": {
+    "folderName": "__ROOT"
+  },
   "eventsBasedBehaviors": [
     {
       "description": "Use objects as buttons.",
       "fullName": "Button states",
+      "helpPath": "",
+      "iconUrl": "",
       "name": "ButtonFSM",
       "objectType": "",
+      "previewIconUrl": "",
       "eventsFunctions": [
         {
           "fullName": "",
@@ -1121,6 +1127,41 @@
           "objectGroups": []
         }
       ],
+      "eventsFunctionsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "functionName": "doStepPreEvents"
+          },
+          {
+            "functionName": "onDeActivate"
+          },
+          {
+            "functionName": "ResetState"
+          },
+          {
+            "functionName": "IsIdle"
+          },
+          {
+            "functionName": "IsClicked"
+          },
+          {
+            "functionName": "IsHovered"
+          },
+          {
+            "functionName": "IsFocused"
+          },
+          {
+            "functionName": "IsPressed"
+          },
+          {
+            "functionName": "IsPressedOutside"
+          },
+          {
+            "functionName": "TouchId"
+          }
+        ]
+      },
       "propertyDescriptors": [
         {
           "value": "true",
@@ -1215,8 +1256,11 @@
     {
       "description": "Enable effects on buttons based on their state.",
       "fullName": "Button object effects",
+      "helpPath": "",
+      "iconUrl": "",
       "name": "ButtonObjectEffects",
       "objectType": "",
+      "previewIconUrl": "",
       "eventsFunctions": [
         {
           "fullName": "",
@@ -1710,6 +1754,40 @@
           "objectGroups": []
         }
       ],
+      "eventsFunctionsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "functionName": "onCreated"
+          },
+          {
+            "functionName": "doStepPreEvents"
+          },
+          {
+            "folderName": "Button object effects configuration",
+            "children": [
+              {
+                "functionName": "IdleEffect"
+              },
+              {
+                "functionName": "SetIdleEffect"
+              },
+              {
+                "functionName": "FocusedEffect"
+              },
+              {
+                "functionName": "SetFocusedEffect"
+              },
+              {
+                "functionName": "PressedEffect"
+              },
+              {
+                "functionName": "SetPressedEffect"
+              }
+            ]
+          }
+        ]
+      },
       "propertyDescriptors": [
         {
           "value": "",
@@ -1783,8 +1861,11 @@
     {
       "description": "Change the animation of buttons according to their state.",
       "fullName": "Button animation",
+      "helpPath": "",
+      "iconUrl": "",
       "name": "ButtonAnimationName",
       "objectType": "",
+      "previewIconUrl": "",
       "eventsFunctions": [
         {
           "fullName": "",
@@ -2187,6 +2268,40 @@
           "objectGroups": []
         }
       ],
+      "eventsFunctionsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "functionName": "onCreated"
+          },
+          {
+            "functionName": "doStepPreEvents"
+          },
+          {
+            "folderName": "Button animation configuration",
+            "children": [
+              {
+                "functionName": "IdleAnimationName"
+              },
+              {
+                "functionName": "SetIdleAnimationName"
+              },
+              {
+                "functionName": "FocusedAnimationName"
+              },
+              {
+                "functionName": "SetFocusedAnimationName"
+              },
+              {
+                "functionName": "PressedAnimationName"
+              },
+              {
+                "functionName": "SetPressedAnimationName"
+              }
+            ]
+          }
+        ]
+      },
       "propertyDescriptors": [
         {
           "value": "",
@@ -2260,8 +2375,11 @@
     {
       "description": "Smoothly change an effect on buttons according to their state.",
       "fullName": "Button object effect tween",
+      "helpPath": "",
+      "iconUrl": "",
       "name": "ButtonObjectEffectTween",
       "objectType": "",
+      "previewIconUrl": "",
       "eventsFunctions": [
         {
           "fullName": "",
@@ -3719,6 +3837,85 @@
           "objectGroups": []
         }
       ],
+      "eventsFunctionsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "functionName": "onCreated"
+          },
+          {
+            "functionName": "doStepPreEvents"
+          },
+          {
+            "functionName": "TimeDelta"
+          },
+          {
+            "functionName": "FadeIn"
+          },
+          {
+            "functionName": "FadeOut"
+          },
+          {
+            "functionName": "PlayTween"
+          },
+          {
+            "folderName": "Button effect tween configuration",
+            "children": [
+              {
+                "functionName": "EffectName"
+              },
+              {
+                "functionName": "EffectProperty"
+              },
+              {
+                "functionName": "SetEffectProperty"
+              },
+              {
+                "functionName": "IdleValue"
+              },
+              {
+                "functionName": "SetIdleValue"
+              },
+              {
+                "functionName": "FocusedValue"
+              },
+              {
+                "functionName": "SetFocusedValue"
+              },
+              {
+                "functionName": "PressedValue"
+              },
+              {
+                "functionName": "SetPressedValue"
+              },
+              {
+                "functionName": "FadeInEasing"
+              },
+              {
+                "functionName": "SetFadeInEasing"
+              },
+              {
+                "functionName": "FadeOutEasing"
+              },
+              {
+                "functionName": "SetFadeOutEasing"
+              },
+              {
+                "functionName": "FadeInDuration"
+              },
+              {
+                "functionName": "SetFadeInDuration"
+              },
+              {
+                "functionName": "FadeOutDuration"
+              },
+              {
+                "functionName": "SetFadeOutDuration"
+              }
+            ]
+          }
+        ]
+      },
       "propertyDescriptors": [
         {
           "value": "",
@@ -4231,8 +4428,11 @@
     {
       "description": "Smoothly resize buttons according to their state.",
       "fullName": "Button scale tween",
+      "helpPath": "",
+      "iconUrl": "",
       "name": "ButtonScaleTween",
       "objectType": "",
+      "previewIconUrl": "",
       "eventsFunctions": [
         {
           "fullName": "",
@@ -5167,6 +5367,70 @@
           "objectGroups": []
         }
       ],
+      "eventsFunctionsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "functionName": "onCreated"
+          },
+          {
+            "functionName": "doStepPreEvents"
+          },
+          {
+            "functionName": "FadeIn"
+          },
+          {
+            "functionName": "FadeOut"
+          },
+          {
+            "folderName": "Button scale tween configuration",
+            "children": [
+              {
+                "functionName": "IdleScale"
+              },
+              {
+                "functionName": "SetIdleScale"
+              },
+              {
+                "functionName": "FocusedScale"
+              },
+              {
+                "functionName": "SetFocusedScale"
+              },
+              {
+                "functionName": "PressedScale"
+              },
+              {
+                "functionName": "SetPressedScale"
+              },
+              {
+                "functionName": "FadeInDuration"
+              },
+              {
+                "functionName": "SetFadeInDuration"
+              },
+              {
+                "functionName": "FadeOutDuration"
+              },
+              {
+                "functionName": "SetFadeOutDuration"
+              },
+              {
+                "functionName": "FadeInEasing"
+              },
+              {
+                "functionName": "SetFadeInEasing"
+              },
+              {
+                "functionName": "FadeOutEasing"
+              },
+              {
+                "functionName": "SetFadeOutEasing"
+              }
+            ]
+          }
+        ]
+      },
       "propertyDescriptors": [
         {
           "value": "",
@@ -5595,8 +5859,11 @@
     {
       "description": "Smoothly change the color tint of buttons according to their state.",
       "fullName": "Button color tint tween",
+      "helpPath": "",
+      "iconUrl": "",
       "name": "ButtonColorTintTween",
       "objectType": "Sprite",
+      "previewIconUrl": "",
       "eventsFunctions": [
         {
           "fullName": "",
@@ -6545,6 +6812,70 @@
           "objectGroups": []
         }
       ],
+      "eventsFunctionsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "functionName": "onCreated"
+          },
+          {
+            "functionName": "doStepPreEvents"
+          },
+          {
+            "functionName": "FadeIn"
+          },
+          {
+            "functionName": "FadeOut"
+          },
+          {
+            "folderName": "Button color tint tween",
+            "children": [
+              {
+                "functionName": "IdleColorTint"
+              },
+              {
+                "functionName": "SetIdleColorTint"
+              },
+              {
+                "functionName": "FocusedColorTint"
+              },
+              {
+                "functionName": "SetFocusedColorTint"
+              },
+              {
+                "functionName": "PressedColorTint"
+              },
+              {
+                "functionName": "SetPressedColorTint"
+              },
+              {
+                "functionName": "FadeInDuration"
+              },
+              {
+                "functionName": "SetFadeInDuration"
+              },
+              {
+                "functionName": "FadeOutDuration"
+              },
+              {
+                "functionName": "SetFadeOutDuration"
+              },
+              {
+                "functionName": "FadeInEasing"
+              },
+              {
+                "functionName": "SetFadeInEasing"
+              },
+              {
+                "functionName": "FadeOutEasing"
+              },
+              {
+                "functionName": "SetFadeOutEasing"
+              }
+            ]
+          }
+        ]
+      },
       "propertyDescriptors": [
         {
           "value": "",

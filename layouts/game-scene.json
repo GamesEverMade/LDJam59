@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.29122588669111743,
+    "zoomFactor": 0.46331118245140906,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -363,8 +363,8 @@
       "name": "AttackCooldown",
       "persistentUuid": "9627ddf6-f69a-4853-9ee9-45ee9e05383c",
       "width": 0,
-      "x": 1486,
-      "y": 81,
+      "x": 1395,
+      "y": 109,
       "zOrder": 25,
       "numberProperties": [],
       "stringProperties": [],
@@ -379,8 +379,8 @@
       "name": "HealthBar",
       "persistentUuid": "a7a4f914-331a-4e69-955d-6fa5f7b99770",
       "width": 0,
-      "x": 1486,
-      "y": 32,
+      "x": 1395,
+      "y": 60,
       "zOrder": 26,
       "numberProperties": [],
       "stringProperties": [],
@@ -412,8 +412,8 @@
       "name": "LevelProgress",
       "persistentUuid": "4bc20844-d373-48de-8a5a-76b016e776be",
       "width": 0,
-      "x": 1486,
-      "y": 134,
+      "x": 1395,
+      "y": 162,
       "zOrder": 29,
       "numberProperties": [],
       "stringProperties": [],
@@ -494,7 +494,7 @@
       "persistentUuid": "e37b61d8-3f79-4188-b422-1dfff57bad13",
       "width": 164.5,
       "x": 1724,
-      "y": 352,
+      "y": 408,
       "zOrder": 35,
       "numberProperties": [],
       "stringProperties": [],
@@ -512,7 +512,7 @@
       "persistentUuid": "7dd32a35-f563-45f1-9937-fad6e21df261",
       "width": 164.5,
       "x": 32,
-      "y": 352,
+      "y": 408,
       "zOrder": 36,
       "numberProperties": [],
       "stringProperties": [],
@@ -539,14 +539,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 182,
+      "height": 252,
       "keepRatio": true,
       "layer": "UI",
       "name": "Go",
       "persistentUuid": "9b733709-8bd2-423c-b84c-573f07f0ebac",
-      "width": 179,
-      "x": 1734,
-      "y": 10,
+      "width": 248,
+      "x": 1644,
+      "y": 30,
       "zOrder": 40,
       "numberProperties": [],
       "stringProperties": [],
@@ -786,196 +786,10 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "ButtonRight",
-      "persistentUuid": "41646f01-6353-4f80-a5b0-ce72ef7524f0",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "arrow",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "arrow",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 329,
-                        "y": 0
-                      },
-                      {
-                        "x": 329,
-                        "y": 344
-                      },
-                      {
-                        "x": 0,
-                        "y": 344
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "ButtonLeft",
-      "persistentUuid": "bf800815-f7dd-4540-a35e-72a341880b73",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "arrow2",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "arrow2",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 329,
-                        "y": 0
-                      },
-                      {
-                        "x": 329,
-                        "y": 344
-                      },
-                      {
-                        "x": 0,
-                        "y": 344
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "Go",
-      "persistentUuid": "63fa7916-8793-48c3-a911-ad6fcf26725e",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "OK",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "OK",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 329,
-                        "y": 0
-                      },
-                      {
-                        "x": 329,
-                        "y": 344
-                      },
-                      {
-                        "x": 0,
-                        "y": 344
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
       "name": "GnollSoldier",
       "persistentUuid": "2ee68a9d-6fa5-4cd1-901b-3ab7e99c2e58",
       "type": "Sprite",
-      "updateIfNotVisible": false,
+      "updateIfNotVisible": true,
       "variables": [
         {
           "name": "gnollSpeed",
@@ -1063,6 +877,10 @@
           "CurrentLength": 2.0247e-320,
           "IsLookingBack": false,
           "Viewpoint": "Top-Down"
+        },
+        {
+          "name": "YSort",
+          "type": "YSort::YSort"
         }
       ],
       "animations": [
@@ -1646,8 +1464,8 @@
         "BarBottomPadding": 6,
         "BarLeftPadding": 4,
         "BarRightPadding": 4,
-        "MaxValue": 20,
-        "InitialValue": 20
+        "MaxValue": 10,
+        "InitialValue": 10
       }
     },
     {
@@ -1789,7 +1607,7 @@
       "name": "GnollArcher",
       "persistentUuid": "e1d80195-89ff-4e61-b8ac-57c5ca5cb310",
       "type": "Sprite",
-      "updateIfNotVisible": false,
+      "updateIfNotVisible": true,
       "variables": [
         {
           "name": "gnollSpeed",
@@ -1877,6 +1695,10 @@
           "CurrentLength": 2.0247e-320,
           "IsLookingBack": false,
           "Viewpoint": "Top-Down"
+        },
+        {
+          "name": "YSort",
+          "type": "YSort::YSort"
         }
       ],
       "animations": [
@@ -2007,6 +1829,186 @@
                       }
                     ]
                   ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "gnolldead1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 312,
+                    "y": 453
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 322,
+                    "y": 325
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 14,
+                        "y": 13
+                      },
+                      {
+                        "x": 492,
+                        "y": 13
+                      },
+                      {
+                        "x": 492,
+                        "y": 523
+                      },
+                      {
+                        "x": 14,
+                        "y": 523
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "gnolldead5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 312,
+                    "y": 453
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 322,
+                    "y": 325
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 14,
+                        "y": 13
+                      },
+                      {
+                        "x": 492,
+                        "y": 13
+                      },
+                      {
+                        "x": 492,
+                        "y": 523
+                      },
+                      {
+                        "x": 14,
+                        "y": 523
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "gnolldead4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 312,
+                    "y": 453
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 322,
+                    "y": 325
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 14,
+                        "y": 13
+                      },
+                      {
+                        "x": 492,
+                        "y": 13
+                      },
+                      {
+                        "x": 492,
+                        "y": 523
+                      },
+                      {
+                        "x": 14,
+                        "y": 523
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "gnolldead2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 312,
+                    "y": 453
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 322,
+                    "y": 325
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 14,
+                        "y": 13
+                      },
+                      {
+                        "x": 492,
+                        "y": 13
+                      },
+                      {
+                        "x": 492,
+                        "y": 523
+                      },
+                      {
+                        "x": 14,
+                        "y": 523
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "gnolldead2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 312,
+                    "y": 453
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 322,
+                    "y": 325
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 14,
+                        "y": 13
+                      },
+                      {
+                        "x": 492,
+                        "y": 13
+                      },
+                      {
+                        "x": 492,
+                        "y": 523
+                      },
+                      {
+                        "x": 14,
+                        "y": 523
+                      }
+                    ]
+                  ]
                 }
               ]
             }
@@ -2020,7 +2022,7 @@
       "name": "GnollEnraged",
       "persistentUuid": "b685f635-f2db-4b3e-aa1e-d85466c9e0c1",
       "type": "Sprite",
-      "updateIfNotVisible": false,
+      "updateIfNotVisible": true,
       "variables": [
         {
           "name": "gnollSpeed",
@@ -2108,6 +2110,10 @@
           "CurrentLength": 2.0247e-320,
           "IsLookingBack": false,
           "Viewpoint": "Top-Down"
+        },
+        {
+          "name": "YSort",
+          "type": "YSort::YSort"
         }
       ],
       "animations": [
@@ -2167,6 +2173,186 @@
               "looping": false,
               "timeBetweenFrames": 0.2,
               "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "gnolldead3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 279,
+                    "y": 419
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 280,
+                    "y": 207
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 68,
+                        "y": 38
+                      },
+                      {
+                        "x": 457,
+                        "y": 38
+                      },
+                      {
+                        "x": 457,
+                        "y": 519
+                      },
+                      {
+                        "x": 68,
+                        "y": 519
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "gnolldead3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 279,
+                    "y": 419
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 280,
+                    "y": 207
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 68,
+                        "y": 38
+                      },
+                      {
+                        "x": 457,
+                        "y": 38
+                      },
+                      {
+                        "x": 457,
+                        "y": 519
+                      },
+                      {
+                        "x": 68,
+                        "y": 519
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "gnolldead1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 279,
+                    "y": 419
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 280,
+                    "y": 207
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 68,
+                        "y": 38
+                      },
+                      {
+                        "x": 457,
+                        "y": 38
+                      },
+                      {
+                        "x": 457,
+                        "y": 519
+                      },
+                      {
+                        "x": 68,
+                        "y": 519
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "gnolldead5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 279,
+                    "y": 419
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 280,
+                    "y": 207
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 68,
+                        "y": 38
+                      },
+                      {
+                        "x": 457,
+                        "y": 38
+                      },
+                      {
+                        "x": 457,
+                        "y": 519
+                      },
+                      {
+                        "x": 68,
+                        "y": 519
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "gnolldead4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 279,
+                    "y": 419
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 280,
+                    "y": 207
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 68,
+                        "y": 38
+                      },
+                      {
+                        "x": 457,
+                        "y": 38
+                      },
+                      {
+                        "x": 457,
+                        "y": 519
+                      },
+                      {
+                        "x": 68,
+                        "y": 519
+                      }
+                    ]
+                  ]
+                },
                 {
                   "hasCustomCollisionMask": true,
                   "image": "gnolldead3.png",
@@ -2873,6 +3059,35 @@
         "LabelMargin": 6,
         "InitialValue": 25
       }
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "HurtRed",
+      "persistentUuid": "b568d04e-6f59-4de5-b646-e824fb1e9e25",
+      "texture": "NewTiledSprite",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [
+        {
+          "effectType": "Adjustment",
+          "name": "Effect",
+          "doubleParameters": {
+            "alpha": 0.2,
+            "blue": 1,
+            "brightness": 1,
+            "contrast": 1,
+            "gamma": 1,
+            "green": 1,
+            "red": 1,
+            "saturation": 1
+          },
+          "stringParameters": {},
+          "booleanParameters": {}
+        }
+      ],
+      "behaviors": []
     }
   ],
   "objectsFolderStructure": {
@@ -2915,15 +3130,6 @@
           },
           {
             "objectName": "UIBase"
-          },
-          {
-            "objectName": "ButtonLeft"
-          },
-          {
-            "objectName": "ButtonRight"
-          },
-          {
-            "objectName": "Go"
           },
           {
             "objectName": "AttackCooldown"
@@ -2981,6 +3187,9 @@
       },
       {
         "objectName": "Level3Scroll"
+      },
+      {
+        "objectName": "HurtRed"
       }
     ]
   },
@@ -3034,7 +3243,7 @@
               "parameters": [
                 "PlayerHealth",
                 "=",
-                "20"
+                "10"
               ]
             },
             {
@@ -3072,28 +3281,6 @@
                 }
               ],
               "actions": [
-                {
-                  "type": {
-                    "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetMaxValue"
-                  },
-                  "parameters": [
-                    "LevelProgress",
-                    "=",
-                    "LevelGoalTime",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetMaxValue"
-                  },
-                  "parameters": [
-                    "HealthBar",
-                    "=",
-                    "PlayerHealth",
-                    ""
-                  ]
-                },
                 {
                   "type": {
                     "value": "CameraShake::SetLayerShakable"
@@ -3171,7 +3358,20 @@
                     "100",
                     "1"
                   ]
-                },
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
                 {
                   "type": {
                     "value": "CurvedMovement::CreatePathFromSvg"
@@ -3361,7 +3561,7 @@
                   "parameters": [
                     "LevelGoalTime",
                     "=",
-                    "300"
+                    "60"
                   ]
                 },
                 {
@@ -3371,7 +3571,7 @@
                   "parameters": [
                     "LevelSpawnRate",
                     "=",
-                    "1"
+                    "3.6"
                   ]
                 },
                 {
@@ -3455,7 +3655,7 @@
                   "parameters": [
                     "LevelGoalTime",
                     "=",
-                    "3"
+                    "80"
                   ]
                 },
                 {
@@ -3465,7 +3665,7 @@
                   "parameters": [
                     "LevelSpawnRate",
                     "=",
-                    "2.5"
+                    "3.4"
                   ]
                 },
                 {
@@ -3550,7 +3750,7 @@
                   "parameters": [
                     "LevelSpawnRate",
                     "=",
-                    "2"
+                    "3.2"
                   ]
                 },
                 {
@@ -3587,11 +3787,83 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetMaxValue"
+                  },
+                  "parameters": [
+                    "LevelProgress",
+                    "=",
+                    "LevelGoalTime",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetMaxValue"
+                  },
+                  "parameters": [
+                    "HealthBar",
+                    "=",
+                    "PlayerHealth",
+                    ""
+                  ]
+                }
+              ]
             }
           ]
         }
       ],
       "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "Health::Health::Health"
+          },
+          "parameters": [
+            "Enemies",
+            "Health",
+            "<=",
+            "0",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
+          },
+          "parameters": [
+            "Enemies",
+            "Animation"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "Enemies",
+            ""
+          ]
+        }
+      ]
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
@@ -3628,6 +3900,35 @@
             "=",
             "TimerElapsedTime(\"LevelTimer\")",
             ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "MouseButtonFromTextReleased"
+          },
+          "parameters": [
+            "",
+            "\"Left\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "PlaySoundOnChannel"
+          },
+          "parameters": [
+            "",
+            "assets/ClickButton.wav",
+            "7",
+            "",
+            "30",
+            "1"
           ]
         }
       ]
@@ -3948,6 +4249,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Volume Controller",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -4007,24 +4309,6 @@
                     ""
                   ]
                 }
-              ]
-            },
-            {
-              "type": {
-                "value": "MouseButtonFromTextReleased"
-              },
-              "parameters": [
-                "",
-                "\"Left\""
-              ]
-            },
-            {
-              "type": {
-                "value": "HasTouchEnded"
-              },
-              "parameters": [
-                "",
-                "1"
               ]
             },
             {
@@ -5140,7 +5424,7 @@
                   },
                   "parameters": [
                     "",
-                    "0.2",
+                    "0.3",
                     "0.05",
                     "0.05",
                     ""
@@ -5175,7 +5459,66 @@
                     "",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "HurtRed",
+                    "0",
+                    "0",
+                    "\"HUD\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResizableCapability::ResizableBehavior::SetSize"
+                  },
+                  "parameters": [
+                    "HurtRed",
+                    "Resizable",
+                    "1920",
+                    "1080"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "HurtRed",
+                    "\"HurtEffect\""
+                  ]
                 }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "HurtRed",
+                "\"HurtEffect\"",
+                ">",
+                "0.4"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "HurtRed",
+                ""
               ]
             }
           ]
@@ -5426,17 +5769,6 @@
                         "=",
                         "0.5"
                       ]
-                    },
-                    {
-                      "type": {
-                        "value": "CurvedMovement::SpeedPathMovement::DrawDebug"
-                      },
-                      "parameters": [
-                        "Enemies",
-                        "SpeedPathMovement",
-                        "Trajectory",
-                        ""
-                      ]
                     }
                   ]
                 },
@@ -5538,17 +5870,6 @@
                         "Scale",
                         "=",
                         "0.5"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "CurvedMovement::SpeedPathMovement::DrawDebug"
-                      },
-                      "parameters": [
-                        "Enemies",
-                        "SpeedPathMovement",
-                        "Trajectory",
-                        ""
                       ]
                     }
                   ]
@@ -5652,17 +5973,6 @@
                         "=",
                         "0.5"
                       ]
-                    },
-                    {
-                      "type": {
-                        "value": "CurvedMovement::SpeedPathMovement::DrawDebug"
-                      },
-                      "parameters": [
-                        "Enemies",
-                        "SpeedPathMovement",
-                        "Trajectory",
-                        ""
-                      ]
                     }
                   ]
                 }
@@ -5686,6 +5996,18 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Victory"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -6882,11 +7204,11 @@
                     },
                     {
                       "type": {
-                        "value": "NumberObjectVariable"
+                        "value": "StringObjectVariable"
                       },
                       "parameters": [
                         "Enemies",
-                        "gnollSpeed",
+                        "EnemyType",
                         "=",
                         "SelectedAttack"
                       ]
@@ -7126,43 +7448,6 @@
         }
       ],
       "parameters": []
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "Health::Health::Health"
-          },
-          "parameters": [
-            "Enemies",
-            "Health",
-            "<=",
-            "0",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
-          },
-          "parameters": [
-            "Enemies",
-            "Animation"
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Delete"
-          },
-          "parameters": [
-            "Enemies",
-            ""
-          ]
-        }
-      ]
     }
   ],
   "layers": [
@@ -7370,6 +7655,10 @@
     {
       "name": "Tween",
       "type": "Tween::TweenBehavior"
+    },
+    {
+      "name": "YSort",
+      "type": "YSort::YSort"
     }
   ]
 }

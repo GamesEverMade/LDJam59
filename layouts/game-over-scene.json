@@ -1,15 +1,15 @@
 {
-  "b": 0,
+  "b": 255,
   "disableInputWhenNotFocused": true,
   "mangledName": "Game_32Over_32Scene",
   "name": "Game Over Scene",
-  "r": 0,
+  "r": 255,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
   "title": "",
-  "v": 0,
+  "v": 255,
   "uiSettings": {
-    "grid": false,
+    "grid": true,
     "gridType": "rectangular",
     "gridWidth": 32,
     "gridHeight": 32,
@@ -19,8 +19,8 @@
     "gridOffsetZ": 0,
     "gridColor": 10401023,
     "gridAlpha": 0.8,
-    "snap": false,
-    "zoomFactor": 0.44485159988866496,
+    "snap": true,
+    "zoomFactor": 0.4303403802207656,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -32,46 +32,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 110,
+      "height": 197,
       "keepRatio": true,
       "layer": "",
-      "name": "GameOverTitle",
-      "persistentUuid": "d5abeb50-a2bf-4a41-bb9f-4728ae2274f6",
-      "width": 810,
-      "x": 611,
-      "y": 410,
-      "zOrder": 1,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "CreditsTitle",
-      "persistentUuid": "427512a1-ee8b-4820-8844-16700558fc7f",
-      "width": 0,
-      "x": 36,
-      "y": 780,
-      "zOrder": 2,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "CreditNames",
-      "persistentUuid": "6a2c2834-3285-478f-a153-d9a354148a90",
-      "width": 0,
-      "x": 40,
-      "y": 866,
+      "name": "BtnQuit",
+      "persistentUuid": "bf890517-5875-489e-bd2d-0ab633310c1b",
+      "width": 224,
+      "x": 1600,
+      "y": 699,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
@@ -83,61 +51,12 @@
       "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "Songs_and_Effects",
-      "persistentUuid": "e7a4ad37-7b90-4857-bb6f-2a7e7f00811e",
+      "name": "Congratulations",
+      "persistentUuid": "881d44d3-7dc1-4373-859d-d047131cea47",
       "width": 0,
-      "x": 1215,
-      "y": 808,
-      "zOrder": 7,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 254,
-      "layer": "",
-      "name": "NewSprite",
-      "persistentUuid": "ca8bf0af-cec1-43ee-bcdd-7ee0de2f00e8",
-      "width": 254,
-      "x": -1,
-      "y": 2,
-      "zOrder": 8,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Thanks",
-      "persistentUuid": "9117b528-73d6-49ea-a88a-4c3dce4b9413",
-      "width": 0,
-      "x": 501,
-      "y": 266,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 120.4705882352941,
-      "height": 52.705882352941174,
-      "keepRatio": true,
-      "layer": "",
-      "name": "TinyTanButton",
-      "persistentUuid": "c00d42d1-3f7f-4442-bfda-93202c63778c",
-      "width": 128,
-      "x": 1610,
-      "y": 960,
-      "zOrder": 10,
+      "x": 0,
+      "y": 0,
+      "zOrder": -1,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -145,109 +64,9 @@
   ],
   "objects": [
     {
-      "assetStoreId": "54d86c7d46104e19c9a7e86e173b71bce9592b476e156846c53f11be91039afd",
-      "name": "GameOverTitle",
-      "persistentUuid": "68ba0162-9d45-429b-94e9-05a22ceeaaaa",
-      "type": "BitmapText::BitmapTextObject",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {
-        "text": "Game Over",
-        "opacity": 255,
-        "scale": 10,
-        "fontSize": 20,
-        "tint": "255;0;0",
-        "bitmapFontResourceName": "assets/NotJamOldStyle11.fnt",
-        "textureAtlasResourceName": "assets/NotJamOldStyle11.png",
-        "align": "left",
-        "verticalTextAlignment": "top"
-      }
-    },
-    {
-      "assetStoreId": "54d86c7d46104e19c9a7e86e173b71bce9592b476e156846c53f11be91039afd",
-      "name": "CreditsTitle",
-      "persistentUuid": "4300def4-6d82-4b13-864d-f825c8104602",
-      "type": "BitmapText::BitmapTextObject",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {
-        "text": "Credits",
-        "opacity": 255,
-        "scale": 6,
-        "fontSize": 20,
-        "tint": "255;255;255",
-        "bitmapFontResourceName": "assets/NotJamOldStyle11.fnt",
-        "textureAtlasResourceName": "assets/NotJamOldStyle11.png",
-        "align": "left",
-        "verticalTextAlignment": "top"
-      }
-    },
-    {
-      "assetStoreId": "54d86c7d46104e19c9a7e86e173b71bce9592b476e156846c53f11be91039afd",
-      "name": "CreditNames",
-      "persistentUuid": "c37476d2-fd19-40ea-af07-1f24949da46d",
-      "type": "BitmapText::BitmapTextObject",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {
-        "text": "Marcelo \"Holy\" Moreira\nAndrew \"Elf\" Lopes\nAlisson \"Bahiano\" Lindote\nFelipe \"Gilgameth\"",
-        "opacity": 255,
-        "scale": 4,
-        "fontSize": 20,
-        "tint": "255;255;255",
-        "bitmapFontResourceName": "assets/NotJamOldStyle11.fnt",
-        "textureAtlasResourceName": "assets/NotJamOldStyle11.png",
-        "align": "left",
-        "verticalTextAlignment": "top"
-      }
-    },
-    {
-      "assetStoreId": "54d86c7d46104e19c9a7e86e173b71bce9592b476e156846c53f11be91039afd",
-      "name": "Thanks",
-      "persistentUuid": "57bc9d1d-9b97-4809-9140-fbd6cafcd777",
-      "type": "BitmapText::BitmapTextObject",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {
-        "text": "Thank you all for defend our Village",
-        "opacity": 255,
-        "scale": 4,
-        "fontSize": 20,
-        "tint": "255;255;255",
-        "bitmapFontResourceName": "assets/NotJamOldStyle11.fnt",
-        "textureAtlasResourceName": "assets/NotJamOldStyle11.png",
-        "align": "left",
-        "verticalTextAlignment": "top"
-      }
-    },
-    {
-      "assetStoreId": "54d86c7d46104e19c9a7e86e173b71bce9592b476e156846c53f11be91039afd",
-      "name": "Songs_and_Effects",
-      "persistentUuid": "fccc9f64-f782-430e-a759-6772e127eec9",
-      "type": "BitmapText::BitmapTextObject",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {
-        "text": "Songs and SFX:\nFelipe \"Gilgameth\"",
-        "opacity": 255,
-        "scale": 4,
-        "fontSize": 20,
-        "tint": "255;255;255",
-        "bitmapFontResourceName": "assets/NotJamOldStyle11.fnt",
-        "textureAtlasResourceName": "assets/NotJamOldStyle11.png",
-        "align": "left",
-        "verticalTextAlignment": "top"
-      }
-    },
-    {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "NewSprite",
+      "name": "Logo",
       "persistentUuid": "06e786e9-af57-4af7-8a16-9983a3e87b7c",
       "type": "Sprite",
       "updateIfNotVisible": false,
@@ -307,10 +126,10 @@
     },
     {
       "assetStoreId": "5d63e0be714d9bf61e2629d4c26dd36195ea8dee1e25f4b7037beefff44c7cf5",
-      "name": "TinyTanButton",
+      "name": "BtnQuit",
       "persistentUuid": "eb9929c9-8ef0-4f9f-b66b-8c7a1d3c4650",
       "type": "PanelSpriteButton::PanelSpriteButton",
-      "variant": "Tiny Tan Button",
+      "variant": "Small Tan Button2",
       "variables": [],
       "effects": [],
       "behaviors": [],
@@ -318,31 +137,127 @@
         "LabelText": "Back to Menu",
         "PressedLabelOffsetY": 2
       }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "GameOver",
+      "persistentUuid": "9204042c-de84-4656-b030-4c24cb02c649",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Thank you for playing",
+      "font": "assets/JO______.TTF",
+      "textAlignment": "left",
+      "characterSize": 80,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Thank you for playing",
+        "font": "assets/JO______.TTF",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 80,
+        "lineHeight": 0,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Congratulations",
+      "persistentUuid": "c61ed7f3-8985-4737-a3b7-28fcffc5885d",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Gnoll_Ending.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 1920,
+                        "y": 0
+                      },
+                      {
+                        "x": 1920,
+                        "y": 1080
+                      },
+                      {
+                        "x": 0,
+                        "y": 1080
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
       {
-        "objectName": "GameOverTitle"
+        "objectName": "GameOver"
       },
       {
-        "objectName": "CreditsTitle"
+        "objectName": "Logo"
       },
       {
-        "objectName": "CreditNames"
+        "objectName": "BtnQuit"
       },
       {
-        "objectName": "NewSprite"
-      },
-      {
-        "objectName": "Thanks"
-      },
-      {
-        "objectName": "Songs_and_Effects"
-      },
-      {
-        "objectName": "TinyTanButton"
+        "objectName": "Congratulations"
       }
     ]
   },
@@ -362,27 +277,6 @@
       "actions": [
         {
           "type": {
-            "value": "ResetTimer"
-          },
-          "parameters": [
-            "",
-            "\"GameOverInnitialTimer\""
-          ]
-        },
-        {
-          "type": {
-            "value": "PlaySound"
-          },
-          "parameters": [
-            "",
-            "assets/music/Game_over_lightyeartraxx-kl-peach-game-over-iii-142453.mp3",
-            "",
-            "25",
-            "1"
-          ]
-        },
-        {
-          "type": {
             "value": "SetStringVariable"
           },
           "parameters": [
@@ -390,34 +284,17 @@
             "=",
             "\"Game Over Scene\""
           ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
+        },
         {
           "type": {
-            "value": "CompareTimer"
-          },
-          "parameters": [
-            "",
-            "\"GameOverInnitialTimer\"",
-            ">",
-            "2.5"
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "PlaySound"
+            "value": "PlayMusicOnChannel"
           },
           "parameters": [
             "",
             "assets/music/Fairytale Waltz.mp3",
-            "",
+            "8",
             "16",
+            "100",
             "1"
           ]
         }
@@ -437,7 +314,7 @@
                 "value": "PanelSpriteButton::PanelSpriteButton::IsPressed"
               },
               "parameters": [
-                "TinyTanButton",
+                "BtnQuit",
                 ""
               ]
             },
@@ -446,7 +323,7 @@
                 "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
               },
               "parameters": [
-                "TinyTanButton",
+                "BtnQuit",
                 ""
               ]
             }

@@ -1,7 +1,7 @@
 {
   "firstLayout": "Intro Scene",
   "gdVersion": {
-    "build": 260,
+    "build": 266,
     "major": 5,
     "minor": 6,
     "revision": 0
@@ -12,19 +12,19 @@
     "antialisingEnabledOnMobile": false,
     "folderProject": true,
     "orientation": "landscape",
-    "packageName": "prototype.plataformer",
+    "packageName": "see.gnolls",
     "pixelsRounding": false,
     "projectUuid": "20dc4f7e-b8a6-4cbc-8f7b-22c23b6a485a",
     "scaleMode": "linear",
     "sizeOnStartupMode": "",
     "templateSlug": "starting-platformer",
-    "version": "1.0.1",
-    "name": "LDJam59",
-    "description": "GEM - Basic Starter Pack",
+    "version": "0.1.2",
+    "name": "See Gnolls!",
+    "description": "The game is about managing a watch tower where you have to **see gnolls**. The gnolls come in waves and your job is to warn the village about what is coming from where. The goal is to resist the attacks by correctly warning the village through signals (flags, horns, torches, etc), where each signal has a meaning that you, as a player, have to remember and the complexity increases at every wave.",
     "author": "Games Ever Made",
     "windowWidth": 1920,
     "windowHeight": 1080,
-    "latestCompilationDirectory": "",
+    "latestCompilationDirectory": "C:\\Users\\Holy\\Desktop\\See Gnolls v0.1.1",
     "maxFPS": 60,
     "minFPS": 30,
     "verticalSync": false,
@@ -60,7 +60,7 @@
     "loadingScreen": {
       "backgroundColor": 0,
       "backgroundFadeInDuration": 4,
-      "backgroundImageResourceName": "GEMLogo_ColorAndWhite_NoBG_1080.png",
+      "backgroundImageResourceName": "",
       "gdevelopLogoStyle": "dark",
       "logoAndProgressFadeInDuration": 0.2,
       "logoAndProgressLogoFadeInDelay": 0,
@@ -78,16 +78,17 @@
       "showWatermark": false
     },
     "authorIds": [
-      "oV4hiwHoEddAbbL5lUfLeKHYbGM2"
+      "oV4hiwHoEddAbbL5lUfLeKHYbGM2",
+      "R08wQyOwJjVyaJfzfHWJTJOi9Rh1"
     ],
     "authorUsernames": [
-      "Lindoten"
+      "Lindoten",
+      "holysparks"
     ],
     "categories": [],
     "playableDevices": [
       "keyboard",
       "gamepad",
-      "mobile",
       "mobile"
     ],
     "extensionProperties": [],
@@ -314,53 +315,6 @@
         }
       },
       {
-        "file": "assets/NotJamOldStyle11.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/NotJamOldStyle11.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Bitmap texts/Not Jam bitmap fonts/db0c13bb0fd38392e0b4dd2d41753a5b056a319ff942477e25e27f946768cb7a_NotJamOldStyle11.png",
-          "name": "NotJamOldStyle11.png"
-        }
-      },
-      {
-        "file": "assets/NotJamOldStyle11.fnt",
-        "kind": "bitmapFont",
-        "metadata": "",
-        "name": "assets/NotJamOldStyle11.fnt",
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Bitmap texts/Not Jam bitmap fonts/02bfd26cf796fa150716a58ad1da54490e112c063d7870d6010005178c9d1ef3_NotJamOldStyle11.fnt",
-          "name": "NotJamOldStyle11.fnt"
-        }
-      },
-      {
-        "file": "assets/Blank button.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Blank button.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/On-Screen Controls/Sprites/Shaded Dark/02db3757a7f6d52edf0c0e56035840f8daeca559d9d6811fa1ea14c1ac073bea_Blank button.png",
-          "name": "Blank button.png"
-        }
-      },
-      {
-        "file": "assets/Check button.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Check button.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/On-Screen Controls/Sprites/Shaded Dark/8c93a78edfaf317e2860330d1523b896106ec43aa9cf4ae0bfa5dfb494688c80_Check button.png",
-          "name": "Check button.png"
-        }
-      },
-      {
         "file": "assets/On Screen Controls Button_Hovered.png",
         "kind": "image",
         "metadata": "",
@@ -507,7 +461,7 @@
         "metadata": "",
         "name": "Damage.wav",
         "preloadAsMusic": false,
-        "preloadAsSound": false,
+        "preloadAsSound": true,
         "preloadInCache": false,
         "userAdded": false
       },
@@ -752,14 +706,6 @@
         "userAdded": false
       },
       {
-        "file": "assets/NewSprite6.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite6.png\"}",
-        "name": "NewSprite2",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
         "file": "assets/OK.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
@@ -813,7 +759,7 @@
         "metadata": "",
         "name": "assets/sfx/roar-3.wav",
         "preloadAsMusic": false,
-        "preloadAsSound": false,
+        "preloadAsSound": true,
         "preloadInCache": false,
         "userAdded": false
       },
@@ -885,14 +831,6 @@
         "userAdded": false
       },
       {
-        "file": "tutorial3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "tutorial3.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
         "file": "assets/tutorial3.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
@@ -937,18 +875,6 @@
         }
       },
       {
-        "file": "assets/Sound button_off.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Sound button_off.png",
-        "smoothed": true,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/On-Screen Controls/Sprites/Line Light/3874bf0fd5f4abcbc1f4b0e463f92e58c1264978aa7cdc86a13324f283fb1e83_Sound button_off.png",
-          "name": "Sound button_off.png"
-        }
-      },
-      {
         "file": "assets/Sound button_on.png",
         "kind": "image",
         "metadata": "{\"localFilePath\":\"assets/Sound button_on.png\",\"extension\":\".png\"}",
@@ -966,32 +892,8 @@
         "metadata": "",
         "name": "assets/ClickButton.wav",
         "preloadAsMusic": false,
-        "preloadAsSound": false,
+        "preloadAsSound": true,
         "preloadInCache": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/on.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "on",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/off.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "off",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/off2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "off2",
-        "smoothed": true,
         "userAdded": false
       },
       {
@@ -1018,14 +920,6 @@
         "userAdded": false
       },
       {
-        "file": "arrow4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "arrow4.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
         "file": "assets/arrow4.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
@@ -1038,30 +932,6 @@
         "kind": "image",
         "metadata": "",
         "name": "gnolldead.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "slash.png",
-        "kind": "image",
-        "metadata": "{\"localFilePath\":\"slash.png\",\"extension\":\".png\"}",
-        "name": "slash.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "slash1.png",
-        "kind": "image",
-        "metadata": "{\"localFilePath\":\"slash1.png\",\"extension\":\".png\"}",
-        "name": "slash1.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "slash2.png",
-        "kind": "image",
-        "metadata": "{\"localFilePath\":\"slash2.png\",\"extension\":\".png\"}",
-        "name": "slash2.png",
         "smoothed": true,
         "userAdded": false
       },
@@ -1106,18 +976,26 @@
         "userAdded": false
       },
       {
-        "file": "tutorial1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "tutorial1.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
         "file": "assets/tutorial1.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "tutorial1",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewTiledSprite.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "NewTiledSprite",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Gnoll_Ending.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Gnoll_Ending.png",
         "smoothed": true,
         "userAdded": false
       }
@@ -1945,6 +1823,192 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "ButtonLeft",
+      "persistentUuid": "bf800815-f7dd-4540-a35e-72a341880b73",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "arrow2",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "arrow2",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 329,
+                        "y": 0
+                      },
+                      {
+                        "x": 329,
+                        "y": 344
+                      },
+                      {
+                        "x": 0,
+                        "y": 344
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "ButtonRight",
+      "persistentUuid": "41646f01-6353-4f80-a5b0-ce72ef7524f0",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "arrow",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "arrow",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 329,
+                        "y": 0
+                      },
+                      {
+                        "x": 329,
+                        "y": 344
+                      },
+                      {
+                        "x": 0,
+                        "y": 344
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Go",
+      "persistentUuid": "63fa7916-8793-48c3-a911-ad6fcf26725e",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "OK",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "OK",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 329,
+                        "y": 0
+                      },
+                      {
+                        "x": 329,
+                        "y": 344
+                      },
+                      {
+                        "x": 0,
+                        "y": 344
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1992,6 +2056,15 @@
       },
       {
         "objectName": "Level1Scroll"
+      },
+      {
+        "objectName": "ButtonLeft"
+      },
+      {
+        "objectName": "ButtonRight"
+      },
+      {
+        "objectName": "Go"
       }
     ]
   },
@@ -2126,6 +2199,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/leaderboarddialog"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/ysort"
     }
   ],
   "externalLayouts": []
