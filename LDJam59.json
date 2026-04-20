@@ -1000,6 +1000,21 @@
         "name": "off3",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "SeeGnollsMainScreen.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "SeeGnollsMainScreen.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/JO______.TTF",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets/JO______.TTF",
+        "userAdded": false
       }
     ]
   },

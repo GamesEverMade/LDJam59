@@ -9,7 +9,7 @@
   "title": "",
   "v": 155,
   "uiSettings": {
-    "grid": false,
+    "grid": true,
     "gridType": "rectangular",
     "gridWidth": 32,
     "gridHeight": 32,
@@ -19,8 +19,8 @@
     "gridOffsetZ": 0,
     "gridColor": 10401023,
     "gridAlpha": 0.8,
-    "snap": false,
-    "zoomFactor": 0.44819780454103586,
+    "snap": true,
+    "zoomFactor": 0.36732575450588234,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -31,15 +31,15 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 64,
-      "height": 48,
+      "depth": 89,
+      "height": 195,
       "keepRatio": true,
       "layer": "",
       "name": "New_Game",
       "persistentUuid": "5d5d3992-a6ce-4355-b064-7596aef08c8a",
-      "width": 201,
-      "x": 1258,
-      "y": 947,
+      "width": 320,
+      "x": 64,
+      "y": 477,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -48,16 +48,32 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 64,
-      "height": 48,
+      "depth": 91,
+      "height": 192,
       "keepRatio": true,
       "layer": "",
       "name": "Quit_Game",
       "persistentUuid": "e7388139-9efc-4c82-bcae-b9fd513925f3",
-      "width": 202,
-      "x": 1555,
-      "y": 948,
+      "width": 320,
+      "x": 64,
+      "y": 768,
       "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "MainScreen",
+      "persistentUuid": "b835baa1-0a0c-457d-9e13-3491d6d4e455",
+      "width": 0,
+      "x": 0,
+      "y": 0,
+      "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -69,7 +85,7 @@
       "name": "New_Game",
       "persistentUuid": "b1d517c9-5168-43d8-900b-1294a6de472d",
       "type": "PanelSpriteButton::PanelSpriteButton",
-      "variant": "Small Tan Button",
+      "variant": "Small Tan Button2",
       "variables": [],
       "effects": [],
       "behaviors": [],
@@ -84,7 +100,7 @@
       "name": "Quit_Game",
       "persistentUuid": "2afb8bec-15d8-4c1a-8ad4-0445b3094494",
       "type": "PanelSpriteButton::PanelSpriteButton",
-      "variant": "Small Tan Button",
+      "variant": "Small Tan Button2",
       "variables": [],
       "effects": [],
       "behaviors": [],
@@ -92,6 +108,67 @@
         "LabelText": "Quit Game",
         "PressedLabelOffsetY": 2
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "MainScreen",
+      "persistentUuid": "00af3cec-3655-4ba9-8807-d7164315ade7",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "SeeGnollsMainScreen.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 1920,
+                        "y": 0
+                      },
+                      {
+                        "x": 1920,
+                        "y": 1080
+                      },
+                      {
+                        "x": 0,
+                        "y": 1080
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -110,6 +187,9 @@
             "objectName": "New_Game"
           }
         ]
+      },
+      {
+        "objectName": "MainScreen"
       }
     ]
   },
@@ -328,6 +408,10 @@
   ],
   "behaviorsSharedData": [
     {
+      "name": "Animation",
+      "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
       "name": "Effect",
       "type": "EffectCapability::EffectBehavior"
     },
@@ -342,6 +426,10 @@
     {
       "name": "Resizable",
       "type": "ResizableCapability::ResizableBehavior"
+    },
+    {
+      "name": "Scale",
+      "type": "ScalableCapability::ScalableBehavior"
     }
   ]
 }
