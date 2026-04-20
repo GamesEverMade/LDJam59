@@ -306,7 +306,7 @@
       "effects": [],
       "behaviors": [],
       "content": {
-        "text": "- Drag the corresponding flags and items to the screen\n- Press press [b]GO![/b], [b]Space bar[/b] or [b]Return[/b] \n- Use the [b]arrows[/b] to look around between the regions.",
+        "text": "- Drag the [b]flags matching regions[/b] and items to the screen\n- Press press [b]OK[/b], [b]Space bar[/b] or [b]Return[/b] \n- Use the [b]arrows[/b] to look around between the regions",
         "opacity": 255,
         "fontSize": 55,
         "visible": true,
