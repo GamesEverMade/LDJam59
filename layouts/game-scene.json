@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.3325387091250842,
+    "zoomFactor": 0.29122588669111743,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -299,7 +299,7 @@
       "name": "GnollSpawnerNorth",
       "persistentUuid": "4c15201d-df24-4e2b-ac10-a034cba2689d",
       "width": 0,
-      "x": 864,
+      "x": 992,
       "y": 0,
       "zOrder": 21,
       "numberProperties": [],
@@ -315,7 +315,7 @@
       "name": "GnollSpawnerEast",
       "persistentUuid": "d275c2b0-ce7d-4d72-8f13-bec1178600bb",
       "width": 0,
-      "x": 3200,
+      "x": 3808,
       "y": -160,
       "zOrder": 22,
       "numberProperties": [],
@@ -331,7 +331,7 @@
       "name": "GnollSpawnerSouth",
       "persistentUuid": "9ad4a7e0-b2c5-445f-9c47-5619fe2f9d4e",
       "width": 0,
-      "x": 2976,
+      "x": 3104,
       "y": 1440,
       "zOrder": 23,
       "numberProperties": [],
@@ -347,7 +347,7 @@
       "name": "GnollSpawnerWest",
       "persistentUuid": "2ebb5336-c68c-47cf-8ca5-807382279094",
       "width": 0,
-      "x": 640,
+      "x": 800,
       "y": 1536,
       "zOrder": 24,
       "numberProperties": [],
@@ -1080,14 +1080,14 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 282,
+                    "y": 409
                   },
                   "centerPoint": {
                     "automatic": true,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 256,
+                    "y": 354
                   },
                   "customCollisionMask": [
                     [
@@ -1128,14 +1128,14 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 282,
+                    "y": 409
                   },
                   "centerPoint": {
                     "automatic": true,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 256,
+                    "y": 354
                   },
                   "customCollisionMask": [
                     [
@@ -1164,14 +1164,14 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 282,
+                    "y": 409
                   },
                   "centerPoint": {
                     "automatic": true,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 256,
+                    "y": 354
                   },
                   "customCollisionMask": [
                     [
@@ -1200,14 +1200,14 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 282,
+                    "y": 409
                   },
                   "centerPoint": {
                     "automatic": true,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 256,
+                    "y": 354
                   },
                   "customCollisionMask": [
                     [
@@ -1236,14 +1236,14 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 282,
+                    "y": 409
                   },
                   "centerPoint": {
                     "automatic": true,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 256,
+                    "y": 354
                   },
                   "customCollisionMask": [
                     [
@@ -1272,14 +1272,14 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 282,
+                    "y": 409
                   },
                   "centerPoint": {
                     "automatic": true,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 256,
+                    "y": 354
                   },
                   "customCollisionMask": [
                     [
@@ -1308,14 +1308,14 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 282,
+                    "y": 409
                   },
                   "centerPoint": {
                     "automatic": true,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 256,
+                    "y": 354
                   },
                   "customCollisionMask": [
                     [
@@ -1344,14 +1344,14 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 282,
+                    "y": 409
                   },
                   "centerPoint": {
                     "automatic": true,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 256,
+                    "y": 354
                   },
                   "customCollisionMask": [
                     [
@@ -1894,14 +1894,14 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 312,
+                    "y": 453
                   },
                   "centerPoint": {
                     "automatic": true,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 322,
+                    "y": 325
                   },
                   "customCollisionMask": [
                     [
@@ -1942,14 +1942,14 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 312,
+                    "y": 453
                   },
                   "centerPoint": {
                     "automatic": true,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 322,
+                    "y": 325
                   },
                   "customCollisionMask": [
                     [
@@ -1978,14 +1978,14 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 312,
+                    "y": 453
                   },
                   "centerPoint": {
                     "automatic": true,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 322,
+                    "y": 325
                   },
                   "customCollisionMask": [
                     [
@@ -2125,14 +2125,14 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 279,
+                    "y": 419
                   },
                   "centerPoint": {
                     "automatic": true,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 280,
+                    "y": 207
                   },
                   "customCollisionMask": [
                     [
@@ -2173,14 +2173,14 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 279,
+                    "y": 419
                   },
                   "centerPoint": {
                     "automatic": true,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 280,
+                    "y": 207
                   },
                   "customCollisionMask": [
                     [
@@ -2209,14 +2209,14 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 279,
+                    "y": 419
                   },
                   "centerPoint": {
                     "automatic": true,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 280,
+                    "y": 207
                   },
                   "customCollisionMask": [
                     [
@@ -3167,7 +3167,7 @@
                     "",
                     "assets/music/Village_Song_freesound_community-village-theme-68229.mp3",
                     "8",
-                    "25",
+                    "yes",
                     "100",
                     "1"
                   ]
@@ -3178,8 +3178,41 @@
                   },
                   "parameters": [
                     "",
-                    "\"TestPath\"",
-                    "\"m260.84 1.4043c26.681 73.723 61.085 104.27 61.085 104.27 20.362 23.521 8.7766 24.574 1.0532 24.223-7.7234-0.35107-24.926-5.9681-37.915-3.8617-12.989 2.1064-44.234 11.234-59.33 26.33-15.096 15.096-10.181 20.713-5.266 32.298 4.9149 11.585 10.181 31.596 10.181 31.596\"",
+                    "\"North\"",
+                    "\"m963.3 2.6537c96.86 327.73 363.56 493.59 265.37 497.57-109.87 4.4542-159.22-29.191-274.66 35.825-115.44 65.016-189.74 70.323-136.67 143.3 53.074 72.977 68.996 98.187 71.65 157.9\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CurvedMovement::CreatePathFromSvg"
+                  },
+                  "parameters": [
+                    "",
+                    "\"East\"",
+                    "\"m1537.3 32.527c-36.77 199.4-164.05 480.83-253.14 483.66-119.94 3.8076-243.24-39.598-248.9 32.527-11.089 141.39-1.4142 117.38-100.41 178.19-93.255 57.285-118.79 36.77-127.28 114.55\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CurvedMovement::CreatePathFromSvg"
+                  },
+                  "parameters": [
+                    "",
+                    "\"South\"",
+                    "\"m1033.8 2.8284c-55.154 118.79 80.423 182.49 84.853 291.33 4.3724 107.43-154.7 121.45-67.882 183.85 45.255 32.527 246.07 93.338 178.19 144.25-67.882 50.912-87.681 137.18-93.338 220.62\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CurvedMovement::CreatePathFromSvg"
+                  },
+                  "parameters": [
+                    "",
+                    "\"West\"",
+                    "\"m1001.3 1.4142c-46.669 144.25-48.083 195.16-26.87 271.53 20.6 74.16 125.87 124.45 36.77 185.26-89.095 60.811-271.53 182.43-347.9 183.85-118.79 2.1998-407.29-86.267-363.45 25.456 39.142 99.749 66.468 175.36 66.468 175.36\"",
                     ""
                   ]
                 }
@@ -5155,7 +5188,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Level manager",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -5340,7 +5372,7 @@
                       "parameters": [
                         "GnollSoldier",
                         "SpeedPathMovement",
-                        "\"TestPath\"",
+                        "Spawners.Direction",
                         "1",
                         "",
                         ""
@@ -5453,7 +5485,7 @@
                       "parameters": [
                         "GnollArcher",
                         "SpeedPathMovement",
-                        "\"TestPath\"",
+                        "Spawners.Direction",
                         "1",
                         "",
                         ""
@@ -5566,7 +5598,7 @@
                       "parameters": [
                         "GnollEnraged",
                         "SpeedPathMovement",
-                        "\"TestPath\"",
+                        "Spawners.Direction",
                         "1",
                         "",
                         ""
@@ -5649,7 +5681,7 @@
                 {
                   "name": "LocationVariance",
                   "type": "number",
-                  "value": 100
+                  "value": 20
                 }
               ]
             }
@@ -6850,11 +6882,11 @@
                     },
                     {
                       "type": {
-                        "value": "StringObjectVariable"
+                        "value": "NumberObjectVariable"
                       },
                       "parameters": [
                         "Enemies",
-                        "EnemyType",
+                        "gnollSpeed",
                         "=",
                         "SelectedAttack"
                       ]

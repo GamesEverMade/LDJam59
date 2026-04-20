@@ -360,23 +360,6 @@
       "objectGroups": []
     }
   ],
-  "eventsFunctionsFolderStructure": {
-    "folderName": "__ROOT",
-    "children": [
-      {
-        "functionName": "IsInGameEdition"
-      },
-      {
-        "functionName": "FormatTime"
-      },
-      {
-        "functionName": "ToFixed"
-      },
-      {
-        "functionName": "PadStart"
-      }
-    ]
-  },
   "eventsBasedBehaviors": [],
   "eventsBasedObjects": [
     {
@@ -390,12 +373,9 @@
       "defaultName": "GameOverDialog",
       "description": "Display the score and let players choose what to do next.",
       "fullName": "Game over dialog",
-      "helpPath": "",
-      "iconUrl": "",
       "isInnerAreaFollowingParentSize": true,
       "isUsingLegacyInstancesRenderer": false,
       "name": "LeaderboardDialog",
-      "previewIconUrl": "",
       "objects": [
         {
           "assetStoreId": "",
@@ -2321,77 +2301,6 @@
           "objectGroups": []
         }
       ],
-      "eventsFunctionsFolderStructure": {
-        "folderName": "__ROOT",
-        "children": [
-          {
-            "functionName": "onCreated"
-          },
-          {
-            "functionName": "doStepPostEvents"
-          },
-          {
-            "functionName": "Score"
-          },
-          {
-            "functionName": "SetScore"
-          },
-          {
-            "functionName": "BestScore"
-          },
-          {
-            "functionName": "SetBestScore"
-          },
-          {
-            "functionName": "FormatScore"
-          },
-          {
-            "functionName": "DefaultPlayerName"
-          },
-          {
-            "functionName": "SetDefaultPlayerName"
-          },
-          {
-            "functionName": "PlayerName"
-          },
-          {
-            "functionName": "IsRestartClicked"
-          },
-          {
-            "functionName": "IsNextClicked"
-          },
-          {
-            "functionName": "IsBackClicked"
-          },
-          {
-            "functionName": "IsScoreSubmitted"
-          },
-          {
-            "functionName": "LeaderboardId"
-          },
-          {
-            "functionName": "SetLeaderboardId"
-          },
-          {
-            "functionName": "Title"
-          },
-          {
-            "functionName": "SetTitle"
-          },
-          {
-            "functionName": "TweenIn"
-          },
-          {
-            "functionName": "TweenOut"
-          },
-          {
-            "functionName": "HasTweenedIn"
-          },
-          {
-            "functionName": "HasTweenedOut"
-          }
-        ]
-      },
       "propertyDescriptors": [
         {
           "value": "",

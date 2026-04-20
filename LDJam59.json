@@ -1,7 +1,7 @@
 {
   "firstLayout": "Intro Scene",
   "gdVersion": {
-    "build": 266,
+    "build": 260,
     "major": 5,
     "minor": 6,
     "revision": 0
@@ -87,6 +87,7 @@
     "playableDevices": [
       "keyboard",
       "gamepad",
+      "mobile",
       "mobile"
     ],
     "extensionProperties": [],
