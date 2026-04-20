@@ -9,7 +9,7 @@
   "title": "",
   "v": 255,
   "uiSettings": {
-    "grid": true,
+    "grid": false,
     "gridType": "rectangular",
     "gridWidth": 32,
     "gridHeight": 32,
@@ -19,8 +19,8 @@
     "gridOffsetZ": 0,
     "gridColor": 10401023,
     "gridAlpha": 0.8,
-    "snap": true,
-    "zoomFactor": 0.46331118245140906,
+    "snap": false,
+    "zoomFactor": 0.291225886691119,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -364,7 +364,7 @@
       "persistentUuid": "9627ddf6-f69a-4853-9ee9-45ee9e05383c",
       "width": 0,
       "x": 1395,
-      "y": 109,
+      "y": 104,
       "zOrder": 25,
       "numberProperties": [],
       "stringProperties": [],
@@ -380,7 +380,7 @@
       "persistentUuid": "a7a4f914-331a-4e69-955d-6fa5f7b99770",
       "width": 0,
       "x": 1395,
-      "y": 60,
+      "y": 50,
       "zOrder": 26,
       "numberProperties": [],
       "stringProperties": [],
@@ -429,7 +429,7 @@
       "persistentUuid": "ec412beb-8613-4926-8c1e-cb9f1253f5b3",
       "width": 0,
       "x": 0,
-      "y": 2,
+      "y": 0,
       "zOrder": 30,
       "numberProperties": [],
       "stringProperties": [],
@@ -615,6 +615,57 @@
       "x": 288,
       "y": 30,
       "zOrder": 45,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 48,
+      "keepRatio": true,
+      "layer": "HUD",
+      "name": "TimeIcon",
+      "persistentUuid": "fa9a9ad4-b629-4aea-993d-17d5b8dad105",
+      "width": 47,
+      "x": 1354,
+      "y": 153,
+      "zOrder": 46,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 48,
+      "keepRatio": true,
+      "layer": "HUD",
+      "name": "HealthIcon",
+      "persistentUuid": "40bbf5cf-6faf-4875-b003-56e844379212",
+      "width": 47,
+      "x": 1354,
+      "y": 41,
+      "zOrder": 47,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 48,
+      "keepRatio": true,
+      "layer": "HUD",
+      "name": "CooldownIcon",
+      "persistentUuid": "ac9049c1-c9ef-41f8-b1e7-38cd2891e758",
+      "width": 47,
+      "x": 1354,
+      "y": 97,
+      "zOrder": 48,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2790,17 +2841,16 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "tutorial3",
+          "name": "",
           "useMultipleDirections": false,
           "directions": [
             {
               "looping": false,
-              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "tutorial3",
+                  "image": "tutorial3.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -2816,20 +2866,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0,
-                        "y": 0
+                        "x": 43,
+                        "y": 54
                       },
                       {
-                        "x": 1014,
-                        "y": 0
+                        "x": 1063,
+                        "y": 54
                       },
                       {
-                        "x": 1014,
-                        "y": 484
+                        "x": 1063,
+                        "y": 545
                       },
                       {
-                        "x": 0,
-                        "y": 484
+                        "x": 43,
+                        "y": 545
                       }
                     ]
                   ]
@@ -3088,6 +3138,189 @@
         }
       ],
       "behaviors": []
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "CooldownIcon",
+      "persistentUuid": "51c1e77b-714a-4c3b-9cc3-4b0a21fd62e1",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "CDIcon.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 7,
+                        "y": 8
+                      },
+                      {
+                        "x": 128,
+                        "y": 8
+                      },
+                      {
+                        "x": 128,
+                        "y": 136
+                      },
+                      {
+                        "x": 7,
+                        "y": 136
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "HealthIcon",
+      "persistentUuid": "b78ee7dd-36e1-4d70-815e-429e621405bd",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "HPIcon.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 7,
+                        "y": 8
+                      },
+                      {
+                        "x": 128,
+                        "y": 8
+                      },
+                      {
+                        "x": 128,
+                        "y": 136
+                      },
+                      {
+                        "x": 7,
+                        "y": 136
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "TimeIcon",
+      "persistentUuid": "60c6894f-b185-40d2-8582-5332ac39ac38",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "TimeIcon.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 8,
+                        "y": 7
+                      },
+                      {
+                        "x": 129,
+                        "y": 7
+                      },
+                      {
+                        "x": 129,
+                        "y": 135
+                      },
+                      {
+                        "x": 8,
+                        "y": 135
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -3145,6 +3378,15 @@
           },
           {
             "objectName": "Sound_button"
+          },
+          {
+            "objectName": "CooldownIcon"
+          },
+          {
+            "objectName": "HealthIcon"
+          },
+          {
+            "objectName": "TimeIcon"
           }
         ]
       },
@@ -3571,7 +3813,7 @@
                   "parameters": [
                     "LevelSpawnRate",
                     "=",
-                    "3.6"
+                    "3"
                   ]
                 },
                 {
@@ -3665,7 +3907,7 @@
                   "parameters": [
                     "LevelSpawnRate",
                     "=",
-                    "3.4"
+                    "3.2"
                   ]
                 },
                 {
@@ -3750,7 +3992,7 @@
                   "parameters": [
                     "LevelSpawnRate",
                     "=",
-                    "3.2"
+                    "3.5"
                   ]
                 },
                 {
@@ -6516,43 +6758,85 @@
           "conditions": [
             {
               "type": {
-                "value": "IsCursorOnObject"
+                "value": "BuiltinCommonInstructions::Or"
               },
-              "parameters": [
-                "Go",
-                "",
-                "",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "MouseButtonFromTextReleased"
-              },
-              "parameters": [
-                "",
-                "\"Left\""
-              ]
-            },
-            {
-              "type": {
-                "value": "CompareTimer"
-              },
-              "parameters": [
-                "",
-                "\"AttackCooldown\"",
-                ">",
-                "3"
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanVariable"
-              },
-              "parameters": [
-                "IsLevelRunning",
-                "True",
-                ""
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "IsCursorOnObject"
+                      },
+                      "parameters": [
+                        "Go",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "MouseButtonFromTextReleased"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Left\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CompareTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"AttackCooldown\"",
+                        ">",
+                        "3"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "IsLevelRunning",
+                        "True",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "KeyFromTextReleased"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Return\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "KeyFromTextReleased"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Space\""
+                      ]
+                    }
+                  ]
+                }
               ]
             }
           ],

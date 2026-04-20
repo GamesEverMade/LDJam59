@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.4598521426736334,
+    "zoomFactor": 0.5079575118131735,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -206,8 +206,8 @@
       "name": "TxtTutorial",
       "persistentUuid": "ac7d5520-e866-4aea-955c-d9f831f5df1a",
       "width": 0,
-      "x": 168,
-      "y": 22,
+      "x": 162,
+      "y": 23,
       "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
@@ -223,8 +223,8 @@
       "name": "ButtonLeft",
       "persistentUuid": "a509354e-c8e3-41b7-b662-c4b4fe6f77b1",
       "width": 102,
-      "x": 1673,
-      "y": 123,
+      "x": 1641,
+      "y": 116,
       "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
@@ -241,8 +241,8 @@
       "name": "ButtonRight",
       "persistentUuid": "d884b375-cf77-4365-ab46-7a034f7ff50e",
       "width": 102,
-      "x": 1610,
-      "y": 202,
+      "x": 1673,
+      "y": 199,
       "zOrder": 12,
       "numberProperties": [],
       "stringProperties": [],
@@ -258,8 +258,8 @@
       "name": "Go",
       "persistentUuid": "6234381c-3c96-4827-ba22-eea598ebc60d",
       "width": 118,
-      "x": 1665,
-      "y": 843,
+      "x": 1336,
+      "y": 708,
       "zOrder": 13,
       "numberProperties": [],
       "stringProperties": [],
@@ -290,7 +290,7 @@
       "effects": [],
       "behaviors": [],
       "content": {
-        "text": "Use the corresponding flags to signal when you see gnolls!\n\nUse the arrows to look around between the regions.",
+        "text": "- Drag the corresponding flags and items to the screen\n- Press press [b]GO![/b], [b]Space bar[/b] or [b]Return[/b] \n- Use the [b]arrows[/b] to look around between the regions.",
         "opacity": 255,
         "fontSize": 55,
         "visible": true,
@@ -339,6 +339,17 @@
         },
         {
           "type": {
+            "value": "ScalableCapability::ScalableBehavior::SetValue"
+          },
+          "parameters": [
+            "Go",
+            "Scale",
+            "=",
+            "0.0001"
+          ]
+        },
+        {
+          "type": {
             "value": "SetGlobalVolume"
           },
           "parameters": [
@@ -377,6 +388,21 @@
                 "Tween",
                 "\"tutorial1\"",
                 "1",
+                "\"linear\"",
+                "2.3",
+                "",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+              },
+              "parameters": [
+                "Go",
+                "Tween",
+                "\"tutorial1\"",
+                "0.25",
                 "\"linear\"",
                 "2.3",
                 "",

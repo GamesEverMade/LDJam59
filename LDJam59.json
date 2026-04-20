@@ -24,7 +24,7 @@
     "author": "Games Ever Made",
     "windowWidth": 1920,
     "windowHeight": 1080,
-    "latestCompilationDirectory": "C:\\Users\\Holy\\Desktop\\See Gnolls v0.1.1",
+    "latestCompilationDirectory": "C:\\Users\\Holy\\Desktop\\See Gnolls v0.3",
     "maxFPS": 60,
     "minFPS": 30,
     "verticalSync": false,
@@ -831,14 +831,6 @@
         "userAdded": false
       },
       {
-        "file": "assets/tutorial3.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "tutorial3",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
         "file": "assets/Tiny Square White Slider Border.png",
         "kind": "image",
         "metadata": "",
@@ -976,14 +968,6 @@
         "userAdded": false
       },
       {
-        "file": "assets/tutorial1.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "tutorial1",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
         "file": "assets/NewTiledSprite.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
@@ -996,6 +980,46 @@
         "kind": "image",
         "metadata": "",
         "name": "Gnoll_Ending.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "CDIcon.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "CDIcon.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "HPIcon.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "HPIcon.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "TimeIcon.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "TimeIcon.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "tutorial1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tutorial1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "tutorial3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tutorial3.png",
         "smoothed": true,
         "userAdded": false
       }
@@ -1774,17 +1798,16 @@
       ],
       "animations": [
         {
-          "name": "tutorial1",
+          "name": "",
           "useMultipleDirections": false,
           "directions": [
             {
               "looping": false,
-              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "tutorial1",
+                  "image": "tutorial1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1800,20 +1823,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0,
-                        "y": 0
+                        "x": 53,
+                        "y": 50
                       },
                       {
-                        "x": 1049,
-                        "y": 0
+                        "x": 1105,
+                        "y": 50
                       },
                       {
-                        "x": 1049,
-                        "y": 483
+                        "x": 1105,
+                        "y": 536
                       },
                       {
-                        "x": 0,
-                        "y": 483
+                        "x": 53,
+                        "y": 536
                       }
                     ]
                   ]
@@ -1957,7 +1980,12 @@
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
       "animations": [
         {
           "name": "OK",

@@ -1522,10 +1522,10 @@
               ],
               "behaviors": [
                 {
-                  "bottomEdgeAnchor": 4,
                   "name": "Anchor",
-                  "topEdgeAnchor": 4,
                   "type": "AnchorBehavior::AnchorBehavior",
+                  "bottomEdgeAnchor": 4,
+                  "topEdgeAnchor": 4,
                   "leftEdgeAnchor": 0,
                   "relativeToOriginalWindowSize": true,
                   "rightEdgeAnchor": 2,
