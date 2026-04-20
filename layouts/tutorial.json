@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.38958562738272856,
+    "zoomFactor": 0.40272258333259126,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -38,8 +38,8 @@
       "name": "AreaNorth",
       "persistentUuid": "b1cd608a-31c1-4e47-ac2b-69a3e44a452c",
       "width": 991,
-      "x": -407,
-      "y": -63,
+      "x": 38,
+      "y": 84,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -55,8 +55,8 @@
       "name": "AreaEast",
       "persistentUuid": "41ae099b-7c8d-41b1-ada7-3b8d361084f1",
       "width": 991,
-      "x": 452,
-      "y": 355,
+      "x": 897,
+      "y": 499,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -72,8 +72,8 @@
       "name": "AreaSouth",
       "persistentUuid": "c954217f-ad19-43c8-bb51-dec6e2ac6429",
       "width": 991,
-      "x": -212,
-      "y": 353,
+      "x": 32,
+      "y": 500,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
@@ -89,8 +89,8 @@
       "name": "AreaWest",
       "persistentUuid": "5bec3e7d-4483-45a7-bda4-e4b047bc47c7",
       "width": 991,
-      "x": 67,
-      "y": -59,
+      "x": 897,
+      "y": 88,
       "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
@@ -99,15 +99,15 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 1,
-      "height": 122,
+      "depth": 2,
+      "height": 278,
       "keepRatio": true,
       "layer": "",
       "name": "FlagNorth",
       "persistentUuid": "3c59c775-17fb-4981-ba35-3a09d2389f50",
-      "width": 122,
-      "x": 34,
-      "y": 37,
+      "width": 278,
+      "x": 64,
+      "y": 138,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -116,15 +116,15 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 1,
-      "height": 122,
+      "depth": 2,
+      "height": 278,
       "keepRatio": true,
       "layer": "",
       "name": "FlagEast",
       "persistentUuid": "c3c2a29d-e32b-4191-8c49-6d1ec3304c52",
-      "width": 122,
-      "x": 603,
-      "y": 11,
+      "width": 278,
+      "x": 1322,
+      "y": 64,
       "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
@@ -133,15 +133,15 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 1,
-      "height": 122,
+      "depth": 2,
+      "height": 278,
       "keepRatio": true,
       "layer": "",
       "name": "FlagSouth",
       "persistentUuid": "b2cb78db-4530-4e1e-a37d-f6ea016442e3",
-      "width": 122,
-      "x": 14,
-      "y": 369,
+      "width": 278,
+      "x": 96,
+      "y": 608,
       "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
@@ -150,26 +150,209 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 1,
-      "height": 122,
+      "depth": 2,
+      "height": 278,
       "keepRatio": true,
       "layer": "",
       "name": "FlagWest",
       "persistentUuid": "e48cdda7-0915-4d2d-81d5-66a86072294f",
-      "width": 122,
-      "x": 486,
-      "y": 380,
+      "width": 278,
+      "x": 1546,
+      "y": 554,
       "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Level1Scroll",
+      "persistentUuid": "5f6483e2-107d-48fd-bc1f-f071be0a24e0",
+      "width": 0,
+      "x": 935,
+      "y": 509,
+      "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "MainScreen",
+      "persistentUuid": "26e1f9ae-370d-46ac-b04d-1a6b234a63d1",
+      "width": 0,
+      "x": 0,
+      "y": 0,
+      "zOrder": -1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 2,
+      "height": 103,
+      "keepRatio": true,
+      "layer": "",
+      "name": "SmallTanButton",
+      "persistentUuid": "b95d6b22-4cc5-47e8-99e0-0a188069e44a",
+      "width": 275,
+      "x": 799,
+      "y": 959,
+      "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
     }
   ],
-  "objects": [],
+  "objects": [
+    {
+      "assetStoreId": "c22fb0ef85cbe185b6ca8705c18c5bcc879d7cdfd18556b886954ad75c920835",
+      "name": "SmallTanButton",
+      "persistentUuid": "0beb0ebd-338a-448e-9ec1-7bc694d686d1",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "Small Tan Button2",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LabelText": "Start",
+        "PressedLabelOffsetY": 2
+      }
+    }
+  ],
   "objectsFolderStructure": {
-    "folderName": "__ROOT"
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "objectName": "SmallTanButton"
+      }
+    ]
   },
-  "events": [],
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "SceneJustBegins"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ScalableCapability::ScalableBehavior::SetValue"
+          },
+          "parameters": [
+            "Level1Scroll",
+            "Scale",
+            "=",
+            "0.0001"
+          ]
+        },
+        {
+          "type": {
+            "value": "PlayMusicOnChannel"
+          },
+          "parameters": [
+            "",
+            "assets/music/Main_Song_freesound_community-village-theme-68229.mp3",
+            "8",
+            "50",
+            "100",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetGlobalVolume"
+          },
+          "parameters": [
+            "",
+            "=",
+            "20"
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "0.9"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+              },
+              "parameters": [
+                "Level1Scroll",
+                "Tween",
+                "\"tutorial1\"",
+                "1",
+                "\"linear\"",
+                "2",
+                "",
+                "yes"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+          },
+          "parameters": [
+            "SmallTanButton",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Game Scene\"",
+            ""
+          ]
+        }
+      ]
+    }
+  ],
   "layers": [
     {
       "ambientLightColorB": 200,
@@ -265,6 +448,10 @@
     {
       "name": "ShakeObject_PositionAngleScale",
       "type": "ShakeObject::ShakeObject_PositionAngleScale"
+    },
+    {
+      "name": "Tween",
+      "type": "Tween::TweenBehavior"
     }
   ]
 }

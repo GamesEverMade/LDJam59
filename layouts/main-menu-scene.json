@@ -108,67 +108,6 @@
         "LabelText": "Quit Game",
         "PressedLabelOffsetY": 2
       }
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "MainScreen",
-      "persistentUuid": "00af3cec-3655-4ba9-8807-d7164315ade7",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "SeeGnollsMainScreen.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 1920,
-                        "y": 0
-                      },
-                      {
-                        "x": 1920,
-                        "y": 1080
-                      },
-                      {
-                        "x": 0,
-                        "y": 1080
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
     }
   ],
   "objectsFolderStructure": {
@@ -187,9 +126,6 @@
             "objectName": "New_Game"
           }
         ]
-      },
-      {
-        "objectName": "MainScreen"
       }
     ]
   },
@@ -237,7 +173,18 @@
           "parameters": [
             "",
             "=",
-            "30"
+            "20"
+          ]
+        },
+        {
+          "type": {
+            "value": "EffectCapability::EffectBehavior::EnableEffect"
+          },
+          "parameters": [
+            "MainScreen",
+            "Effect",
+            "\"Effect\"",
+            "no"
           ]
         }
       ]
@@ -288,7 +235,7 @@
               },
               "parameters": [
                 "",
-                "\"Game Scene\"",
+                "\"Tutorial\"",
                 ""
               ]
             }
@@ -434,6 +381,10 @@
     {
       "name": "ShakeObject_PositionAngleScale",
       "type": "ShakeObject::ShakeObject_PositionAngleScale"
+    },
+    {
+      "name": "Tween",
+      "type": "Tween::TweenBehavior"
     }
   ]
 }

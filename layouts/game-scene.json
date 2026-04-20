@@ -608,7 +608,7 @@
       "depth": 64,
       "height": 66,
       "keepRatio": true,
-      "layer": "",
+      "layer": "HUD",
       "name": "VolumeSlider",
       "persistentUuid": "a4bc2a5b-90fc-4df6-a26d-0d176bd1da69",
       "width": 160,
@@ -7334,6 +7334,10 @@
     {
       "name": "Text",
       "type": "TextContainerCapability::TextContainerBehavior"
+    },
+    {
+      "name": "Tween",
+      "type": "Tween::TweenBehavior"
     }
   ]
 }
