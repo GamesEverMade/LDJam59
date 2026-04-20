@@ -1498,7 +1498,7 @@
               "name": "NoButton",
               "persistentUuid": "026f39d2-2b6d-4f9c-b26b-6a44a425a47a",
               "type": "PanelSpriteButton::PanelSpriteButton",
-              "variant": "Semi-transparent black and white",
+              "variant": "Small Tan Button2",
               "variables": [
                 {
                   "name": "ID",
@@ -1542,7 +1542,7 @@
               "name": "YesButton",
               "persistentUuid": "6d2a387e-cbfd-4964-9c7b-5d4076b363fb",
               "type": "PanelSpriteButton::PanelSpriteButton",
-              "variant": "Semi-transparent black and white",
+              "variant": "Small Tan Button2",
               "variables": [
                 {
                   "name": "ID",
@@ -1744,8 +1744,8 @@
               "layer": "",
               "name": "YesButton",
               "persistentUuid": "a0ca78d3-0a23-4bbe-89de-fb2d0a53996c",
-              "width": 140,
-              "x": 234,
+              "width": 200,
+              "x": 84,
               "y": 90,
               "zOrder": 510,
               "numberProperties": [],
@@ -1760,8 +1760,8 @@
               "layer": "",
               "name": "NoButton",
               "persistentUuid": "6781aafa-3ae9-4820-bb97-682a524a0cf6",
-              "width": 140,
-              "x": 443,
+              "width": 200,
+              "x": 383,
               "y": 90,
               "zOrder": 510,
               "numberProperties": [],
@@ -1808,7 +1808,7 @@
               "name": "NoButton",
               "persistentUuid": "7332e858-399d-4bce-97cb-c3f865ea38f1",
               "type": "PanelSpriteButton::PanelSpriteButton",
-              "variant": "Semi-transparent black and white",
+              "variant": "Small Tan Button2",
               "variables": [
                 {
                   "name": "ID",
@@ -1852,7 +1852,7 @@
               "name": "YesButton",
               "persistentUuid": "b5dcb3d8-83e4-4bb4-8df3-bb9fb694d78c",
               "type": "PanelSpriteButton::PanelSpriteButton",
-              "variant": "Semi-transparent black and white",
+              "variant": "Small Tan Button2",
               "variables": [
                 {
                   "name": "ID",
@@ -2054,8 +2054,8 @@
               "layer": "",
               "name": "YesButton",
               "persistentUuid": "a0ca78d3-0a23-4bbe-89de-fb2d0a53996c",
-              "width": 174,
-              "x": 411,
+              "width": 248,
+              "x": 337,
               "y": 122,
               "zOrder": 510,
               "numberProperties": [],

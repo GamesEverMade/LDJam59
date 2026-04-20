@@ -560,6 +560,10 @@
       "type": "ScalableCapability::ScalableBehavior"
     },
     {
+      "name": "ShakeObject_PositionAngleScale",
+      "type": "ShakeObject::ShakeObject_PositionAngleScale"
+    },
+    {
       "name": "Text",
       "type": "TextContainerCapability::TextContainerBehavior"
     }

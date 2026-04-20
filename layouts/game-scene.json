@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.3216911764705949,
+    "zoomFactor": 0.3325387091250842,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -148,7 +148,7 @@
     {
       "name": "PlayerHealth",
       "type": "number",
-      "value": 20
+      "value": 2
     },
     {
       "name": "SelectedAttack",
@@ -537,38 +537,6 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "HUD",
-      "name": "CompassNorth",
-      "persistentUuid": "cd1ccf4b-6af8-4f14-9d7e-44dbe0308d81",
-      "width": 0,
-      "x": 64,
-      "y": 0,
-      "zOrder": 38,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "HUD",
-      "name": "CompassArrow",
-      "persistentUuid": "7ddb8462-27ab-492f-a5c4-614e43252dd0",
-      "width": 0,
-      "x": 64,
-      "y": 64,
-      "zOrder": 39,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
       "customSize": true,
       "depth": 1,
       "height": 182,
@@ -587,15 +555,16 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 67,
-      "height": 32,
+      "depth": 2,
+      "height": 64,
+      "keepRatio": true,
       "layer": "HUD",
-      "name": "Volume",
-      "persistentUuid": "6004e212-cf33-4638-8e02-ef6a7e00e967",
-      "width": 200,
-      "x": 256,
+      "name": "Sound_button",
+      "persistentUuid": "fa3e2596-31df-4de5-82d0-e36dd92b0a88",
+      "width": 64,
+      "x": 192,
       "y": 32,
-      "zOrder": 41,
+      "zOrder": 42,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -603,455 +572,55 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 0.6666666666666666,
-      "height": 32,
+      "depth": 1,
+      "height": 67,
       "keepRatio": true,
       "layer": "HUD",
-      "name": "Sound_button",
-      "persistentUuid": "fa3e2596-31df-4de5-82d0-e36dd92b0a88",
-      "width": 32,
-      "x": 200,
-      "y": 32,
-      "zOrder": 42,
+      "name": "CompassArrow",
+      "persistentUuid": "9ecf4164-e0fe-4db9-9e91-2b4c3976bde1",
+      "width": 73,
+      "x": 55,
+      "y": 71,
+      "zOrder": 43,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "HUD",
+      "name": "CompassNorth2",
+      "persistentUuid": "09d86db5-0705-431b-9068-4cbcf940d2df",
+      "width": 0,
+      "x": 67,
+      "y": 7,
+      "zOrder": 44,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 64,
+      "height": 66,
+      "keepRatio": true,
+      "layer": "",
+      "name": "VolumeSlider",
+      "persistentUuid": "a4bc2a5b-90fc-4df6-a26d-0d176bd1da69",
+      "width": 160,
+      "x": 288,
+      "y": 30,
+      "zOrder": 45,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
     }
   ],
   "objects": [
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "FlagNorth",
-      "persistentUuid": "a2f5033f-9c6b-4ebb-9efa-76a9b6711223",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [
-        {
-          "name": "IsSelected",
-          "type": "boolean",
-          "value": false
-        },
-        {
-          "name": "Direction",
-          "type": "string",
-          "value": "North"
-        }
-      ],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "Draggable",
-          "type": "DraggableBehavior::Draggable",
-          "checkCollisionMask": true
-        },
-        {
-          "name": "ShakeObject_PositionAngleScale",
-          "type": "ShakeObject::ShakeObject_PositionAngleScale",
-          "Scale": "Scale"
-        }
-      ],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "FlagNorth.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 40,
-                        "y": 23
-                      },
-                      {
-                        "x": 465,
-                        "y": 23
-                      },
-                      {
-                        "x": 465,
-                        "y": 488
-                      },
-                      {
-                        "x": 40,
-                        "y": 488
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "FlagEast",
-      "persistentUuid": "f8f8f1c8-88c8-4bb3-ae73-19e1fe98f376",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [
-        {
-          "name": "IsSelected",
-          "type": "boolean",
-          "value": false
-        },
-        {
-          "name": "Direction",
-          "type": "string",
-          "value": "East"
-        }
-      ],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "Draggable",
-          "type": "DraggableBehavior::Draggable",
-          "checkCollisionMask": true
-        },
-        {
-          "name": "ShakeObject_PositionAngleScale",
-          "type": "ShakeObject::ShakeObject_PositionAngleScale",
-          "Scale": "Scale"
-        }
-      ],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "FlagEast.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 40,
-                        "y": 23
-                      },
-                      {
-                        "x": 465,
-                        "y": 23
-                      },
-                      {
-                        "x": 465,
-                        "y": 488
-                      },
-                      {
-                        "x": 40,
-                        "y": 488
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "FlagSouth",
-      "persistentUuid": "8f1d9832-3eb5-4532-ae45-107f0ff8e344",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [
-        {
-          "name": "IsSelected",
-          "type": "boolean",
-          "value": false
-        },
-        {
-          "name": "Direction",
-          "type": "string",
-          "value": "South"
-        }
-      ],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "Draggable",
-          "type": "DraggableBehavior::Draggable",
-          "checkCollisionMask": true
-        },
-        {
-          "name": "ShakeObject_PositionAngleScale",
-          "type": "ShakeObject::ShakeObject_PositionAngleScale",
-          "Scale": "Scale"
-        }
-      ],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "FlagSouth.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 40,
-                        "y": 23
-                      },
-                      {
-                        "x": 465,
-                        "y": 23
-                      },
-                      {
-                        "x": 465,
-                        "y": 488
-                      },
-                      {
-                        "x": 40,
-                        "y": 488
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "FlagWest",
-      "persistentUuid": "f0f88f49-a2b7-4571-9496-47bae1309351",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [
-        {
-          "name": "IsSelected",
-          "type": "boolean",
-          "value": false
-        },
-        {
-          "name": "Direction",
-          "type": "string",
-          "value": "West"
-        }
-      ],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "Draggable",
-          "type": "DraggableBehavior::Draggable",
-          "checkCollisionMask": true
-        },
-        {
-          "name": "ShakeObject_PositionAngleScale",
-          "type": "ShakeObject::ShakeObject_PositionAngleScale",
-          "Scale": "Scale"
-        }
-      ],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "FlagWest.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 40,
-                        "y": 23
-                      },
-                      {
-                        "x": 465,
-                        "y": 23
-                      },
-                      {
-                        "x": 465,
-                        "y": 488
-                      },
-                      {
-                        "x": 40,
-                        "y": 488
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "Torch",
-      "persistentUuid": "f5e99343-e0ea-4fea-88a1-eb86b54fe399",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [
-        {
-          "name": "IsSelected",
-          "type": "boolean",
-          "value": false
-        },
-        {
-          "name": "StrongAgainst",
-          "type": "string",
-          "value": "Soldier"
-        }
-      ],
-      "effects": [
-        {
-          "disabled": true,
-          "effectType": "Shockwave",
-          "name": "Effect",
-          "doubleParameters": {
-            "amplitude": 50,
-            "brightness": 1,
-            "centerX": 0.5,
-            "centerY": 0.5,
-            "radius": 0,
-            "speed": 500,
-            "time": 0,
-            "wavelength": 200
-          },
-          "stringParameters": {},
-          "booleanParameters": {}
-        }
-      ],
-      "behaviors": [
-        {
-          "name": "Draggable",
-          "type": "DraggableBehavior::Draggable",
-          "checkCollisionMask": true
-        },
-        {
-          "name": "ShakeObject_PositionAngleScale",
-          "type": "ShakeObject::ShakeObject_PositionAngleScale",
-          "Scale": "Scale"
-        }
-      ],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Torch.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 89,
-                        "y": 39
-                      },
-                      {
-                        "x": 454,
-                        "y": 39
-                      },
-                      {
-                        "x": 454,
-                        "y": 467
-                      },
-                      {
-                        "x": 89,
-                        "y": 467
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
@@ -1143,128 +712,6 @@
                       {
                         "x": 42,
                         "y": 482
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "AreaNorth",
-      "persistentUuid": "6262011b-636b-4705-aac5-9cf498f9bb82",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "BG3.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 960,
-                    "y": 540
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 1920,
-                        "y": 0
-                      },
-                      {
-                        "x": 1920,
-                        "y": 830
-                      },
-                      {
-                        "x": 0,
-                        "y": 830
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "AreaEast",
-      "persistentUuid": "f35ee809-b23d-4adc-a496-98794d72763a",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "BG2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 960,
-                    "y": 540
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 1920,
-                        "y": 0
-                      },
-                      {
-                        "x": 1920,
-                        "y": 830
-                      },
-                      {
-                        "x": 0,
-                        "y": 830
                       }
                     ]
                   ]
@@ -1624,12 +1071,276 @@
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
+              "looping": true,
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
                   "image": "GnollSoldier2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 82,
+                        "y": 5
+                      },
+                      {
+                        "x": 453,
+                        "y": 5
+                      },
+                      {
+                        "x": 453,
+                        "y": 491
+                      },
+                      {
+                        "x": 82,
+                        "y": 491
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Dead",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.1,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "gnolldead.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 82,
+                        "y": 5
+                      },
+                      {
+                        "x": 453,
+                        "y": 5
+                      },
+                      {
+                        "x": 453,
+                        "y": 491
+                      },
+                      {
+                        "x": 82,
+                        "y": 491
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "gnolldead.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 82,
+                        "y": 5
+                      },
+                      {
+                        "x": 453,
+                        "y": 5
+                      },
+                      {
+                        "x": 453,
+                        "y": 491
+                      },
+                      {
+                        "x": 82,
+                        "y": 491
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "gnolldead1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 82,
+                        "y": 5
+                      },
+                      {
+                        "x": 453,
+                        "y": 5
+                      },
+                      {
+                        "x": 453,
+                        "y": 491
+                      },
+                      {
+                        "x": 82,
+                        "y": 491
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "gnolldead5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 82,
+                        "y": 5
+                      },
+                      {
+                        "x": 453,
+                        "y": 5
+                      },
+                      {
+                        "x": 453,
+                        "y": 491
+                      },
+                      {
+                        "x": 82,
+                        "y": 491
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "gnolldead4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 82,
+                        "y": 5
+                      },
+                      {
+                        "x": 453,
+                        "y": 5
+                      },
+                      {
+                        "x": 453,
+                        "y": 491
+                      },
+                      {
+                        "x": 82,
+                        "y": 491
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "gnolldead.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 82,
+                        "y": 5
+                      },
+                      {
+                        "x": 453,
+                        "y": 5
+                      },
+                      {
+                        "x": 453,
+                        "y": 491
+                      },
+                      {
+                        "x": 82,
+                        "y": 491
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "gnolldead.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1744,128 +1455,6 @@
       "effects": [],
       "behaviors": [],
       "animations": []
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "AreaSouth",
-      "persistentUuid": "145e735b-cfc5-4cbf-8bcb-32b96e6b080d",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "BG4.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 960,
-                    "y": 540
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 1920,
-                        "y": 0
-                      },
-                      {
-                        "x": 1920,
-                        "y": 830
-                      },
-                      {
-                        "x": 0,
-                        "y": 830
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "AreaWest",
-      "persistentUuid": "4e6b60f8-9d21-46ff-b1e2-36b80174758f",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "BG1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 960,
-                    "y": 540
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 1920,
-                        "y": 0
-                      },
-                      {
-                        "x": 1920,
-                        "y": 830
-                      },
-                      {
-                        "x": 0,
-                        "y": 830
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
     },
     {
       "adaptCollisionMaskAutomatically": true,
@@ -2296,12 +1885,96 @@
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
+              "looping": true,
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
                   "image": "GnollArcher.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 14,
+                        "y": 13
+                      },
+                      {
+                        "x": 492,
+                        "y": 13
+                      },
+                      {
+                        "x": 492,
+                        "y": 523
+                      },
+                      {
+                        "x": 14,
+                        "y": 523
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.2,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "gnolldead2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 14,
+                        "y": 13
+                      },
+                      {
+                        "x": 492,
+                        "y": 13
+                      },
+                      {
+                        "x": 492,
+                        "y": 523
+                      },
+                      {
+                        "x": 14,
+                        "y": 523
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "gnolldead2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -2443,12 +2116,96 @@
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
+              "looping": true,
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
                   "image": "GnollEnraged.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 68,
+                        "y": 38
+                      },
+                      {
+                        "x": 457,
+                        "y": 38
+                      },
+                      {
+                        "x": 457,
+                        "y": 519
+                      },
+                      {
+                        "x": 68,
+                        "y": 519
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.2,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "gnolldead3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 68,
+                        "y": 38
+                      },
+                      {
+                        "x": 457,
+                        "y": 38
+                      },
+                      {
+                        "x": 457,
+                        "y": 519
+                      },
+                      {
+                        "x": 68,
+                        "y": 519
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "gnolldead3.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -2694,24 +2451,11 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
-      "effects": [
-        {
-          "effectType": "Outline",
-          "name": "Effect",
-          "doubleParameters": {
-            "padding": 0,
-            "thickness": 2
-          },
-          "stringParameters": {
-            "color": "255;255;255"
-          },
-          "booleanParameters": {}
-        }
-      ],
+      "effects": [],
       "behaviors": [],
       "animations": [
         {
-          "name": "NewSprite",
+          "name": "arrow4",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -2721,7 +2465,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite2",
+                  "image": "arrow4",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -2737,20 +2481,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 6,
+                        "x": 0,
                         "y": 0
                       },
                       {
-                        "x": 56,
+                        "x": 412,
                         "y": 0
                       },
                       {
-                        "x": 56,
-                        "y": 56
+                        "x": 412,
+                        "y": 378
                       },
                       {
-                        "x": 6,
-                        "y": 56
+                        "x": 0,
+                        "y": 378
                       }
                     ]
                   ]
@@ -2927,20 +2671,6 @@
       }
     },
     {
-      "assetStoreId": "a0c5ce222ddf98aaf502b91b2b0e38f9cbaa61985a18a50866a66073ee00c287",
-      "name": "Volume",
-      "persistentUuid": "475c9422-67cf-4f19-b273-21f23134ed9f",
-      "type": "PanelSpriteSlider::PanelSpriteSlider",
-      "variant": "Tiny square white slider",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {
-        "ShowLabelAtChanges": true,
-        "InitialValue": 50
-      }
-    },
-    {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "28bba677a308e6e42234abd1768e81a573e7ef6527d43556948e84516256875d",
       "name": "Sound_button",
@@ -3068,6 +2798,81 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "CompassNorth2",
+      "persistentUuid": "8debf512-8217-4d54-90bf-f8a7a506fcb3",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [
+        {
+          "effectType": "Outline",
+          "name": "Effect",
+          "doubleParameters": {
+            "padding": 0,
+            "thickness": 3
+          },
+          "stringParameters": {
+            "color": "255;255;255"
+          },
+          "booleanParameters": {}
+        }
+      ],
+      "behaviors": [],
+      "string": "N",
+      "font": "assets/JO______.TTF",
+      "textAlignment": "left",
+      "characterSize": 55,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "N",
+        "font": "assets/JO______.TTF",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 55,
+        "lineHeight": 0,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "assetStoreId": "bfeeb465a4a164b560a2215e3ff9e78e66123af43cbf7ef1f22d56fca4271c80",
+      "name": "VolumeSlider",
+      "persistentUuid": "df2c2e99-5b51-423c-aee7-f7cefba12062",
+      "type": "PanelSpriteSlider::PanelSpriteSlider",
+      "variant": "Square white slider",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "BarTopPadding": 6,
+        "BarLeftPadding": 6,
+        "BarRightPadding": 6,
+        "BarBottomPadding": 6,
+        "LabelMargin": 6,
+        "InitialValue": 25
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -3106,6 +2911,9 @@
             "objectName": "CompassNorth"
           },
           {
+            "objectName": "CompassNorth2"
+          },
+          {
             "objectName": "UIBase"
           },
           {
@@ -3127,7 +2935,7 @@
             "objectName": "LevelProgress"
           },
           {
-            "objectName": "Volume"
+            "objectName": "VolumeSlider"
           },
           {
             "objectName": "Sound_button"
@@ -3149,23 +2957,6 @@
         ]
       },
       {
-        "folderName": "Backgrounds",
-        "children": [
-          {
-            "objectName": "AreaWest"
-          },
-          {
-            "objectName": "AreaSouth"
-          },
-          {
-            "objectName": "AreaEast"
-          },
-          {
-            "objectName": "AreaNorth"
-          }
-        ]
-      },
-      {
         "folderName": "Flags and items",
         "children": [
           {
@@ -3175,22 +2966,7 @@
             "objectName": "Gong"
           },
           {
-            "objectName": "Torch"
-          },
-          {
             "objectName": "Horn"
-          },
-          {
-            "objectName": "FlagWest"
-          },
-          {
-            "objectName": "FlagSouth"
-          },
-          {
-            "objectName": "FlagEast"
-          },
-          {
-            "objectName": "FlagNorth"
           }
         ]
       },
@@ -3380,7 +3156,7 @@
                     "",
                     "8",
                     "=",
-                    "100"
+                    "20"
                   ]
                 },
                 {
@@ -3552,7 +3328,7 @@
                   "parameters": [
                     "LevelGoalTime",
                     "=",
-                    "60"
+                    "300"
                   ]
                 },
                 {
@@ -3562,7 +3338,7 @@
                   "parameters": [
                     "LevelSpawnRate",
                     "=",
-                    "3"
+                    "1"
                   ]
                 },
                 {
@@ -3597,6 +3373,24 @@
                     "=",
                     "0"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Gong",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Horn",
+                    ""
+                  ]
                 }
               ]
             },
@@ -3628,7 +3422,7 @@
                   "parameters": [
                     "LevelGoalTime",
                     "=",
-                    "80"
+                    "3"
                   ]
                 },
                 {
@@ -3672,6 +3466,15 @@
                     "RiderThreshold",
                     "=",
                     "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Horn",
+                    ""
                   ]
                 }
               ]
@@ -3791,17 +3594,6 @@
             "LevelProgress",
             "=",
             "TimerElapsedTime(\"LevelTimer\")",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "PanelSpriteSlider::PanelSpriteSlider::SetValue"
-          },
-          "parameters": [
-            "Volume",
-            "=",
-            "Sound.MainVolume",
             ""
           ]
         }
@@ -3983,7 +3775,7 @@
           "parameters": [
             "DefeatedBox",
             "=",
-            "1100",
+            "980",
             "=",
             "320"
           ]
@@ -4016,204 +3808,296 @@
             "\"LevelTimer\""
           ]
         }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Comment",
-      "color": {
-        "b": 109,
-        "g": 230,
-        "r": 255,
-        "textB": 0,
-        "textG": 0,
-        "textR": 0
-      },
-      "comment": "Volume Controller"
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "PanelSpriteSlider::PanelSpriteSlider::IsActivated"
-          },
-          "parameters": [
-            "Volume",
-            ""
-          ]
-        }
       ],
-      "actions": [
+      "events": [
         {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "Sound.MainVolume",
-            "=",
-            "Volume.Value()"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Or"
-          },
-          "parameters": [],
-          "subInstructions": [
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
             {
               "type": {
-                "value": "ButtonStates::ButtonFSM::IsClicked"
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "StopSoundChannel"
               },
               "parameters": [
-                "Sound_button",
-                "ButtonFSM",
-                ""
+                "",
+                "1"
               ]
             },
             {
               "type": {
-                "value": "ButtonStates::ButtonFSM::IsPressed"
+                "value": "StopSoundChannel"
+              },
+              "parameters": [
+                "",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "StopSoundChannel"
+              },
+              "parameters": [
+                "",
+                "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "StopSoundChannel"
+              },
+              "parameters": [
+                "",
+                "4"
+              ]
+            },
+            {
+              "type": {
+                "value": "StopSoundChannel"
+              },
+              "parameters": [
+                "",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "StopSoundChannel"
+              },
+              "parameters": [
+                "",
+                "6"
+              ]
+            },
+            {
+              "type": {
+                "value": "StopSoundChannel"
+              },
+              "parameters": [
+                "",
+                "7"
+              ]
+            },
+            {
+              "type": {
+                "value": "StopSoundChannel"
+              },
+              "parameters": [
+                "",
+                "9"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlayMusicOnChannel"
+              },
+              "parameters": [
+                "",
+                "assets/music/Game_over_lightyeartraxx-kl-peach-game-over-iii-142453.mp3",
+                "8",
+                "25",
+                "25",
+                "1"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Volume Controller",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteSlider::PanelSpriteSlider::IsActivated"
+              },
+              "parameters": [
+                "VolumeSlider",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetGlobalVolume"
+              },
+              "parameters": [
+                "",
+                "=",
+                "VolumeSlider.Value()"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonFSM::IsClicked"
+                  },
+                  "parameters": [
+                    "Sound_button",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonFSM::IsPressed"
+                  },
+                  "parameters": [
+                    "Sound_button",
+                    "ButtonFSM",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": {
+                "value": "MouseButtonFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            },
+            {
+              "type": {
+                "value": "HasTouchEnded"
+              },
+              "parameters": [
+                "",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySoundOnChannel"
+              },
+              "parameters": [
+                "",
+                "assets/ClickButton.wav",
+                "7",
+                "",
+                "30",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
               },
               "parameters": [
                 "Sound_button",
-                "ButtonFSM",
+                "IsMute",
+                "Toggle",
                 ""
               ]
             }
           ]
         },
         {
-          "type": {
-            "value": "MouseButtonFromTextReleased"
-          },
-          "parameters": [
-            "",
-            "\"Left\""
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "Sound_button",
+                "IsMute",
+                "=",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+              },
+              "parameters": [
+                "Sound_button",
+                "Animation",
+                "=",
+                "0"
+              ]
+            }
           ]
         },
         {
-          "type": {
-            "value": "HasTouchEnded"
-          },
-          "parameters": [
-            "",
-            "1"
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": []
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "PlaySoundOnChannel"
-          },
-          "parameters": [
-            "",
-            "assets/ClickButton.wav",
-            "7",
-            "",
-            "30",
-            "1"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetBooleanObjectVariable"
-          },
-          "parameters": [
-            "Sound_button",
-            "IsMute",
-            "Toggle",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "BooleanObjectVariable"
-          },
-          "parameters": [
-            "Sound_button",
-            "IsMute",
-            "=",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
-          },
-          "parameters": [
-            "Sound_button",
-            "Animation",
-            "=",
-            "0"
-          ]
-        },
-        {
-          "type": {
-            "value": "ResumeMusicChannel"
-          },
-          "parameters": [
-            "",
-            "8"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "BooleanObjectVariable"
-          },
-          "parameters": [
-            "Sound_button",
-            "IsMute",
-            "True",
-            ""
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "Sound_button",
+                "IsMute",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+              },
+              "parameters": [
+                "Sound_button",
+                "Animation",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetGlobalVolume"
+              },
+              "parameters": [
+                "",
+                "=",
+                "0"
+              ]
+            }
           ]
         }
       ],
-      "actions": [
-        {
-          "type": {
-            "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
-          },
-          "parameters": [
-            "Sound_button",
-            "Animation",
-            "=",
-            "1"
-          ]
-        },
-        {
-          "type": {
-            "value": "StopMusicChannel"
-          },
-          "parameters": [
-            "",
-            "8"
-          ]
-        }
-      ]
+      "parameters": []
     },
     {
       "colorB": 228,
@@ -4715,6 +4599,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Drag and drop",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -5149,96 +5034,115 @@
             },
             {
               "type": {
-                "value": "CurvedMovement::SpeedPathMovement::HasReachedTarget"
+                "value": "AnimatableCapability::AnimatableBehavior::Index"
               },
               "parameters": [
                 "Enemies",
-                "SpeedPathMovement",
-                "="
-              ]
-            },
-            {
-              "type": {
-                "value": "CompareTimer"
-              },
-              "parameters": [
-                "",
-                "\"DamageCooldown\"",
-                ">",
-                "2"
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanVariable"
-              },
-              "parameters": [
-                "IsLevelRunning",
-                "True",
-                ""
+                "Animation",
+                "=",
+                "0"
               ]
             }
           ],
-          "actions": [
+          "actions": [],
+          "events": [
             {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "PlayerHealth",
-                "-",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "ResetTimer"
-              },
-              "parameters": [
-                "",
-                "\"DamageCooldown\""
-              ]
-            },
-            {
-              "type": {
-                "value": "CameraShake::ShakeCamera"
-              },
-              "parameters": [
-                "",
-                "0.2",
-                "0.05",
-                "0.05",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "PlaySoundOnChannel"
-              },
-              "parameters": [
-                "",
-                "Damage.wav",
-                "2",
-                "",
-                "25",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "ShakeObject::ShakeObject_PositionAngleScale::ShakeObject_PositionAngleScale"
-              },
-              "parameters": [
-                "Enemies",
-                "ShakeObject_PositionAngleScale",
-                "0.5",
-                "0",
-                "20",
-                "0",
-                "5",
-                "0.5",
-                "",
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CurvedMovement::SpeedPathMovement::HasReachedTarget"
+                  },
+                  "parameters": [
+                    "Enemies",
+                    "SpeedPathMovement",
+                    "="
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CompareTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"DamageCooldown\"",
+                    ">",
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "IsLevelRunning",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "PlayerHealth",
+                    "-",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"DamageCooldown\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CameraShake::ShakeCamera"
+                  },
+                  "parameters": [
+                    "",
+                    "0.2",
+                    "0.05",
+                    "0.05",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundOnChannel"
+                  },
+                  "parameters": [
+                    "",
+                    "Damage.wav",
+                    "2",
+                    "",
+                    "25",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ShakeObject::ShakeObject_PositionAngleScale::ShakeObject_PositionAngleScale"
+                  },
+                  "parameters": [
+                    "Enemies",
+                    "ShakeObject_PositionAngleScale",
+                    "0.5",
+                    "0",
+                    "20",
+                    "0",
+                    "5",
+                    "0.5",
+                    "",
+                    ""
+                  ]
+                }
               ]
             }
           ]
@@ -5251,6 +5155,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Level manager",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -7001,10 +6906,41 @@
                     },
                     {
                       "type": {
-                        "value": "Delete"
+                        "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
                       },
                       "parameters": [
                         "Enemies",
+                        "Animation",
+                        "=",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ShakeObject::ShakeObject_PositionAngleScale::ShakeObject_PositionAngleScale"
+                      },
+                      "parameters": [
+                        "Enemies",
+                        "ShakeObject_PositionAngleScale",
+                        "0.3",
+                        "30",
+                        "30",
+                        "30",
+                        "30",
+                        "0.3",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CurvedMovement::SpeedPathMovement::SetSpeed"
+                      },
+                      "parameters": [
+                        "Enemies",
+                        "SpeedPathMovement",
+                        "=",
+                        "0",
                         ""
                       ]
                     }
@@ -7158,6 +7094,43 @@
         }
       ],
       "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "Health::Health::Health"
+          },
+          "parameters": [
+            "Enemies",
+            "Health",
+            "<=",
+            "0",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
+          },
+          "parameters": [
+            "Enemies",
+            "Animation"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "Enemies",
+            ""
+          ]
+        }
+      ]
     }
   ],
   "layers": [

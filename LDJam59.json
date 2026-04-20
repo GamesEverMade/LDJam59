@@ -1015,12 +1015,817 @@
         "metadata": "",
         "name": "assets/JO______.TTF",
         "userAdded": false
+      },
+      {
+        "file": "arrow4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "arrow4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/arrow4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "arrow4",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "gnolldead.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "gnolldead.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "slash.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"slash.png\",\"extension\":\".png\"}",
+        "name": "slash.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "slash1.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"slash1.png\",\"extension\":\".png\"}",
+        "name": "slash1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "slash2.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"slash2.png\",\"extension\":\".png\"}",
+        "name": "slash2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "gnolldead2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "gnolldead2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "gnolldead3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "gnolldead3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "gnolldead1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "gnolldead1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "gnolldead4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "gnolldead4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "gnolldead5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "gnolldead5.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
-  "objects": [],
+  "objects": [
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "AreaWest",
+      "persistentUuid": "4e6b60f8-9d21-46ff-b1e2-36b80174758f",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "BG1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 960,
+                    "y": 540
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 1920,
+                        "y": 0
+                      },
+                      {
+                        "x": 1920,
+                        "y": 830
+                      },
+                      {
+                        "x": 0,
+                        "y": 830
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "AreaSouth",
+      "persistentUuid": "145e735b-cfc5-4cbf-8bcb-32b96e6b080d",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "BG4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 960,
+                    "y": 540
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 1920,
+                        "y": 0
+                      },
+                      {
+                        "x": 1920,
+                        "y": 830
+                      },
+                      {
+                        "x": 0,
+                        "y": 830
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "AreaEast",
+      "persistentUuid": "f35ee809-b23d-4adc-a496-98794d72763a",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "BG2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 960,
+                    "y": 540
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 1920,
+                        "y": 0
+                      },
+                      {
+                        "x": 1920,
+                        "y": 830
+                      },
+                      {
+                        "x": 0,
+                        "y": 830
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "AreaNorth",
+      "persistentUuid": "6262011b-636b-4705-aac5-9cf498f9bb82",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "BG3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 960,
+                    "y": 540
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 1920,
+                        "y": 0
+                      },
+                      {
+                        "x": 1920,
+                        "y": 830
+                      },
+                      {
+                        "x": 0,
+                        "y": 830
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "FlagWest",
+      "persistentUuid": "f0f88f49-a2b7-4571-9496-47bae1309351",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "IsSelected",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "Direction",
+          "type": "string",
+          "value": "West"
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Draggable",
+          "type": "DraggableBehavior::Draggable",
+          "checkCollisionMask": true
+        },
+        {
+          "name": "ShakeObject_PositionAngleScale",
+          "type": "ShakeObject::ShakeObject_PositionAngleScale",
+          "Scale": "Scale"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "FlagWest.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 40,
+                        "y": 23
+                      },
+                      {
+                        "x": 465,
+                        "y": 23
+                      },
+                      {
+                        "x": 465,
+                        "y": 488
+                      },
+                      {
+                        "x": 40,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "FlagSouth",
+      "persistentUuid": "8f1d9832-3eb5-4532-ae45-107f0ff8e344",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "IsSelected",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "Direction",
+          "type": "string",
+          "value": "South"
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Draggable",
+          "type": "DraggableBehavior::Draggable",
+          "checkCollisionMask": true
+        },
+        {
+          "name": "ShakeObject_PositionAngleScale",
+          "type": "ShakeObject::ShakeObject_PositionAngleScale",
+          "Scale": "Scale"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "FlagSouth.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 40,
+                        "y": 23
+                      },
+                      {
+                        "x": 465,
+                        "y": 23
+                      },
+                      {
+                        "x": 465,
+                        "y": 488
+                      },
+                      {
+                        "x": 40,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "FlagEast",
+      "persistentUuid": "f8f8f1c8-88c8-4bb3-ae73-19e1fe98f376",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "IsSelected",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "Direction",
+          "type": "string",
+          "value": "East"
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Draggable",
+          "type": "DraggableBehavior::Draggable",
+          "checkCollisionMask": true
+        },
+        {
+          "name": "ShakeObject_PositionAngleScale",
+          "type": "ShakeObject::ShakeObject_PositionAngleScale",
+          "Scale": "Scale"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "FlagEast.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 40,
+                        "y": 23
+                      },
+                      {
+                        "x": 465,
+                        "y": 23
+                      },
+                      {
+                        "x": 465,
+                        "y": 488
+                      },
+                      {
+                        "x": 40,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "FlagNorth",
+      "persistentUuid": "a2f5033f-9c6b-4ebb-9efa-76a9b6711223",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "IsSelected",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "Direction",
+          "type": "string",
+          "value": "North"
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Draggable",
+          "type": "DraggableBehavior::Draggable",
+          "checkCollisionMask": true
+        },
+        {
+          "name": "ShakeObject_PositionAngleScale",
+          "type": "ShakeObject::ShakeObject_PositionAngleScale",
+          "Scale": "Scale"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "FlagNorth.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 40,
+                        "y": 23
+                      },
+                      {
+                        "x": 465,
+                        "y": 23
+                      },
+                      {
+                        "x": 465,
+                        "y": 488
+                      },
+                      {
+                        "x": 40,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Torch",
+      "persistentUuid": "f5e99343-e0ea-4fea-88a1-eb86b54fe399",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "IsSelected",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "StrongAgainst",
+          "type": "string",
+          "value": "Soldier"
+        }
+      ],
+      "effects": [
+        {
+          "disabled": true,
+          "effectType": "Shockwave",
+          "name": "Effect",
+          "doubleParameters": {
+            "amplitude": 50,
+            "brightness": 1,
+            "centerX": 0.5,
+            "centerY": 0.5,
+            "radius": 0,
+            "speed": 500,
+            "time": 0,
+            "wavelength": 200
+          },
+          "stringParameters": {},
+          "booleanParameters": {}
+        }
+      ],
+      "behaviors": [
+        {
+          "name": "Draggable",
+          "type": "DraggableBehavior::Draggable",
+          "checkCollisionMask": true
+        },
+        {
+          "name": "ShakeObject_PositionAngleScale",
+          "type": "ShakeObject::ShakeObject_PositionAngleScale",
+          "Scale": "Scale"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Torch.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 89,
+                        "y": 39
+                      },
+                      {
+                        "x": 454,
+                        "y": 39
+                      },
+                      {
+                        "x": 454,
+                        "y": 467
+                      },
+                      {
+                        "x": 89,
+                        "y": 467
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "objectsFolderStructure": {
-    "folderName": "__ROOT"
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "folderName": "Flags",
+        "children": [
+          {
+            "objectName": "FlagNorth"
+          },
+          {
+            "objectName": "FlagEast"
+          },
+          {
+            "objectName": "FlagSouth"
+          },
+          {
+            "objectName": "FlagWest"
+          }
+        ]
+      },
+      {
+        "folderName": "Backgrounds",
+        "children": [
+          {
+            "objectName": "AreaNorth"
+          },
+          {
+            "objectName": "AreaEast"
+          },
+          {
+            "objectName": "AreaSouth"
+          },
+          {
+            "objectName": "AreaWest"
+          }
+        ]
+      },
+      {
+        "objectName": "Torch"
+      }
+    ]
   },
   "objectsGroups": [],
   "variables": [

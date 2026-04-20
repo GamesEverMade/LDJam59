@@ -20,14 +20,151 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.3645833333333333,
+    "zoomFactor": 0.38958562738272856,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
   },
   "objectsGroups": [],
   "variables": [],
-  "instances": [],
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 428,
+      "keepRatio": true,
+      "layer": "",
+      "name": "AreaNorth",
+      "persistentUuid": "b1cd608a-31c1-4e47-ac2b-69a3e44a452c",
+      "width": 991,
+      "x": -407,
+      "y": -63,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 428,
+      "keepRatio": true,
+      "layer": "",
+      "name": "AreaEast",
+      "persistentUuid": "41ae099b-7c8d-41b1-ada7-3b8d361084f1",
+      "width": 991,
+      "x": 452,
+      "y": 355,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 428,
+      "keepRatio": true,
+      "layer": "",
+      "name": "AreaSouth",
+      "persistentUuid": "c954217f-ad19-43c8-bb51-dec6e2ac6429",
+      "width": 991,
+      "x": -212,
+      "y": 353,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 428,
+      "keepRatio": true,
+      "layer": "",
+      "name": "AreaWest",
+      "persistentUuid": "5bec3e7d-4483-45a7-bda4-e4b047bc47c7",
+      "width": 991,
+      "x": 67,
+      "y": -59,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 122,
+      "keepRatio": true,
+      "layer": "",
+      "name": "FlagNorth",
+      "persistentUuid": "3c59c775-17fb-4981-ba35-3a09d2389f50",
+      "width": 122,
+      "x": 34,
+      "y": 37,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 122,
+      "keepRatio": true,
+      "layer": "",
+      "name": "FlagEast",
+      "persistentUuid": "c3c2a29d-e32b-4191-8c49-6d1ec3304c52",
+      "width": 122,
+      "x": 603,
+      "y": 11,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 122,
+      "keepRatio": true,
+      "layer": "",
+      "name": "FlagSouth",
+      "persistentUuid": "b2cb78db-4530-4e1e-a37d-f6ea016442e3",
+      "width": 122,
+      "x": 14,
+      "y": 369,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 122,
+      "keepRatio": true,
+      "layer": "",
+      "name": "FlagWest",
+      "persistentUuid": "e48cdda7-0915-4d2d-81d5-66a86072294f",
+      "width": 122,
+      "x": 486,
+      "y": 380,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
   "objects": [],
   "objectsFolderStructure": {
     "folderName": "__ROOT"
@@ -100,5 +237,34 @@
       ]
     }
   ],
-  "behaviorsSharedData": []
+  "behaviorsSharedData": [
+    {
+      "name": "Animation",
+      "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
+      "name": "Effect",
+      "type": "EffectCapability::EffectBehavior"
+    },
+    {
+      "name": "Flippable",
+      "type": "FlippableCapability::FlippableBehavior"
+    },
+    {
+      "name": "Opacity",
+      "type": "OpacityCapability::OpacityBehavior"
+    },
+    {
+      "name": "Resizable",
+      "type": "ResizableCapability::ResizableBehavior"
+    },
+    {
+      "name": "Scale",
+      "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "ShakeObject_PositionAngleScale",
+      "type": "ShakeObject::ShakeObject_PositionAngleScale"
+    }
+  ]
 }

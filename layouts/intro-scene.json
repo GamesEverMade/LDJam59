@@ -36,23 +36,17 @@
   "instances": [
     {
       "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 547,
+      "customSize": false,
+      "height": 0,
       "keepRatio": true,
       "layer": "",
       "name": "Logo",
-      "persistentUuid": "8cfcc2a8-7daf-4b97-8821-0f2f977c10b5",
-      "width": 554,
-      "x": 598,
-      "y": 220,
-      "zOrder": 2,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
+      "persistentUuid": "32fe5898-d652-47de-a844-568b3d842aec",
+      "width": 0,
+      "x": 338,
+      "y": -11,
+      "zOrder": 3,
+      "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
     }
@@ -199,6 +193,18 @@
             "Effect",
             "\"Effect\"",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "CenterCameraOnObject"
+          },
+          "parameters": [
+            "Logo",
+            "Logo",
+            "",
+            "",
+            "0"
           ]
         }
       ]
@@ -352,6 +358,10 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "ShakeObject_PositionAngleScale",
+      "type": "ShakeObject::ShakeObject_PositionAngleScale"
     },
     {
       "name": "Tween",
