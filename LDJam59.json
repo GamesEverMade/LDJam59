@@ -443,69 +443,13 @@
         }
       },
       {
-        "file": "assets/ButtonRight.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "ButtonRight",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/ButtonLeft.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "ButtonLeft",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
         "file": "beep.wav",
         "kind": "audio",
         "metadata": "",
         "name": "beep.wav",
         "preloadAsMusic": false,
-        "preloadAsSound": false,
+        "preloadAsSound": true,
         "preloadInCache": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/NorthMock6.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NorthMock6.png\"}",
-        "name": "NorthMock6",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/PlayArea3.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "PlayArea3",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/SouthMock.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/SouthMock.png\"}",
-        "name": "SouthMock",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/EastMock4.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "EastMock4",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/WestMock.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "WestMock",
-        "smoothed": true,
         "userAdded": false
       },
       {
@@ -636,7 +580,7 @@
         "metadata": "",
         "name": "Wrong.wav",
         "preloadAsMusic": false,
-        "preloadAsSound": false,
+        "preloadAsSound": true,
         "preloadInCache": false,
         "userAdded": false
       },
@@ -671,7 +615,7 @@
         "kind": "audio",
         "metadata": "",
         "name": "assets/music/Village_Song_freesound_community-village-theme-68229.mp3",
-        "preloadAsMusic": false,
+        "preloadAsMusic": true,
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
@@ -681,7 +625,7 @@
         "kind": "audio",
         "metadata": "",
         "name": "assets/sfx/Loadscenefreesound_community-old-record-player-effect-14887.mp3",
-        "preloadAsMusic": false,
+        "preloadAsMusic": true,
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
@@ -691,7 +635,7 @@
         "kind": "audio",
         "metadata": "",
         "name": "assets/music/Game_over_lightyeartraxx-kl-peach-game-over-iii-142453.mp3",
-        "preloadAsMusic": false,
+        "preloadAsMusic": true,
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
@@ -701,7 +645,7 @@
         "kind": "audio",
         "metadata": "",
         "name": "assets/music/Fairytale Waltz.mp3",
-        "preloadAsMusic": false,
+        "preloadAsMusic": true,
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
@@ -719,22 +663,6 @@
         "kind": "image",
         "metadata": "",
         "name": "GnollArcher.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "Horn.jpg",
-        "kind": "image",
-        "metadata": "",
-        "name": "Horn.jpg",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "Horn2.jpg",
-        "kind": "image",
-        "metadata": "",
-        "name": "Horn2.jpg",
         "smoothed": true,
         "userAdded": false
       },
@@ -787,6 +715,171 @@
         "kind": "image",
         "metadata": "",
         "name": "BG1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/arrow2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "arrow2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/arrow.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "arrow",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/horn2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "horn2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite6.png\"}",
+        "name": "NewSprite2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/OK.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "OK",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Swish.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Swish.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/gongo.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sfx/gongo.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/waving-torch.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sfx/waving-torch.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "horn.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "horn.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/roar-3.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sfx/roar-3.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Grey Button With Shadow_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Grey Button With Shadow_Idle.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Game over dialogs/7a8f60c5db6936e591235ae6ef3eca1c856c61adcc8d2a059e4e408804ebc477_Grey Button With Shadow_Idle.png",
+          "name": "Grey Button With Shadow_Idle.png"
+        }
+      },
+      {
+        "file": "assets/Purple Button With Shadow_Hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Purple Button With Shadow_Hovered.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Game over dialogs/4a64488d212c7a69721b3ac48319e64bc830f5663535fdafb18e2fc907e8d10a_Purple Button With Shadow_Hovered.png",
+          "name": "Purple Button With Shadow_Hovered.png"
+        }
+      },
+      {
+        "file": "assets/Purple Button With Shadow_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Purple Button With Shadow_Idle.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Game over dialogs/e44a40d67427b4e53751fc82b5ad4d87b2daf311558dcf0151cd1b173b7e5dcf_Purple Button With Shadow_Idle.png",
+          "name": "Purple Button With Shadow_Idle.png"
+        }
+      },
+      {
+        "file": "assets/Purple Button With Shadow_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Purple Button With Shadow_Pressed.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Game over dialogs/04a69986487fb427759132f3807a28db0f3b845623d5ba34d063f46a9ee22f63_Purple Button With Shadow_Pressed.png",
+          "name": "Purple Button With Shadow_Pressed.png"
+        }
+      },
+      {
+        "file": "assets/CantoraOne-Regular2.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "CantoraOne-Regular.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Game over dialogs/05b0c1364a92b436b86ca819e66b63480d1bc2fb399f6c0cf8bffbf8199ccc2a_CantoraOne-Regular.ttf",
+          "name": "CantoraOne-Regular.ttf"
+        }
+      },
+      {
+        "file": "tutorial2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tutorial2.png",
         "smoothed": true,
         "userAdded": false
       }
@@ -923,6 +1016,14 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/shakeobject"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/health"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/leaderboarddialog"
     }
   ],
   "externalLayouts": []
