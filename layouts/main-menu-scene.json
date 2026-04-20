@@ -190,14 +190,25 @@
         },
         {
           "type": {
-            "value": "PlaySound"
+            "value": "PlayMusicOnChannel"
           },
           "parameters": [
             "",
             "assets/music/Main_Song_freesound_community-village-theme-68229.mp3",
-            "yes",
+            "8",
             "50",
+            "100",
             "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetGlobalVolume"
+          },
+          "parameters": [
+            "",
+            "=",
+            "30"
           ]
         }
       ]
@@ -212,6 +223,7 @@
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -260,6 +272,49 @@
                 "TransitionScene",
                 "=",
                 "\"Tutorial\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                  },
+                  "parameters": [
+                    "New_Game",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::IsPressed"
+                  },
+                  "parameters": [
+                    "New_Game",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Game Scene\"",
+                ""
               ]
             }
           ]

@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.7817486425451757,
+    "zoomFactor": 0.44485159988866496,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -193,7 +193,7 @@
       "effects": [],
       "behaviors": [],
       "content": {
-        "text": "Marcelo Holysparks\nAndrew \"Elf\" Lopes\nAlisson \"Bahiano\" Lindote\nFelipe \"Gilgameth\"",
+        "text": "Marcelo \"Holy\" Moreira\nAndrew \"Elf\" Lopes\nAlisson \"Bahiano\" Lindote\nFelipe \"Gilgameth\"",
         "opacity": 255,
         "scale": 4,
         "fontSize": 20,

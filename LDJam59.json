@@ -882,6 +882,22 @@
         "name": "tutorial2.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "tutorial3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tutorial3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/tutorial3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "tutorial3",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
@@ -897,9 +913,9 @@
       "value": ""
     },
     {
-      "name": "Variable",
+      "name": "CurrentLevel",
       "type": "number",
-      "value": 0
+      "value": 1
     },
     {
       "name": "Sound",

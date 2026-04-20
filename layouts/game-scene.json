@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.30104611971825107,
+    "zoomFactor": 0.2386775827025823,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -131,11 +131,6 @@
       "value": 0
     },
     {
-      "name": "LevelDifficulty",
-      "type": "number",
-      "value": 0
-    },
-    {
       "name": "SelectedFlagsCount",
       "type": "number",
       "value": 0
@@ -169,6 +164,11 @@
       "name": "LevelGoalTime",
       "type": "number",
       "value": 40
+    },
+    {
+      "name": "IsLevelRunning",
+      "type": "boolean",
+      "value": true
     }
   ],
   "instances": [
@@ -580,22 +580,6 @@
       "x": 1734,
       "y": 10,
       "zOrder": 40,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "UI",
-      "name": "TwoChoicesDialogBox",
-      "persistentUuid": "21c53128-d184-417d-b6ae-35831f39828d",
-      "width": 0,
-      "x": 288,
-      "y": -512,
-      "zOrder": 41,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2590,7 +2574,8 @@
         "BarLeftPadding": 4,
         "BarRightPadding": 4,
         "MaxValue": 30,
-        "InitialValue": 0
+        "InitialValue": 0,
+        "EasingDuration": 0.1
       }
     },
     {
@@ -2756,7 +2741,7 @@
     },
     {
       "assetStoreId": "9d5de415b6e469c681701ea42d3b1c486fee31d6ef591a2d3e226f639ab486ff",
-      "name": "TwoChoicesDialogBox",
+      "name": "LevelBeatBox",
       "persistentUuid": "da73438e-10f3-490c-93f7-0440f1fde6e6",
       "type": "TwoChoicesDialogBoxes::TwoChoicesDialogBox",
       "variant": "Semi-transparent black and white2",
@@ -2829,6 +2814,84 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Level3Scroll",
+      "persistentUuid": "5f709430-96a2-4b49-a219-1eb7dd8ef042",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "tutorial3",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "tutorial3",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 1014,
+                        "y": 0
+                      },
+                      {
+                        "x": 1014,
+                        "y": 484
+                      },
+                      {
+                        "x": 0,
+                        "y": 484
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "9d5de415b6e469c681701ea42d3b1c486fee31d6ef591a2d3e226f639ab486ff",
+      "name": "DefeatedBox",
+      "persistentUuid": "afd03628-82ff-4b40-82f5-ac70540eb7b7",
+      "type": "TwoChoicesDialogBoxes::TwoChoicesDialogBox",
+      "variant": "Semi-transparent black and white3",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "EnableEscape": false,
+        "LabelButtonID0": "Retry",
+        "LabelButtonID1": "Main menu",
+        "TextMessage": "The village was overrun by gnolls!"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -2950,285 +3013,568 @@
         ]
       },
       {
-        "objectName": "TwoChoicesDialogBox"
+        "objectName": "LevelBeatBox"
+      },
+      {
+        "objectName": "DefeatedBox"
       },
       {
         "objectName": "Level2Scroll"
+      },
+      {
+        "objectName": "Level3Scroll"
       }
     ]
   },
   "events": [
     {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "SceneJustBegins"
-          },
-          "parameters": [
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "SetStringVariable"
-          },
-          "parameters": [
-            "CurrentScene",
-            "=",
-            "\"Game Scene 1\""
-          ]
-        },
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "AreaOffset",
-            "=",
-            "40"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "LevelSpawnRate",
-            "=",
-            "2"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetBooleanObjectVariable"
-          },
-          "parameters": [
-            "Flags",
-            "IsSelected",
-            "False",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SetBooleanObjectVariable"
-          },
-          "parameters": [
-            "Items",
-            "IsSelected",
-            "False",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "LevelGoalTime",
-            "=",
-            "5"
-          ]
-        },
-        {
-          "type": {
-            "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetMaxValue"
-          },
-          "parameters": [
-            "LevelProgress",
-            "=",
-            "LevelGoalTime",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "CurvedMovement::CreatePathFromSvg"
-          },
-          "parameters": [
-            "",
-            "\"TestPath\"",
-            "\"m260.84 1.4043c26.681 73.723 61.085 104.27 61.085 104.27 20.362 23.521 8.7766 24.574 1.0532 24.223-7.7234-0.35107-24.926-5.9681-37.915-3.8617-12.989 2.1064-44.234 11.234-59.33 26.33-15.096 15.096-10.181 20.713-5.266 32.298 4.9149 11.585 10.181 31.596 10.181 31.596\"",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "CameraShake::SetLayerShakable"
-          },
-          "parameters": [
-            "",
-            "",
-            "",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "CameraShake::SetLayerShakable"
-          },
-          "parameters": [
-            "",
-            "",
-            "\"Background\"",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "CameraShake::SetLayerShakable"
-          },
-          "parameters": [
-            "",
-            "",
-            "\"UI\"",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "CameraShake::SetLayerShakable"
-          },
-          "parameters": [
-            "",
-            "",
-            "\"HUD\"",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "PlaySound"
-          },
-          "parameters": [
-            "",
-            "assets/music/Village_Song_freesound_community-village-theme-68229.mp3",
-            "yes",
-            "25",
-            "1"
-          ]
-        }
-      ],
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "folded": true,
+      "name": "At the beginning of the scene...",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "value": "BuiltinCommonInstructions::Once"
+                "value": "SceneJustBegins"
               },
-              "parameters": []
+              "parameters": [
+                ""
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "SetCameraCenterX"
+                "value": "SetStringVariable"
               },
               "parameters": [
-                "",
+                "CurrentScene",
                 "=",
-                "AreaNorth.CenterX()",
-                "\"Background\"",
-                "0"
+                "\"Game Scene\""
               ]
             },
             {
               "type": {
-                "value": "SetCameraCenterY"
+                "value": "SetNumberVariable"
               },
               "parameters": [
-                "",
+                "AreaOffset",
                 "=",
-                "AreaNorth.CenterY()",
-                "\"Background\"",
-                "0"
+                "40"
               ]
             },
             {
               "type": {
-                "value": "SetY"
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "PlayerHealth",
+                "=",
+                "20"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
               },
               "parameters": [
                 "Flags",
-                "=",
-                "UIBase.Y() + AreaOffset"
+                "IsSelected",
+                "False",
+                ""
               ]
             },
             {
               "type": {
-                "value": "SetY"
+                "value": "SetBooleanObjectVariable"
               },
               "parameters": [
                 "Items",
-                "=",
-                "UIBase.Y() + AreaOffset "
+                "IsSelected",
+                "False",
+                ""
               ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
             }
           ],
-          "actions": [
+          "events": [
             {
-              "type": {
-                "value": "ResetTimer"
-              },
-              "parameters": [
-                "",
-                "\"SpawnTimerEast\""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetMaxValue"
+                  },
+                  "parameters": [
+                    "LevelProgress",
+                    "=",
+                    "LevelGoalTime",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetMaxValue"
+                  },
+                  "parameters": [
+                    "HealthBar",
+                    "=",
+                    "PlayerHealth",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CameraShake::SetLayerShakable"
+                  },
+                  "parameters": [
+                    "",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CameraShake::SetLayerShakable"
+                  },
+                  "parameters": [
+                    "",
+                    "",
+                    "\"Background\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CameraShake::SetLayerShakable"
+                  },
+                  "parameters": [
+                    "",
+                    "",
+                    "\"UI\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CameraShake::SetLayerShakable"
+                  },
+                  "parameters": [
+                    "",
+                    "",
+                    "\"HUD\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetGlobalVolume"
+                  },
+                  "parameters": [
+                    "",
+                    "=",
+                    "30"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetMusicChannelVolume"
+                  },
+                  "parameters": [
+                    "",
+                    "8",
+                    "=",
+                    "100"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlayMusicOnChannel"
+                  },
+                  "parameters": [
+                    "",
+                    "assets/music/Village_Song_freesound_community-village-theme-68229.mp3",
+                    "8",
+                    "25",
+                    "100",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CurvedMovement::CreatePathFromSvg"
+                  },
+                  "parameters": [
+                    "",
+                    "\"TestPath\"",
+                    "\"m260.84 1.4043c26.681 73.723 61.085 104.27 61.085 104.27 20.362 23.521 8.7766 24.574 1.0532 24.223-7.7234-0.35107-24.926-5.9681-37.915-3.8617-12.989 2.1064-44.234 11.234-59.33 26.33-15.096 15.096-10.181 20.713-5.266 32.298 4.9149 11.585 10.181 31.596 10.181 31.596\"",
+                    ""
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "ResetTimer"
-              },
-              "parameters": [
-                "",
-                "\"SpawnTimerLevel\""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetCameraCenterX"
+                  },
+                  "parameters": [
+                    "",
+                    "=",
+                    "AreaNorth.CenterX()",
+                    "\"Background\"",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCameraCenterY"
+                  },
+                  "parameters": [
+                    "",
+                    "=",
+                    "AreaNorth.CenterY()",
+                    "\"Background\"",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetY"
+                  },
+                  "parameters": [
+                    "Flags",
+                    "=",
+                    "UIBase.Y() + AreaOffset"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetY"
+                  },
+                  "parameters": [
+                    "Items",
+                    "=",
+                    "UIBase.Y() + AreaOffset "
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "ResetTimer"
-              },
-              "parameters": [
-                "",
-                "\"AttackCooldown\""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"SpawnTimerEast\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"SpawnTimerLevel\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"AttackCooldown\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"DamageCooldown\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"LevelTimer\""
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "ResetTimer"
-              },
-              "parameters": [
-                "",
-                "\"DamageCooldown\""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "CurrentLevel",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "LevelGoalTime",
+                    "=",
+                    "60"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "LevelSpawnRate",
+                    "=",
+                    "3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Spawners",
+                    "SoldierThreshold",
+                    "=",
+                    "100"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Spawners",
+                    "ArcherThreshold",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Spawners",
+                    "RiderThreshold",
+                    "=",
+                    "0"
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "ResetTimer"
-              },
-              "parameters": [
-                "",
-                "\"LevelTimer\""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "CurrentLevel",
+                    "=",
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "LevelGoalTime",
+                    "=",
+                    "80"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "LevelSpawnRate",
+                    "=",
+                    "2.5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Spawners",
+                    "SoldierThreshold",
+                    "=",
+                    "100"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Spawners",
+                    "ArcherThreshold",
+                    "=",
+                    "30"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Spawners",
+                    "RiderThreshold",
+                    "=",
+                    "0"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "CurrentLevel",
+                    "=",
+                    "3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "LevelGoalTime",
+                    "=",
+                    "120"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "LevelSpawnRate",
+                    "=",
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Spawners",
+                    "SoldierThreshold",
+                    "=",
+                    "100"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Spawners",
+                    "ArcherThreshold",
+                    "=",
+                    "40"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Spawners",
+                    "RiderThreshold",
+                    "=",
+                    "15"
+                  ]
+                }
               ]
             }
           ]
         }
-      ]
+      ],
+      "parameters": []
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
@@ -3270,16 +3616,203 @@
       ]
     },
     {
-      "type": "BuiltinCommonInstructions::Comment",
-      "color": {
-        "b": 109,
-        "g": 230,
-        "r": 255,
-        "textB": 0,
-        "textG": 0,
-        "textR": 0
-      },
-      "comment": "TO DO: Check level and adjust spawn rates, difficulty etc"
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "PlayerHealth",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ChangeTimeScale"
+          },
+          "parameters": [
+            "",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "LevelBeatBox",
+            "DefeatedBox",
+            "0",
+            "0",
+            "\"UI\""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetCenter"
+          },
+          "parameters": [
+            "DefeatedBox",
+            "=",
+            "1100",
+            "=",
+            "320"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "IsLevelRunning",
+            "False",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ResetTimer"
+          },
+          "parameters": [
+            "",
+            "\"LevelTimer\""
+          ]
+        },
+        {
+          "type": {
+            "value": "PauseTimer"
+          },
+          "parameters": [
+            "",
+            "\"LevelTimer\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "TwoChoicesDialogBoxes::TwoChoicesDialogBox::IsYesClicked"
+          },
+          "parameters": [
+            "DefeatedBox",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "CurrentLevel",
+            "=",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "IsLevelRunning",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Game Scene\"",
+            "yes"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "TwoChoicesDialogBoxes::TwoChoicesDialogBox::IsNoClicked"
+          },
+          "parameters": [
+            "DefeatedBox",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Main Menu Scene\"",
+            "yes"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "IsLevelRunning",
+            "False",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ActivateBehavior"
+          },
+          "parameters": [
+            "Items",
+            "Draggable",
+            "no"
+          ]
+        },
+        {
+          "type": {
+            "value": "ActivateBehavior"
+          },
+          "parameters": [
+            "Flags",
+            "Draggable",
+            "no"
+          ]
+        }
+      ]
     },
     {
       "colorB": 228,
@@ -3312,6 +3845,16 @@
               "parameters": [
                 "",
                 "\"Left\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "IsLevelRunning",
+                "True",
+                ""
               ]
             }
           ],
@@ -4225,6 +4768,16 @@
                 ">",
                 "2"
               ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "IsLevelRunning",
+                "True",
+                ""
+              ]
             }
           ],
           "actions": [
@@ -4299,6 +4852,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Level manager",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -4825,14 +5379,65 @@
             },
             {
               "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "LevelBeatBox",
+                "LevelBeatBox",
+                "0",
+                "0",
+                "\"UI\""
+              ]
+            },
+            {
+              "type": {
                 "value": "SetCenter"
               },
               "parameters": [
-                "TwoChoicesDialogBox",
+                "LevelBeatBox",
                 "=",
-                "960",
+                "600",
                 "=",
                 "320"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetSize"
+              },
+              "parameters": [
+                "LevelBeatBox",
+                "Resizable",
+                "1300",
+                "540"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "IsLevelRunning",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"LevelTimer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "PauseTimer"
+              },
+              "parameters": [
+                "",
+                "\"LevelTimer\""
               ]
             }
           ]
@@ -4845,43 +5450,394 @@
                 "value": "TwoChoicesDialogBoxes::TwoChoicesDialogBox::IsYesClicked"
               },
               "parameters": [
-                "TwoChoicesDialogBox",
+                "LevelBeatBox",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
-          "actions": [
+          "actions": [],
+          "events": [
             {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "TwoChoicesDialogBox",
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "IsLevelRunning",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "CurrentLevel",
+                        "=",
+                        "4"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Scene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Game Over Scene\"",
+                        "yes"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "CurrentLevel",
+                        "!=",
+                        "4"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Scene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Game Scene\"",
+                        "yes"
+                      ]
+                    }
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "Level2Scroll",
-                "CameraCenterX(\"HUD\",0)",
-                "CameraCenterY(\"HUD\",0)",
-                "\"HUD\""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetCenter"
-              },
-              "parameters": [
-                "Level2Scroll",
-                "=",
-                "CameraCenterX(\"HUD\",0)",
-                "=",
-                "CameraCenterY(\"HUD\",0)"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "IsLevelRunning",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "IsLevelRunning",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "CurrentLevel",
+                        "=",
+                        "3"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "LevelBeatBox",
+                        "Text",
+                        "=",
+                        "\"YOU WIN! YOU SEE GNOLLS VERY GOOD! And that's what they needed in the end, they were so lonely! But not anymore. The real gnolls were the friends we made on the way after all.\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "CurrentLevel",
+                        "+",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanVariable"
+                      },
+                      "parameters": [
+                        "IsLevelRunning",
+                        "True",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "CurrentLevel",
+                        "=",
+                        "2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "Level3Scroll",
+                        "CameraCenterX(\"HUD\",0)",
+                        "CameraCenterY(\"HUD\",0)",
+                        "\"UI\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetCenter"
+                      },
+                      "parameters": [
+                        "Level3Scroll",
+                        "=",
+                        "CameraCenterX(\"HUD\",0)",
+                        "=",
+                        "CameraCenterY(\"HUD\",0)"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "LevelBeatBox",
+                        "Text",
+                        "=",
+                        "\"A new day begins...\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResizableCapability::ResizableBehavior::SetHeight"
+                      },
+                      "parameters": [
+                        "LevelBeatBox",
+                        "Resizable",
+                        "*",
+                        "1.6"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetY"
+                      },
+                      "parameters": [
+                        "LevelBeatBox",
+                        "=",
+                        "100"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "CurrentLevel",
+                        "+",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanVariable"
+                      },
+                      "parameters": [
+                        "IsLevelRunning",
+                        "True",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "CurrentLevel",
+                        "=",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "Level2Scroll",
+                        "CameraCenterX(\"HUD\",0)",
+                        "CameraCenterY(\"HUD\",0)",
+                        "\"UI\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetCenter"
+                      },
+                      "parameters": [
+                        "Level2Scroll",
+                        "=",
+                        "CameraCenterX(\"HUD\",0)",
+                        "=",
+                        "CameraCenterY(\"HUD\",0)"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "LevelBeatBox",
+                        "Text",
+                        "=",
+                        "\"A new day begins...\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResizableCapability::ResizableBehavior::SetHeight"
+                      },
+                      "parameters": [
+                        "LevelBeatBox",
+                        "Resizable",
+                        "*",
+                        "1.6"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetY"
+                      },
+                      "parameters": [
+                        "LevelBeatBox",
+                        "=",
+                        "100"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "CurrentLevel",
+                        "+",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanVariable"
+                      },
+                      "parameters": [
+                        "IsLevelRunning",
+                        "True",
+                        ""
+                      ]
+                    }
+                  ]
+                }
               ]
             }
           ]
@@ -4931,6 +5887,16 @@
                 "\"AttackCooldown\"",
                 ">",
                 "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "IsLevelRunning",
+                "True",
+                ""
               ]
             }
           ],
