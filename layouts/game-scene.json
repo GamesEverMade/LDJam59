@@ -1479,27 +1479,6 @@
       "animations": []
     },
     {
-      "assetStoreId": "0a398f1656e34f64758c909a71ca17cd69fd41bd251d89ff5a640303c4279f50",
-      "name": "AttackCooldown",
-      "persistentUuid": "36cdbf74-eac7-4209-8ecc-b5a724b862e6",
-      "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
-      "variant": "Blue Flat Bar2",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {
-        "PreviousHighValueDuration": 0,
-        "ShowLabel": false,
-        "BarTopPadding": 4,
-        "BarBottomPadding": 6,
-        "BarLeftPadding": 4,
-        "BarRightPadding": 4,
-        "MaxValue": 3,
-        "InitialValue": 0,
-        "EasingDuration": 0.05
-      }
-    },
-    {
       "assetStoreId": "3d6c54e76a9a06cbd7629c1e78388d4ab808bbf36d644c61d6a14c9ad34d4f89",
       "name": "HealthBar",
       "persistentUuid": "89fa2a10-f4cc-4ced-b168-cadd697b897a",
@@ -2585,27 +2564,6 @@
       ]
     },
     {
-      "assetStoreId": "5c37cb58ddc519829264b5ff95dd80416c82e89b60bfa67c6c3852154ec2b632",
-      "name": "LevelProgress",
-      "persistentUuid": "bac50fd0-7d3b-4064-80ea-f9afff274719",
-      "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
-      "variant": "Green Flat Bar",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {
-        "PreviousHighValueDuration": 0,
-        "ShowLabel": false,
-        "BarTopPadding": 4,
-        "BarBottomPadding": 6,
-        "BarLeftPadding": 4,
-        "BarRightPadding": 4,
-        "MaxValue": 30,
-        "InitialValue": 0,
-        "EasingDuration": 0.1
-      }
-    },
-    {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "CompassNorth",
@@ -3142,67 +3100,6 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "CooldownIcon",
-      "persistentUuid": "51c1e77b-714a-4c3b-9cc3-4b0a21fd62e1",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "CDIcon.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 7,
-                        "y": 8
-                      },
-                      {
-                        "x": 128,
-                        "y": 8
-                      },
-                      {
-                        "x": 128,
-                        "y": 136
-                      },
-                      {
-                        "x": 7,
-                        "y": 136
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
       "name": "HealthIcon",
       "persistentUuid": "b78ee7dd-36e1-4d70-815e-429e621405bd",
       "type": "Sprite",
@@ -3260,67 +3157,6 @@
           ]
         }
       ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "TimeIcon",
-      "persistentUuid": "60c6894f-b185-40d2-8582-5332ac39ac38",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "TimeIcon.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 8,
-                        "y": 7
-                      },
-                      {
-                        "x": 129,
-                        "y": 7
-                      },
-                      {
-                        "x": 129,
-                        "y": 135
-                      },
-                      {
-                        "x": 8,
-                        "y": 135
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
     }
   ],
   "objectsFolderStructure": {
@@ -3365,13 +3201,7 @@
             "objectName": "UIBase"
           },
           {
-            "objectName": "AttackCooldown"
-          },
-          {
             "objectName": "HealthBar"
-          },
-          {
-            "objectName": "LevelProgress"
           },
           {
             "objectName": "VolumeSlider"
@@ -3380,13 +3210,7 @@
             "objectName": "Sound_button"
           },
           {
-            "objectName": "CooldownIcon"
-          },
-          {
             "objectName": "HealthIcon"
-          },
-          {
-            "objectName": "TimeIcon"
           }
         ]
       },

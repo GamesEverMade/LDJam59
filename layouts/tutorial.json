@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.41630252177333293,
+    "zoomFactor": 0.8081094648115783,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -272,11 +272,95 @@
       "keepRatio": true,
       "layer": "",
       "name": "TxtTidyUp",
-      "persistentUuid": "6262d13f-a70e-48c4-97e4-7eef8685dc43",
+      "persistentUuid": "8510d8c5-773a-4b8c-b867-165d2d03a911",
       "width": 0,
-      "x": 37,
-      "y": 918,
-      "zOrder": 14,
+      "x": 13,
+      "y": 927,
+      "zOrder": 16,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "TxtBars",
+      "persistentUuid": "a6ed6ca6-7791-4604-9d03-dab50e573845",
+      "width": 0,
+      "x": 1178,
+      "y": 951,
+      "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 55,
+      "keepRatio": true,
+      "layer": "",
+      "name": "CooldownIcon",
+      "persistentUuid": "ca9d36dd-547f-4cd2-8910-4abdffe8c117",
+      "width": 52,
+      "x": 1732,
+      "y": 850,
+      "zOrder": 18,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 64,
+      "height": 34,
+      "keepRatio": true,
+      "layer": "",
+      "name": "AttackCooldown",
+      "persistentUuid": "3feebd45-f66e-4246-95ad-fba6f7c21a9e",
+      "width": 122,
+      "x": 1779,
+      "y": 860,
+      "zOrder": 19,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 64,
+      "height": 34,
+      "keepRatio": true,
+      "layer": "",
+      "name": "LevelProgress",
+      "persistentUuid": "7e943269-42cb-45c3-a461-7077b5b256ec",
+      "width": 122,
+      "x": 1778,
+      "y": 908,
+      "zOrder": 20,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 53,
+      "keepRatio": true,
+      "layer": "",
+      "name": "TimeIcon",
+      "persistentUuid": "f378b61b-9636-41a4-8d65-8dc429a9ba38",
+      "width": 51,
+      "x": 1733,
+      "y": 900,
+      "zOrder": 21,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -318,46 +402,40 @@
     },
     {
       "assetStoreId": "",
-      "bold": false,
-      "italic": false,
       "name": "TxtTidyUp",
-      "persistentUuid": "e10fd020-f50c-4370-94b4-b9f0842389fd",
-      "smoothed": true,
-      "type": "TextObject::Text",
-      "underlined": false,
+      "persistentUuid": "6a4a7c6c-7751-4f4a-8ae7-ce0189c817e6",
+      "type": "BBText::BBText",
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "Tidy up! Careful not to make a mess \nof the flags and items after they drop \nback straight from where they were used.",
-      "font": "assets/JO______.TTF",
-      "textAlignment": "center",
-      "characterSize": 40,
-      "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
-      },
       "content": {
-        "bold": false,
-        "isOutlineEnabled": false,
-        "isShadowEnabled": false,
-        "italic": false,
-        "outlineColor": "255;255;255",
-        "outlineThickness": 2,
-        "shadowAngle": 90,
-        "shadowBlurRadius": 2,
-        "shadowColor": "0;0;0",
-        "shadowDistance": 4,
-        "shadowOpacity": 127,
-        "smoothed": true,
-        "underlined": false,
-        "text": "Tidy up! Careful not to make a mess \nof the flags and items after they drop \nback straight from where they were used.",
-        "font": "assets/JO______.TTF",
-        "textAlignment": "center",
-        "verticalTextAlignment": "top",
-        "characterSize": 40,
-        "lineHeight": 0,
-        "color": "0;0;0"
+        "text": "Tidy up! Careful not to make a mess \nof the flags and items after they [b]drop \nback straight from where they were used[/b]",
+        "opacity": 255,
+        "fontSize": 40,
+        "visible": true,
+        "color": "0;0;0",
+        "fontFamily": "assets/JO______.TTF",
+        "align": "left",
+        "verticalTextAlignment": "top"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "TxtBars",
+      "persistentUuid": "60e01443-ce05-4ce3-80af-04e0abd95cd6",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "Watch for your [b]action cooldown[/b]\nReach the [b]end of day[/b] to beat a level",
+        "opacity": 255,
+        "fontSize": 40,
+        "visible": true,
+        "color": "0;0;0",
+        "fontFamily": "assets/JO______.TTF",
+        "align": "right",
+        "verticalTextAlignment": "top"
       }
     }
   ],
@@ -372,6 +450,9 @@
       },
       {
         "objectName": "TxtTidyUp"
+      },
+      {
+        "objectName": "TxtBars"
       }
     ]
   },
@@ -408,6 +489,50 @@
             "",
             "=",
             "20"
+          ]
+        },
+        {
+          "type": {
+            "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetMaxValue"
+          },
+          "parameters": [
+            "LevelProgress",
+            "=",
+            "5",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetMaxValue"
+          },
+          "parameters": [
+            "AttackCooldown",
+            "=",
+            "5",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+          },
+          "parameters": [
+            "AttackCooldown",
+            "=",
+            "5",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+          },
+          "parameters": [
+            "LevelProgress",
+            "=",
+            "5",
+            ""
           ]
         },
         {
@@ -474,7 +599,7 @@
                   "parameters": [
                     "",
                     "BtnStart",
-                    "1300",
+                    "880",
                     "970",
                     ""
                   ]
@@ -618,10 +743,6 @@
     {
       "name": "ShakeObject_PositionAngleScale",
       "type": "ShakeObject::ShakeObject_PositionAngleScale"
-    },
-    {
-      "name": "Text",
-      "type": "TextContainerCapability::TextContainerBehavior"
     },
     {
       "name": "Tween",
