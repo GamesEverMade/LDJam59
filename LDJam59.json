@@ -1022,6 +1022,38 @@
         "name": "tutorial3.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "TutorialEast.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "TutorialEast.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "TutorialNorth.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "TutorialNorth.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "TutorialSouth.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "TutorialSouth.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "TutorialWest.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "TutorialWest.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
@@ -1716,7 +1748,7 @@
           "effectType": "Adjustment",
           "name": "Effect",
           "doubleParameters": {
-            "alpha": 0.2,
+            "alpha": 0.15,
             "blue": 1,
             "brightness": 1,
             "contrast": 1,

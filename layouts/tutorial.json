@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.8081094648115783,
+    "zoomFactor": 0.376877203675088,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -28,159 +28,6 @@
   "objectsGroups": [],
   "variables": [],
   "instances": [
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 324,
-      "keepRatio": true,
-      "layer": "",
-      "name": "AreaNorth",
-      "persistentUuid": "b1cd608a-31c1-4e47-ac2b-69a3e44a452c",
-      "width": 750,
-      "x": 226,
-      "y": 248,
-      "zOrder": 1,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 324,
-      "keepRatio": true,
-      "layer": "",
-      "name": "AreaEast",
-      "persistentUuid": "41ae099b-7c8d-41b1-ada7-3b8d361084f1",
-      "width": 750,
-      "x": 875,
-      "y": 562,
-      "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 324,
-      "keepRatio": true,
-      "layer": "",
-      "name": "AreaSouth",
-      "persistentUuid": "c954217f-ad19-43c8-bb51-dec6e2ac6429",
-      "width": 750,
-      "x": 221,
-      "y": 563,
-      "zOrder": 3,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 324,
-      "keepRatio": true,
-      "layer": "",
-      "name": "AreaWest",
-      "persistentUuid": "5bec3e7d-4483-45a7-bda4-e4b047bc47c7",
-      "width": 750,
-      "x": 875,
-      "y": 251,
-      "zOrder": 0,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 2,
-      "height": 210,
-      "keepRatio": true,
-      "layer": "",
-      "name": "FlagNorth",
-      "persistentUuid": "3c59c775-17fb-4981-ba35-3a09d2389f50",
-      "width": 210,
-      "x": 245,
-      "y": 289,
-      "zOrder": 5,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 2,
-      "height": 210,
-      "keepRatio": true,
-      "layer": "",
-      "name": "FlagEast",
-      "persistentUuid": "c3c2a29d-e32b-4191-8c49-6d1ec3304c52",
-      "width": 210,
-      "x": 1352,
-      "y": 611,
-      "zOrder": 6,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 2,
-      "height": 210,
-      "keepRatio": true,
-      "layer": "",
-      "name": "FlagSouth",
-      "persistentUuid": "b2cb78db-4530-4e1e-a37d-f6ea016442e3",
-      "width": 210,
-      "x": 269,
-      "y": 645,
-      "zOrder": 7,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 2,
-      "height": 210,
-      "keepRatio": true,
-      "layer": "",
-      "name": "FlagWest",
-      "persistentUuid": "e48cdda7-0915-4d2d-81d5-66a86072294f",
-      "width": 210,
-      "x": 1210,
-      "y": 280,
-      "zOrder": 8,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 418,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Level1Scroll",
-      "persistentUuid": "5f6483e2-107d-48fd-bc1f-f071be0a24e0",
-      "width": 908,
-      "x": 873,
-      "y": 544,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
     {
       "angle": 0,
       "customSize": false,
@@ -199,116 +46,16 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "TxtTutorial",
-      "persistentUuid": "ac7d5520-e866-4aea-955c-d9f831f5df1a",
-      "width": 0,
-      "x": 162,
-      "y": 23,
-      "zOrder": 10,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 315,
-      "customSize": true,
-      "depth": 0,
-      "height": 106,
-      "keepRatio": true,
-      "layer": "",
-      "name": "ButtonLeft",
-      "persistentUuid": "a509354e-c8e3-41b7-b662-c4b4fe6f77b1",
-      "width": 102,
-      "x": 1641,
-      "y": 116,
-      "zOrder": 11,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 345,
-      "customSize": true,
-      "depth": 0,
-      "flippedX": true,
-      "height": 106,
-      "keepRatio": true,
-      "layer": "",
-      "name": "ButtonRight",
-      "persistentUuid": "d884b375-cf77-4365-ab46-7a034f7ff50e",
-      "width": 102,
-      "x": 1673,
-      "y": 199,
-      "zOrder": 12,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 32,
       "customSize": true,
       "depth": 1,
-      "height": 105,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Go",
-      "persistentUuid": "6234381c-3c96-4827-ba22-eea598ebc60d",
-      "width": 101,
-      "x": 1733,
-      "y": 129,
-      "zOrder": 13,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "TxtTidyUp",
-      "persistentUuid": "8510d8c5-773a-4b8c-b867-165d2d03a911",
-      "width": 0,
-      "x": 13,
-      "y": 927,
-      "zOrder": 16,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "TxtBars",
-      "persistentUuid": "a6ed6ca6-7791-4604-9d03-dab50e573845",
-      "width": 0,
-      "x": 1178,
-      "y": 951,
-      "zOrder": 17,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 55,
+      "height": 51,
       "keepRatio": true,
       "layer": "",
       "name": "CooldownIcon",
       "persistentUuid": "ca9d36dd-547f-4cd2-8910-4abdffe8c117",
-      "width": 52,
-      "x": 1732,
-      "y": 850,
+      "width": 47,
+      "x": 1684,
+      "y": 463,
       "zOrder": 18,
       "numberProperties": [],
       "stringProperties": [],
@@ -317,15 +64,15 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 64,
-      "height": 34,
+      "depth": 59,
+      "height": 31,
       "keepRatio": true,
       "layer": "",
       "name": "AttackCooldown",
       "persistentUuid": "3feebd45-f66e-4246-95ad-fba6f7c21a9e",
-      "width": 122,
-      "x": 1779,
-      "y": 860,
+      "width": 112,
+      "x": 1728,
+      "y": 472,
       "zOrder": 19,
       "numberProperties": [],
       "stringProperties": [],
@@ -334,15 +81,15 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 64,
-      "height": 34,
+      "depth": 59,
+      "height": 31,
       "keepRatio": true,
       "layer": "",
       "name": "LevelProgress",
       "persistentUuid": "7e943269-42cb-45c3-a461-7077b5b256ec",
-      "width": 122,
-      "x": 1778,
-      "y": 908,
+      "width": 112,
+      "x": 1726,
+      "y": 517,
       "zOrder": 20,
       "numberProperties": [],
       "stringProperties": [],
@@ -351,16 +98,183 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 0,
-      "height": 53,
+      "depth": 1,
+      "height": 49,
       "keepRatio": true,
       "layer": "",
       "name": "TimeIcon",
       "persistentUuid": "f378b61b-9636-41a4-8d65-8dc429a9ba38",
-      "width": 51,
-      "x": 1733,
-      "y": 900,
+      "width": 47,
+      "x": 1685,
+      "y": 509,
       "zOrder": 21,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 964,
+      "keepRatio": true,
+      "layer": "",
+      "name": "TxtTutorial",
+      "persistentUuid": "e7ad8e34-42cc-4bac-ac09-98787909686b",
+      "width": 1730,
+      "x": 77,
+      "y": 18,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "TutorialEast",
+      "persistentUuid": "9b89347c-c77a-4b6a-947b-054eaa1db111",
+      "width": 0,
+      "x": 528,
+      "y": 606,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "TutorialNorth",
+      "persistentUuid": "15385c38-f76c-467f-bb5a-48c58118fe8d",
+      "width": 0,
+      "x": 109,
+      "y": 606,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "TutorialSouth",
+      "persistentUuid": "890bd650-8450-4794-87f9-0f7aac174596",
+      "width": 0,
+      "x": 956,
+      "y": 606,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "TutorialWest",
+      "persistentUuid": "6851a527-65c4-4503-824e-9eea84232ffe",
+      "width": 0,
+      "x": 1382,
+      "y": 606,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 199,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Level1Scroll",
+      "persistentUuid": "43ad3411-5c4e-4b20-90be-13929e36fdf8",
+      "width": 387,
+      "x": 1265,
+      "y": 367,
+      "zOrder": 22,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "flippedX": true,
+      "height": 71,
+      "keepRatio": true,
+      "layer": "",
+      "name": "ButtonRight",
+      "persistentUuid": "2300a1ce-78da-441b-bfac-6df88e930a9f",
+      "width": 68,
+      "x": 73,
+      "y": 780,
+      "zOrder": 24,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 71,
+      "keepRatio": true,
+      "layer": "",
+      "name": "ButtonRight",
+      "persistentUuid": "1293ac73-ca5a-4634-9b4e-4f59b7500934",
+      "width": 68,
+      "x": 1762,
+      "y": 786,
+      "zOrder": 25,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 71,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Go",
+      "persistentUuid": "4108c17f-2775-4308-8e73-bc1bedc867e3",
+      "width": 68,
+      "x": 1734,
+      "y": 373,
+      "zOrder": 26,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 2,
+      "height": 113,
+      "keepRatio": true,
+      "layer": "",
+      "name": "BtnStart",
+      "persistentUuid": "5347df59-cf68-41cf-8af4-5f4d78b9110c",
+      "width": 301,
+      "x": 807,
+      "y": 952,
+      "zOrder": 27,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -387,12 +301,25 @@
       "persistentUuid": "1d81978e-e214-48c5-8d37-fdd5f0ba7c71",
       "type": "BBText::BBText",
       "variables": [],
-      "effects": [],
+      "effects": [
+        {
+          "effectType": "Outline",
+          "name": "Effect",
+          "doubleParameters": {
+            "padding": 0,
+            "thickness": 2
+          },
+          "stringParameters": {
+            "color": "255;255;255"
+          },
+          "booleanParameters": {}
+        }
+      ],
       "behaviors": [],
       "content": {
-        "text": "- Drag the [b]flags matching regions[/b] and items to the screen\n- Press press [b]OK[/b], [b]Space bar[/b] or [b]Return[/b] \n- Use the [b]arrows[/b] to look around between the regions",
+        "text": "[b]The city is under attack by gnolls and you must signal the defences where to strike![/b]\n\n[b]Drag a flag[/b] and an [b]item[/b] to the center of the screen and [b]press OK/Space bar/Return[/b] to send the signal\nEach [b]flag stands for a region[/b] and each [b]item for a type of gnoll[/b]\nFlags and items [b]drop back straight from where they were used[/b], careful not to make a mess\n\nUse the [b]arrows on screen[/b] to look around between regions\n\nWatch for the [b]action cooldown timer[/b]\nReach the end of [b]three days straight[/b] to win",
         "opacity": 255,
-        "fontSize": 55,
+        "fontSize": 41,
         "visible": true,
         "color": "0;0;0",
         "fontFamily": "assets/JO______.TTF",
@@ -401,42 +328,248 @@
       }
     },
     {
+      "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "TxtTidyUp",
-      "persistentUuid": "6a4a7c6c-7751-4f4a-8ae7-ce0189c817e6",
-      "type": "BBText::BBText",
+      "name": "TutorialEast",
+      "persistentUuid": "fc24f71c-7d83-4222-8e34-6bbaf74ecd95",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "content": {
-        "text": "Tidy up! Careful not to make a mess \nof the flags and items after they [b]drop \nback straight from where they were used[/b]",
-        "opacity": 255,
-        "fontSize": 40,
-        "visible": true,
-        "color": "0;0;0",
-        "fontFamily": "assets/JO______.TTF",
-        "align": "left",
-        "verticalTextAlignment": "top"
-      }
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "TutorialEast.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 426,
+                        "y": 0
+                      },
+                      {
+                        "x": 426,
+                        "y": 467
+                      },
+                      {
+                        "x": 0,
+                        "y": 467
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
+      "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "TxtBars",
-      "persistentUuid": "60e01443-ce05-4ce3-80af-04e0abd95cd6",
-      "type": "BBText::BBText",
+      "name": "TutorialNorth",
+      "persistentUuid": "1a850bad-e6a9-4cba-a3b8-1b63b59fa46d",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "content": {
-        "text": "Watch for your [b]action cooldown[/b]\nReach the [b]end of day[/b] to beat a level",
-        "opacity": 255,
-        "fontSize": 40,
-        "visible": true,
-        "color": "0;0;0",
-        "fontFamily": "assets/JO______.TTF",
-        "align": "right",
-        "verticalTextAlignment": "top"
-      }
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "TutorialNorth.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 426,
+                        "y": 0
+                      },
+                      {
+                        "x": 426,
+                        "y": 467
+                      },
+                      {
+                        "x": 0,
+                        "y": 467
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "TutorialSouth",
+      "persistentUuid": "afa32f87-e1a1-4390-bbb0-501549a16fbf",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "TutorialSouth.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 426,
+                        "y": 0
+                      },
+                      {
+                        "x": 426,
+                        "y": 467
+                      },
+                      {
+                        "x": 0,
+                        "y": 467
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "TutorialWest",
+      "persistentUuid": "53a721c6-28cb-4877-93d7-e9d99cce18cb",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "TutorialWest.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 426,
+                        "y": 0
+                      },
+                      {
+                        "x": 426,
+                        "y": 467
+                      },
+                      {
+                        "x": 0,
+                        "y": 467
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -449,10 +582,16 @@
         "objectName": "TxtTutorial"
       },
       {
-        "objectName": "TxtTidyUp"
+        "objectName": "TutorialEast"
       },
       {
-        "objectName": "TxtBars"
+        "objectName": "TutorialNorth"
+      },
+      {
+        "objectName": "TutorialSouth"
+      },
+      {
+        "objectName": "TutorialWest"
       }
     ]
   },
@@ -470,17 +609,6 @@
         }
       ],
       "actions": [
-        {
-          "type": {
-            "value": "ScalableCapability::ScalableBehavior::SetValue"
-          },
-          "parameters": [
-            "Level1Scroll",
-            "Scale",
-            "=",
-            "0.0001"
-          ]
-        },
         {
           "type": {
             "value": "SetGlobalVolume"
@@ -533,90 +661,6 @@
             "=",
             "5",
             ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Wait"
-          },
-          "parameters": [
-            "0.9"
-          ]
-        }
-      ],
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Tween::TweenBehavior::AddObjectScaleTween3"
-              },
-              "parameters": [
-                "Level1Scroll",
-                "Tween",
-                "\"tutorial1\"",
-                "0.9",
-                "\"linear\"",
-                "2.3",
-                "",
-                "yes"
-              ]
-            }
-          ],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Wait"
-                  },
-                  "parameters": [
-                    "2"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "BtnStart",
-                    "880",
-                    "970",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ResizableCapability::ResizableBehavior::SetSize"
-                  },
-                  "parameters": [
-                    "BtnStart",
-                    "Resizable",
-                    "215",
-                    "80"
-                  ]
-                }
-              ]
-            }
           ]
         }
       ]
